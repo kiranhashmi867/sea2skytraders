@@ -3,2146 +3,576 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sea2Sky Traders | Global Import & Export</title>
-<meta name="description" content="Sea2Sky Traders is a global import and export trading house supplying garments, dry fruits, sports products, toys, nuts, bolts and industrial fittings.">
-<meta name="keywords" content="Sea2Sky Traders, import export, garments, dry fruits, sports toys, nuts bolts fittings, Pakistan exporters">
-
+<title>Sea2Sky Traders | Premium Global Online Store</title>
+<meta name="description" content="Sea2Sky Traders is a premium global online store for ladies garments, dry fruits, fresh fruits, sports goods, toys, nuts and bolts, pink salt and electronics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
 <style>
-
-:root{
-  --navy:#07111f;
-  --navy2:#0c1a2d;
-  --blue:#12355b;
-  --blue2:#174a78;
-  --gold:#d6ad55;
-  --gold2:#f0d18b;
-  --cream:#f8f5ed;
-  --white:#ffffff;
-  --text:#172033;
-  --muted:#667085;
-  --border:#e7eaf0;
-  --green:#25D366;
-  --facebook:#1877F2;
-  --instagram:#E1306C;
-  --shadow:0 20px 60px rgba(7,17,31,.12);
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:'DM Sans',Arial,sans-serif;
-  background:#fff;
-  color:var(--text);
-  overflow-x:hidden;
-}
-
-h1,h2,h3,h4{
-  font-family:'Playfair Display',Georgia,serif;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-.container{
-  width:90%;
-  max-width:1240px;
-  margin:auto;
-}
-
-
-/* =========================
-   TOP BAR
-========================= */
-
-.topbar{
-  background:#050c16;
-  color:#aeb8c6;
-  padding:9px 0;
-  font-size:12px;
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-
-.topbar-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-
-.top-left{
-  display:flex;
-  gap:25px;
-  flex-wrap:wrap;
-}
-
-.top-left span::before{
-  content:"✦";
-  color:var(--gold);
-  margin-right:7px;
-}
-
-.top-right{
-  display:flex;
-  align-items:center;
-  gap:18px;
-}
-
-.top-right a{
-  color:var(--gold2);
-  transition:.3s;
-}
-
-.top-right a:hover{
-  color:#fff;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-  position:sticky;
-  top:0;
-  z-index:9999;
-  background:rgba(7,17,31,.96);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.navbar{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  gap:13px;
-}
-
-.logo img{
-  width:58px;
-  height:58px;
-  object-fit:contain;
-  border-radius:50%;
-  border:2px solid var(--gold);
-  background:#fff;
-  padding:3px;
-}
-
-.logo-text h1{
-  color:#fff;
-  font-size:22px;
-  letter-spacing:1.2px;
-  line-height:1;
-}
-
-.logo-text h1 span{
-  color:var(--gold);
-}
-
-.logo-text small{
-  display:block;
-  color:#98a4b5;
-  font-size:9px;
-  letter-spacing:3px;
-  margin-top:7px;
-  text-transform:uppercase;
-}
-
-nav ul{
-  list-style:none;
-  display:flex;
-  align-items:center;
-  gap:30px;
-}
-
-nav ul li a{
-  color:#e9edf3;
-  font-size:14px;
-  font-weight:500;
-  transition:.3s;
-  position:relative;
-  padding:8px 0;
-}
-
-nav ul li a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:0;
-  height:2px;
-  background:var(--gold);
-  transition:.3s;
-}
-
-nav ul li a:hover{
-  color:var(--gold2);
-}
-
-nav ul li a:hover::after{
-  width:100%;
-}
-
-.nav-actions{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.cart-btn{
-  background:linear-gradient(135deg,var(--gold),var(--gold2));
-  color:#07111f;
-  padding:11px 20px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:700;
-  box-shadow:0 8px 25px rgba(214,173,85,.2);
-  transition:.3s;
-}
-
-.cart-btn:hover{
-  transform:translateY(-2px);
-}
-
-.menu-btn{
-  display:none;
-  font-size:27px;
-  color:#fff;
-  cursor:pointer;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-  min-height:690px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  color:#fff;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(4,11,20,.96) 0%,
-      rgba(5,17,31,.82) 48%,
-      rgba(7,17,31,.42) 100%
-    ),
-    url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=2000&q=85")
-    center/cover no-repeat;
-}
-
-.hero-content{
-  max-width:760px;
-  padding:105px 0;
-}
-
-.hero-tag{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  color:var(--gold2);
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  margin-bottom:22px;
-}
-
-.hero-tag::before{
-  content:"";
-  width:38px;
-  height:1px;
-  background:var(--gold);
-}
-
-.hero h2{
-  font-size:58px;
-  line-height:1.12;
-  font-weight:800;
-  margin-bottom:25px;
-  max-width:820px;
-}
-
-.hero h2 span{
-  color:var(--gold2);
-}
-
-.hero p{
-  color:#c4ccd7;
-  font-size:16px;
-  line-height:1.9;
-  max-width:650px;
-  margin-bottom:35px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,var(--gold),var(--gold2));
-  color:#07111f;
-  padding:15px 30px;
-  border-radius:5px;
-  font-weight:700;
-  font-size:14px;
-  transition:.3s;
-  box-shadow:0 10px 30px rgba(214,173,85,.2);
-}
-
-.btn-primary:hover{
-  transform:translateY(-3px);
-  box-shadow:0 15px 35px rgba(214,173,85,.3);
-}
-
-.btn-outline{
-  border:1px solid rgba(240,209,139,.7);
-  color:#fff;
-  padding:15px 30px;
-  border-radius:5px;
-  font-weight:600;
-  font-size:14px;
-  transition:.3s;
-}
-
-.btn-outline:hover{
-  background:rgba(214,173,85,.1);
-  border-color:var(--gold);
-}
-
-.hero-location{
-  margin-top:45px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-.hero-location span{
-  border:1px solid rgba(255,255,255,.15);
-  padding:8px 14px;
-  border-radius:30px;
-  color:#bfc8d4;
-  font-size:12px;
-  background:rgba(255,255,255,.04);
-}
-
-
-/* =========================
-   TRUST BAR
-========================= */
-
-.trust{
-  background:#0c1929;
-  border-top:1px solid rgba(255,255,255,.07);
-  border-bottom:1px solid rgba(255,255,255,.07);
-}
-
-.trust-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-
-.trust-item{
-  padding:28px 20px;
-  text-align:center;
-  border-right:1px solid rgba(255,255,255,.08);
-}
-
-.trust-item:last-child{
-  border-right:none;
-}
-
-.trust-item strong{
-  display:block;
-  color:var(--gold2);
-  font-family:'Playfair Display',serif;
-  font-size:28px;
-  margin-bottom:5px;
-}
-
-.trust-item span{
-  color:#aeb8c6;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-
-/* =========================
-   SECTION TITLES
-========================= */
-
-.section-head{
-  text-align:center;
-  max-width:750px;
-  margin:0 auto 50px;
-}
-
-.section-kicker{
-  color:#9b762b;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:700;
-}
-
-.section-head h2{
-  font-size:40px;
-  color:var(--navy);
-  margin:13px 0 15px;
-}
-
-.section-head p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.8;
-}
-
-
-/* =========================
-   CATEGORIES
-========================= */
-
-.categories{
-  padding:105px 0;
-  background:var(--cream);
-}
-
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-}
-
-.category-card{
-  height:360px;
-  border-radius:12px;
-  overflow:hidden;
-  position:relative;
-  box-shadow:0 12px 35px rgba(7,17,31,.12);
-  background:#111;
-}
-
-.category-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.7s;
-}
-
-.category-card:hover img{
-  transform:scale(1.08);
-}
-
-.category-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to top,
-    rgba(4,10,18,.94) 0%,
-    rgba(4,10,18,.25) 60%,
-    rgba(4,10,18,.05) 100%
-  );
-}
-
-.category-content{
-  position:absolute;
-  left:25px;
-  right:20px;
-  bottom:24px;
-  color:#fff;
-}
-
-.category-content small{
-  color:var(--gold2);
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:10px;
-  font-weight:700;
-}
-
-.category-content h3{
-  font-size:23px;
-  margin:7px 0 8px;
-}
-
-.category-content p{
-  color:#d3d8df;
-  font-size:12px;
-  line-height:1.6;
-}
-
-
-/* =========================
-   ABOUT / WHY US
-========================= */
-
-.about-section{
-  padding:110px 0;
-  background:#fff;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:75px;
-  align-items:center;
-}
-
-.about-image{
-  position:relative;
-}
-
-.about-image img{
-  width:100%;
-  height:520px;
-  object-fit:cover;
-  border-radius:12px;
-  box-shadow:var(--shadow);
-}
-
-.experience-box{
-  position:absolute;
-  right:-25px;
-  bottom:30px;
-  background:var(--navy);
-  color:#fff;
-  padding:25px 30px;
-  border-left:4px solid var(--gold);
-  box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
-
-.experience-box strong{
-  display:block;
-  color:var(--gold2);
-  font-family:'Playfair Display',serif;
-  font-size:29px;
-}
-
-.experience-box span{
-  color:#aeb8c6;
-  font-size:11px;
-}
-
-.about-content .section-kicker{
-  display:block;
-  margin-bottom:10px;
-}
-
-.about-content h2{
-  font-size:40px;
-  line-height:1.2;
-  margin-bottom:22px;
-  color:var(--navy);
-}
-
-.about-content > p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.9;
-  margin-bottom:30px;
-}
-
-.feature-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
-}
-
-.feature{
-  display:flex;
-  gap:13px;
-}
-
-.feature-icon{
-  width:42px;
-  height:42px;
-  flex-shrink:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:8px;
-  background:#f1ead9;
-  color:#9b762b;
-  font-size:18px;
-}
-
-.feature h4{
-  font-family:'DM Sans',sans-serif;
-  font-size:14px;
-  margin-bottom:4px;
-}
-
-.feature p{
-  color:#7b8493;
-  font-size:12px;
-  line-height:1.6;
-}
-
-
-/* =========================
-   TEAM
-========================= */
-
-.team{
-  padding:105px 0;
-  background:var(--navy);
-  position:relative;
-  overflow:hidden;
-}
-
-.team::before{
-  content:"";
-  position:absolute;
-  width:500px;
-  height:500px;
-  border:1px solid rgba(214,173,85,.08);
-  border-radius:50%;
-  top:-250px;
-  right:-150px;
-}
-
-.team .section-head h2{
-  color:#fff;
-}
-
-.team .section-head p{
-  color:#98a4b5;
-}
-
-.team-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:25px;
-  max-width:850px;
-  margin:auto;
-}
-
-.team-card{
-  background:#0d1d31;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:12px;
-  padding:35px;
-  transition:.3s;
-}
-
-.team-card:hover{
-  transform:translateY(-5px);
-  border-color:rgba(214,173,85,.4);
-}
-
-.team-role{
-  color:var(--gold);
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-weight:700;
-}
-
-.team-card h3{
-  color:#fff;
-  font-size:25px;
-  margin:10px 0 18px;
-}
-
-.team-info{
-  color:#9da8b7;
-  font-size:13px;
-  line-height:2;
-}
-
-.team-info a{
-  color:var(--gold2);
-}
-
-.team-actions{
-  display:flex;
-  gap:10px;
-  margin-top:22px;
-  flex-wrap:wrap;
-}
-
-.team-wa{
-  background:var(--green);
-  color:#fff;
-  padding:9px 15px;
-  border-radius:5px;
-  font-size:12px;
-  font-weight:700;
-}
-
-.team-email{
-  background:#172b44;
-  color:#fff;
-  padding:9px 15px;
-  border-radius:5px;
-  font-size:12px;
-  font-weight:600;
-}
-
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-  padding:100px 0;
-  background:
-    linear-gradient(120deg,rgba(7,17,31,.96),rgba(18,53,91,.9)),
-    url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1800&q=80")
-    center/cover;
-  text-align:center;
-}
-
-.cta small{
-  color:var(--gold2);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:11px;
-  font-weight:700;
-}
-
-.cta h2{
-  color:#fff;
-  font-size:42px;
-  max-width:800px;
-  margin:15px auto 18px;
-}
-
-.cta p{
-  color:#c0c8d3;
-  max-width:650px;
-  margin:auto auto 30px;
-  font-size:14px;
-  line-height:1.8;
-}
-
-.cta-buttons{
-  display:flex;
-  justify-content:center;
-  gap:13px;
-  flex-wrap:wrap;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-  background:#050c16;
-  color:#aeb8c6;
-  padding-top:70px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr 1.3fr;
-  gap:50px;
-  padding-bottom:55px;
-}
-
-.footer-logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-bottom:20px;
-}
-
-.footer-logo img{
-  width:52px;
-  height:52px;
-  object-fit:contain;
-  background:#fff;
-  border-radius:50%;
-  padding:3px;
-  border:2px solid var(--gold);
-}
-
-.footer-logo h2{
-  color:#fff;
-  font-size:21px;
-}
-
-.footer-logo h2 span{
-  color:var(--gold);
-}
-
-.footer-about{
-  font-size:13px;
-  line-height:1.9;
-  color:#8995a5;
-  margin-bottom:22px;
-}
-
-.footer-title{
-  color:var(--gold2);
-  font-size:15px;
-  margin-bottom:20px;
-  font-family:'DM Sans',sans-serif;
-  font-weight:700;
-}
-
-.footer-links{
-  list-style:none;
-}
-
-.footer-links li{
-  margin-bottom:11px;
-}
-
-.footer-links a{
-  color:#8f9aaa;
-  font-size:13px;
-  transition:.3s;
-}
-
-.footer-links a:hover{
-  color:var(--gold2);
-  padding-left:4px;
-}
-
-.contact-line{
-  display:flex;
-  gap:10px;
-  margin-bottom:13px;
-  font-size:13px;
-  line-height:1.6;
-}
-
-.contact-icon{
-  color:var(--gold);
-  width:20px;
-}
-
-.contact-line a{
-  color:#aeb8c6;
-}
-
-.contact-line a:hover{
-  color:var(--gold2);
-}
-
-
-/* SOCIAL */
-
-.socials{
-  display:flex;
-  gap:9px;
-}
-
-.socials a{
-  width:38px;
-  height:38px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
-  color:#fff;
-  font-size:14px;
-  font-weight:700;
-  transition:.3s;
-}
-
-.facebook{
-  background:var(--facebook);
-}
-
-.instagram{
-  background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
-}
-
-.whatsapp{
-  background:var(--green);
-}
-
-.socials a:hover{
-  transform:translateY(-3px);
-}
-
-
-/* FOOTER BOTTOM */
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.07);
-  padding:22px 0;
-}
-
-.footer-bottom-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.footer-bottom p{
-  font-size:11px;
-  color:#667384;
-}
-
-.footer-bottom a{
-  color:var(--gold2);
-}
-
-
-/* =========================
-   FLOATING CONTACT BUTTONS
-========================= */
-
-.floating-contact{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:99999;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.float-btn{
-  width:52px;
-  height:52px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:21px;
-  box-shadow:0 8px 25px rgba(0,0,0,.25);
-  transition:.3s;
-}
-
-.float-btn:hover{
-  transform:scale(1.08);
-}
-
-.float-wa{
-  background:var(--green);
-}
-
-.float-email{
-  background:#174a78;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:1050px){
-
-  nav ul{
-    gap:18px;
-  }
-
-  .hero h2{
-    font-size:50px;
-  }
-
-  .category-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
+:root{--navy:#0a2342;--navy2:#123a6b;--blue:#1d5aa6;--gold:#d4a72c;--gold2:#f2cf6b;--cream:#faf7ef;--text:#1b2740;--muted:#5d6b82;--green:#25D366;--shadow:0 18px 50px rgba(10,35,66,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',Arial,sans-serif;background:#fff;color:var(--text);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:90%;max-width:1240px;margin:auto}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
+.navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo svg{width:56px;height:56px;flex-shrink:0}
+.logo-text b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);letter-spacing:1px;line-height:1}
+.logo-text b span{color:var(--gold)}
+.logo-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:6px;text-transform:uppercase}
+nav ul{list-style:none;display:flex;align-items:center;gap:28px}
+nav ul li a{color:var(--navy);font-size:14px;font-weight:600;position:relative;padding:8px 0;transition:.3s}
+nav ul li a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
+nav ul li a:hover{color:var(--blue)}
+nav ul li a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{background:var(--navy);color:#fff;padding:11px 22px;border-radius:30px;font-size:13px;font-weight:700;border:2px solid var(--gold);transition:.3s}
+.cart-btn:hover{background:var(--gold);color:var(--navy)}
+.menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
+
+/* HERO */
+.hero{min-height:680px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(10,35,66,.94) 0%,rgba(18,58,107,.8) 52%,rgba(18,58,107,.35) 100%),url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.hero-content{max-width:760px;padding:100px 0}
+.hero h2{font-size:56px;line-height:1.14;font-weight:800;margin-bottom:24px}
+.hero h2 span{color:var(--gold2)}
+.hero p{color:#dbe5f3;font-size:16px;line-height:1.9;max-width:650px;margin-bottom:34px}
+.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px)}
+.btn-outline{border:2px solid var(--gold2);color:#fff;padding:13px 28px;border-radius:6px;font-weight:600;font-size:14px;transition:.3s;display:inline-block}
+.btn-outline:hover{background:rgba(242,207,107,.15)}
+
+/* TRUST */
+.trust{background:var(--navy2);border-bottom:4px solid var(--gold)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:26px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.trust-item:last-child{border-right:0}
+.trust-item strong{display:block;color:var(--gold2);font-family:'Playfair Display',serif;font-size:27px;margin-bottom:4px}
+.trust-item span{color:#c9d6ea;font-size:12px;letter-spacing:1px}
+
+/* SECTION HEAD */
+.section-head{text-align:center;max-width:740px;margin:0 auto 48px}
+.section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
+.section-head h2{font-size:40px;color:var(--navy);margin:12px 0 14px}
+.section-head p{color:var(--muted);font-size:14px;line-height:1.8}
+
+/* CATEGORIES */
+.categories{padding:100px 0;background:var(--cream)}
+.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.category-card{height:370px;border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--shadow);background:var(--navy2);border:2px solid #fff}
+.category-card.wide{grid-column:span 2}
+.cimg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.7s}
+.category-card:hover .cimg{transform:scale(1.07)}
+.category-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,35,66,.95) 0%,rgba(10,35,66,.25) 60%,rgba(10,35,66,0) 100%)}
+.category-content{position:absolute;left:24px;right:20px;bottom:24px;color:#fff}
+.category-content small{color:var(--gold2);letter-spacing:2px;font-size:10px;font-weight:700;text-transform:uppercase}
+.category-content h3{font-size:23px;margin:7px 0 8px}
+.category-content p{color:#dbe5f3;font-size:12px;line-height:1.6}
+.triple{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;transition:.7s}
+.category-card:hover .triple{transform:scale(1.05)}
+.triple div{background-size:cover;background-position:center}
+.triple div:first-child{grid-row:span 2}
+
+/* ABOUT */
+.about-section{padding:105px 0;background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about-image{position:relative}
+.about-image img{width:100%;height:520px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+.experience-box{position:absolute;right:-24px;bottom:30px;background:var(--navy);color:#fff;padding:24px 30px;border-left:5px solid var(--gold);border-radius:6px;box-shadow:0 15px 40px rgba(10,35,66,.3)}
+.experience-box strong{display:block;color:var(--gold2);font-family:'Playfair Display',serif;font-size:28px}
+.experience-box span{color:#c9d6ea;font-size:12px}
+.about-content .section-kicker{display:block;margin-bottom:10px}
+.about-content h2{font-size:38px;line-height:1.22;margin-bottom:20px;color:var(--navy)}
+.about-content>p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:28px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.feature{display:flex;gap:13px}
+.feature-icon{width:42px;height:42px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#fbf1cf;color:#8a6510;font-size:18px}
+.feature h4{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--navy);margin-bottom:4px}
+.feature p{color:var(--muted);font-size:12px;line-height:1.6}
+
+/* HOW TO ORDER */
+.steps{padding:95px 0;background:var(--cream)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{background:#fff;border-radius:14px;padding:34px 30px;border-top:5px solid var(--gold);box-shadow:var(--shadow)}
+.step-no{width:46px;height:46px;border-radius:50%;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:18px}
+.step h3{font-size:21px;color:var(--navy);margin-bottom:10px}
+.step p{color:var(--muted);font-size:13px;line-height:1.8}
+
+/* TEAM */
+.team{padding:100px 0;background:linear-gradient(135deg,var(--navy),var(--navy2))}
+.team .section-head h2{color:#fff}
+.team .section-head p{color:#c9d6ea}
+.team .section-kicker{color:var(--gold2)}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;max-width:880px;margin:auto}
+.team-card{background:#fff;border-radius:14px;padding:34px;border-top:5px solid var(--gold);transition:.3s;box-shadow:0 14px 40px rgba(0,0,0,.2)}
+.team-card:hover{transform:translateY(-5px)}
+.team-role{color:#9a7412;font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:700}
+.team-card h3{color:var(--navy);font-size:26px;margin:10px 0 16px}
+.team-info{color:var(--muted);font-size:13px;line-height:2}
+.team-info a{color:var(--blue);font-weight:600}
+.team-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.team-actions a{padding:10px 16px;border-radius:6px;font-size:12px;font-weight:700;color:#fff;display:inline-flex;align-items:center;gap:7px}
+.team-actions svg{width:15px;height:15px;fill:currentColor}
+.team-wa{background:var(--green)}
+.team-snap{background:#FFFC00;color:#111!important}
+.team-email{background:var(--navy)}
+
+/* CTA */
+.cta{padding:95px 0;text-align:center;background:linear-gradient(120deg,rgba(29,90,166,.94),rgba(10,35,66,.94)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1800&q=80") center/cover}
+.cta h2{color:#fff;font-size:42px;max-width:800px;margin:0 auto 16px}
+.cta p{color:#dbe5f3;max-width:650px;margin:0 auto 30px;font-size:14px;line-height:1.8}
+.cta-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:50px;height:50px}
+.footer-logo b{font-family:'Playfair Display',serif;color:#fff;font-size:20px}
+.footer-logo b span{color:var(--gold2)}
+.footer-about{font-size:13px;line-height:1.9;color:#aebcd2;margin-bottom:22px}
+.footer-title{color:var(--gold2);font-size:16px;margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:700}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:11px}
+.footer-links a{color:#c9d6ea;font-size:13px;transition:.3s}
+.footer-links a:hover{color:var(--gold2);padding-left:4px}
+.contact-line{display:flex;gap:10px;margin-bottom:13px;font-size:13px;line-height:1.6}
+.contact-icon{color:var(--gold2);width:20px;flex-shrink:0}
+.contact-line a:hover{color:var(--gold2)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.3s}
+.socials svg{width:20px;height:20px;fill:#fff}
+.facebook{background:#1877F2}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.whatsapp{background:var(--green)}
+.snapchat{background:#FFFC00}
+.socials .snapchat svg{fill:#111}
+.socials a:hover{transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-bottom p{font-size:12px;color:#aebcd2}
+.footer-bottom a{color:var(--gold2)}
+
+/* FLOATING CONTACT TOGGLE */
+.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
+.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.3s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-opt svg{width:24px;height:24px;fill:#fff}
+.fab-wa{background:var(--green)}
+.fab-mail{background:var(--blue)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold2);background:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,35,66,.4);transition:.3s}
+.fab-main svg{width:27px;height:27px;fill:var(--gold2);transition:.3s}
+.fab.open .fab-main{background:var(--gold)}
+.fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
+
+/* RESPONSIVE */
+@media(max-width:1050px){nav ul{gap:16px}.hero h2{font-size:48px}.category-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){
-
-  .topbar{
-    display:none;
-  }
-
-  .navbar{
-    min-height:74px;
-  }
-
-  .logo img{
-    width:50px;
-    height:50px;
-  }
-
-  .logo-text h1{
-    font-size:18px;
-  }
-
-  .logo-text small{
-    font-size:8px;
-  }
-
-  nav ul{
-    position:fixed;
-    top:74px;
-    right:-100%;
-    width:82%;
-    height:calc(100vh - 74px);
-    background:#07111f;
-    flex-direction:column;
-    align-items:flex-start;
-    padding:40px 30px;
-    gap:24px;
-    transition:.4s;
-    box-shadow:-10px 0 40px rgba(0,0,0,.3);
-  }
-
-  nav ul.active{
-    right:0;
-  }
-
-  nav ul li a{
-    font-size:16px;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .cart-btn{
-    padding:9px 14px;
-  }
-
-  .hero{
-    min-height:620px;
-  }
-
-  .hero h2{
-    font-size:42px;
-  }
-
-  .trust-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .trust-item:nth-child(2){
-    border-right:none;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr;
-    gap:55px;
-  }
-
-  .about-image img{
-    height:430px;
-  }
-
-  .experience-box{
-    right:15px;
-  }
-
-  .team-grid{
-    grid-template-columns:1fr;
-  }
+.navbar{min-height:72px}
+.logo svg{width:48px;height:48px}
+.logo-text b{font-size:18px}
+.logo-text small{font-size:8px}
+nav ul{position:fixed;top:75px;right:-100%;width:82%;height:calc(100vh - 75px);background:#fff;flex-direction:column;align-items:flex-start;padding:38px 30px;gap:22px;transition:.4s;box-shadow:-10px 0 40px rgba(10,35,66,.2)}
+nav ul.active{right:0}
+nav ul li a{font-size:16px}
+.menu-btn{display:block}
+.cart-btn{padding:9px 14px}
+.hero{min-height:600px}
+.hero h2{font-size:40px}
+.trust-grid{grid-template-columns:1fr 1fr}
+.trust-item:nth-child(2){border-right:0}
+.about-grid{grid-template-columns:1fr;gap:55px}
+.about-image img{height:420px}
+.experience-box{right:15px}
+.steps-grid{grid-template-columns:1fr}
+.team-grid{grid-template-columns:1fr}
 }
-
 @media(max-width:600px){
-
-  .container{
-    width:91%;
-  }
-
-  .hero-content{
-    padding:80px 0;
-  }
-
-  .hero h2{
-    font-size:34px;
-  }
-
-  .hero p{
-    font-size:14px;
-  }
-
-  .hero-location{
-    gap:7px;
-  }
-
-  .hero-location span{
-    font-size:10px;
-    padding:7px 10px;
-  }
-
-  .trust-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .trust-item{
-    padding:22px 10px;
-  }
-
-  .trust-item strong{
-    font-size:23px;
-  }
-
-  .trust-item span{
-    font-size:9px;
-  }
-
-  .categories,
-  .about-section,
-  .team,
-  .cta{
-    padding:75px 0;
-  }
-
-  .section-head h2,
-  .about-content h2{
-    font-size:31px;
-  }
-
-  .category-grid{
-    grid-template-columns:1fr;
-  }
-
-  .category-card{
-    height:330px;
-  }
-
-  .feature-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about-image img{
-    height:350px;
-  }
-
-  .experience-box{
-    position:relative;
-    right:auto;
-    bottom:auto;
-    margin-top:-5px;
-    width:100%;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .cta h2{
-    font-size:31px;
-  }
-
-  .floating-contact{
-    right:14px;
-    bottom:14px;
-  }
-
-  .float-btn{
-    width:48px;
-    height:48px;
-  }
+.container{width:91%}
+.hero-content{padding:75px 0}
+.hero h2{font-size:33px}
+.hero p{font-size:14px}
+.trust-item{padding:20px 8px}
+.trust-item strong{font-size:20px}
+.trust-item span{font-size:10px}
+.categories,.about-section,.team,.cta,.steps{padding:72px 0}
+.section-head h2,.about-content h2{font-size:30px}
+.category-grid{grid-template-columns:1fr}
+.category-card.wide{grid-column:auto}
+.category-card{height:330px}
+.feature-grid{grid-template-columns:1fr}
+.about-image img{height:340px}
+.experience-box{position:relative;right:auto;bottom:auto;margin-top:-5px;width:100%}
+.footer-grid{grid-template-columns:1fr;gap:34px}
+.cta h2{font-size:30px}
+.fab{right:14px;bottom:14px}
 }
-
 </style>
 </head>
-
 <body>
 
-
-<!-- =========================
-     TOP BAR
-========================= -->
-
-<div class="topbar">
-  <div class="container topbar-inner">
-
-    <div class="top-left">
-      <span>Global Import & Export</span>
-      <span>Serving USA · UK · Europe · Canada</span>
-      <span>Lahore, Pakistan</span>
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+  <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2cf6b"/><stop offset="1" stop-color="#c8971f"/></linearGradient></defs>
+      <circle cx="50" cy="50" r="47" fill="#0a2342" stroke="url(#g1)" stroke-width="4"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#f2cf6b" stroke-width="1" opacity=".6"/>
+      <circle cx="68" cy="30" r="7" fill="url(#g1)"/>
+      <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+    </svg>
+    <div class="logo-text">
+      <b>SEA2SKY <span>TRADERS</span></b>
+      <small>Premium Global Store</small>
     </div>
+  </a>
 
-    <div class="top-right">
-      <a href="https://wa.me/923008697543" target="_blank">
-        WhatsApp: +92 300 8697543
-      </a>
-    </div>
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
+  <div class="nav-actions">
+    <a href="cart.html" class="cart-btn">🛒 Cart</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navMenu').classList.toggle('active')">☰</button>
   </div>
 </div>
-
-
-<!-- =========================
-     HEADER
-========================= -->
-
-<header>
-
-  <div class="container navbar">
-
-    <a href="index.html" class="logo">
-
-      <img src="logo.png" alt="Sea2Sky Traders Logo">
-
-      <div class="logo-text">
-        <h1>SEA2SKY <span>TRADERS</span></h1>
-        <small>Global Trading House</small>
-      </div>
-
-    </a>
-
-
-    <nav>
-
-      <ul id="navMenu">
-
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-
-        <li>
-          <a href="shop.html">Shop</a>
-        </li>
-
-        <li>
-          <a href="about.html">About</a>
-        </li>
-
-        <li>
-          <a href="shipping-returns.html">
-            Shipping & Returns
-          </a>
-        </li>
-
-        <li>
-          <a href="blog.html">Blog</a>
-        </li>
-
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-
-      </ul>
-
-    </nav>
-
-
-    <div class="nav-actions">
-
-      <a href="cart.html" class="cart-btn">
-        🛒 Cart
-      </a>
-
-      <div class="menu-btn"
-           onclick="document.getElementById('navMenu').classList.toggle('active')">
-        ☰
-      </div>
-
-    </div>
-
-  </div>
-
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
+<!-- HERO -->
 <section class="hero">
-
-  <div class="container">
-
-    <div class="hero-content">
-
-      <div class="hero-tag">
-        Global Sourcing · International Trade
-      </div>
-
-      <h2>
-        Connecting Global Markets with
-        <span>Quality Products</span>
-      </h2>
-
-      <p>
-        Sea2Sky Traders is a Pakistan-based import and export trading house
-        connecting reliable suppliers with international buyers across
-        garments, dry fruits, sports products, toys and industrial hardware.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="shop.html" class="btn-primary">
-          Explore Products →
-        </a>
-
-        <a href="contact.html" class="btn-outline">
-          Request a Quote
-        </a>
-
-      </div>
-
-      <div class="hero-location">
-
-        <span>🇵🇰 Pakistan</span>
-        <span>🇺🇸 USA</span>
-        <span>🇬🇧 UK</span>
-        <span>🇪🇺 Europe</span>
-        <span>🇨🇦 Canada</span>
-
-      </div>
-
+<div class="container">
+  <div class="hero-content">
+    <h2>Premium Quality Products, <span>Delivered Worldwide</span></h2>
+    <p>Sea2Sky Traders is your trusted global online store for ladies garments, dry fruits, fresh fruits, sports goods, toys, industrial hardware, pink salt and electronics, sourced from Pakistan and shipped to customers around the world.</p>
+    <div class="hero-buttons">
+      <a href="shop.html" class="btn-primary">Shop Now →</a>
+      <a href="contact.html" class="btn-outline">Request a Quote</a>
     </div>
-
   </div>
-
+</div>
 </section>
 
-
-<!-- =========================
-     TRUST
-========================= -->
-
+<!-- TRUST -->
 <section class="trust">
-
-  <div class="container trust-grid">
-
-    <div class="trust-item">
-      <strong>Global</strong>
-      <span>Market Reach</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>4+</strong>
-      <span>Product Categories</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>24/7</strong>
-      <span>Customer Support</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>Direct</strong>
-      <span>Business Communication</span>
-    </div>
-
-  </div>
-
+<div class="container trust-grid">
+  <div class="trust-item"><strong>Worldwide</strong><span>Shipping &amp; Service</span></div>
+  <div class="trust-item"><strong>7</strong><span>Product Categories</span></div>
+  <div class="trust-item"><strong>24/7</strong><span>Customer Support</span></div>
+  <div class="trust-item"><strong>Direct</strong><span>WhatsApp Ordering</span></div>
+</div>
 </section>
 
-
-<!-- =========================
-     CATEGORIES
-========================= -->
-
+<!-- CATEGORIES -->
 <section class="categories">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="section-kicker">
-        Our Product Range
-      </span>
-
-      <h2>
-        Explore Our Categories
-      </h2>
-
-      <p>
-        Carefully selected product categories designed to serve
-        international wholesale, retail and sourcing requirements.
-      </p>
-
-    </div>
-
-
-    <div class="category-grid">
-
-
-      <!-- GARMENTS -->
-
-      <a href="shop.html?cat=garments" class="category-card">
-
-        <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85"
-          alt="Premium Garments and Fashion"
-        >
-
-        <div class="category-overlay"></div>
-
-        <div class="category-content">
-
-          <small>Fashion Collection</small>
-
-          <h3>
-            Garments & Fashion
-          </h3>
-
-          <p>
-            Men's, women's and lifestyle garments
-            for international markets.
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <!-- DRY FRUITS -->
-
-      <a href="shop.html?cat=dry-fruits" class="category-card">
-
-        <img
-          src="https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?auto=format&fit=crop&w=900&q=85"
-          alt="Premium Dry Fruits"
-        >
-
-        <div class="category-overlay"></div>
-
-        <div class="category-content">
-
-          <small>Premium Selection</small>
-
-          <h3>
-            Dry Fruits
-          </h3>
-
-          <p>
-            Carefully selected nuts, dried fruits
-            and premium food products.
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <!-- SPORTS & TOYS -->
-
-      <a href="shop.html?cat=sports-toys" class="category-card">
-
-        <img
-          src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=900&q=85"
-          alt="Sports Products and Toys"
-        >
-
-        <div class="category-overlay"></div>
-
-        <div class="category-content">
-
-          <small>Sports & Lifestyle</small>
-
-          <h3>
-            Sports & Toys
-          </h3>
-
-          <p>
-            Sports goods, recreational products
-            and toys for different age groups.
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <!-- HARDWARE -->
-
-      <a href="shop.html?cat=hardware" class="category-card">
-
-        <img
-          src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85"
-          alt="Industrial Nuts Bolts and Fittings"
-        >
-
-        <div class="category-overlay"></div>
-
-        <div class="category-content">
-
-          <small>Industrial Supply</small>
-
-          <h3>
-            Nuts, Bolts & Fittings
-          </h3>
-
-          <p>
-            Industrial hardware, fasteners,
-            nuts, bolts and essential fittings.
-          </p>
-
-        </div>
-
-      </a>
-
-
-    </div>
-
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Our Product Range</span>
+    <h2>Explore Our Categories</h2>
+    <p>Carefully selected products for retail, wholesale and sourcing requirements in every market we serve.</p>
   </div>
 
+  <div class="category-grid">
+
+    <!-- 1. LADIES GARMENTS -->
+    <a href="shop.html?cat=garments" class="category-card">
+      <div class="cimg" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85'),linear-gradient(135deg,#7a2e4d,#d98fa9)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Fashion Collection</small>
+        <h3>Ladies Garments &amp; Fashion</h3>
+        <p>Elegant ladies wear and lifestyle fashion for international markets.</p>
+      </div>
+    </a>
+
+    <!-- 2. DRY FRUITS -->
+    <a href="shop.html?cat=dry-fruits" class="category-card">
+      <div class="triple">
+        <div style="background-image:url('images/dates.jpg'),url('https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?auto=format&fit=crop&w=900&q=85'),linear-gradient(135deg,#6b3f14,#c99a3a)"></div>
+        <div style="background-image:url('images/almonds.jpg'),linear-gradient(135deg,#a9743a,#e0b978)"></div>
+        <div style="background-image:url('images/pistachios.jpg'),linear-gradient(135deg,#5f7a2b,#a3bd5a)"></div>
+      </div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Premium Selection</small>
+        <h3>Dry Fruits</h3>
+        <p>Almonds, dates, pistachios and more, selected and packed fresh.</p>
+      </div>
+    </a>
+
+    <!-- 3. SPORTS & TOYS -->
+    <a href="shop.html?cat=sports-toys" class="category-card">
+      <div class="cimg" style="background-image:url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=900&q=85'),linear-gradient(135deg,#1d5aa6,#5aa0e6)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Sports &amp; Lifestyle</small>
+        <h3>Sports &amp; Toys</h3>
+        <p>Sports goods, recreational products and toys for all ages.</p>
+      </div>
+    </a>
+
+    <!-- 4. NUTS & BOLTS -->
+    <a href="shop.html?cat=hardware" class="category-card">
+      <div class="cimg" style="background-image:url('https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85'),linear-gradient(135deg,#3a4a63,#8393ad)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Industrial Supply</small>
+        <h3>Nuts &amp; Bolts</h3>
+        <p>Industrial hardware, fasteners and essential fittings.</p>
+      </div>
+    </a>
+
+    <!-- 5. FRESH FRUITS -->
+    <a href="shop.html?cat=fresh-fruits" class="category-card">
+      <div class="cimg" style="background-image:url('images/fresh-fruits.jpg'),url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=900&q=85'),linear-gradient(135deg,#2f7d32,#e8b923)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Farm Fresh</small>
+        <h3>Fresh Fruits</h3>
+        <p>Bananas, apples, grapes and seasonal fruits, fresh from the farm.</p>
+      </div>
+    </a>
+
+    <!-- 6. PINK SALT -->
+    <a href="shop.html?cat=pink-salt" class="category-card">
+      <div class="cimg" style="background-image:url('images/pink-salt.jpg'),linear-gradient(135deg,#c56a7a,#f4c1c1)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Natural Mineral</small>
+        <h3>Pink Salt</h3>
+        <p>Pure Himalayan pink salt for kitchens, wellness and décor.</p>
+      </div>
+    </a>
+
+    <!-- 7. ELECTRONICS -->
+    <a href="shop.html?cat=electronics" class="category-card wide">
+      <div class="cimg" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85'),linear-gradient(135deg,#0a2342,#1d5aa6)"></div>
+      <div class="category-overlay"></div>
+      <div class="category-content">
+        <small>Modern Tech</small>
+        <h3>Electronics</h3>
+        <p>Electronic gadgets, accessories and appliances for everyday use.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
 </section>
 
-
-<!-- =========================
-     WHY SEA2SKY
-========================= -->
-
+<!-- WHY US -->
 <section class="about-section">
-
-  <div class="container about-grid">
-
-
-    <div class="about-image">
-
-      <img
-        src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1100&q=85"
-        alt="International Trade and Logistics"
-      >
-
-      <div class="experience-box">
-        <strong>Global</strong>
-        <span>Trading & Sourcing</span>
-      </div>
-
-    </div>
-
-
-    <div class="about-content">
-
-      <span class="section-kicker">
-        Why Sea2Sky Traders
-      </span>
-
-      <h2>
-        Built Around Quality,
-        Reliability & Global Trade
-      </h2>
-
-      <p>
-        We connect businesses and buyers with product sourcing
-        opportunities from Pakistan and international markets.
-        Our focus is straightforward — reliable communication,
-        product quality and professional trade coordination.
-      </p>
-
-
-      <div class="feature-grid">
-
-
-        <div class="feature">
-
-          <div class="feature-icon">
-            ✓
-          </div>
-
-          <div>
-
-            <h4>
-              Reliable Sourcing
-            </h4>
-
-            <p>
-              Supplier and product sourcing
-              for different market requirements.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">
-            🌎
-          </div>
-
-          <div>
-
-            <h4>
-              International Reach
-            </h4>
-
-            <p>
-              Serving buyers and businesses
-              across multiple markets.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">
-            ◆
-          </div>
-
-          <div>
-
-            <h4>
-              Product Focus
-            </h4>
-
-            <p>
-              Garments, dry fruits, sports,
-              toys and industrial hardware.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">
-            🤝
-          </div>
-
-          <div>
-
-            <h4>
-              Direct Support
-            </h4>
-
-            <p>
-              Direct communication with our
-              management and customer care team.
-            </p>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
+<div class="container about-grid">
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1100&q=85" alt="International Trade and Logistics">
+    <div class="experience-box"><strong>Trusted</strong><span>Trading &amp; Sourcing</span></div>
   </div>
-
+  <div class="about-content">
+    <span class="section-kicker">Why Sea2Sky Traders</span>
+    <h2>Built Around Quality, Reliability &amp; Service</h2>
+    <p>We connect customers and businesses across the world with quality products sourced from Pakistan. Our focus is simple: honest communication, dependable quality and professional order handling.</p>
+    <div class="feature-grid">
+      <div class="feature"><div class="feature-icon">✓</div><div><h4>Reliable Sourcing</h4><p>Trusted suppliers and quality-checked products.</p></div></div>
+      <div class="feature"><div class="feature-icon">🌎</div><div><h4>Global Delivery</h4><p>Serving customers and businesses worldwide.</p></div></div>
+      <div class="feature"><div class="feature-icon">◆</div><div><h4>Wide Range</h4><p>Fashion, food, sports, hardware and electronics.</p></div></div>
+      <div class="feature"><div class="feature-icon">🤝</div><div><h4>Direct Support</h4><p>Talk directly to our management and care team.</p></div></div>
+    </div>
+  </div>
+</div>
 </section>
 
+<!-- HOW TO ORDER -->
+<section class="steps">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Simple Ordering</span>
+    <h2>How to Order</h2>
+    <p>Three easy steps from choosing your products to receiving them.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step"><div class="step-no">1</div><h3>Choose Products</h3><p>Browse our categories in the shop and pick the products you need.</p></div>
+    <div class="step"><div class="step-no">2</div><h3>Confirm Your Order</h3><p>Add items to your cart or message us on WhatsApp for quotes and bulk pricing.</p></div>
+    <div class="step"><div class="step-no">3</div><h3>Get It Delivered</h3><p>We pack carefully and ship to your address anywhere in the world.</p></div>
+  </div>
+</div>
+</section>
 
-<!-- =========================
-     TEAM
-========================= -->
-
+<!-- TEAM -->
 <section class="team">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Leadership &amp; Management</span>
+    <h2>Meet Our Team</h2>
+    <p>Our team is available for orders, sourcing enquiries and customer support.</p>
+  </div>
+  <div class="team-grid">
 
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="section-kicker">
-        Leadership & Management
-      </span>
-
-      <h2>
-        Meet Our Team
-      </h2>
-
-      <p>
-        Our management team is available for
-        business enquiries, sourcing and customer support.
-      </p>
-
+    <div class="team-card">
+      <span class="team-role">Chief Executive Officer</span>
+      <h3>Imran Khan</h3>
+      <div class="team-info">
+        <div>✉️ <a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+        <div>📱 <a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+      </div>
+      <div class="team-actions">
+        <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="team-wa">WhatsApp</a>
+        <a href="mailto:sales@sea2skytraders.com" class="team-email">Email</a>
+      </div>
     </div>
 
-
-    <div class="team-grid">
-
-
-      <!-- CEO -->
-
-      <div class="team-card">
-
-        <span class="team-role">
-          Chief Executive Officer
-        </span>
-
-        <h3>
-          Imran Khan
-        </h3>
-
-        <div class="team-info">
-
-          <div>
-            ✉️
-            <a href="mailto:sales@sea2skytraders.com">
-              sales@sea2skytraders.com
-            </a>
-          </div>
-
-          <div>
-            📱
-            <a href="https://wa.me/923008697543" target="_blank">
-              +92 300 8697543
-            </a>
-          </div>
-
-        </div>
-
-        <div class="team-actions">
-
-          <a
-            href="https://wa.me/923008697543"
-            target="_blank"
-            class="team-wa">
-            WhatsApp
-          </a>
-
-          <a
-            href="mailto:sales@sea2skytraders.com"
-            class="team-email">
-            Email
-          </a>
-
-        </div>
-
+    <div class="team-card">
+      <span class="team-role">Management</span>
+      <h3>Kiran Hashmi</h3>
+      <div class="team-info">
+        <div>✉️ <a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a></div>
+        <div>📱 <a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></div>
+        <div>💼 Business &amp; Website Management</div>
       </div>
-
-
-      <!-- MANAGEMENT -->
-
-      <div class="team-card">
-
-        <span class="team-role">
-          Management
-        </span>
-
-        <h3>
-          Kiran Hashmi
-        </h3>
-
-        <div class="team-info">
-
-          <div>
-            ✉️
-            <a href="mailto:kiran@sea2skytraders.com">
-              kiran@sea2skytraders.com
-            </a>
-          </div>
-
-          <div>
-            💼
-            Business & Website Management
-          </div>
-
-        </div>
-
-        <div class="team-actions">
-
-          <a
-            href="mailto:kiran@sea2skytraders.com"
-            class="team-email">
-            Contact Management
-          </a>
-
-        </div>
-
+      <div class="team-actions">
+        <a href="https://wa.me/923081333143" target="_blank" rel="noopener" class="team-wa">WhatsApp</a>
+        <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="team-snap">
+          <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+          Snapchat
+        </a>
+        <a href="mailto:kiran@sea2skytraders.com" class="team-email">Email</a>
       </div>
-
-
     </div>
 
   </div>
-
+</div>
 </section>
 
-
-<!-- =========================
-     CTA
-========================= -->
-
+<!-- CTA -->
 <section class="cta">
-
-  <div class="container">
-
-    <small>
-      Global Sourcing & Trade
-    </small>
-
-    <h2>
-      Ready to Source Products
-      for Your Market?
-    </h2>
-
-    <p>
-      Contact Sea2Sky Traders for product enquiries,
-      sourcing requirements, wholesale opportunities
-      and international trade discussions.
-    </p>
-
-    <div class="cta-buttons">
-
-      <a href="contact.html" class="btn-primary">
-        Contact Our Team →
-      </a>
-
-      <a
-        href="https://wa.me/923008697543"
-        target="_blank"
-        class="btn-outline">
-        WhatsApp Us
-      </a>
-
-    </div>
-
+<div class="container">
+  <h2>Ready to Order for Your Market?</h2>
+  <p>Contact Sea2Sky Traders for product enquiries, wholesale orders and sourcing requirements, anywhere in the world.</p>
+  <div class="cta-buttons">
+    <a href="contact.html" class="btn-primary">Contact Our Team →</a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn-outline">WhatsApp Us</a>
   </div>
-
+</div>
 </section>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
+<!-- FOOTER -->
 <footer>
+<div class="container footer-grid">
 
-  <div class="container footer-grid">
-
-
-    <!-- BRAND -->
-
-    <div>
-
-      <div class="footer-logo">
-
-        <img
-          src="logo.png"
-          alt="Sea2Sky Traders Logo"
-        >
-
-        <h2>
-          SEA2SKY <span>TRADERS</span>
-        </h2>
-
-      </div>
-
-      <p class="footer-about">
-        Sea2Sky Traders is a Pakistan-based trading
-        and sourcing business serving international
-        buyers across garments, dry fruits, sports
-        products, toys and industrial hardware.
-      </p>
-
-
-      <div class="socials">
-
-        <a
-          href="https://www.facebook.com/share/1H9YBM2kvf/"
-          target="_blank"
-          class="facebook">
-          f
-        </a>
-
-        <a
-          href="https://www.instagram.com/sea2skytraders"
-          target="_blank"
-          class="instagram">
-          ◎
-        </a>
-
-        <a
-          href="https://wa.me/923008697543"
-          target="_blank"
-          class="whatsapp">
-          ☎
-        </a>
-
-      </div>
-
+  <div>
+    <div class="footer-logo">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#123a6b" stroke="#f2cf6b" stroke-width="4"/>
+        <circle cx="68" cy="30" r="7" fill="#f2cf6b"/>
+        <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+      </svg>
+      <b>SEA2SKY <span>TRADERS</span></b>
     </div>
-
-
-    <!-- QUICK LINKS -->
-
-    <div>
-
-      <h3 class="footer-title">
-        Quick Links
-      </h3>
-
-      <ul class="footer-links">
-
-        <li>
-          <a href="index.html">
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a href="shop.html">
-            Shop
-          </a>
-        </li>
-
-        <li>
-          <a href="about.html">
-            About Us
-          </a>
-        </li>
-
-        <li>
-          <a href="blog.html">
-            Blog
-          </a>
-        </li>
-
-        <li>
-          <a href="shipping-returns.html">
-            Shipping & Returns
-          </a>
-        </li>
-
-        <li>
-          <a href="contact.html">
-            Contact
-          </a>
-        </li>
-
-      </ul>
-
+    <p class="footer-about">Sea2Sky Traders is a premium global online store offering ladies garments, dry fruits, fresh fruits, sports goods, toys, hardware, pink salt and electronics to customers worldwide.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+      </a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+      </a>
+      <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+      </a>
     </div>
-
-
-    <!-- PRODUCTS -->
-
-    <div>
-
-      <h3 class="footer-title">
-        Product Categories
-      </h3>
-
-      <ul class="footer-links">
-
-        <li>
-          <a href="shop.html?cat=garments">
-            Garments & Fashion
-          </a>
-        </li>
-
-        <li>
-          <a href="shop.html?cat=dry-fruits">
-            Dry Fruits
-          </a>
-        </li>
-
-        <li>
-          <a href="shop.html?cat=sports-toys">
-            Sports & Toys
-          </a>
-        </li>
-
-        <li>
-          <a href="shop.html?cat=hardware">
-            Nuts, Bolts & Fittings
-          </a>
-        </li>
-
-        <li>
-          <a href="shop.html">
-            All Products
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
-
-
-    <!-- CONTACT -->
-
-    <div>
-
-      <h3 class="footer-title">
-        Customer Care
-      </h3>
-
-
-      <div class="contact-line">
-
-        <span class="contact-icon">
-          👤
-        </span>
-
-        <span>
-          <strong>CEO:</strong><br>
-          Imran Khan
-        </span>
-
-      </div>
-
-
-      <div class="contact-line">
-
-        <span class="contact-icon">
-          ✉
-        </span>
-
-        <a href="mailto:sales@sea2skytraders.com">
-          sales@sea2skytraders.com
-        </a>
-
-      </div>
-
-
-      <div class="contact-line">
-
-        <span class="contact-icon">
-          ☎
-        </span>
-
-        <a
-          href="https://wa.me/923008697543"
-          target="_blank">
-          +92 300 8697543
-        </a>
-
-      </div>
-
-
-      <div class="contact-line">
-
-        <span class="contact-icon">
-          📍
-        </span>
-
-        <span>
-          5-LGF, Aman Business Centre,<br>
-          Johar Town, Lahore, Pakistan
-        </span>
-
-      </div>
-
-
-      <div class="contact-line">
-
-        <span class="contact-icon">
-          💼
-        </span>
-
-        <span>
-          Management:<br>
-          <a href="mailto:kiran@sea2skytraders.com">
-            kiran@sea2skytraders.com
-          </a>
-        </span>
-
-      </div>
-
-    </div>
-
-
   </div>
 
-
-  <!-- FOOTER BOTTOM -->
-
-  <div class="footer-bottom">
-
-    <div class="container footer-bottom-inner">
-
-      <p>
-        © 2026 Sea2Sky Traders. All Rights Reserved.
-      </p>
-
-      <p>
-
-        <a href="privacy-policy.html">
-          Privacy Policy
-        </a>
-
-        &nbsp; · &nbsp;
-
-        <a href="contact.html">
-          Customer Support
-        </a>
-
-      </p>
-
-    </div>
-
+  <div>
+    <h3 class="footer-title">Quick Links</h3>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </div>
 
-</footer>
+  <div>
+    <h3 class="footer-title">Product Categories</h3>
+    <ul class="footer-links">
+      <li><a href="shop.html?cat=garments">Ladies Garments &amp; Fashion</a></li>
+      <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+      <li><a href="shop.html?cat=sports-toys">Sports &amp; Toys</a></li>
+      <li><a href="shop.html?cat=hardware">Nuts &amp; Bolts</a></li>
+      <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+      <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+      <li><a href="shop.html?cat=electronics">Electronics</a></li>
+    </ul>
+  </div>
 
-
-<!-- =========================
-     FLOATING CONTACT
-========================= -->
-
-<div class="floating-contact">
-
-  <a
-    href="mailto:sales@sea2skytraders.com"
-    class="float-btn float-email"
-    title="Email Sea2Sky Traders">
-    ✉
-  </a>
-
-  <a
-    href="https://wa.me/923008697543"
-    target="_blank"
-    class="float-btn float-wa"
-    title="WhatsApp Sea2Sky Traders">
-    ☎
-  </a>
+  <div>
+    <h3 class="footer-title">Customer Care</h3>
+    <div class="contact-line"><span class="contact-icon">👤</span><span><strong>CEO:</strong><br>Imran Khan</span></div>
+    <div class="contact-line"><span class="contact-icon">✉</span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+    <div class="contact-line"><span class="contact-icon">☎</span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+    <div class="contact-line"><span class="contact-icon">📍</span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
+    <div class="contact-line"><span class="contact-icon">💼</span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+  </div>
 
 </div>
 
+<div class="footer-bottom">
+  <div class="container footer-bottom-inner">
+    <p>© 2026 Sea2Sky Traders. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="contact.html">Customer Support</a></p>
+  </div>
+</div>
+</footer>
 
-<!-- =========================
-     MOBILE MENU SCRIPT
-========================= -->
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
+    </a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+  <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
+  </button>
+</div>
 
 <script>
-
-const navLinks = document.querySelectorAll("#navMenu a");
-
-navLinks.forEach(function(link){
-
-  link.addEventListener("click",function(){
-
-    document
-      .getElementById("navMenu")
-      .classList.remove("active");
-
-  });
-
+document.querySelectorAll("#navMenu a").forEach(function(l){
+  l.addEventListener("click",function(){document.getElementById("navMenu").classList.remove("active")});
 });
-
+var fab=document.getElementById("fab"),fabBtn=document.getElementById("fabBtn");
+fabBtn.addEventListener("click",function(e){
+  e.stopPropagation();
+  var o=fab.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded",o);
+});
+document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
 </script>
-
 
 </body>
 </html>
