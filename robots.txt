@@ -1,1 +1,4 @@
-222
+User-agent: *
+Allow: /
+
+Sitemap: https://sea2skytraders.com/sitemap.xml
