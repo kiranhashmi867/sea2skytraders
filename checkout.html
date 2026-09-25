@@ -1,1 +1,545 @@
-7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Sea2Sky Traders</title>
+<meta name="description" content="Complete your order at Sea2Sky Traders — enter your details and confirm your order instantly via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a2342;--navy2:#123a6b;--blue:#1d5aa6;--gold:#d4a72c;--gold2:#f2cf6b;--cream:#faf7ef;--text:#1b2740;--muted:#5d6b82;--green:#25D366;--shadow:0 18px 50px rgba(10,35,66,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',Arial,sans-serif;background:#fff;color:var(--text);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:90%;max-width:1240px;margin:auto}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
+.navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo svg{width:56px;height:56px;flex-shrink:0}
+.logo-text b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);letter-spacing:1px;line-height:1}
+.logo-text b span{color:var(--gold)}
+.logo-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:6px;text-transform:uppercase}
+nav ul{list-style:none;display:flex;align-items:center;gap:28px}
+nav ul li a{color:var(--navy);font-size:14px;font-weight:600;position:relative;padding:8px 0;transition:.3s}
+nav ul li a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
+nav ul li a:hover{color:var(--blue)}
+nav ul li a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{background:var(--navy);color:#fff;padding:11px 22px;border-radius:30px;font-size:13px;font-weight:700;border:2px solid var(--gold);transition:.3s;position:relative}
+.cart-btn:hover{background:var(--gold);color:var(--navy)}
+.cart-count{position:absolute;top:-8px;right:-8px;background:var(--gold);color:var(--navy);width:20px;height:20px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff}
+.menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
+
+/* PAGE HERO */
+.page-hero{min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,rgba(10,35,66,.94),rgba(18,58,107,.9)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.page-hero .section-kicker{color:var(--gold2)}
+.page-hero h1{font-size:36px;margin:12px 0 6px}
+.page-hero p{color:#dbe5f3;font-size:13.5px}
+.section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
+
+/* STEP TRACKER */
+.steps-bar{background:var(--cream);border-bottom:1px solid #e7eaf0;padding:20px 0}
+.steps-track{display:flex;align-items:center;justify-content:center;gap:0;max-width:640px;margin:auto}
+.step-dot{display:flex;align-items:center;gap:10px}
+.step-circle{width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #d9dde5;color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+.step-dot.active .step-circle{background:var(--navy);border-color:var(--navy);color:var(--gold2)}
+.step-dot.done .step-circle{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.step-label{font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
+.step-dot.active .step-label{color:var(--navy)}
+.step-line{flex:1;height:2px;background:#d9dde5;margin:0 12px;min-width:30px}
+
+/* CHECKOUT MAIN */
+.checkout-main{padding:60px 0 100px;background:#fff}
+.checkout-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:start}
+
+.form-card{background:var(--cream);border-radius:16px;padding:38px;border-top:5px solid var(--gold)}
+.form-card h3{color:var(--navy);font-size:21px;margin-bottom:6px}
+.form-card>p.sub{color:var(--muted);font-size:12.5px;margin-bottom:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:7px;text-transform:uppercase;letter-spacing:1px}
+.field input,.field select,.field textarea{width:100%;padding:13px 15px;border:1px solid #d9dde5;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:#fff}
+.field textarea{resize:vertical;min-height:90px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.section-divider{margin:30px 0 20px;padding-top:20px;border-top:1px dashed #d9dde5;font-size:13px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:1px}
+
+.pay-options{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.pay-option{display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid #d9dde5;border-radius:10px;padding:15px 16px;cursor:pointer;transition:.2s}
+.pay-option.selected{border-color:var(--gold);background:#fffaf0}
+.pay-option input{width:16px;height:16px;accent-color:var(--gold)}
+.pay-option-text strong{display:block;font-size:13.5px;color:var(--navy)}
+.pay-option-text span{font-size:11.5px;color:var(--muted)}
+
+.field-error{border-color:#c0392b !important}
+.error-msg{color:#c0392b;font-size:11.5px;margin-top:5px;display:none}
+.error-msg.show{display:block}
+
+/* ORDER SUMMARY */
+.summary-card{background:var(--navy);color:#fff;border-radius:16px;padding:32px;position:sticky;top:110px}
+.summary-card h3{color:#fff;font-size:20px;margin-bottom:20px}
+.summary-item{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#dbe5f3;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.summary-item .si-name{flex:1}
+.summary-item .si-qty{color:#9fb0cc;font-size:11.5px}
+.summary-row{display:flex;justify-content:space-between;font-size:13.5px;color:#c9d6ea;padding:10px 0}
+.summary-row.total{color:#fff;font-weight:800;font-size:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);margin-top:8px}
+.summary-row.total span:last-child{color:var(--gold2)}
+.summary-note{font-size:11px;color:#aebcd2;margin:16px 0 22px;line-height:1.6}
+.btn-place-order{width:100%;background:var(--green);color:#fff;border:none;padding:16px;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:.3s}
+.btn-place-order:hover{filter:brightness(1.08)}
+.btn-place-order svg{width:18px;height:18px;fill:#fff}
+.back-link{display:block;text-align:center;margin-top:16px;color:var(--gold2);font-size:12.5px;font-weight:600}
+
+.empty-cart{text-align:center;padding:80px 20px;background:var(--cream);border-radius:14px}
+.empty-cart .icon{font-size:52px;margin-bottom:18px}
+.empty-cart h3{font-size:22px;color:var(--navy);margin-bottom:10px}
+.empty-cart p{color:var(--muted);font-size:14px;margin-bottom:26px}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px)}
+
+/* SUCCESS SCREEN */
+.success-screen{display:none;text-align:center;padding:70px 20px;max-width:600px;margin:auto}
+.success-screen.show{display:block}
+.success-icon{width:84px;height:84px;border-radius:50%;background:#eafaf0;color:#1f9d55;display:flex;align-items:center;justify-content:center;margin:0 auto 26px;font-size:40px}
+.success-screen h2{color:var(--navy);font-size:28px;margin-bottom:14px}
+.success-screen p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:30px}
+.success-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:50px;height:50px}
+.footer-logo b{font-family:'Playfair Display',serif;color:#fff;font-size:20px}
+.footer-logo b span{color:var(--gold2)}
+.footer-about{font-size:13px;line-height:1.9;color:#aebcd2;margin-bottom:22px}
+.footer-title{color:var(--gold2);font-size:16px;margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:700}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:11px}
+.footer-links a{color:#c9d6ea;font-size:13px;transition:.3s}
+.footer-links a:hover{color:var(--gold2);padding-left:4px}
+.contact-line{display:flex;gap:10px;margin-bottom:13px;font-size:13px;line-height:1.6}
+.contact-icon{width:20px;flex-shrink:0;display:flex;align-items:flex-start;padding-top:2px}
+.contact-icon svg{width:16px;height:16px;fill:var(--gold2)}
+.contact-line a:hover{color:var(--gold2)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.3s}
+.socials svg{width:20px;height:20px;fill:#fff}
+.facebook{background:#1877F2}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.whatsapp{background:var(--green)}
+.snapchat{background:#FFFC00}
+.socials .snapchat svg{fill:#111}
+.socials a:hover{transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-bottom p{font-size:12px;color:#aebcd2}
+.footer-bottom a{color:var(--gold2)}
+
+/* FLOATING CONTACT TOGGLE */
+.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
+.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.3s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-opt svg{width:24px;height:24px;fill:#fff}
+.fab-wa{background:var(--green)}
+.fab-mail{background:var(--blue)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold2);background:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,35,66,.4);transition:.3s}
+.fab-main svg{width:27px;height:27px;fill:var(--gold2);transition:.3s}
+.fab.open .fab-main{background:var(--gold)}
+.fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
+
+/* RESPONSIVE */
+@media(max-width:1050px){nav ul{gap:16px}.checkout-grid{grid-template-columns:1fr}.summary-card{position:static}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:850px){
+.navbar{min-height:72px}
+.logo svg{width:48px;height:48px}
+.logo-text b{font-size:18px}
+.logo-text small{font-size:8px}
+nav ul{position:fixed;top:75px;right:-100%;width:82%;height:calc(100vh - 75px);background:#fff;flex-direction:column;align-items:flex-start;padding:38px 30px;gap:22px;transition:.4s;box-shadow:-10px 0 40px rgba(10,35,66,.2)}
+nav ul.active{right:0}
+nav ul li a{font-size:16px}
+.menu-btn{display:block}
+.cart-btn{padding:9px 14px}
+.form-card{padding:26px}
+.row3{grid-template-columns:1fr 1fr}
+.step-label{display:none}
+}
+@media(max-width:600px){
+.container{width:91%}
+.page-hero{min-height:190px}
+.page-hero h1{font-size:28px}
+.checkout-main{padding:35px 0 60px}
+.row2,.row3{grid-template-columns:1fr}
+.form-card{padding:22px}
+.summary-card{padding:24px}
+.fab{right:14px;bottom:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+  <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2cf6b"/><stop offset="1" stop-color="#c8971f"/></linearGradient></defs>
+      <circle cx="50" cy="50" r="47" fill="#0a2342" stroke="url(#g1)" stroke-width="4"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#f2cf6b" stroke-width="1" opacity=".6"/>
+      <circle cx="68" cy="30" r="7" fill="url(#g1)"/>
+      <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+    </svg>
+    <div class="logo-text">
+      <b>SEA2SKY <span>TRADERS</span></b>
+      <small>Premium Global Store</small>
+    </div>
+  </a>
+
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="cart.html" class="cart-btn">🛒 Cart<span class="cart-count" id="cartCount">0</span></a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navMenu').classList.toggle('active')">☰</button>
+  </div>
+</div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+<div class="container">
+  <span class="section-kicker">Almost There</span>
+  <h1>Checkout</h1>
+  <p>Enter your details below to confirm your order.</p>
+</div>
+</section>
+
+<!-- STEP TRACKER -->
+<div class="steps-bar">
+  <div class="container steps-track">
+    <div class="step-dot done"><div class="step-circle">✓</div><span class="step-label">Cart</span></div>
+    <div class="step-line"></div>
+    <div class="step-dot active"><div class="step-circle">2</div><span class="step-label">Checkout</span></div>
+    <div class="step-line"></div>
+    <div class="step-dot"><div class="step-circle">3</div><span class="step-label">Confirm</span></div>
+  </div>
+</div>
+
+<!-- CHECKOUT MAIN -->
+<section class="checkout-main">
+<div class="container" id="checkoutContainer">
+
+  <!-- FILLED VIA JS: either empty-cart, the checkout form, or success screen -->
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footer-grid">
+
+  <div>
+    <div class="footer-logo">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#123a6b" stroke="#f2cf6b" stroke-width="4"/>
+        <circle cx="68" cy="30" r="7" fill="#f2cf6b"/>
+        <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+      </svg>
+      <b>SEA2SKY <span>TRADERS</span></b>
+    </div>
+    <p class="footer-about">Sea2Sky Traders is a premium global online store offering ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics to customers worldwide.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+      </a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+      </a>
+      <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Quick Links</h3>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Product Categories</h3>
+    <ul class="footer-links">
+      <li><a href="shop.html?cat=garments">Ladies Garments &amp; Fashion</a></li>
+      <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+      <li><a href="shop.html?cat=sports-toys">Sports &amp; Toys</a></li>
+      <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+      <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+      <li><a href="shop.html?cat=electronics">Electronics &amp; Accessories</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Customer Care</h3>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></span><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg></span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M10 2h4a1 1 0 0 1 1 1v2h4a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2h4V3a1 1 0 0 1 1-1zm0 2v1h4V4h-4zM3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm8 2v3h2v-3h-2z"/></svg></span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  <div class="container footer-bottom-inner">
+    <p>© 2026 Sea2Sky Traders. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="contact.html">Customer Support</a></p>
+  </div>
+</div>
+</footer>
+
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
+    </a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+  <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
+  </button>
+</div>
+
+<script>
+document.querySelectorAll("#navMenu a").forEach(function(l){
+  l.addEventListener("click",function(){document.getElementById("navMenu").classList.remove("active")});
+});
+var fab=document.getElementById("fab"),fabBtn=document.getElementById("fabBtn");
+fabBtn.addEventListener("click",function(e){
+  e.stopPropagation();
+  var o=fab.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded",o);
+});
+document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
+
+/* PRODUCT LOOKUP (mirrors catalog on shop.html / cart.html) */
+var productsByName={
+  "Embroidered Ladies Kurti Set":{price:18,unit:"/ piece"},
+  "Printed Lawn 3-Piece Suit":{price:22,unit:"/ set"},
+  "Premium Californian Almonds":{price:9,unit:"/ 500g"},
+  "Soft Premium Dates":{price:7,unit:"/ 500g"},
+  "Roasted Pistachios":{price:12,unit:"/ 500g"},
+  "All-Weather Sports Ball Set":{price:14,unit:"/ piece"},
+  "Kids Activity Toy Set":{price:10,unit:"/ set"},
+  "Seasonal Fresh Fruit Basket":{price:16,unit:"/ basket"},
+  "Himalayan Pink Salt (Fine Grain)":{price:6,unit:"/ 1kg"},
+  "Pink Salt Lamp Decor Chunks":{price:11,unit:"/ pack"},
+  "Wireless Earbuds Pro":{price:19,unit:"/ piece"},
+  "Mobile Accessories Kit":{price:13,unit:"/ kit"}
+};
+
+function getCartRaw(){try{return JSON.parse(localStorage.getItem("s2sCart")||"[]")}catch(e){return []}}
+function updateCartCount(){document.getElementById("cartCount").textContent=getCartRaw().length}
+function getGroupedCart(){
+  var raw=getCartRaw();
+  var map={};
+  raw.forEach(function(name){map[name]=(map[name]||0)+1});
+  return Object.keys(map).map(function(name){return {name:name,qty:map[name]}});
+}
+
+var container=document.getElementById("checkoutContainer");
+
+function renderPage(){
+  updateCartCount();
+  var grouped=getGroupedCart();
+
+  if(grouped.length===0){
+    container.innerHTML=
+      '<div class="empty-cart">'+
+        '<div class="icon">🛒</div>'+
+        '<h3>Your cart is empty</h3>'+
+        '<p>Add a few items to your cart before checking out.</p>'+
+        '<a href="shop.html" class="btn-primary">Browse the Shop →</a>'+
+      '</div>';
+    return;
+  }
+
+  var total=0;
+  var summaryItemsHtml="";
+  grouped.forEach(function(item){
+    var p=productsByName[item.name]||{price:0,unit:""};
+    var lineTotal=p.price*item.qty;
+    total+=lineTotal;
+    summaryItemsHtml+=
+      '<div class="summary-item">'+
+        '<div class="si-name">'+item.name+'<br><span class="si-qty">Qty: '+item.qty+' '+(p.unit?('· $'+p.price+' '+p.unit):'')+'</span></div>'+
+        '<div>$'+lineTotal+'</div>'+
+      '</div>';
+  });
+
+  container.innerHTML=
+    '<div class="checkout-grid">'+
+
+      '<form class="form-card" id="checkoutForm" novalidate>'+
+        '<h3>Delivery Details</h3>'+
+        '<p class="sub">Tell us where and how to reach you — we\'ll confirm everything on WhatsApp.</p>'+
+
+        '<div class="row2">'+
+          '<div class="field"><label for="fullName">Full Name</label><input type="text" id="fullName" placeholder="Your full name" required><div class="error-msg" id="err-fullName">Please enter your name.</div></div>'+
+          '<div class="field"><label for="phone">WhatsApp / Phone</label><input type="tel" id="phone" placeholder="+1 234 567 8900" required><div class="error-msg" id="err-phone">Please enter a valid phone number.</div></div>'+
+        '</div>'+
+
+        '<div class="field"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com" required><div class="error-msg" id="err-email">Please enter a valid email.</div></div>'+
+
+        '<div class="field"><label for="address">Street Address</label><input type="text" id="address" placeholder="House / street / area" required><div class="error-msg" id="err-address">Please enter your address.</div></div>'+
+
+        '<div class="row3">'+
+          '<div class="field"><label for="city">City</label><input type="text" id="city" placeholder="City" required><div class="error-msg" id="err-city">Required.</div></div>'+
+          '<div class="field"><label for="postal">Postal Code</label><input type="text" id="postal" placeholder="Postal / ZIP code"></div>'+
+          '<div class="field"><label for="country">Country</label><input type="text" id="country" placeholder="Country" required><div class="error-msg" id="err-country">Required.</div></div>'+
+        '</div>'+
+
+        '<div class="field"><label for="notes">Order Notes (optional)</label><textarea id="notes" placeholder="Sizes, colors, delivery preferences, anything else we should know"></textarea></div>'+
+
+        '<div class="section-divider">Payment Method</div>'+
+        '<div class="pay-options" id="payOptions">'+
+          '<label class="pay-option selected"><input type="radio" name="pay" value="cod" checked><div class="pay-option-text"><strong>Cash on Delivery</strong><span>Pay when your order arrives</span></div></label>'+
+          '<label class="pay-option"><input type="radio" name="pay" value="bank"><div class="pay-option-text"><strong>Bank Transfer</strong><span>Details shared with you on WhatsApp</span></div></label>'+
+          '<label class="pay-option"><input type="radio" name="pay" value="wa"><div class="pay-option-text"><strong>Confirm on WhatsApp</strong><span>Decide payment method while chatting with our team</span></div></label>'+
+        '</div>'+
+      '</form>'+
+
+      '<div class="summary-card">'+
+        '<h3>Order Summary</h3>'+
+        summaryItemsHtml+
+        '<div class="summary-row"><span>Items</span><span>'+grouped.reduce(function(s,i){return s+i.qty},0)+'</span></div>'+
+        '<div class="summary-row"><span>Estimated Subtotal</span><span>$'+total+'</span></div>'+
+        '<div class="summary-row total"><span>Total</span><span>$'+total+'</span></div>'+
+        '<p class="summary-note">Shipping cost and final delivery time are confirmed on WhatsApp based on your destination and order size.</p>'+
+        '<button class="btn-place-order" id="placeOrderBtn">'+
+          '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>'+
+          'Place Order via WhatsApp'+
+        '</button>'+
+        '<a href="cart.html" class="back-link">← Back to Cart</a>'+
+      '</div>'+
+
+    '</div>'+
+
+    '<div class="success-screen" id="successScreen">'+
+      '<div class="success-icon">✓</div>'+
+      '<h2>Order Details Sent!</h2>'+
+      '<p>Your order has been prepared and opened in WhatsApp. Please hit send on the message to confirm your order with our team — we\'ll get back to you shortly.</p>'+
+      '<div class="success-buttons">'+
+        '<a href="shop.html" class="btn-primary">Continue Shopping →</a>'+
+      '</div>'+
+    '</div>';
+
+  attachFormEvents(grouped,total);
+}
+
+function attachFormEvents(grouped,total){
+  var payOptions=document.querySelectorAll(".pay-option");
+  payOptions.forEach(function(opt){
+    opt.addEventListener("click",function(){
+      payOptions.forEach(function(o){o.classList.remove("selected")});
+      opt.classList.add("selected");
+      opt.querySelector("input").checked=true;
+    });
+  });
+
+  document.getElementById("placeOrderBtn").addEventListener("click",function(){
+    var fields=["fullName","phone","email","address","city","country"];
+    var valid=true;
+    fields.forEach(function(id){
+      var el=document.getElementById(id);
+      var err=document.getElementById("err-"+id);
+      var ok=el.value.trim().length>0;
+      if(id==="email" && ok){ok=/^\S+@\S+\.\S+$/.test(el.value.trim())}
+      if(id==="phone" && ok){ok=el.value.trim().length>=7}
+      if(!ok){
+        el.classList.add("field-error");
+        if(err)err.classList.add("show");
+        valid=false;
+      }else{
+        el.classList.remove("field-error");
+        if(err)err.classList.remove("show");
+      }
+    });
+    if(!valid)return;
+
+    var name=document.getElementById("fullName").value.trim();
+    var phone=document.getElementById("phone").value.trim();
+    var email=document.getElementById("email").value.trim();
+    var address=document.getElementById("address").value.trim();
+    var city=document.getElementById("city").value.trim();
+    var postal=document.getElementById("postal").value.trim();
+    var country=document.getElementById("country").value.trim();
+    var notes=document.getElementById("notes").value.trim();
+    var payVal=document.querySelector('input[name="pay"]:checked').value;
+    var payLabel=payVal==="cod"?"Cash on Delivery":payVal==="bank"?"Bank Transfer":"To be confirmed on WhatsApp";
+
+    var lines=["New Order Request — Sea2Sky Traders",""];
+    lines.push("Customer: "+name);
+    lines.push("Phone: "+phone);
+    lines.push("Email: "+email);
+    lines.push("Address: "+address+", "+city+(postal?(" "+postal):"")+", "+country);
+    lines.push("Payment: "+payLabel);
+    lines.push("");
+    lines.push("Order Items:");
+    grouped.forEach(function(item){
+      var p=productsByName[item.name]||{price:0};
+      lines.push("• "+item.name+" x "+item.qty+" = $"+(p.price*item.qty));
+    });
+    lines.push("");
+    lines.push("Estimated Total: $"+total);
+    if(notes)lines.push("Notes: "+notes);
+    lines.push("");
+    lines.push("Please confirm availability, shipping cost and delivery time.");
+
+    var msg=encodeURIComponent(lines.join("\n"));
+    window.open("https://wa.me/923008697543?text="+msg,"_blank");
+
+    document.querySelector(".checkout-grid").style.display="none";
+    document.getElementById("successScreen").classList.add("show");
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+}
+
+renderPage();
+</script>
+
+</body>
+</html>
