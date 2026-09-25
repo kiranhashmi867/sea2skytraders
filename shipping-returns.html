@@ -1,1 +1,512 @@
-8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping &amp; Returns | Sea2Sky Traders</title>
+<meta name="description" content="Shipping, delivery and returns policy for Sea2Sky Traders — premium global online store shipping ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a2342;--navy2:#123a6b;--blue:#1d5aa6;--gold:#d4a72c;--gold2:#f2cf6b;--cream:#faf7ef;--text:#1b2740;--muted:#5d6b82;--green:#25D366;--shadow:0 18px 50px rgba(10,35,66,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',Arial,sans-serif;background:#fff;color:var(--text);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:90%;max-width:1240px;margin:auto}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
+.navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo svg{width:56px;height:56px;flex-shrink:0}
+.logo-text b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);letter-spacing:1px;line-height:1}
+.logo-text b span{color:var(--gold)}
+.logo-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:6px;text-transform:uppercase}
+nav ul{list-style:none;display:flex;align-items:center;gap:28px}
+nav ul li a{color:var(--navy);font-size:14px;font-weight:600;position:relative;padding:8px 0;transition:.3s}
+nav ul li a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
+nav ul li a:hover{color:var(--blue)}
+nav ul li a:hover::after{width:100%}
+nav ul li a.active::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{background:var(--navy);color:#fff;padding:11px 22px;border-radius:30px;font-size:13px;font-weight:700;border:2px solid var(--gold);transition:.3s;position:relative}
+.cart-btn:hover{background:var(--gold);color:var(--navy)}
+.cart-count{position:absolute;top:-8px;right:-8px;background:var(--gold);color:var(--navy);width:20px;height:20px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff}
+.menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
+
+/* PAGE HERO */
+.page-hero{min-height:300px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,rgba(10,35,66,.94),rgba(18,58,107,.9)),url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.page-hero .section-kicker{color:var(--gold2)}
+.page-hero h1{font-size:42px;margin:12px 0 10px}
+.page-hero p{color:#dbe5f3;font-size:14px}
+.section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
+.section-head{text-align:center;max-width:740px;margin:0 auto 46px}
+.section-head h2{font-size:36px;color:var(--navy);margin:12px 0 14px}
+.section-head p{color:var(--muted);font-size:14px;line-height:1.8}
+
+/* QUICK FACTS */
+.quick{padding:90px 0 30px;background:#fff}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.quick-card{background:var(--cream);border-radius:14px;padding:30px 22px;text-align:center;border-top:5px solid var(--gold);box-shadow:var(--shadow);transition:.3s}
+.quick-card:hover{transform:translateY(-6px)}
+.quick-icon{width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.quick-icon svg{width:22px;height:22px;fill:var(--gold2)}
+.quick-card h3{font-size:16px;color:var(--navy);margin-bottom:8px}
+.quick-card p{color:var(--muted);font-size:12.5px;line-height:1.6}
+
+/* SHIPPING DETAIL SECTION */
+.detail-section{padding:80px 0;background:#fff}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.detail-card{background:var(--cream);border-radius:16px;padding:36px;border-left:5px solid var(--gold)}
+.detail-card h3{color:var(--navy);font-size:22px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.detail-card h3 svg{width:22px;height:22px;fill:var(--gold)}
+.detail-card p{color:var(--muted);font-size:13.5px;line-height:1.85;margin-bottom:14px}
+.detail-card ul{padding-left:18px;color:var(--muted);font-size:13.5px;line-height:1.9}
+.detail-card li{margin-bottom:8px}
+.detail-card li strong{color:var(--navy)}
+
+/* SHIPPING RATES TABLE */
+.rates-section{padding:80px 0;background:var(--cream)}
+.rates-table-wrap{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border:2px solid #fff}
+.rates-table{width:100%;border-collapse:collapse}
+.rates-table thead{background:var(--navy)}
+.rates-table th{color:#fff;font-size:12.5px;text-transform:uppercase;letter-spacing:1px;padding:18px 22px;text-align:left;font-weight:700}
+.rates-table td{padding:18px 22px;font-size:13.5px;color:var(--text);border-bottom:1px solid #eef0f4}
+.rates-table tr:last-child td{border-bottom:none}
+.rates-table tr:nth-child(even){background:#faf9f6}
+.rates-table td strong{color:var(--navy)}
+.rates-note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:18px;line-height:1.7}
+
+/* RETURNS PROCESS STEPS */
+.process{padding:80px 0;background:#fff}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.step{background:var(--cream);border-radius:14px;padding:30px 24px;border-top:5px solid var(--gold);box-shadow:var(--shadow)}
+.step-no{width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:16px}
+.step h3{font-size:17px;color:var(--navy);margin-bottom:9px}
+.step p{color:var(--muted);font-size:12.5px;line-height:1.7}
+
+/* FAQ ACCORDION */
+.faq-section{padding:80px 0;background:var(--cream)}
+.faq-list{max-width:820px;margin:auto;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden;border-left:4px solid var(--gold)}
+.faq-question{width:100%;text-align:left;padding:20px 24px;background:none;border:none;cursor:pointer;font-size:14.5px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:14px;font-family:'DM Sans',sans-serif}
+.faq-icon{font-size:20px;color:var(--gold);flex-shrink:0;transition:.3s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 24px}
+.faq-item.open .faq-answer{max-height:300px;padding-bottom:22px}
+.faq-answer p{color:var(--muted);font-size:13.5px;line-height:1.85}
+
+/* CTA */
+.cta{padding:95px 0;text-align:center;background:linear-gradient(120deg,rgba(29,90,166,.94),rgba(10,35,66,.94)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1800&q=80") center/cover}
+.cta h2{color:#fff;font-size:36px;max-width:800px;margin:0 auto 16px}
+.cta p{color:#dbe5f3;max-width:650px;margin:0 auto 30px;font-size:14px;line-height:1.8}
+.cta-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.btn-outline{border:2px solid var(--gold2);color:#fff;padding:13px 28px;border-radius:6px;font-weight:600;font-size:14px;transition:.3s;display:inline-block}
+.btn-outline:hover{background:rgba(242,207,107,.15)}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px)}
+
+/* FOOTER */
+footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:50px;height:50px}
+.footer-logo b{font-family:'Playfair Display',serif;color:#fff;font-size:20px}
+.footer-logo b span{color:var(--gold2)}
+.footer-about{font-size:13px;line-height:1.9;color:#aebcd2;margin-bottom:22px}
+.footer-title{color:var(--gold2);font-size:16px;margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:700}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:11px}
+.footer-links a{color:#c9d6ea;font-size:13px;transition:.3s}
+.footer-links a:hover{color:var(--gold2);padding-left:4px}
+.contact-line{display:flex;gap:10px;margin-bottom:13px;font-size:13px;line-height:1.6}
+.contact-icon{width:20px;flex-shrink:0;display:flex;align-items:flex-start;padding-top:2px}
+.contact-icon svg{width:16px;height:16px;fill:var(--gold2)}
+.contact-line a:hover{color:var(--gold2)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.3s}
+.socials svg{width:20px;height:20px;fill:#fff}
+.facebook{background:#1877F2}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.whatsapp{background:var(--green)}
+.snapchat{background:#FFFC00}
+.socials .snapchat svg{fill:#111}
+.socials a:hover{transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-bottom p{font-size:12px;color:#aebcd2}
+.footer-bottom a{color:var(--gold2)}
+
+/* FLOATING CONTACT TOGGLE */
+.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
+.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.3s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-opt svg{width:24px;height:24px;fill:#fff}
+.fab-wa{background:var(--green)}
+.fab-mail{background:var(--blue)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold2);background:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,35,66,.4);transition:.3s}
+.fab-main svg{width:27px;height:27px;fill:var(--gold2);transition:.3s}
+.fab.open .fab-main{background:var(--gold)}
+.fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
+
+/* RESPONSIVE */
+@media(max-width:1050px){nav ul{gap:16px}.quick-grid{grid-template-columns:repeat(2,1fr)}.detail-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:850px){
+.navbar{min-height:72px}
+.logo svg{width:48px;height:48px}
+.logo-text b{font-size:18px}
+.logo-text small{font-size:8px}
+nav ul{position:fixed;top:75px;right:-100%;width:82%;height:calc(100vh - 75px);background:#fff;flex-direction:column;align-items:flex-start;padding:38px 30px;gap:22px;transition:.4s;box-shadow:-10px 0 40px rgba(10,35,66,.2)}
+nav ul.active{right:0}
+nav ul li a{font-size:16px}
+.menu-btn{display:block}
+.cart-btn{padding:9px 14px}
+.page-hero h1{font-size:32px}
+.rates-table th,.rates-table td{padding:14px 12px;font-size:12.5px}
+}
+@media(max-width:600px){
+.container{width:91%}
+.page-hero{min-height:250px}
+.page-hero h1{font-size:28px}
+.quick,.detail-section,.rates-section,.process,.faq-section,.cta{padding:60px 0}
+.section-head h2{font-size:26px}
+.quick-grid{grid-template-columns:1fr}
+.detail-card{padding:26px}
+.steps-grid{grid-template-columns:1fr}
+.rates-table-wrap{overflow-x:auto}
+.rates-table{min-width:520px}
+.cta h2{font-size:26px}
+.fab{right:14px;bottom:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+  <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2cf6b"/><stop offset="1" stop-color="#c8971f"/></linearGradient></defs>
+      <circle cx="50" cy="50" r="47" fill="#0a2342" stroke="url(#g1)" stroke-width="4"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#f2cf6b" stroke-width="1" opacity=".6"/>
+      <circle cx="68" cy="30" r="7" fill="url(#g1)"/>
+      <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+    </svg>
+    <div class="logo-text">
+      <b>SEA2SKY <span>TRADERS</span></b>
+      <small>Premium Global Store</small>
+    </div>
+  </a>
+
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shipping-returns.html" class="active">Shipping &amp; Returns</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="cart.html" class="cart-btn">🛒 Cart<span class="cart-count" id="cartCount">0</span></a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navMenu').classList.toggle('active')">☰</button>
+  </div>
+</div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+<div class="container">
+  <span class="section-kicker">Delivery &amp; Policies</span>
+  <h1>Shipping &amp; Returns</h1>
+  <p>Everything you need to know about how we ship, and what happens if something isn't right.</p>
+</div>
+</section>
+
+<!-- QUICK FACTS -->
+<section class="quick">
+<div class="container">
+  <div class="quick-grid">
+    <div class="quick-card">
+      <div class="quick-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8z"/></svg></div>
+      <h3>Worldwide Shipping</h3>
+      <p>We ship to customers in the USA, UK, Europe and beyond.</p>
+    </div>
+    <div class="quick-card">
+      <div class="quick-icon"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg></div>
+      <h3>1–2 Day Processing</h3>
+      <p>Orders are packed and dispatched within 1–2 business days.</p>
+    </div>
+    <div class="quick-card">
+      <div class="quick-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></div>
+      <h3>Direct Support</h3>
+      <p>Track your order or ask questions anytime on WhatsApp.</p>
+    </div>
+    <div class="quick-card">
+      <div class="quick-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></div>
+      <h3>Easy Returns</h3>
+      <p>Report an issue within 3 days of delivery for a quick resolution.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SHIPPING & RETURNS DETAIL -->
+<section class="detail-section">
+<div class="container detail-grid">
+
+  <div class="detail-card">
+    <h3><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8z"/></svg> Shipping Policy</h3>
+    <p>We ship every order from our Lahore, Pakistan facility to customers around the world. Here's how it works:</p>
+    <ul>
+      <li><strong>Processing time:</strong> Orders are prepared and packed within 1–2 business days after confirmation.</li>
+      <li><strong>Delivery time:</strong> Varies by destination country and courier — we confirm exact timelines on WhatsApp once your order is placed.</li>
+      <li><strong>Order confirmation:</strong> All orders are confirmed directly with you on WhatsApp before dispatch.</li>
+      <li><strong>Bulk &amp; wholesale orders:</strong> May require additional preparation time — ask us for an estimate.</li>
+      <li><strong>Tracking:</strong> A tracking number or shipment update is shared with you once your order is dispatched.</li>
+    </ul>
+  </div>
+
+  <div class="detail-card">
+    <h3><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg> Returns &amp; Refunds</h3>
+    <p>Customer satisfaction matters to us. If there's a problem with your order, here's what to do:</p>
+    <ul>
+      <li><strong>Report window:</strong> Contact us within 3 days of delivery for damaged, defective or incorrect items.</li>
+      <li><strong>How to report:</strong> Message us on WhatsApp with your order details and a photo of the item received.</li>
+      <li><strong>Resolution:</strong> We'll offer a replacement, exchange or refund depending on the situation, once reviewed.</li>
+      <li><strong>Perishable items:</strong> Dry fruits and fresh fruits can only be returned if received damaged or spoiled.</li>
+      <li><strong>Return shipping:</strong> Covered by us if the issue is on our end; otherwise discussed case by case.</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- SHIPPING RATES -->
+<section class="rates-section">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Estimated Delivery</span>
+    <h2>Shipping Timelines by Region</h2>
+    <p>Approximate delivery windows after dispatch. Exact timelines are confirmed on WhatsApp for every order.</p>
+  </div>
+  <div class="rates-table-wrap">
+    <table class="rates-table">
+      <thead>
+        <tr><th>Region</th><th>Estimated Delivery</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Pakistan (Domestic)</strong></td><td>2–4 business days</td><td>Fastest delivery option</td></tr>
+        <tr><td><strong>United Kingdom</strong></td><td>7–12 business days</td><td>Subject to customs clearance</td></tr>
+        <tr><td><strong>United States &amp; Canada</strong></td><td>8–14 business days</td><td>Subject to customs clearance</td></tr>
+        <tr><td><strong>Europe</strong></td><td>7–14 business days</td><td>Varies by country</td></tr>
+        <tr><td><strong>Rest of World</strong></td><td>10–18 business days</td><td>Confirmed on WhatsApp per order</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="rates-note">Delivery times are estimates and may vary due to customs, courier delays or public holidays. Bulk and wholesale orders may take longer to prepare and ship.</p>
+</div>
+</section>
+
+<!-- RETURN PROCESS -->
+<section class="process">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Simple Process</span>
+    <h2>How to Request a Return</h2>
+    <p>Four easy steps to report an issue and get it resolved.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step"><div class="step-no">1</div><h3>Message Us</h3><p>Contact us on WhatsApp within 3 days of delivery.</p></div>
+    <div class="step"><div class="step-no">2</div><h3>Share Details</h3><p>Send your order details and a photo of the item received.</p></div>
+    <div class="step"><div class="step-no">3</div><h3>We Review</h3><p>Our team reviews your case and confirms the best resolution.</p></div>
+    <div class="step"><div class="step-no">4</div><h3>Get Resolved</h3><p>Receive a replacement, exchange or refund as agreed.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Common Questions</span>
+    <h2>Shipping &amp; Returns FAQ</h2>
+  </div>
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-question">Do you ship internationally?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes, Sea2Sky Traders ships worldwide, including the USA, UK, Canada and across Europe, directly from our facility in Lahore, Pakistan.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How long will my order take to arrive?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Delivery time depends on your destination country. Domestic orders in Pakistan typically arrive in 2–4 business days, while international orders can take 7–18 business days. We'll confirm an exact estimate on WhatsApp once your order is placed.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I track my order?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes, once your order is dispatched we share a tracking number or shipment update with you directly on WhatsApp.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What if my item arrives damaged or wrong?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Message us on WhatsApp within 3 days of delivery with your order details and a photo of the item. We'll arrange a replacement, exchange or refund depending on the situation.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I return dry fruits or fresh fruits?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Since these are perishable items, returns are only accepted if the product arrives damaged or spoiled. Please report this within 3 days of delivery with photo proof.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer bulk or wholesale shipping?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes, we handle bulk and wholesale orders. These may require additional processing time — message us on WhatsApp for a shipping and pricing estimate.</p></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+  <h2>Have a Question About Your Order?</h2>
+  <p>Our team is one message away on WhatsApp for shipping updates, return requests or anything else.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn-primary">WhatsApp Us Now →</a>
+    <a href="contact.html" class="btn-outline">Contact Our Team</a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footer-grid">
+
+  <div>
+    <div class="footer-logo">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#123a6b" stroke="#f2cf6b" stroke-width="4"/>
+        <circle cx="68" cy="30" r="7" fill="#f2cf6b"/>
+        <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+      </svg>
+      <b>SEA2SKY <span>TRADERS</span></b>
+    </div>
+    <p class="footer-about">Sea2Sky Traders is a premium global online store offering ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics to customers worldwide.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+      </a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+      </a>
+      <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Quick Links</h3>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Product Categories</h3>
+    <ul class="footer-links">
+      <li><a href="shop.html?cat=garments">Ladies Garments &amp; Fashion</a></li>
+      <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+      <li><a href="shop.html?cat=sports-toys">Sports &amp; Toys</a></li>
+      <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+      <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+      <li><a href="shop.html?cat=electronics">Electronics &amp; Accessories</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Customer Care</h3>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></span><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg></span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M10 2h4a1 1 0 0 1 1 1v2h4a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2h4V3a1 1 0 0 1 1-1zm0 2v1h4V4h-4zM3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm8 2v3h2v-3h-2z"/></svg></span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  <div class="container footer-bottom-inner">
+    <p>© 2026 Sea2Sky Traders. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="contact.html">Customer Support</a></p>
+  </div>
+</div>
+</footer>
+
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
+    </a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+  <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
+  </button>
+</div>
+
+<script>
+document.querySelectorAll("#navMenu a").forEach(function(l){
+  l.addEventListener("click",function(){document.getElementById("navMenu").classList.remove("active")});
+});
+var fab=document.getElementById("fab"),fabBtn=document.getElementById("fabBtn");
+fabBtn.addEventListener("click",function(e){
+  e.stopPropagation();
+  var o=fab.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded",o);
+});
+document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
+
+/* CART COUNT */
+function getCart(){try{return JSON.parse(localStorage.getItem("s2sCart")||"[]")}catch(e){return []}}
+document.getElementById("cartCount").textContent=getCart().length;
+
+/* FAQ ACCORDION */
+document.querySelectorAll(".faq-item").forEach(function(item){
+  var btn=item.querySelector(".faq-question");
+  btn.addEventListener("click",function(){
+    var isOpen=item.classList.contains("open");
+    document.querySelectorAll(".faq-item").forEach(function(i){i.classList.remove("open")});
+    if(!isOpen)item.classList.add("open");
+  });
+});
+</script>
+
+</body>
+</html>
