@@ -18,7 +18,6 @@ a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 .container{width:90%;max-width:1240px;margin:auto}
 
-/* HEADER */
 header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
 .navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .logo{display:flex;align-items:center;gap:13px}
@@ -38,21 +37,18 @@ nav ul li a.active::after{width:100%}
 .cart-count{position:absolute;top:-8px;right:-8px;background:var(--gold);color:var(--navy);width:20px;height:20px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff}
 .menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
 
-/* PAGE HERO */
 .page-hero{min-height:280px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,rgba(10,35,66,.94),rgba(18,58,107,.9)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
 .page-hero .section-kicker{color:var(--gold2)}
 .page-hero h1{font-size:42px;margin:12px 0 10px}
 .page-hero p{color:#dbe5f3;font-size:14px}
 .section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
 
-/* FILTER BAR */
 .filter-bar{position:sticky;top:83px;z-index:50;background:#fff;border-bottom:1px solid #e7eaf0;padding:18px 0;box-shadow:0 4px 14px rgba(10,35,66,.05)}
 .filter-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 .filter-tag{background:var(--cream);color:var(--navy);padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;border:1px solid #e7eaf0;cursor:pointer;transition:.25s}
 .filter-tag:hover{border-color:var(--gold)}
 .filter-tag.active{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-color:var(--gold)}
 
-/* PRODUCT GRID */
 .shop-section{padding:65px 0 100px;background:#fff}
 .results-note{text-align:center;color:var(--muted);font-size:13px;margin-bottom:30px}
 .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
@@ -74,7 +70,6 @@ nav ul li a.active::after{width:100%}
 .btn-wa-small{width:42px;background:var(--green);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .btn-wa-small svg{width:18px;height:18px;fill:#fff}
 
-/* CTA */
 .cta{padding:95px 0;text-align:center;background:linear-gradient(120deg,rgba(29,90,166,.94),rgba(10,35,66,.94)),url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1800&q=80") center/cover}
 .cta h2{color:#fff;font-size:38px;max-width:800px;margin:0 auto 16px}
 .cta p{color:#dbe5f3;max-width:650px;margin:0 auto 30px;font-size:14px;line-height:1.8}
@@ -84,7 +79,6 @@ nav ul li a.active::after{width:100%}
 .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block;border:none;cursor:pointer}
 .btn-primary:hover{transform:translateY(-3px)}
 
-/* FOOTER */
 footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
 .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
@@ -115,7 +109,6 @@ footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px soli
 .footer-bottom p{font-size:12px;color:#aebcd2}
 .footer-bottom a{color:var(--gold2)}
 
-/* FLOATING CONTACT TOGGLE */
 .fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
 .fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
 .fab.open .fab-options{opacity:1;visibility:visible;transform:none}
@@ -129,7 +122,6 @@ footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px soli
 .fab.open .fab-main{background:var(--gold)}
 .fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
 
-/* RESPONSIVE */
 @media(max-width:1050px){nav ul{gap:16px}.product-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){
 .navbar{min-height:72px}
@@ -165,7 +157,6 @@ nav ul li a{font-size:16px}
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container navbar">
   <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
@@ -202,7 +193,6 @@ nav ul li a{font-size:16px}
 </div>
 </header>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
 <div class="container">
   <span class="section-kicker">Our Full Range</span>
@@ -211,7 +201,6 @@ nav ul li a{font-size:16px}
 </div>
 </section>
 
-<!-- FILTER BAR -->
 <div class="filter-bar">
   <div class="container filter-tags" id="filterTags">
     <button class="filter-tag active" data-cat="all">All Products</button>
@@ -224,13 +213,11 @@ nav ul li a{font-size:16px}
   </div>
 </div>
 
-<!-- PRODUCTS -->
 <section class="shop-section">
 <div class="container">
   <p class="results-note" id="resultsNote">Showing all products</p>
   <div class="product-grid" id="productGrid">
 
-    <!-- GARMENTS -->
     <div class="product-card" data-cat="garments">
       <div class="product-img"><span class="product-badge">New</span><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=85" alt="Ladies Kurti Set"></div>
       <div class="product-body"><span class="product-cat">Ladies Garments</span><h3>Embroidered Ladies Kurti Set</h3><p>Soft fabric, elegant embroidery, available in multiple sizes and colors.</p><div class="product-price">$18 <span>/ piece</span></div>
@@ -243,7 +230,6 @@ nav ul li a{font-size:16px}
       <div class="product-actions"><button class="btn-add" onclick="addToCart('Printed Lawn 3-Piece Suit')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Printed%20Lawn%203-Piece%20Suit" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
     </div>
 
-    <!-- DRY FRUITS -->
     <div class="product-card" data-cat="dry-fruits">
       <div class="product-img"><span class="product-badge">Best Seller</span><img src="https://images.unsplash.com/photo-1508779018996-601e37fa274e?auto=format&fit=crop&w=600&q=85" alt="Premium Almonds"></div>
       <div class="product-body"><span class="product-cat">Dry Fruits</span><h3>Premium Californian Almonds</h3><p>Hand-selected, crunchy almonds — 500g resealable pack.</p><div class="product-price">$9 <span>/ 500g</span></div>
@@ -262,7 +248,6 @@ nav ul li a{font-size:16px}
       <div class="product-actions"><button class="btn-add" onclick="addToCart('Roasted Pistachios')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Roasted%20Pistachios" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
     </div>
 
-    <!-- SPORTS & TOYS -->
     <div class="product-card" data-cat="sports-toys">
       <div class="product-img"><span class="product-badge">Popular</span><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=85" alt="Sports Ball Set"></div>
       <div class="product-body"><span class="product-cat">Sports &amp; Toys</span><h3>All-Weather Sports Ball Set</h3><p>Durable outdoor sports ball, great grip and long-lasting build.</p><div class="product-price">$14 <span>/ piece</span></div>
@@ -275,14 +260,12 @@ nav ul li a{font-size:16px}
       <div class="product-actions"><button class="btn-add" onclick="addToCart('Kids Activity Toy Set')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Kids%20Activity%20Toy%20Set" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
     </div>
 
-    <!-- FRESH FRUITS -->
     <div class="product-card" data-cat="fresh-fruits">
       <div class="product-img"><span class="product-badge">Fresh</span><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=85" alt="Fresh Fruit Basket"></div>
       <div class="product-body"><span class="product-cat">Fresh Fruits</span><h3>Seasonal Fresh Fruit Basket</h3><p>A mix of bananas, apples and grapes, freshly packed for delivery.</p><div class="product-price">$16 <span>/ basket</span></div>
       <div class="product-actions"><button class="btn-add" onclick="addToCart('Seasonal Fresh Fruit Basket')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Seasonal%20Fresh%20Fruit%20Basket" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
     </div>
 
-    <!-- PINK SALT -->
     <div class="product-card" data-cat="pink-salt">
       <div class="product-img" style="background:linear-gradient(135deg,#c56a7a,#f4c1c1)"><span class="product-badge">Natural</span></div>
       <div class="product-body"><span class="product-cat">Pink Salt</span><h3>Himalayan Pink Salt (Fine Grain)</h3><p>100% natural, mineral-rich pink salt for everyday cooking.</p><div class="product-price">$6 <span>/ 1kg</span></div>
@@ -295,7 +278,6 @@ nav ul li a{font-size:16px}
       <div class="product-actions"><button class="btn-add" onclick="addToCart('Pink Salt Lamp Decor Chunks')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Pink%20Salt%20Lamp%20Decor%20Chunks" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
     </div>
 
-    <!-- ELECTRONICS -->
     <div class="product-card" data-cat="electronics">
       <div class="product-img"><span class="product-badge">Trending</span><img src="https://images.unsplash.com/photo-1555679792-6783ef0bbf61?auto=format&fit=crop&w=600&q=85" alt="Wireless Earbuds"></div>
       <div class="product-body"><span class="product-cat">Electronics</span><h3>Wireless Earbuds Pro</h3><p>Clear sound, long battery life, comes with a compact charging case.</p><div class="product-price">$19 <span>/ piece</span></div>
@@ -312,7 +294,6 @@ nav ul li a{font-size:16px}
 </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
 <div class="container">
   <h2>Can't Find What You're Looking For?</h2>
@@ -324,7 +305,6 @@ nav ul li a{font-size:16px}
 </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
 <div class="container footer-grid">
 
@@ -348,10 +328,10 @@ nav ul li a{font-size:16px}
         <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
       </a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.7 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
       </a>
       <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
-        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.2 5 5v2.2c.6.1 1.3.3 1.8.5.4.2.4.7 0 .9-.5.3-1.1.5-1.5.7.6 1.5 1.7 2.5 3 3 .4.2.3.7-.1.8-.8.2-1.3.3-1.5.6-.2.4-.2.8-.7.8-.6 0-1.2-.2-2.2 0-1 .2-1.6 1.4-3 1.4s-2-1.2-3-1.4c-1-.2-1.6 0-2.2 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.5-.6-.4-.1-.5-.6-.1-.8 1.3-.5 2.4-1.5 3-3-.4-.2-1-.4-1.5-.7-.4-.2-.4-.7 0-.9.5-.2 1.2-.4 1.8-.5V7c0-2.8 2-5 5-5z"/></svg>
       </a>
     </div>
   </div>
@@ -385,7 +365,7 @@ nav ul li a{font-size:16px}
     <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></span><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
     <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg></span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
     <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>100, Sodhran Block, Bahria Orchard Phase 1,<br>Lahore, Pakistan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
     <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M10 2h4a1 1 0 0 1 1 1v2h4a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2h4V3a1 1 0 0 1 1-1zm0 2v1h4V4h-4zM3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm8 2v3h2v-3h-2z"/></svg></span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
   </div>
 
@@ -399,14 +379,13 @@ nav ul li a{font-size:16px}
 </div>
 </footer>
 
-<!-- FLOATING CONTACT TOGGLE -->
 <div class="fab" id="fab">
   <div class="fab-options">
     <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
       <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
     </a>
     <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.7 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
     </a>
   </div>
   <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
@@ -426,11 +405,10 @@ fabBtn.addEventListener("click",function(e){
 });
 document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
 
-/* FILTER LOGIC */
 var tags=document.querySelectorAll(".filter-tag");
 var cards=document.querySelectorAll(".product-card");
 var note=document.getElementById("resultsNote");
-var labels={all:"all products",garments:"Ladies Garments & Fashion",dry-fruits:"Dry Fruits","sports-toys":"Sports & Toys","fresh-fruits":"Fresh Fruits","pink-salt":"Pink Salt",electronics:"Electronics & Accessories"};
+var labels={all:"all products",garments:"Ladies Garments & Fashion","dry-fruits":"Dry Fruits","sports-toys":"Sports & Toys","fresh-fruits":"Fresh Fruits","pink-salt":"Pink Salt",electronics:"Electronics & Accessories"};
 
 function applyFilter(cat){
   tags.forEach(function(t){t.classList.toggle("active",t.dataset.cat===cat)});
@@ -447,12 +425,10 @@ tags.forEach(function(t){
   t.addEventListener("click",function(){applyFilter(t.dataset.cat)});
 });
 
-/* Read ?cat= from URL on load */
 var params=new URLSearchParams(window.location.search);
 var initialCat=params.get("cat")||"all";
 applyFilter(initialCat);
 
-/* Simple cart counter using localStorage */
 function getCart(){try{return JSON.parse(localStorage.getItem("s2sCart")||"[]")}catch(e){return []}}
 function updateCartCount(){document.getElementById("cartCount").textContent=getCart().length}
 function addToCart(name){
