@@ -1,1 +1,490 @@
-2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Sea2Sky Traders</title>
+<meta name="description" content="Learn about Sea2Sky Traders, a premium global online store for ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a2342;--navy2:#123a6b;--blue:#1d5aa6;--gold:#d4a72c;--gold2:#f2cf6b;--cream:#faf7ef;--text:#1b2740;--muted:#5d6b82;--green:#25D366;--shadow:0 18px 50px rgba(10,35,66,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',Arial,sans-serif;background:#fff;color:var(--text);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:90%;max-width:1240px;margin:auto}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
+.navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo svg{width:56px;height:56px;flex-shrink:0}
+.logo-text b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);letter-spacing:1px;line-height:1}
+.logo-text b span{color:var(--gold)}
+.logo-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:6px;text-transform:uppercase}
+nav ul{list-style:none;display:flex;align-items:center;gap:28px}
+nav ul li a{color:var(--navy);font-size:14px;font-weight:600;position:relative;padding:8px 0;transition:.3s}
+nav ul li a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
+nav ul li a:hover{color:var(--blue)}
+nav ul li a:hover::after{width:100%}
+nav ul li a.active::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{background:var(--navy);color:#fff;padding:11px 22px;border-radius:30px;font-size:13px;font-weight:700;border:2px solid var(--gold);transition:.3s}
+.cart-btn:hover{background:var(--gold);color:var(--navy)}
+.menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
+
+/* PAGE HERO */
+.page-hero{min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,rgba(10,35,66,.94),rgba(18,58,107,.9)),url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.page-hero .section-kicker{color:var(--gold2)}
+.page-hero h1{font-size:44px;margin:12px 0 10px}
+.page-hero p{color:#dbe5f3;font-size:14px}
+.page-hero p a{color:var(--gold2);font-weight:600}
+
+/* SECTION HEAD */
+.section-head{text-align:center;max-width:740px;margin:0 auto 48px}
+.section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
+.section-head h2{font-size:38px;color:var(--navy);margin:12px 0 14px}
+.section-head p{color:var(--muted);font-size:14px;line-height:1.8}
+
+/* STORY */
+.story{padding:105px 0;background:#fff}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.story-image{position:relative}
+.story-image img{width:100%;height:480px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+.experience-box{position:absolute;right:-24px;bottom:30px;background:var(--navy);color:#fff;padding:24px 30px;border-left:5px solid var(--gold);border-radius:6px;box-shadow:0 15px 40px rgba(10,35,66,.3)}
+.experience-box strong{display:block;color:var(--gold2);font-family:'Playfair Display',serif;font-size:28px}
+.experience-box span{color:#c9d6ea;font-size:12px}
+.story-content .section-kicker{display:block;margin-bottom:10px}
+.story-content h2{font-size:36px;line-height:1.22;margin-bottom:20px;color:var(--navy)}
+.story-content p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:18px}
+
+/* MISSION / VALUES */
+.values{padding:100px 0;background:var(--cream)}
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.value-card{background:#fff;border-radius:14px;padding:32px 26px;border-top:5px solid var(--gold);box-shadow:var(--shadow);text-align:center;transition:.3s}
+.value-card:hover{transform:translateY(-6px)}
+.value-icon{width:54px;height:54px;border-radius:50%;background:#fbf1cf;color:#8a6510;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 16px}
+.value-card h3{font-size:19px;color:var(--navy);margin-bottom:10px}
+.value-card p{color:var(--muted);font-size:13px;line-height:1.7}
+
+/* CATEGORIES STRIP */
+.cat-strip{padding:95px 0;background:#fff}
+.cat-tags{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;max-width:900px;margin:auto}
+.cat-tag{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:14px 26px;border-radius:30px;font-size:13px;font-weight:600;border:1px solid var(--gold2);box-shadow:0 8px 22px rgba(10,35,66,.15);transition:.3s}
+.cat-tag:hover{transform:translateY(-3px);background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy)}
+
+/* WORLD MAP STAT */
+.reach{padding:95px 0;text-align:center;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff}
+.reach .section-head h2{color:#fff}
+.reach .section-head p{color:#c9d6ea}
+.reach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:900px;margin:auto}
+.reach-item{padding:20px}
+.reach-item strong{display:block;font-family:'Playfair Display',serif;font-size:30px;color:var(--gold2);margin-bottom:6px}
+.reach-item span{font-size:12px;color:#c9d6ea;letter-spacing:1px}
+
+/* TEAM */
+.team{padding:100px 0;background:var(--cream)}
+.team .section-head h2{color:var(--navy)}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;max-width:880px;margin:auto}
+.team-card{background:#fff;border-radius:14px;padding:34px;border-top:5px solid var(--gold);transition:.3s;box-shadow:var(--shadow)}
+.team-card:hover{transform:translateY(-5px)}
+.team-role{color:#9a7412;font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:700}
+.team-card h3{color:var(--navy);font-size:24px;margin:10px 0 16px}
+.team-info{color:var(--muted);font-size:13px;line-height:2}
+.team-info a{color:var(--blue);font-weight:600}
+.team-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.team-actions a{padding:10px 16px;border-radius:6px;font-size:12px;font-weight:700;color:#fff;display:inline-flex;align-items:center;gap:7px}
+.team-actions svg{width:15px;height:15px;fill:currentColor}
+.team-wa{background:var(--green)}
+.team-snap{background:#FFFC00;color:#111!important}
+.team-email{background:var(--navy)}
+
+/* CTA */
+.cta{padding:95px 0;text-align:center;background:linear-gradient(120deg,rgba(29,90,166,.94),rgba(10,35,66,.94)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1800&q=80") center/cover}
+.cta h2{color:#fff;font-size:40px;max-width:800px;margin:0 auto 16px}
+.cta p{color:#dbe5f3;max-width:650px;margin:0 auto 30px;font-size:14px;line-height:1.8}
+.cta-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px)}
+.btn-outline{border:2px solid var(--gold2);color:#fff;padding:13px 28px;border-radius:6px;font-weight:600;font-size:14px;transition:.3s;display:inline-block}
+.btn-outline:hover{background:rgba(242,207,107,.15)}
+
+/* FOOTER */
+footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:50px;height:50px}
+.footer-logo b{font-family:'Playfair Display',serif;color:#fff;font-size:20px}
+.footer-logo b span{color:var(--gold2)}
+.footer-about{font-size:13px;line-height:1.9;color:#aebcd2;margin-bottom:22px}
+.footer-title{color:var(--gold2);font-size:16px;margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:700}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:11px}
+.footer-links a{color:#c9d6ea;font-size:13px;transition:.3s}
+.footer-links a:hover{color:var(--gold2);padding-left:4px}
+.contact-line{display:flex;gap:10px;margin-bottom:13px;font-size:13px;line-height:1.6}
+.contact-icon{width:20px;flex-shrink:0;display:flex;align-items:flex-start;padding-top:2px}
+.contact-icon svg{width:16px;height:16px;fill:var(--gold2)}
+.contact-line a:hover{color:var(--gold2)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.3s}
+.socials svg{width:20px;height:20px;fill:#fff}
+.facebook{background:#1877F2}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.whatsapp{background:var(--green)}
+.snapchat{background:#FFFC00}
+.socials .snapchat svg{fill:#111}
+.socials a:hover{transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-bottom p{font-size:12px;color:#aebcd2}
+.footer-bottom a{color:var(--gold2)}
+
+/* FLOATING CONTACT TOGGLE */
+.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
+.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.3s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-opt svg{width:24px;height:24px;fill:#fff}
+.fab-wa{background:var(--green)}
+.fab-mail{background:var(--blue)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold2);background:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,35,66,.4);transition:.3s}
+.fab-main svg{width:27px;height:27px;fill:var(--gold2);transition:.3s}
+.fab.open .fab-main{background:var(--gold)}
+.fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
+
+/* RESPONSIVE */
+@media(max-width:1050px){nav ul{gap:16px}.values-grid{grid-template-columns:repeat(2,1fr)}.reach-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:850px){
+.navbar{min-height:72px}
+.logo svg{width:48px;height:48px}
+.logo-text b{font-size:18px}
+.logo-text small{font-size:8px}
+nav ul{position:fixed;top:75px;right:-100%;width:82%;height:calc(100vh - 75px);background:#fff;flex-direction:column;align-items:flex-start;padding:38px 30px;gap:22px;transition:.4s;box-shadow:-10px 0 40px rgba(10,35,66,.2)}
+nav ul.active{right:0}
+nav ul li a{font-size:16px}
+.menu-btn{display:block}
+.cart-btn{padding:9px 14px}
+.page-hero h1{font-size:34px}
+.story-grid{grid-template-columns:1fr;gap:55px}
+.story-image img{height:400px}
+.experience-box{right:15px}
+.team-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.container{width:91%}
+.page-hero{min-height:280px}
+.page-hero h1{font-size:28px}
+.story,.values,.cat-strip,.reach,.team,.cta{padding:72px 0}
+.section-head h2,.story-content h2{font-size:28px}
+.values-grid{grid-template-columns:1fr}
+.reach-grid{grid-template-columns:1fr 1fr}
+.story-image img{height:300px}
+.experience-box{position:relative;right:auto;bottom:auto;margin-top:-5px;width:100%}
+.footer-grid{grid-template-columns:1fr;gap:34px}
+.cta h2{font-size:28px}
+.fab{right:14px;bottom:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+  <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2cf6b"/><stop offset="1" stop-color="#c8971f"/></linearGradient></defs>
+      <circle cx="50" cy="50" r="47" fill="#0a2342" stroke="url(#g1)" stroke-width="4"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#f2cf6b" stroke-width="1" opacity=".6"/>
+      <circle cx="68" cy="30" r="7" fill="url(#g1)"/>
+      <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+    </svg>
+    <div class="logo-text">
+      <b>SEA2SKY <span>TRADERS</span></b>
+      <small>Premium Global Store</small>
+    </div>
+  </a>
+
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="cart.html" class="cart-btn">🛒 Cart</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navMenu').classList.toggle('active')">☰</button>
+  </div>
+</div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+<div class="container">
+  <span class="section-kicker">About Sea2Sky Traders</span>
+  <h1>Our Story, Our Promise</h1>
+  <p>A trusted global online store, built on quality and honest service &nbsp;·&nbsp; <a href="https://wa.me/923008697543" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+</div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+<div class="container story-grid">
+  <div class="story-image">
+    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1100&q=85" alt="International Trade and Logistics">
+    <div class="experience-box"><strong>Trusted</strong><span>Trading &amp; Sourcing</span></div>
+  </div>
+  <div class="story-content">
+    <span class="section-kicker">Who We Are</span>
+    <h2>A Global Store Built on Trust</h2>
+    <p>Sea2Sky Traders is a Pakistan-based online store connecting customers around the world with quality products across six carefully chosen categories: ladies garments and fashion, dry fruits, sports and toys, fresh fruits, pink salt, and electronics and accessories.</p>
+    <p>From the very first order to every order after it, our focus stays the same: honest communication, dependable quality and a smooth, professional buying experience for every customer, wherever they are in the world.</p>
+    <p>We work directly with our customers over WhatsApp, so questions get answered quickly and orders move without delay.</p>
+  </div>
+</div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">What Drives Us</span>
+    <h2>Our Values</h2>
+    <p>The principles that guide every order we prepare and every customer we serve.</p>
+  </div>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">✓</div>
+      <h3>Quality First</h3>
+      <p>Every product is checked before it leaves our hands, so what you order is what you receive.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌎</div>
+      <h3>Global Reach</h3>
+      <p>We ship worldwide, bringing our products to customers wherever they are.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🤝</div>
+      <h3>Direct Support</h3>
+      <p>Talk directly to our team on WhatsApp for quotes, updates and support.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">◆</div>
+      <h3>Honest Business</h3>
+      <p>Clear pricing, clear communication and no hidden surprises, order after order.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CATEGORIES STRIP -->
+<section class="cat-strip">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">What We Offer</span>
+    <h2>Our Product Categories</h2>
+    <p>Six categories, one trusted store.</p>
+  </div>
+  <div class="cat-tags">
+    <a href="shop.html?cat=garments" class="cat-tag">Ladies Garments &amp; Fashion</a>
+    <a href="shop.html?cat=dry-fruits" class="cat-tag">Dry Fruits</a>
+    <a href="shop.html?cat=sports-toys" class="cat-tag">Sports &amp; Toys</a>
+    <a href="shop.html?cat=fresh-fruits" class="cat-tag">Fresh Fruits</a>
+    <a href="shop.html?cat=pink-salt" class="cat-tag">Pink Salt</a>
+    <a href="shop.html?cat=electronics" class="cat-tag">Electronics &amp; Accessories</a>
+  </div>
+</div>
+</section>
+
+<!-- REACH -->
+<section class="reach">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Our Reach</span>
+    <h2>Serving Customers Worldwide</h2>
+    <p>From our base in Lahore, Pakistan, to doorsteps around the globe.</p>
+  </div>
+  <div class="reach-grid">
+    <div class="reach-item"><strong>Worldwide</strong><span>Shipping</span></div>
+    <div class="reach-item"><strong>6</strong><span>Product Categories</span></div>
+    <div class="reach-item"><strong>24/7</strong><span>Customer Support</span></div>
+    <div class="reach-item"><strong>Direct</strong><span>WhatsApp Ordering</span></div>
+  </div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+<div class="container">
+  <div class="section-head">
+    <span class="section-kicker">Leadership &amp; Management</span>
+    <h2>Meet Our Team</h2>
+    <p>Our team is available for orders, sourcing enquiries and customer support.</p>
+  </div>
+  <div class="team-grid">
+
+    <div class="team-card">
+      <span class="team-role">Chief Executive Officer</span>
+      <h3>Muhammad Imran Khan</h3>
+      <div class="team-info">
+        <div>✉️ <a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+        <div>📱 <a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+      </div>
+      <div class="team-actions">
+        <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="team-wa">WhatsApp</a>
+        <a href="mailto:sales@sea2skytraders.com" class="team-email">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <span class="team-role">Management</span>
+      <h3>Kiran Hashmi</h3>
+      <div class="team-info">
+        <div>✉️ <a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a></div>
+        <div>📱 <a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></div>
+        <div>💼 Business &amp; Website Management</div>
+      </div>
+      <div class="team-actions">
+        <a href="https://wa.me/923081333143" target="_blank" rel="noopener" class="team-wa">WhatsApp</a>
+        <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="team-snap">
+          <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+          Snapchat
+        </a>
+        <a href="mailto:kiran@sea2skytraders.com" class="team-email">Email</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+  <h2>Ready to Order for Your Market?</h2>
+  <p>Contact Sea2Sky Traders for product enquiries, wholesale orders and sourcing requirements, anywhere in the world.</p>
+  <div class="cta-buttons">
+    <a href="contact.html" class="btn-primary">Contact Our Team →</a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn-outline">WhatsApp Us</a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footer-grid">
+
+  <div>
+    <div class="footer-logo">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#123a6b" stroke="#f2cf6b" stroke-width="4"/>
+        <circle cx="68" cy="30" r="7" fill="#f2cf6b"/>
+        <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
+      </svg>
+      <b>SEA2SKY <span>TRADERS</span></b>
+    </div>
+    <p class="footer-about">Sea2Sky Traders is a premium global online store offering ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics to customers worldwide.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+      </a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+      </a>
+      <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.200 5 5v2.200c.6.100 1.300.3 1.800.5.4.2.4.7 0 .9-.5.3-1.100.5-1.500.7.6 1.500 1.700 2.500 3 3 .4.2.3.7-.1.8-.8.2-1.300.3-1.500.6-.2.4-.2.8-.7.8-.6 0-1.200-.2-2.200 0-1 .2-1.600 1.400-3 1.400s-2-1.200-3-1.400c-1-.2-1.600 0-2.200 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.500-.6-.4-.1-.5-.6-.1-.8 1.300-.5 2.400-1.500 3-3-.4-.2-1-.4-1.500-.7-.4-.2-.4-.7 0-.9.5-.2 1.200-.4 1.800-.5V7c0-2.800 2-5 5-5z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Quick Links</h3>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Product Categories</h3>
+    <ul class="footer-links">
+      <li><a href="shop.html?cat=garments">Ladies Garments &amp; Fashion</a></li>
+      <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+      <li><a href="shop.html?cat=sports-toys">Sports &amp; Toys</a></li>
+      <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+      <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+      <li><a href="shop.html?cat=electronics">Electronics &amp; Accessories</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="footer-title">Customer Care</h3>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></span><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg></span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
+    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M10 2h4a1 1 0 0 1 1 1v2h4a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2h4V3a1 1 0 0 1 1-1zm0 2v1h4V4h-4zM3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm8 2v3h2v-3h-2z"/></svg></span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  <div class="container footer-bottom-inner">
+    <p>© 2026 Sea2Sky Traders. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="contact.html">Customer Support</a></p>
+  </div>
+</div>
+</footer>
+
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
+    </a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.200s.9 2.500 1.100 2.700c.1.2 1.800 2.800 4.500 3.900 1.700.7 2.300.7 3.200.6.5-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+  <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
+  </button>
+</div>
+
+<script>
+document.querySelectorAll("#navMenu a").forEach(function(l){
+  l.addEventListener("click",function(){document.getElementById("navMenu").classList.remove("active")});
+});
+var fab=document.getElementById("fab"),fabBtn=document.getElementById("fabBtn");
+fabBtn.addEventListener("click",function(e){
+  e.stopPropagation();
+  var o=fab.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded",o);
+});
+document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
+</script>
+
+</body>
+</html>
