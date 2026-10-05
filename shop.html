@@ -3,441 +3,998 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop | Sea2Sky Traders</title>
-<meta name="description" content="Shop ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics at Sea2Sky Traders — shipping worldwide.">
+
+<title>Shop Dry Fruits, Pink Salt &amp; Fresh Fruits | Sea2Sky Traders</title>
+<meta name="description" content="Shop premium dry fruits, Himalayan pink salt and fresh fruits at Sea2Sky Traders. Add to cart or order on WhatsApp. Shipping worldwide.">
+<link rel="canonical" href="https://sea2skytraders.com/shop.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sea2Sky Traders">
+<meta property="og:title" content="Shop Dry Fruits, Pink Salt &amp; Fresh Fruits | Sea2Sky Traders">
+<meta property="og:description" content="Premium dry fruits, Himalayan pink salt and fresh fruits. Add to cart or order on WhatsApp. Shipping worldwide.">
+<meta property="og:url" content="https://sea2skytraders.com/shop.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1508779018996-601e37fa274e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e3b2e">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e3b2e'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23f2c14e'/%3E%3Cpath d='M10 38 Q17 32 24 38 T38 38 T52 38' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round'/%3E%3Cpath d='M14 46 Q20 41 26 46 T38 46 T50 46' fill='none' stroke='%23f2c14e' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sea2skytraders.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Shop", "item": "https://sea2skytraders.com/shop.html"}
+  ]
+}
+</script>
+
 <style>
-:root{--navy:#0a2342;--navy2:#123a6b;--blue:#1d5aa6;--gold:#d4a72c;--gold2:#f2cf6b;--cream:#faf7ef;--text:#1b2740;--muted:#5d6b82;--green:#25D366;--shadow:0 18px 50px rgba(10,35,66,.14)}
+:root{
+  --pine:#0e3b2e;
+  --pine-deep:#082a20;
+  --pine-soft:#17543f;
+  --gold:#e0a526;
+  --gold-light:#f6d77a;
+  --gold-deep:#a87508;
+  --sage:#f3f7f2;
+  --sand:#fff6e0;
+  --ink:#13251e;
+  --muted:#5d6e66;
+  --line:#e2e9e3;
+  --shadow:0 24px 60px -28px rgba(8,42,32,.35);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+
+/* colour themes */
+.c-dry{--c1:#b87120;--c2:#86490f;--soft:#fdf3e2;--sh:rgba(184,113,32,.5)}
+.c-salt{--c1:#d9577c;--c2:#ab2e5b;--soft:#fdedf1;--sh:rgba(217,87,124,.5)}
+.c-fresh{--c1:#35903f;--c2:#1b6b33;--soft:#eaf6ec;--sh:rgba(53,144,63,.5)}
+.c-gold{--c1:#e0a526;--c2:#a87508;--soft:#fff6e0;--sh:rgba(224,165,38,.5)}
+.c-pine{--c1:#17543f;--c2:#0e3b2e;--soft:#eaf3ee;--sh:rgba(14,59,46,.5)}
+
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',Arial,sans-serif;background:#fff;color:var(--text);overflow-x:hidden}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em;color:var(--pine);text-wrap:balance}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
-.container{width:90%;max-width:1240px;margin:auto}
+ul{list-style:none}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+[hidden]{display:none!important}
 
-header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 4px 24px rgba(10,35,66,.08)}
-.navbar{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.logo{display:flex;align-items:center;gap:13px}
-.logo svg{width:56px;height:56px;flex-shrink:0}
-.logo-text b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);letter-spacing:1px;line-height:1}
-.logo-text b span{color:var(--gold)}
-.logo-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:6px;text-transform:uppercase}
-nav ul{list-style:none;display:flex;align-items:center;gap:28px}
-nav ul li a{color:var(--navy);font-size:14px;font-weight:600;position:relative;padding:8px 0;transition:.3s}
-nav ul li a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
-nav ul li a:hover{color:var(--blue)}
-nav ul li a:hover::after{width:100%}
-nav ul li a.active::after{width:100%}
-.nav-actions{display:flex;align-items:center;gap:12px}
-.cart-btn{background:var(--navy);color:#fff;padding:11px 22px;border-radius:30px;font-size:13px;font-weight:700;border:2px solid var(--gold);transition:.3s;position:relative}
-.cart-btn:hover{background:var(--gold);color:var(--navy)}
-.cart-count{position:absolute;top:-8px;right:-8px;background:var(--gold);color:var(--navy);width:20px;height:20px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff}
-.menu-btn{display:none;font-size:28px;color:var(--navy);cursor:pointer;background:none;border:0}
+.container{width:92%;max-width:1240px;margin:0 auto}
 
-.page-hero{min-height:280px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,rgba(10,35,66,.94),rgba(18,58,107,.9)),url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
-.page-hero .section-kicker{color:var(--gold2)}
-.page-hero h1{font-size:42px;margin:12px 0 10px}
-.page-hero p{color:#dbe5f3;font-size:14px}
-.section-kicker{color:#9a7412;letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:var(--sans);font-weight:700;font-size:.97rem;line-height:1;border:0;cursor:pointer;white-space:nowrap;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--pine-deep);box-shadow:0 14px 30px -12px rgba(224,165,38,.75)}
+.btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 14px 30px -12px rgba(37,211,102,.7)}
 
-.filter-bar{position:sticky;top:83px;z-index:50;background:#fff;border-bottom:1px solid #e7eaf0;padding:18px 0;box-shadow:0 4px 14px rgba(10,35,66,.05)}
-.filter-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.filter-tag{background:var(--cream);color:var(--navy);padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;border:1px solid #e7eaf0;cursor:pointer;transition:.25s}
-.filter-tag:hover{border-color:var(--gold)}
-.filter-tag.active{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-color:var(--gold)}
+/* TOP BAR */
+.topbar{background:var(--pine-deep);color:#d8e6dd;font-size:.86rem}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
+.topbar i{color:var(--gold-light);margin-right:8px}
+.topbar-right{display:flex;gap:24px}
+.topbar a:hover{color:var(--gold-light)}
 
-.shop-section{padding:65px 0 100px;background:#fff}
-.results-note{text-align:center;color:var(--muted);font-size:13px;margin-bottom:30px}
-.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.product-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid #eee;transition:.3s;display:flex;flex-direction:column}
-.product-card:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(10,35,66,.18)}
-.product-img{height:230px;position:relative;overflow:hidden;background:var(--cream)}
-.product-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.product-card:hover .product-img img{transform:scale(1.08)}
-.product-badge{position:absolute;top:12px;left:12px;background:var(--gold);color:var(--navy);font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:20px}
-.product-body{padding:20px;flex:1;display:flex;flex-direction:column}
-.product-cat{color:#9a7412;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;margin-bottom:6px}
-.product-body h3{font-size:17px;color:var(--navy);margin-bottom:8px;line-height:1.3}
-.product-body p{color:var(--muted);font-size:12.5px;line-height:1.6;margin-bottom:14px;flex:1}
-.product-price{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px}
-.product-price span{font-size:12px;color:var(--muted);font-weight:400}
-.product-actions{display:flex;gap:8px}
-.btn-add{flex:1;background:var(--navy);color:#fff;border:none;padding:11px;border-radius:7px;font-size:12.5px;font-weight:700;cursor:pointer;transition:.3s}
-.btn-add:hover{background:var(--gold);color:var(--navy)}
-.btn-wa-small{width:42px;background:var(--green);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.btn-wa-small svg{width:18px;height:18px;fill:#fff}
+/* HEADER */
+header.site{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 6px 24px -18px rgba(8,42,32,.5)}
+.navbar{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:50px;height:50px;flex-shrink:0}
+.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.55rem;color:var(--pine);line-height:1;letter-spacing:-.01em}
+.logo-word b span{color:var(--gold-deep)}
+.logo-word small{display:block;font-size:.66rem;font-weight:700;letter-spacing:.3em;color:var(--muted);margin-top:5px;text-transform:uppercase}
+.nav ul{display:flex;align-items:center;gap:30px}
+.nav a{font-weight:600;font-size:.97rem;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+.nav a:hover,.nav a.active{color:var(--pine)}
+.nav a:hover::after,.nav a.active::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.15rem;transition:background .25s}
+.icon-btn.wa{color:#128c7e}
+.icon-btn:hover{background:var(--sage)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--pine);color:#fff;padding:11px 14px 11px 20px;border-radius:999px;font-weight:700;font-size:.92rem;line-height:1;transition:background .25s,color .25s}
+.cart-btn:hover{background:var(--pine-soft)}
+.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--gold);color:var(--pine-deep);font-size:.78rem;font-weight:700;display:inline-grid;place-items:center;line-height:1}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--pine);font-size:1.1rem;cursor:pointer}
 
-.cta{padding:95px 0;text-align:center;background:linear-gradient(120deg,rgba(29,90,166,.94),rgba(10,35,66,.94)),url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1800&q=80") center/cover}
-.cta h2{color:#fff;font-size:38px;max-width:800px;margin:0 auto 16px}
-.cta p{color:#dbe5f3;max-width:650px;margin:0 auto 30px;font-size:14px;line-height:1.8}
-.cta-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
-.btn-outline{border:2px solid var(--gold2);color:#fff;padding:13px 28px;border-radius:6px;font-weight:600;font-size:14px;transition:.3s;display:inline-block}
-.btn-outline:hover{background:rgba(242,207,107,.15)}
-.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:15px 30px;border-radius:6px;font-weight:700;font-size:14px;transition:.3s;box-shadow:0 10px 28px rgba(212,167,44,.3);display:inline-block;border:none;cursor:pointer}
-.btn-primary:hover{transform:translateY(-3px)}
+/* CATEGORY BAR */
+.catbar{background:var(--sage);border-bottom:1px solid var(--line)}
+.catbar .container{display:flex;align-items:center;gap:10px;min-height:56px;overflow-x:auto;scrollbar-width:none}
+.catbar .container::-webkit-scrollbar{display:none}
+.catbar a{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.9rem;color:var(--ink);white-space:nowrap;transition:border-color .25s,color .25s}
+.catbar a:hover{border-color:var(--c1,var(--pine));color:var(--c2,var(--pine))}
+.catbar a i{color:var(--pine)}
+.catbar .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.catbar a.catbar-quote{margin-left:auto;background:var(--pine);border-color:var(--pine);color:#fff}
+.catbar a.catbar-quote i{color:var(--gold-light)}
+.catbar a.catbar-quote:hover{background:var(--pine-soft);color:#fff}
 
-footer{background:var(--navy);color:#c9d6ea;padding-top:70px;border-top:5px solid var(--gold)}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:55px}
+/* PAGE HERO */
+.page-hero{color:#fff;background:
+  radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
+  radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
+  linear-gradient(135deg,#082a20 0%,#0e3b2e 55%,#17543f 100%)}
+.page-hero .container{padding:56px 0 60px}
+.crumb{font-size:.9rem;color:#b9cdc2;margin-bottom:14px}
+.crumb a:hover{color:var(--gold-light)}
+.crumb b{color:var(--gold-light);font-weight:600}
+.page-hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:12px}
+.page-hero p{color:#cfe0d6;font-size:1.08rem;max-width:620px}
+.hero-search{margin-top:26px;display:flex;align-items:center;gap:12px;background:#fff;border-radius:999px;padding:6px 20px;max-width:520px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);border:2px solid transparent;transition:border-color .2s}
+.hero-search:focus-within{border-color:var(--gold)}
+.hero-search i{color:var(--muted)}
+.hero-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-family:var(--sans);font-size:1rem;color:var(--ink);padding:11px 0}
+
+/* SHOP */
+.shop{padding:44px 0 80px}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.tab{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-family:var(--sans);font-weight:700;font-size:.95rem;color:var(--ink);cursor:pointer;transition:border-color .25s,background .25s,color .25s,box-shadow .25s}
+.tab .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.tab i{color:var(--pine)}
+.tab-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--sage);color:var(--muted);font-size:.78rem;display:inline-grid;place-items:center}
+.tab:hover{border-color:var(--c1,var(--pine))}
+.tab.active{background:linear-gradient(135deg,var(--c1,#17543f),var(--c2,#0e3b2e));border-color:transparent;color:#fff;box-shadow:0 12px 24px -12px var(--sh,rgba(14,59,46,.6))}
+.tab.active .dot{background:#fff}
+.tab.active i{color:var(--gold-light)}
+.tab.active .tab-count{background:rgba(255,255,255,.22);color:#fff}
+.subs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;padding:14px 16px;background:#fdf3e2;border-radius:18px}
+.sub{padding:8px 16px;border-radius:999px;border:1px solid transparent;background:#fff;font-family:var(--sans);font-weight:600;font-size:.88rem;color:#86490f;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.sub:hover{border-color:#b87120}
+.sub.active{background:linear-gradient(135deg,#b87120,#86490f);color:#fff}
+.ship-note{display:flex;gap:10px;align-items:flex-start;background:var(--sage);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:.92rem;color:var(--muted);margin-bottom:6px}
+.ship-note i{color:var(--pine);margin-top:4px}
+.shop-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:16px 0 24px}
+.results{color:var(--muted);font-size:.95rem;font-weight:600}
+.sort{display:inline-flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);font-weight:600}
+.sort select{font-family:var(--sans);font-size:.92rem;font-weight:600;color:var(--ink);padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+
+/* PRODUCT CARDS */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.prod{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s}
+.prod:hover{transform:translateY(-6px);border-color:var(--c1);box-shadow:0 26px 50px -28px var(--sh)}
+.prod-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.ph{position:absolute;inset:0;display:grid;place-items:center;font-size:3.4rem;color:rgba(255,255,255,.3)}
+.prod-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.prod:hover .prod-media img{transform:scale(1.06)}
+.prod-badge{position:absolute;left:14px;top:14px;z-index:2;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;font-weight:700;font-size:.76rem;padding:6px 12px;border-radius:999px;box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
+.prod-body{padding:20px 20px 20px;display:flex;flex-direction:column;flex:1}
+.prod-cat{font-size:.8rem;font-weight:700;color:var(--c2);margin-bottom:6px}
+.prod-body h3{font-size:1.2rem;margin-bottom:8px}
+.prod-body p{color:var(--muted);font-size:.93rem;margin-bottom:16px}
+.prod-foot{margin-top:auto}
+.price{font-family:var(--serif);font-weight:700;font-size:1.5rem;color:var(--pine);line-height:1;margin-bottom:14px}
+.price small{font-family:var(--sans);font-weight:500;font-size:.85rem;color:var(--muted)}
+.price.price-ask{font-family:var(--sans);font-size:.98rem;font-weight:700;color:var(--c2);display:flex;align-items:center;gap:8px;min-height:1.5rem}
+.prod-actions{display:flex;gap:8px;align-items:center}
+.btn-add,.btn-ask{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:999px;border:0;cursor:pointer;font-family:var(--sans);font-weight:700;font-size:.9rem;line-height:1;color:#fff;transition:transform .25s,background .25s}
+.btn-add{background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:0 12px 22px -12px var(--sh)}
+.btn-add.added{background:var(--pine)}
+.btn-ask{background:linear-gradient(135deg,#25d366,#128c7e);box-shadow:0 12px 22px -12px rgba(37,211,102,.7)}
+.btn-add:hover,.btn-ask:hover{transform:translateY(-2px)}
+.wa-mini{width:42px;height:42px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:#25d366;color:#fff;font-size:1.15rem;transition:transform .25s}
+.wa-mini:hover{transform:translateY(-2px)}
+
+.empty{text-align:center;padding:60px 20px;border:1.5px dashed var(--line);border-radius:22px;background:var(--sage)}
+.empty>i{font-size:2.2rem;color:var(--pine);margin-bottom:14px}
+.empty h3{font-size:1.5rem;margin-bottom:8px}
+.empty p{color:var(--muted);max-width:460px;margin:0 auto 22px}
+
+/* ASSURANCE STRIP */
+.assure{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.assure-item{display:flex;align-items:center;gap:14px;padding:24px 22px;border-right:1px solid var(--line)}
+.assure-item:last-child{border-right:0}
+.assure-icon{width:50px;height:50px;border-radius:15px;flex-shrink:0;display:grid;place-items:center;font-size:1.15rem;color:#fff;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.assure-item strong{display:block;font-size:1rem;color:var(--pine);line-height:1.3}
+.assure-item span{display:block;font-size:.87rem;color:var(--muted);line-height:1.4}
+
+/* WHOLESALE BAND */
+.bulk{color:#fff;background:
+  linear-gradient(105deg,rgba(8,42,32,.96) 0%,rgba(14,59,46,.9) 48%,rgba(14,59,46,.55) 100%),
+  url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat}
+.bulk .container{padding:84px 0}
+.bulk h2{color:#fff;font-size:clamp(1.9rem,3.8vw,2.8rem);max-width:660px;margin-bottom:16px}
+.bulk p{color:#cfe0d6;font-size:1.08rem;max-width:560px;margin-bottom:30px}
+.bulk-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* FOOTER */
+footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:46px;padding-bottom:54px}
 .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
-.footer-logo svg{width:50px;height:50px}
-.footer-logo b{font-family:'Playfair Display',serif;color:#fff;font-size:20px}
-.footer-logo b span{color:var(--gold2)}
-.footer-about{font-size:13px;line-height:1.9;color:#aebcd2;margin-bottom:22px}
-.footer-title{color:var(--gold2);font-size:16px;margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:700}
-.footer-links{list-style:none}
-.footer-links li{margin-bottom:11px}
-.footer-links a{color:#c9d6ea;font-size:13px;transition:.3s}
-.footer-links a:hover{color:var(--gold2);padding-left:4px}
-.contact-line{display:flex;gap:10px;margin-bottom:13px;font-size:13px;line-height:1.6}
-.contact-icon{width:20px;flex-shrink:0;display:flex;align-items:flex-start;padding-top:2px}
-.contact-icon svg{width:16px;height:16px;fill:var(--gold2)}
-.contact-line a:hover{color:var(--gold2)}
+.footer-logo svg{width:48px;height:48px}
+.footer-logo b{font-family:var(--serif);font-weight:700;font-size:1.45rem;color:#fff;line-height:1}
+.footer-logo b span{color:var(--gold-light)}
+.footer-logo small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.3em;color:#9fb6aa;margin-top:5px;text-transform:uppercase}
+.footer-about{font-size:.95rem;line-height:1.8;color:#a9c0b4;margin-bottom:22px}
+.footer-title{font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:0;color:var(--gold-light);margin-bottom:18px}
+.footer-links li{margin-bottom:10px}
+.footer-links a{font-size:.95rem;transition:color .2s,padding-left .2s}
+.footer-links a:hover{color:var(--gold-light);padding-left:4px}
+.contact-line{display:flex;gap:12px;margin-bottom:14px;font-size:.95rem;line-height:1.6}
+.contact-line i{width:18px;text-align:center;color:var(--gold-light);margin-top:5px;flex-shrink:0}
+.contact-line strong{color:#fff;font-weight:600}
+.contact-line a{word-break:break-word}
+.contact-line a:hover{color:var(--gold-light)}
 .socials{display:flex;gap:10px;flex-wrap:wrap}
-.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.3s}
-.socials svg{width:20px;height:20px;fill:#fff}
-.facebook{background:#1877F2}
-.instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
-.whatsapp{background:var(--green)}
-.snapchat{background:#FFFC00}
-.socials .snapchat svg{fill:#111}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.05rem;transition:transform .25s}
 .socials a:hover{transform:translateY(-3px)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
-.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer-bottom p{font-size:12px;color:#aebcd2}
-.footer-bottom a{color:var(--gold2)}
+.s-fb{background:#1877f2}
+.s-ig{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.s-wa{background:#25d366}
+.socials a.s-sc{background:#fffc00;color:#111}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.88rem;color:#9fb6aa}
+.footer-bottom a{color:var(--gold-light)}
 
+/* FLOATING CONTACT */
 .fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
-.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .3s,transform .3s,visibility .3s}
 .fab.open .fab-options{opacity:1;visibility:visible;transform:none}
-.fab-opt{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.3s}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.3rem;box-shadow:0 10px 24px rgba(0,0,0,.28);transition:transform .25s}
 .fab-opt:hover{transform:scale(1.1)}
-.fab-opt svg{width:24px;height:24px;fill:#fff}
-.fab-wa{background:var(--green)}
-.fab-mail{background:var(--blue)}
-.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold2);background:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,35,66,.4);transition:.3s}
-.fab-main svg{width:27px;height:27px;fill:var(--gold2);transition:.3s}
-.fab.open .fab-main{background:var(--gold)}
-.fab.open .fab-main svg{fill:var(--navy);transform:rotate(90deg)}
+.fab-wa{background:#25d366}
+.fab-mail{background:var(--gold);color:var(--pine-deep)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold-light);background:var(--pine);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(8,42,32,.45);transition:background .3s,color .3s}
+.fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
 
-@media(max-width:1050px){nav ul{gap:16px}.product-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:850px){
-.navbar{min-height:72px}
-.logo svg{width:48px;height:48px}
-.logo-text b{font-size:18px}
-.logo-text small{font-size:8px}
-nav ul{position:fixed;top:75px;right:-100%;width:82%;height:calc(100vh - 75px);background:#fff;flex-direction:column;align-items:flex-start;padding:38px 30px;gap:22px;transition:.4s;box-shadow:-10px 0 40px rgba(10,35,66,.2)}
-nav ul.active{right:0}
-nav ul li a{font-size:16px}
-.menu-btn{display:block}
-.cart-btn{padding:9px 14px}
-.page-hero h1{font-size:32px}
-.filter-bar{top:73px}
-.product-grid{grid-template-columns:repeat(2,1fr)}
+/* TOAST */
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,30px);opacity:0;visibility:hidden;z-index:9998;display:flex;align-items:center;gap:12px;background:var(--pine-deep);color:#fff;padding:10px 10px 10px 18px;border-radius:999px;box-shadow:0 20px 40px -14px rgba(0,0,0,.55);font-weight:600;font-size:.94rem;white-space:nowrap;transition:opacity .3s,transform .3s,visibility .3s}
+.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.toast i{color:var(--gold-light)}
+.toast a{background:var(--gold);color:var(--pine-deep);padding:9px 14px;border-radius:999px;font-size:.85rem;font-weight:700}
+
+/* RESPONSIVE */
+@media(max-width:1150px){
+  .nav ul{gap:20px}
+  .prod-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
 }
-@media(max-width:600px){
-.container{width:91%}
-.page-hero{min-height:230px}
-.page-hero h1{font-size:26px}
-.shop-section,.cta{padding-top:55px;padding-bottom:55px}
-.product-grid{grid-template-columns:1fr 1fr;gap:14px}
-.product-img{height:150px}
-.product-body{padding:14px}
-.product-body h3{font-size:14px}
-.product-body p{display:none}
-.product-price{font-size:15px}
-.cta h2{font-size:26px}
-.fab{right:14px;bottom:14px}
-.filter-tags{gap:8px}
-.filter-tag{padding:8px 14px;font-size:12px}
+@media(max-width:940px){
+  .menu-btn{display:grid;place-items:center}
+  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:6px 4% 18px;border-top:1px solid var(--line);box-shadow:0 30px 40px -20px rgba(8,42,32,.25)}
+  .nav ul.active{display:flex}
+  .nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .nav a::after{display:none}
+  .assure{grid-template-columns:1fr}
+  .assure-item{border-right:0;border-bottom:1px solid var(--line)}
+  .assure-item:last-child{border-bottom:0}
+}
+@media(max-width:860px){
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+}
+@media(max-width:760px){
+  .topbar .container{justify-content:center;text-align:center}
+  .topbar-right{display:none}
+}
+@media(max-width:640px){
+  .navbar{min-height:70px}
+  .logo svg{width:44px;height:44px}
+  .logo-word b{font-size:1.3rem}
+  .icon-btn.wa{display:none}
+  .cart-btn{padding:0;width:44px;height:44px;justify-content:center}
+  .cart-label{display:none}
+  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid #fff;min-width:22px;height:22px;padding:0 5px}
+  .catbar a.catbar-quote{margin-left:0}
+  .page-hero .container{padding:42px 0 46px}
+  .shop{padding:32px 0 64px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{white-space:nowrap;flex-shrink:0}
+  .shop-bar{margin:14px 0 20px}
+  .bulk .container{padding:64px 0}
+  .bulk-actions .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .fab{right:14px;bottom:14px}
+  .toast{left:14px;right:88px;transform:translateY(30px);justify-content:space-between}
+  .toast.show{transform:translateY(0)}
+}
+@media(max-width:520px){
+  .prod-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
 }
 </style>
 </head>
 <body>
 
-<header>
-<div class="container navbar">
-  <a href="index.html" class="logo" aria-label="Sea2Sky Traders">
-    <svg viewBox="0 0 100 100" aria-hidden="true">
-      <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2cf6b"/><stop offset="1" stop-color="#c8971f"/></linearGradient></defs>
-      <circle cx="50" cy="50" r="47" fill="#0a2342" stroke="url(#g1)" stroke-width="4"/>
-      <circle cx="50" cy="50" r="40" fill="none" stroke="#f2cf6b" stroke-width="1" opacity=".6"/>
-      <circle cx="68" cy="30" r="7" fill="url(#g1)"/>
-      <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
-      <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
-      <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
-    </svg>
-    <div class="logo-text">
-      <b>SEA2SKY <span>TRADERS</span></b>
-      <small>Premium Global Store</small>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <p><i class="fas fa-truck-fast"></i>Worldwide shipping on retail and wholesale orders</p>
+    <div class="topbar-right">
+      <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
     </div>
-  </a>
-
-  <nav>
-    <ul id="navMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html" class="active">Shop</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="nav-actions">
-    <a href="cart.html" class="cart-btn">🛒 Cart<span class="cart-count" id="cartCount">0</span></a>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navMenu').classList.toggle('active')">☰</button>
   </div>
 </div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="container navbar">
+
+    <a href="index.html" class="logo" aria-label="Sea2Sky Traders home">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#0e3b2e"/>
+        <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f6d77a" stroke-width="1" opacity=".55"/>
+        <circle cx="32" cy="24" r="8" fill="#f2c14e"/>
+        <path d="M10 38 Q17 32 24 38 T38 38 T52 38" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M14 46 Q20 41 26 46 T38 46 T50 46" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">
+        <b>Sea<span>2</span>Sky</b>
+        <small>Traders</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn wa" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="cart.html" class="cart-btn" aria-label="Cart"><i class="fas fa-cart-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
+    </div>
+
+  </div>
 </header>
 
+<!-- CATEGORY BAR -->
+<div class="catbar">
+  <div class="container">
+    <a href="shop.html"><i class="fas fa-store"></i>All products</a>
+    <a href="shop.html?cat=dry-fruits" class="c-dry"><span class="dot"></span>Dry Fruits</a>
+    <a href="shop.html?cat=pink-salt" class="c-salt"><span class="dot"></span>Pink Salt</a>
+    <a href="shop.html?cat=fresh-fruits" class="c-fresh"><span class="dot"></span>Fresh Fruits</a>
+    <a href="contact.html" class="catbar-quote"><i class="fas fa-boxes-stacked"></i>Wholesale quote</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
 <section class="page-hero">
-<div class="container">
-  <span class="section-kicker">Our Full Range</span>
-  <h1>Shop Sea2Sky Traders</h1>
-  <p>Browse ladies garments, dry fruits, fresh fruits, sports goods, pink salt and electronics — shipped worldwide.</p>
-</div>
+  <div class="container">
+    <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <b>Shop</b></p>
+    <h1>Shop dry fruits, pink salt and fresh fruits</h1>
+    <p>Browse the full range, add items to your cart or ask for a price on WhatsApp. We ship worldwide.</p>
+
+    <form class="hero-search" id="searchForm" role="search">
+      <i class="fas fa-magnifying-glass"></i>
+      <input type="search" id="shopSearch" placeholder="Search products, for example almonds" aria-label="Search products" autocomplete="off">
+    </form>
+  </div>
 </section>
 
-<div class="filter-bar">
-  <div class="container filter-tags" id="filterTags">
-    <button class="filter-tag active" data-cat="all">All Products</button>
-    <button class="filter-tag" data-cat="garments">Ladies Garments</button>
-    <button class="filter-tag" data-cat="dry-fruits">Dry Fruits</button>
-    <button class="filter-tag" data-cat="sports-toys">Sports &amp; Toys</button>
-    <button class="filter-tag" data-cat="fresh-fruits">Fresh Fruits</button>
-    <button class="filter-tag" data-cat="pink-salt">Pink Salt</button>
-    <button class="filter-tag" data-cat="electronics">Electronics</button>
+<!-- SHOP -->
+<section class="shop" id="shop">
+  <div class="container">
+
+    <div class="tabs" aria-label="Product categories">
+      <button class="tab active" type="button" data-cat="all" aria-pressed="true"><i class="fas fa-store"></i>All products <span class="tab-count">12</span></button>
+      <button class="tab c-dry" type="button" data-cat="dry-fruits" aria-pressed="false"><span class="dot"></span>Dry Fruits <span class="tab-count">6</span></button>
+      <button class="tab c-salt" type="button" data-cat="pink-salt" aria-pressed="false"><span class="dot"></span>Pink Salt <span class="tab-count">2</span></button>
+      <button class="tab c-fresh" type="button" data-cat="fresh-fruits" aria-pressed="false"><span class="dot"></span>Fresh Fruits <span class="tab-count">4</span></button>
+    </div>
+
+    <div class="subs" id="subRow" aria-label="Dry fruit types" hidden>
+      <button class="sub active" type="button" data-sub="all" aria-pressed="true">All dry fruits</button>
+      <button class="sub" type="button" data-sub="dates" aria-pressed="false">Dates</button>
+      <button class="sub" type="button" data-sub="almonds" aria-pressed="false">Almonds</button>
+      <button class="sub" type="button" data-sub="pistachios" aria-pressed="false">Pistachios</button>
+      <button class="sub" type="button" data-sub="walnuts" aria-pressed="false">Walnuts</button>
+      <button class="sub" type="button" data-sub="cashews" aria-pressed="false">Cashews</button>
+      <button class="sub" type="button" data-sub="raisins" aria-pressed="false">Raisins</button>
+    </div>
+
+    <p class="ship-note"><i class="fas fa-circle-info"></i><span>Final pricing, shipping cost and delivery time are confirmed on WhatsApp, based on your destination and order size.</span></p>
+
+    <div class="shop-bar">
+      <p class="results" id="results" aria-live="polite">Showing 12 products</p>
+      <label class="sort">Sort by
+        <select id="shopSort">
+          <option value="default">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="prod-grid" id="prodGrid">
+
+      <!-- ============ DRY FRUITS ============ -->
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="almonds" data-name="Premium Californian Almonds" data-price="9" data-order="1">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1508779018996-601e37fa274e?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Premium Californian Almonds" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Best seller</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Almonds</span>
+          <h3>Premium Californian Almonds</h3>
+          <p>Hand-selected, crunchy almonds in a 500g resealable pack.</p>
+          <div class="prod-foot">
+            <div class="price">$9 <small>/ 500g</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Premium Californian Almonds"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20the%20Premium%20Californian%20Almonds" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Premium Californian Almonds on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="dates" data-name="Soft Premium Dates" data-price="7" data-order="2">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1537201872643-ff006e1f016f?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Soft Premium Dates" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Popular</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Dates</span>
+          <h3>Soft Premium Dates</h3>
+          <p>Naturally sweet, soft-textured dates, great for daily use.</p>
+          <div class="prod-foot">
+            <div class="price">$7 <small>/ 500g</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Soft Premium Dates"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Soft%20Premium%20Dates" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Soft Premium Dates on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="pistachios" data-name="Roasted Pistachios" data-price="12" data-order="3">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1502825751399-28baa9b81efe?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Roasted Pistachios" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Pistachios</span>
+          <h3>Roasted Pistachios</h3>
+          <p>Lightly salted and roasted, packed for maximum freshness.</p>
+          <div class="prod-foot">
+            <div class="price">$12 <small>/ 500g</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Roasted Pistachios"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Roasted%20Pistachios" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Roasted Pistachios on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="walnuts" data-name="Premium Walnuts" data-price="" data-order="4">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1524593000379-d4729b2c4f99?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Premium Walnuts" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Walnuts</span>
+          <h3>Premium Walnuts</h3>
+          <p>Carefully selected walnuts with a rich, hearty flavour.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Premium%20Walnuts" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="cashews" data-name="Premium Cashew Nuts" data-price="" data-order="5">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1573555657105-47a0bb37c3ea?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Premium Cashew Nuts" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Cashews</span>
+          <h3>Premium Cashew Nuts</h3>
+          <p>Smooth, creamy cashews, packed fresh for snacking and cooking.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Premium%20Cashew%20Nuts" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="raisins" data-name="Sun-Dried Raisins" data-price="" data-order="6">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1642102903918-b97c37955bbf?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Sun-Dried Raisins" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Raisins</span>
+          <h3>Sun-Dried Raisins</h3>
+          <p>Naturally sweet dried grapes for snacking, baking and desserts.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Sun-Dried%20Raisins" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ PINK SALT ============ -->
+
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Himalayan Pink Salt (Fine Grain)" data-price="6" data-order="7">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-gem"></i></span>
+          <img src="https://images.unsplash.com/photo-1584683596603-61fbfa842a47?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Himalayan Pink Salt" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Natural</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Pink Salt</span>
+          <h3>Himalayan Pink Salt (Fine Grain)</h3>
+          <p>100% natural, mineral-rich pink salt for everyday cooking.</p>
+          <div class="prod-foot">
+            <div class="price">$6 <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Himalayan Pink Salt (Fine Grain)"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Himalayan%20Pink%20Salt" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Himalayan Pink Salt on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Lamp Decor Chunks" data-price="11" data-order="8">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-gem"></i></span>
+          <img src="https://images.unsplash.com/photo-1524007274076-e8e383a3fa10?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Himalayan pink salt lamp rock" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Gift pack</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Pink Salt</span>
+          <h3>Pink Salt Lamp &amp; Decor Chunks</h3>
+          <p>Hand-picked salt chunks for decorative lamps and home décor.</p>
+          <div class="prod-foot">
+            <div class="price">$11 <small>/ pack</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Pink Salt Lamp Decor Chunks"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Lamp%20Decor%20Chunks" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Lamp and Decor Chunks on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ FRESH FRUITS ============ -->
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Seasonal Fresh Fruit Basket" data-price="16" data-order="9">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Seasonal Fresh Fruit Basket" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Fresh</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits</span>
+          <h3>Seasonal Fresh Fruit Basket</h3>
+          <p>A mix of bananas, apples and grapes, freshly packed for delivery.</p>
+          <div class="prod-foot">
+            <div class="price">$16 <small>/ basket</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Seasonal Fresh Fruit Basket"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20the%20Seasonal%20Fresh%20Fruit%20Basket" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Seasonal Fresh Fruit Basket on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Bananas" data-price="" data-order="10">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1513563401345-1123a773541c?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Bananas" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits</span>
+          <h3>Fresh Bananas</h3>
+          <p>Ripe, naturally sweet bananas, packed with care.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Fresh%20Bananas" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Apples" data-price="" data-order="11">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1474564862106-1f23d10b9d72?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Apples" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits</span>
+          <h3>Fresh Apples</h3>
+          <p>Crisp, juicy red apples, selected for freshness.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Fresh%20Apples" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Grapes" data-price="" data-order="12">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1698305819486-ecca56daaba3?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Grapes" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits</span>
+          <h3>Fresh Grapes</h3>
+          <p>Sweet, juicy grapes, packed fresh for delivery.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Fresh%20Grapes" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="empty" id="emptyState" hidden>
+      <i class="fas fa-magnifying-glass"></i>
+      <h3>No products found</h3>
+      <p>Try a different search or category, or message us on WhatsApp and we will source it for you.</p>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>Ask on WhatsApp</a>
+    </div>
+
+    <div class="assure">
+      <div class="assure-item c-dry">
+        <div class="assure-icon"><i class="fas fa-box-open"></i></div>
+        <div><strong>Carefully packed</strong><span>Every order is packed fresh before it ships.</span></div>
+      </div>
+      <div class="assure-item c-pine">
+        <div class="assure-icon"><i class="fas fa-earth-americas"></i></div>
+        <div><strong>Worldwide shipping</strong><span>Retail and wholesale orders to every market.</span></div>
+      </div>
+      <div class="assure-item c-fresh">
+        <div class="assure-icon"><i class="fab fa-whatsapp"></i></div>
+        <div><strong>Order on WhatsApp</strong><span>Talk to our team directly about your order.</span></div>
+      </div>
+    </div>
+
   </div>
-</div>
-
-<section class="shop-section">
-<div class="container">
-  <p class="results-note" id="resultsNote">Showing all products</p>
-  <div class="product-grid" id="productGrid">
-
-    <div class="product-card" data-cat="garments">
-      <div class="product-img"><span class="product-badge">New</span><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=85" alt="Ladies Kurti Set"></div>
-      <div class="product-body"><span class="product-cat">Ladies Garments</span><h3>Embroidered Ladies Kurti Set</h3><p>Soft fabric, elegant embroidery, available in multiple sizes and colors.</p><div class="product-price">$18 <span>/ piece</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Embroidered Ladies Kurti Set')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Embroidered%20Ladies%20Kurti%20Set" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="garments">
-      <div class="product-img"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=85" alt="Ladies Lawn Suit"></div>
-      <div class="product-body"><span class="product-cat">Ladies Garments</span><h3>Printed Lawn 3-Piece Suit</h3><p>Breathable lawn fabric with modern prints, perfect for everyday wear.</p><div class="product-price">$22 <span>/ set</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Printed Lawn 3-Piece Suit')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Printed%20Lawn%203-Piece%20Suit" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="dry-fruits">
-      <div class="product-img"><span class="product-badge">Best Seller</span><img src="https://images.unsplash.com/photo-1508779018996-601e37fa274e?auto=format&fit=crop&w=600&q=85" alt="Premium Almonds"></div>
-      <div class="product-body"><span class="product-cat">Dry Fruits</span><h3>Premium Californian Almonds</h3><p>Hand-selected, crunchy almonds — 500g resealable pack.</p><div class="product-price">$9 <span>/ 500g</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Premium Californian Almonds')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Premium%20Californian%20Almonds" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="dry-fruits">
-      <div class="product-img"><img src="https://images.unsplash.com/photo-1537201872643-ff006e1f016f?auto=format&fit=crop&w=600&q=85" alt="Dates"></div>
-      <div class="product-body"><span class="product-cat">Dry Fruits</span><h3>Soft Premium Dates</h3><p>Naturally sweet, soft-textured dates — great for daily use.</p><div class="product-price">$7 <span>/ 500g</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Soft Premium Dates')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Soft%20Premium%20Dates" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="dry-fruits">
-      <div class="product-img"><img src="https://images.unsplash.com/photo-1502825751399-28baa9b81efe?auto=format&fit=crop&w=600&q=85" alt="Pistachios"></div>
-      <div class="product-body"><span class="product-cat">Dry Fruits</span><h3>Roasted Pistachios</h3><p>Lightly salted and roasted, packed for maximum freshness.</p><div class="product-price">$12 <span>/ 500g</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Roasted Pistachios')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Roasted%20Pistachios" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="sports-toys">
-      <div class="product-img"><span class="product-badge">Popular</span><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=85" alt="Sports Ball Set"></div>
-      <div class="product-body"><span class="product-cat">Sports &amp; Toys</span><h3>All-Weather Sports Ball Set</h3><p>Durable outdoor sports ball, great grip and long-lasting build.</p><div class="product-price">$14 <span>/ piece</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('All-Weather Sports Ball Set')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20All-Weather%20Sports%20Ball%20Set" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="sports-toys">
-      <div class="product-img"><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=85" alt="Kids Toy Set"></div>
-      <div class="product-body"><span class="product-cat">Sports &amp; Toys</span><h3>Kids Activity Toy Set</h3><p>Safe, colorful and durable toys designed for young children.</p><div class="product-price">$10 <span>/ set</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Kids Activity Toy Set')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Kids%20Activity%20Toy%20Set" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="fresh-fruits">
-      <div class="product-img"><span class="product-badge">Fresh</span><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=85" alt="Fresh Fruit Basket"></div>
-      <div class="product-body"><span class="product-cat">Fresh Fruits</span><h3>Seasonal Fresh Fruit Basket</h3><p>A mix of bananas, apples and grapes, freshly packed for delivery.</p><div class="product-price">$16 <span>/ basket</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Seasonal Fresh Fruit Basket')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Seasonal%20Fresh%20Fruit%20Basket" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="pink-salt">
-      <div class="product-img" style="background:linear-gradient(135deg,#c56a7a,#f4c1c1)"><span class="product-badge">Natural</span></div>
-      <div class="product-body"><span class="product-cat">Pink Salt</span><h3>Himalayan Pink Salt (Fine Grain)</h3><p>100% natural, mineral-rich pink salt for everyday cooking.</p><div class="product-price">$6 <span>/ 1kg</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Himalayan Pink Salt (Fine Grain)')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Himalayan%20Pink%20Salt" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="pink-salt">
-      <div class="product-img" style="background:linear-gradient(135deg,#f4c1c1,#c56a7a)"><span class="product-badge">Gift Pack</span></div>
-      <div class="product-body"><span class="product-cat">Pink Salt</span><h3>Pink Salt Lamp &amp; Decor Chunks</h3><p>Hand-picked salt chunks for decorative lamps and home décor.</p><div class="product-price">$11 <span>/ pack</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Pink Salt Lamp Decor Chunks')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Pink%20Salt%20Lamp%20Decor%20Chunks" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="electronics">
-      <div class="product-img"><span class="product-badge">Trending</span><img src="https://images.unsplash.com/photo-1555679792-6783ef0bbf61?auto=format&fit=crop&w=600&q=85" alt="Wireless Earbuds"></div>
-      <div class="product-body"><span class="product-cat">Electronics</span><h3>Wireless Earbuds Pro</h3><p>Clear sound, long battery life, comes with a compact charging case.</p><div class="product-price">$19 <span>/ piece</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Wireless Earbuds Pro')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20Wireless%20Earbuds%20Pro" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-    <div class="product-card" data-cat="electronics">
-      <div class="product-img"><img src="https://images.unsplash.com/photo-1555679792-6783ef0bbf61?auto=format&fit=crop&w=600&q=85" alt="Phone Accessories Kit"></div>
-      <div class="product-body"><span class="product-cat">Electronics</span><h3>Mobile Accessories Kit</h3><p>Charging cables, adapter and stand — everyday essentials bundle.</p><div class="product-price">$13 <span>/ kit</span></div>
-      <div class="product-actions"><button class="btn-add" onclick="addToCart('Mobile Accessories Kit')">Add to Cart</button><a href="https://wa.me/923008697543?text=I'm%20interested%20in%20the%20Mobile%20Accessories%20Kit" target="_blank" rel="noopener" class="btn-wa-small"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a></div></div>
-    </div>
-
-  </div>
-</div>
 </section>
 
-<section class="cta">
-<div class="container">
-  <h2>Can't Find What You're Looking For?</h2>
-  <p>Message us on WhatsApp — we can source specific items and quote for bulk or wholesale orders.</p>
-  <div class="cta-buttons">
-    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn-primary">WhatsApp Us Now →</a>
-    <a href="contact.html" class="btn-outline">Contact Our Team</a>
+<!-- WHOLESALE BAND -->
+<section class="bulk">
+  <div class="container">
+    <h2>Can't find what you're looking for?</h2>
+    <p>Message us on WhatsApp. We can source specific items and quote for bulk or wholesale orders.</p>
+    <div class="bulk-actions">
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>WhatsApp us now</a>
+      <a href="contact.html" class="btn btn-gold"><i class="fas fa-paper-plane"></i>Contact our team</a>
+    </div>
   </div>
-</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<div class="container footer-grid">
+  <div class="container footer-grid">
 
-  <div>
-    <div class="footer-logo">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="47" fill="#123a6b" stroke="#f2cf6b" stroke-width="4"/>
-        <circle cx="68" cy="30" r="7" fill="#f2cf6b"/>
-        <path d="M14 62 Q32 50 50 62 T86 62" fill="none" stroke="#5aa0e6" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M18 72 Q34 62 50 72 T82 72" fill="none" stroke="#f2cf6b" stroke-width="2.5" stroke-linecap="round"/>
-        <text x="50" y="47" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#fff">S2S</text>
-      </svg>
-      <b>SEA2SKY <span>TRADERS</span></b>
+    <div>
+      <div class="footer-logo">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#17543f"/>
+          <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f6d77a" stroke-width="1" opacity=".55"/>
+          <circle cx="32" cy="24" r="8" fill="#f2c14e"/>
+          <path d="M10 38 Q17 32 24 38 T38 38 T52 38" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M14 46 Q20 41 26 46 T38 46 T50 46" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <b>Sea<span>2</span>Sky</b>
+          <small>Traders</small>
+        </div>
+      </div>
+      <p class="footer-about">Sea2Sky Traders is a premium online store offering dry fruits, Himalayan pink salt and fresh fruits to customers worldwide.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="s-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="s-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="s-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="s-sc" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+      </div>
     </div>
-    <p class="footer-about">Sea2Sky Traders is a premium global online store offering ladies garments, dry fruits, fresh fruits, sports goods, toys, pink salt and electronics to customers worldwide.</p>
-    <div class="socials">
-      <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
-      </a>
-      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.7 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-      </a>
-      <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="snapchat" aria-label="Snapchat">
-        <svg viewBox="0 0 24 24"><path d="M12 2c3 0 5 2.2 5 5v2.2c.6.1 1.3.3 1.8.5.4.2.4.7 0 .9-.5.3-1.1.5-1.5.7.6 1.5 1.7 2.5 3 3 .4.2.3.7-.1.8-.8.2-1.3.3-1.5.6-.2.4-.2.8-.7.8-.6 0-1.2-.2-2.2 0-1 .2-1.6 1.4-3 1.4s-2-1.2-3-1.4c-1-.2-1.6 0-2.2 0-.5 0-.5-.4-.7-.8-.2-.3-.7-.4-1.5-.6-.4-.1-.5-.6-.1-.8 1.3-.5 2.4-1.5 3-3-.4-.2-1-.4-1.5-.7-.4-.2-.4-.7 0-.9.5-.2 1.2-.4 1.8-.5V7c0-2.8 2-5 5-5z"/></svg>
-      </a>
+
+    <div>
+      <h3 class="footer-title">Quick links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Product categories</h3>
+      <ul class="footer-links">
+        <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+        <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+        <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+        <li><a href="contact.html">Wholesale enquiries</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Customer care</h3>
+      <div class="contact-line"><i class="fas fa-user-tie"></i><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
+      <div class="contact-line"><i class="fas fa-envelope"></i><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+      <div class="contact-line"><i class="fab fa-whatsapp"></i><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+      <div class="contact-line"><i class="fas fa-location-dot"></i><span>100, Sodhran Block, Bahria Orchard Phase 1,<br>Lahore, Pakistan</span></div>
+      <div class="contact-line"><i class="fas fa-bullhorn"></i><span><strong>Head of Marketing:</strong><br>Kiran Hashmi<br><a href="mailto:info@sea2skytraders.com">info@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
     </div>
   </div>
-
-  <div>
-    <h3 class="footer-title">Quick Links</h3>
-    <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-  <div>
-    <h3 class="footer-title">Product Categories</h3>
-    <ul class="footer-links">
-      <li><a href="shop.html?cat=garments">Ladies Garments &amp; Fashion</a></li>
-      <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
-      <li><a href="shop.html?cat=sports-toys">Sports &amp; Toys</a></li>
-      <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
-      <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
-      <li><a href="shop.html?cat=electronics">Electronics &amp; Accessories</a></li>
-    </ul>
-  </div>
-
-  <div>
-    <h3 class="footer-title">Customer Care</h3>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg></span><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg></span><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span><span>5-LGF, Aman Business Centre,<br>Johar Town, Lahore, Pakistan</span></div>
-    <div class="contact-line"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M10 2h4a1 1 0 0 1 1 1v2h4a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2h4V3a1 1 0 0 1 1-1zm0 2v1h4V4h-4zM3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm8 2v3h2v-3h-2z"/></svg></span><span>Management (Kiran):<br><a href="mailto:kiran@sea2skytraders.com">kiran@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
-  </div>
-
-</div>
-
-<div class="footer-bottom">
-  <div class="container footer-bottom-inner">
-    <p>© 2026 Sea2Sky Traders. All Rights Reserved.</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="contact.html">Customer Support</a></p>
-  </div>
-</div>
 </footer>
 
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <i class="fas fa-circle-check"></i>
+  <span id="toastText">Added to cart</span>
+  <a href="cart.html">View cart</a>
+</div>
+
+<!-- FLOATING CONTACT TOGGLE -->
 <div class="fab" id="fab">
   <div class="fab-options">
-    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email">
-      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7h15L12 12.2zM4 9v8h16V9l-8 5.5L4 9z"/></svg>
-    </a>
-    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.7 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-    </a>
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
-  <button class="fab-main" id="fabBtn" aria-label="Contact options" aria-expanded="false">
-    <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
-  </button>
+  <button class="fab-main" id="fabBtn" type="button" aria-label="Contact options" aria-expanded="false"><i class="fas fa-comments"></i></button>
 </div>
 
 <script>
-document.querySelectorAll("#navMenu a").forEach(function(l){
-  l.addEventListener("click",function(){document.getElementById("navMenu").classList.remove("active")});
-});
-var fab=document.getElementById("fab"),fabBtn=document.getElementById("fabBtn");
-fabBtn.addEventListener("click",function(e){
-  e.stopPropagation();
-  var o=fab.classList.toggle("open");
-  fabBtn.setAttribute("aria-expanded",o);
-});
-document.addEventListener("click",function(){fab.classList.remove("open");fabBtn.setAttribute("aria-expanded","false")});
+(function () {
 
-var tags=document.querySelectorAll(".filter-tag");
-var cards=document.querySelectorAll(".product-card");
-var note=document.getElementById("resultsNote");
-var labels={all:"all products",garments:"Ladies Garments & Fashion","dry-fruits":"Dry Fruits","sports-toys":"Sports & Toys","fresh-fruits":"Fresh Fruits","pink-salt":"Pink Salt",electronics:"Electronics & Accessories"};
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById("menuBtn");
+  var navMenu = document.getElementById("navMenu");
 
-function applyFilter(cat){
-  tags.forEach(function(t){t.classList.toggle("active",t.dataset.cat===cat)});
-  var count=0;
-  cards.forEach(function(c){
-    var show=(cat==="all"||c.dataset.cat===cat);
-    c.style.display=show?"flex":"none";
-    if(show)count++;
+  function setMenu(open) {
+    navMenu.classList.toggle("active", open);
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+  }
+  menuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setMenu(!navMenu.classList.contains("active"));
   });
-  note.textContent="Showing "+count+" "+(cat==="all"?"products":"products in "+(labels[cat]||cat));
-}
+  navMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () { setMenu(false); });
+  });
 
-tags.forEach(function(t){
-  t.addEventListener("click",function(){applyFilter(t.dataset.cat)});
-});
+  /* ---------- Floating contact toggle ---------- */
+  var fab = document.getElementById("fab");
+  var fabBtn = document.getElementById("fabBtn");
 
-var params=new URLSearchParams(window.location.search);
-var initialCat=params.get("cat")||"all";
-applyFilter(initialCat);
+  function setFab(open) {
+    fab.classList.toggle("open", open);
+    fabBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    fabBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-comments"></i>';
+  }
+  fabBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setFab(!fab.classList.contains("open"));
+  });
+  document.addEventListener("click", function (e) {
+    if (!fab.contains(e.target)) { setFab(false); }
+  });
 
-function getCart(){try{return JSON.parse(localStorage.getItem("s2sCart")||"[]")}catch(e){return []}}
-function updateCartCount(){document.getElementById("cartCount").textContent=getCart().length}
-function addToCart(name){
-  var cart=getCart();
-  cart.push(name);
-  localStorage.setItem("s2sCart",JSON.stringify(cart));
+  /* ---------- Cart (same storage the cart page reads) ---------- */
+  var CART_KEY = "s2sCart";
+  var cartCount = document.getElementById("cartCount");
+
+  function getCart() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
+      return Array.isArray(c) ? c : [];
+    } catch (e) { return []; }
+  }
+  function saveCart(cart) {
+    try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); return true; }
+    catch (e) { return false; }
+  }
+  function updateCartCount() { cartCount.textContent = getCart().length; }
+
   updateCartCount();
-}
-updateCartCount();
+  window.addEventListener("pageshow", updateCartCount);
+  window.addEventListener("storage", updateCartCount);
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("toast");
+  var toastText = document.getElementById("toastText");
+  var toastTimer;
+
+  function showToast(message) {
+    toastText.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove("show"); }, 2600);
+  }
+
+  /* ---------- Shop: filter, search, sort ---------- */
+  var grid = document.getElementById("prodGrid");
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".prod"));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  var subs = Array.prototype.slice.call(document.querySelectorAll(".sub"));
+  var subRow = document.getElementById("subRow");
+  var resultsEl = document.getElementById("results");
+  var emptyEl = document.getElementById("emptyState");
+  var searchEl = document.getElementById("shopSearch");
+  var sortEl = document.getElementById("shopSort");
+
+  var catLabels = { "all": "all products", "dry-fruits": "Dry Fruits", "pink-salt": "Pink Salt", "fresh-fruits": "Fresh Fruits" };
+  var subLabels = { dates: "Dates", almonds: "Almonds", pistachios: "Pistachios", walnuts: "Walnuts", cashews: "Cashews", raisins: "Raisins" };
+  var state = { cat: "all", sub: "all", q: "", sort: "default" };
+
+  cards.forEach(function (c) {
+    var desc = c.querySelector(".prod-body p");
+    c.dataset.search = (c.dataset.name + " " + (catLabels[c.dataset.cat] || "") + " " + (c.dataset.sub || "") + " " + (desc ? desc.textContent : "")).toLowerCase();
+  });
+
+  tabs.forEach(function (t) {
+    var badge = t.querySelector(".tab-count");
+    if (!badge) { return; }
+    badge.textContent = t.dataset.cat === "all"
+      ? cards.length
+      : cards.filter(function (c) { return c.dataset.cat === t.dataset.cat; }).length;
+  });
+
+  function priceOf(c) { return c.dataset.price === "" ? null : parseFloat(c.dataset.price); }
+  function orderOf(c) { return parseInt(c.dataset.order, 10); }
+
+  function render() {
+    tabs.forEach(function (t) {
+      var on = t.dataset.cat === state.cat;
+      t.classList.toggle("active", on);
+      t.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    subRow.hidden = state.cat !== "dry-fruits";
+    subs.forEach(function (s) {
+      var on = s.dataset.sub === state.sub;
+      s.classList.toggle("active", on);
+      s.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+
+    var sorted = cards.slice().sort(function (a, b) {
+      if (state.sort === "name") { return a.dataset.name.localeCompare(b.dataset.name); }
+      if (state.sort === "price-asc" || state.sort === "price-desc") {
+        var pa = priceOf(a), pb = priceOf(b);
+        if (pa === null && pb === null) { return orderOf(a) - orderOf(b); }
+        if (pa === null) { return 1; }
+        if (pb === null) { return -1; }
+        if (pa === pb) { return orderOf(a) - orderOf(b); }
+        return state.sort === "price-asc" ? pa - pb : pb - pa;
+      }
+      return orderOf(a) - orderOf(b);
+    });
+
+    var shown = 0;
+    sorted.forEach(function (c) {
+      var ok = state.cat === "all" || c.dataset.cat === state.cat;
+      if (ok && state.cat === "dry-fruits" && state.sub !== "all") { ok = c.dataset.sub === state.sub; }
+      if (ok && state.q) { ok = c.dataset.search.indexOf(state.q) !== -1; }
+      c.hidden = !ok;
+      if (ok) { shown++; }
+      grid.appendChild(c);
+    });
+
+    var where = "";
+    if (state.cat !== "all") {
+      where = " in " + (state.cat === "dry-fruits" && state.sub !== "all" ? subLabels[state.sub] : catLabels[state.cat]);
+    }
+    resultsEl.textContent = "Showing " + shown + (shown === 1 ? " product" : " products") + where + (state.q ? ' for "' + state.q + '"' : "");
+    emptyEl.hidden = shown !== 0;
+    grid.hidden = shown === 0;
+  }
+
+  function readUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var cat = params.get("cat");
+    state.cat = catLabels[cat] ? cat : "all";
+    state.sub = "all";
+    var hash = window.location.hash.replace("#", "").toLowerCase();
+    if (subLabels[hash]) { state.cat = "dry-fruits"; state.sub = hash; }
+  }
+
+  function syncUrl() {
+    var url = window.location.pathname;
+    if (state.cat !== "all") { url += "?cat=" + state.cat; }
+    if (state.cat === "dry-fruits" && state.sub !== "all") { url += "#" + state.sub; }
+    try { history.replaceState(null, "", url); } catch (e) {}
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      state.cat = t.dataset.cat;
+      state.sub = "all";
+      render();
+      syncUrl();
+    });
+  });
+  subs.forEach(function (s) {
+    s.addEventListener("click", function () {
+      state.sub = s.dataset.sub;
+      render();
+      syncUrl();
+    });
+  });
+  searchEl.addEventListener("input", function () {
+    state.q = searchEl.value.trim().toLowerCase();
+    render();
+  });
+  document.getElementById("searchForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
+  });
+  sortEl.addEventListener("change", function () {
+    state.sort = sortEl.value;
+    render();
+  });
+  window.addEventListener("hashchange", function () { readUrl(); render(); });
+
+  readUrl();
+  render();
+
+  /* ---------- Add to cart ---------- */
+  grid.addEventListener("click", function (e) {
+    var btn = e.target.closest(".btn-add");
+    if (!btn) { return; }
+
+    var cart = getCart();
+    cart.push(btn.dataset.add);
+
+    if (!saveCart(cart)) {
+      showToast("Could not save your cart");
+      return;
+    }
+
+    updateCartCount();
+    btn.classList.add("added");
+    btn.innerHTML = '<i class="fas fa-check"></i><span>Added</span>';
+    clearTimeout(btn._timer);
+    btn._timer = setTimeout(function () {
+      btn.classList.remove("added");
+      btn.innerHTML = '<i class="fas fa-cart-plus"></i><span>Add to cart</span>';
+    }, 1600);
+    showToast("Added to cart");
+  });
+
+})();
 </script>
 
 </body>
