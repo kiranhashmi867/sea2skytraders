@@ -1,1 +1,804 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+
+<title>Your Cart | Sea2Sky Traders</title>
+<meta name="description" content="Review the items in your cart and send your order to Sea2Sky Traders on WhatsApp. Price, shipping and delivery are confirmed before anything ships.">
+<link rel="canonical" href="https://sea2skytraders.com/cart.html">
+<meta name="theme-color" content="#0e3b2e">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e3b2e'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23f2c14e'/%3E%3Cpath d='M10 38 Q17 32 24 38 T38 38 T52 38' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round'/%3E%3Cpath d='M14 46 Q20 41 26 46 T38 46 T50 46' fill='none' stroke='%23f2c14e' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --pine:#0e3b2e;
+  --pine-deep:#082a20;
+  --pine-soft:#17543f;
+  --gold:#e0a526;
+  --gold-light:#f6d77a;
+  --gold-deep:#a87508;
+  --sage:#f3f7f2;
+  --sand:#fff6e0;
+  --ink:#13251e;
+  --muted:#5d6e66;
+  --line:#e2e9e3;
+  --shadow:0 24px 60px -28px rgba(8,42,32,.35);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+
+/* colour themes */
+.c-dry{--c1:#b87120;--c2:#86490f;--soft:#fdf3e2;--sh:rgba(184,113,32,.5)}
+.c-salt{--c1:#d9577c;--c2:#ab2e5b;--soft:#fdedf1;--sh:rgba(217,87,124,.5)}
+.c-fresh{--c1:#35903f;--c2:#1b6b33;--soft:#eaf6ec;--sh:rgba(53,144,63,.5)}
+.c-pine{--c1:#17543f;--c2:#0e3b2e;--soft:#eaf3ee;--sh:rgba(14,59,46,.5)}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em;color:var(--pine);text-wrap:balance}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+[hidden]{display:none!important}
+
+.container{width:92%;max-width:1240px;margin:0 auto}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:var(--sans);font-weight:700;font-size:.97rem;line-height:1;border:0;cursor:pointer;white-space:nowrap;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--pine-deep);box-shadow:0 14px 30px -12px rgba(224,165,38,.75)}
+.btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 14px 30px -12px rgba(37,211,102,.7)}
+.btn-ghost{background:#fff;color:var(--pine);border:1.5px solid var(--line);padding:13.5px 28px}
+.btn-ghost:hover{border-color:var(--pine)}
+.btn-cat{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;box-shadow:0 14px 26px -12px var(--sh)}
+.btn-block{width:100%}
+
+/* TOP BAR */
+.topbar{background:var(--pine-deep);color:#d8e6dd;font-size:.86rem}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
+.topbar i{color:var(--gold-light);margin-right:8px}
+.topbar-right{display:flex;gap:24px}
+.topbar a:hover{color:var(--gold-light)}
+
+/* HEADER */
+header.site{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 6px 24px -18px rgba(8,42,32,.5)}
+.navbar{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:50px;height:50px;flex-shrink:0}
+.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.55rem;color:var(--pine);line-height:1;letter-spacing:-.01em}
+.logo-word b span{color:var(--gold-deep)}
+.logo-word small{display:block;font-size:.66rem;font-weight:700;letter-spacing:.3em;color:var(--muted);margin-top:5px;text-transform:uppercase}
+.nav ul{display:flex;align-items:center;gap:30px}
+.nav a{font-weight:600;font-size:.97rem;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+.nav a:hover{color:var(--pine)}
+.nav a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.15rem;transition:background .25s}
+.icon-btn.wa{color:#128c7e}
+.icon-btn:hover{background:var(--sage)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--pine-deep);padding:11px 14px 11px 20px;border-radius:999px;font-weight:700;font-size:.92rem;line-height:1}
+.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--pine);color:#fff;font-size:.78rem;font-weight:700;display:inline-grid;place-items:center;line-height:1}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--pine);font-size:1.1rem;cursor:pointer}
+
+/* CATEGORY BAR */
+.catbar{background:var(--sage);border-bottom:1px solid var(--line)}
+.catbar .container{display:flex;align-items:center;gap:10px;min-height:56px;overflow-x:auto;scrollbar-width:none}
+.catbar .container::-webkit-scrollbar{display:none}
+.catbar a{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.9rem;color:var(--ink);white-space:nowrap;transition:border-color .25s,color .25s}
+.catbar a:hover{border-color:var(--c1,var(--pine));color:var(--c2,var(--pine))}
+.catbar a i{color:var(--pine)}
+.catbar .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.catbar a.catbar-quote{margin-left:auto;background:var(--pine);border-color:var(--pine);color:#fff}
+.catbar a.catbar-quote i{color:var(--gold-light)}
+.catbar a.catbar-quote:hover{background:var(--pine-soft);color:#fff}
+
+/* PAGE HERO */
+.page-hero{color:#fff;background:
+  radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
+  radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
+  linear-gradient(135deg,#082a20 0%,#0e3b2e 55%,#17543f 100%)}
+.page-hero .container{padding:52px 0 56px}
+.crumb{font-size:.9rem;color:#b9cdc2;margin-bottom:14px}
+.crumb a:hover{color:var(--gold-light)}
+.crumb b{color:var(--gold-light);font-weight:600}
+.page-hero h1{color:#fff;font-size:clamp(2.1rem,4.4vw,3.2rem);margin-bottom:12px}
+.page-hero h1 span{color:var(--gold-light);font-style:italic}
+.page-hero p{color:#cfe0d6;font-size:1.08rem;max-width:640px}
+
+/* CART */
+.cart-wrap{padding:40px 0 88px}
+
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px}
+.flow li{display:flex;align-items:center;gap:14px;background:var(--sage);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.flow-no{width:40px;height:40px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:var(--pine);color:var(--gold-light);font-family:var(--serif);font-weight:700;font-size:1.1rem}
+.flow strong{display:block;color:var(--pine);font-size:.98rem;line-height:1.3}
+.flow span{display:block;color:var(--muted);font-size:.86rem;line-height:1.4}
+
+.noscript{background:var(--sand);border:1px solid var(--gold);border-radius:16px;padding:18px 20px;color:var(--ink);margin-bottom:24px}
+
+.cart-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:start}
+.cart-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.cart-head h2{font-size:1.5rem}
+.clear-btn{display:inline-flex;align-items:center;gap:8px;background:none;border:0;color:var(--muted);font-family:var(--sans);font-weight:700;font-size:.9rem;cursor:pointer;padding:8px 14px;border-radius:999px;transition:color .2s,background .2s}
+.clear-btn:hover{color:#b3261e;background:#fdecea}
+.notice{display:flex;gap:10px;align-items:flex-start;background:var(--sand);border:1px solid var(--gold);border-radius:14px;padding:12px 16px;font-size:.93rem;margin-bottom:14px}
+.notice i{color:var(--gold-deep);margin-top:4px}
+
+.cart-list{display:grid;gap:14px}
+.item{display:grid;grid-template-columns:104px 1fr auto;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;transition:border-color .25s,box-shadow .25s}
+.item:hover{border-color:var(--c1);box-shadow:0 20px 40px -28px var(--sh)}
+.item-img{position:relative;width:104px;height:104px;border-radius:14px;overflow:hidden;display:grid;place-items:center;font-size:1.8rem;color:rgba(255,255,255,.5);background:linear-gradient(135deg,var(--c1),var(--c2))}
+.item-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item-cat{font-size:.78rem;font-weight:700;color:var(--c2)}
+.item h3{font-size:1.15rem;margin:2px 0 4px}
+.item-unit{font-size:.9rem;color:var(--muted)}
+.item-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.item-total{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:var(--pine);line-height:1}
+.item-total.ask{font-family:var(--sans);font-size:.88rem;color:var(--c2)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.qty button{width:38px;height:38px;border:0;background:#fff;color:var(--pine);font-size:.9rem;cursor:pointer;transition:background .2s}
+.qty button:hover{background:var(--sage)}
+.qty span{min-width:34px;text-align:center;font-weight:700}
+.remove{display:inline-flex;align-items:center;gap:6px;background:none;border:0;color:var(--muted);font-family:var(--sans);font-size:.85rem;font-weight:600;cursor:pointer;transition:color .2s}
+.remove:hover{color:#b3261e}
+.continue{display:inline-flex;align-items:center;gap:9px;margin-top:20px;font-weight:700;color:var(--pine)}
+.continue:hover{color:var(--gold-deep)}
+
+.summary{position:sticky;top:104px;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.summary-head{background:linear-gradient(135deg,#082a20 0%,#0e3b2e 60%,#17543f 100%);padding:22px 26px}
+.summary-head h2{color:#fff;font-size:1.4rem}
+.summary-body{padding:20px 26px 26px}
+.sum-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;color:var(--muted)}
+.sum-row strong{color:var(--ink);text-align:right}
+.sum-total{border-top:1.5px solid var(--line);margin-top:8px;padding-top:16px;color:var(--ink);font-weight:700}
+.sum-total span:last-child{font-family:var(--serif);font-weight:700;font-size:1.7rem;color:var(--pine);line-height:1}
+.sum-note{display:flex;gap:9px;align-items:flex-start;background:var(--sage);border-radius:14px;padding:12px 14px;font-size:.87rem;color:var(--muted);margin:14px 0 20px}
+.sum-note i{color:var(--pine);margin-top:3px}
+
+.ship-fields{border-top:1px solid var(--line);padding-top:18px;margin-bottom:20px}
+.ship-fields h3{font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:0;margin-bottom:4px}
+.ship-fields h3 small{font-weight:500;color:var(--muted)}
+.ship-fields>p{font-size:.86rem;color:var(--muted);margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field{margin-bottom:10px}
+.field label{display:block;font-weight:700;font-size:.82rem;color:var(--pine);margin-bottom:5px}
+.field input,.field textarea{width:100%;font-family:var(--sans);font-size:.96rem;color:var(--ink);background:var(--sage);border:1.5px solid var(--line);border-radius:12px;padding:11px 13px;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:72px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(224,165,38,.18)}
+.summary .btn + .btn{margin-top:10px}
+
+.empty{text-align:center;padding:64px 24px;border:1.5px dashed var(--line);border-radius:26px;background:var(--sage)}
+.empty-icon{width:86px;height:86px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:#fff;border:1px solid var(--line);color:var(--pine);font-size:2rem}
+.empty h2{font-size:1.9rem;margin-bottom:10px}
+.empty p{color:var(--muted);max-width:480px;margin:0 auto 26px}
+.empty-cats{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:22px}
+.empty-cats a{display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:.9rem;color:var(--c2);transition:border-color .2s}
+.empty-cats a:hover{border-color:var(--c1)}
+.empty-cats .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+
+/* ASSURANCE STRIP */
+.assure{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.assure-item{display:flex;align-items:center;gap:14px;padding:24px 22px;border-right:1px solid var(--line)}
+.assure-item:last-child{border-right:0}
+.assure-icon{width:50px;height:50px;border-radius:15px;flex-shrink:0;display:grid;place-items:center;font-size:1.15rem;color:#fff;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.assure-item strong{display:block;font-size:1rem;color:var(--pine);line-height:1.3}
+.assure-item span{display:block;font-size:.87rem;color:var(--muted);line-height:1.4}
+
+/* FOOTER */
+footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:46px;padding-bottom:54px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:48px;height:48px}
+.footer-logo b{font-family:var(--serif);font-weight:700;font-size:1.45rem;color:#fff;line-height:1}
+.footer-logo b span{color:var(--gold-light)}
+.footer-logo small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.3em;color:#9fb6aa;margin-top:5px;text-transform:uppercase}
+.footer-about{font-size:.95rem;line-height:1.8;color:#a9c0b4;margin-bottom:22px}
+.footer-title{font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:0;color:var(--gold-light);margin-bottom:18px}
+.footer-links li{margin-bottom:10px}
+.footer-links a{font-size:.95rem;transition:color .2s,padding-left .2s}
+.footer-links a:hover{color:var(--gold-light);padding-left:4px}
+.contact-line{display:flex;gap:12px;margin-bottom:14px;font-size:.95rem;line-height:1.6}
+.contact-line i{width:18px;text-align:center;color:var(--gold-light);margin-top:5px;flex-shrink:0}
+.contact-line strong{color:#fff;font-weight:600}
+.contact-line a{word-break:break-word}
+.contact-line a:hover{color:var(--gold-light)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.05rem;transition:transform .25s}
+.socials a:hover{transform:translateY(-3px)}
+.s-fb{background:#1877f2}
+.s-ig{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.s-wa{background:#25d366}
+.socials a.s-sc{background:#fffc00;color:#111}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.88rem;color:#9fb6aa}
+.footer-bottom a{color:var(--gold-light)}
+
+/* FLOATING CONTACT */
+.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .3s,transform .3s,visibility .3s}
+.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.3rem;box-shadow:0 10px 24px rgba(0,0,0,.28);transition:transform .25s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-wa{background:#25d366}
+.fab-mail{background:var(--gold);color:var(--pine-deep)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold-light);background:var(--pine);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(8,42,32,.45);transition:background .3s,color .3s}
+.fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .nav ul{gap:20px}
+  .cart-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:940px){
+  .menu-btn{display:grid;place-items:center}
+  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:6px 4% 18px;border-top:1px solid var(--line);box-shadow:0 30px 40px -20px rgba(8,42,32,.25)}
+  .nav ul.active{display:flex}
+  .nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .nav a::after{display:none}
+  .flow{grid-template-columns:1fr}
+  .assure{grid-template-columns:1fr}
+  .assure-item{border-right:0;border-bottom:1px solid var(--line)}
+  .assure-item:last-child{border-bottom:0}
+}
+@media(max-width:760px){
+  .topbar .container{justify-content:center;text-align:center}
+  .topbar-right{display:none}
+}
+@media(max-width:640px){
+  .navbar{min-height:70px}
+  .logo svg{width:44px;height:44px}
+  .logo-word b{font-size:1.3rem}
+  .icon-btn.wa{display:none}
+  .cart-btn{padding:0;width:44px;height:44px;justify-content:center}
+  .cart-label{display:none}
+  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid #fff;min-width:22px;height:22px;padding:0 5px}
+  .catbar a.catbar-quote{margin-left:0}
+  .page-hero .container{padding:40px 0 44px}
+  .cart-wrap{padding:28px 0 64px}
+  .item{grid-template-columns:84px 1fr;gap:14px;padding:14px}
+  .item-img{width:84px;height:84px}
+  .item-right{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--line)}
+  .summary-body{padding:18px 20px 22px}
+  .summary-head{padding:20px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .empty{padding:48px 20px}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .fab{right:14px;bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <p><i class="fas fa-truck-fast"></i>Worldwide shipping on retail and wholesale orders</p>
+    <div class="topbar-right">
+      <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="container navbar">
+
+    <a href="index.html" class="logo" aria-label="Sea2Sky Traders home">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#0e3b2e"/>
+        <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f6d77a" stroke-width="1" opacity=".55"/>
+        <circle cx="32" cy="24" r="8" fill="#f2c14e"/>
+        <path d="M10 38 Q17 32 24 38 T38 38 T52 38" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M14 46 Q20 41 26 46 T38 46 T50 46" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">
+        <b>Sea<span>2</span>Sky</b>
+        <small>Traders</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn wa" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="cart.html" class="cart-btn" aria-label="Cart" aria-current="page"><i class="fas fa-cart-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
+    </div>
+
+  </div>
+</header>
+
+<!-- CATEGORY BAR -->
+<div class="catbar">
+  <div class="container">
+    <a href="shop.html"><i class="fas fa-store"></i>All products</a>
+    <a href="shop.html?cat=dry-fruits" class="c-dry"><span class="dot"></span>Dry Fruits</a>
+    <a href="shop.html?cat=pink-salt" class="c-salt"><span class="dot"></span>Pink Salt</a>
+    <a href="shop.html?cat=fresh-fruits" class="c-fresh"><span class="dot"></span>Fresh Fruits</a>
+    <a href="contact.html" class="catbar-quote"><i class="fas fa-boxes-stacked"></i>Wholesale quote</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="shop.html">Shop</a> &nbsp;/&nbsp; <b>Cart</b></p>
+    <h1>Your <span>cart</span></h1>
+    <p>Review your items, then send your order on WhatsApp. We confirm price, shipping and delivery before anything ships.</p>
+  </div>
+</section>
+
+<!-- CART -->
+<section class="cart-wrap">
+  <div class="container">
+
+    <ol class="flow">
+      <li><span class="flow-no">1</span><div><strong>Review your cart</strong><span>Check items and quantities.</span></div></li>
+      <li><span class="flow-no">2</span><div><strong>Send it on WhatsApp</strong><span>Your order opens as a ready message.</span></div></li>
+      <li><span class="flow-no">3</span><div><strong>We confirm and ship</strong><span>Price, shipping cost and delivery time.</span></div></li>
+    </ol>
+
+    <noscript>
+      <p class="noscript">Your cart needs JavaScript to work. Please enable it in your browser, or message us on WhatsApp at +92 300 8697543 to place your order.</p>
+    </noscript>
+
+    <!-- Cart with items -->
+    <div id="cartFilled" hidden>
+      <div class="cart-grid">
+
+        <div>
+          <div class="cart-head">
+            <h2>Items in your cart</h2>
+            <button type="button" class="clear-btn" id="clearCart"><i class="fas fa-trash-can"></i>Clear cart</button>
+          </div>
+
+          <p class="notice" id="removedNotice" hidden><i class="fas fa-circle-info"></i><span>Some items in your cart are no longer available and were removed.</span></p>
+
+          <div class="cart-list" id="cartList"></div>
+
+          <a href="shop.html" class="continue"><i class="fas fa-arrow-left"></i>Continue shopping</a>
+        </div>
+
+        <aside class="summary" aria-label="Order summary">
+          <div class="summary-head"><h2>Order summary</h2></div>
+          <div class="summary-body">
+
+            <div class="sum-row"><span>Items</span><strong id="sumItems">0</strong></div>
+            <div class="sum-row"><span>Estimated subtotal</span><strong id="sumSubtotal">$0</strong></div>
+            <div class="sum-row"><span>Shipping</span><strong>Confirmed on WhatsApp</strong></div>
+            <div class="sum-row sum-total"><span>Estimated total</span><span id="sumTotal">$0</span></div>
+
+            <p class="sum-note"><i class="fas fa-circle-info"></i><span>Final pricing, shipping cost and delivery time will be confirmed on WhatsApp based on your destination and order size.</span></p>
+
+            <div class="ship-fields">
+              <h3>Delivery details <small>(optional)</small></h3>
+              <p>Add these and we can quote your shipping faster.</p>
+
+              <div class="field">
+                <label for="shipName">Full name</label>
+                <input type="text" id="shipName" placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="row2">
+                <div class="field">
+                  <label for="shipCountry">Country</label>
+                  <input type="text" id="shipCountry" placeholder="Country" autocomplete="country-name">
+                </div>
+                <div class="field">
+                  <label for="shipCity">City</label>
+                  <input type="text" id="shipCity" placeholder="City" autocomplete="address-level2">
+                </div>
+              </div>
+              <div class="field">
+                <label for="shipNotes">Order notes</label>
+                <textarea id="shipNotes" placeholder="Delivery preferences or anything else we should know"></textarea>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-wa btn-block" id="checkoutWa"><i class="fab fa-whatsapp"></i>Checkout on WhatsApp</button>
+            <button type="button" class="btn btn-ghost btn-block" id="checkoutMail"><i class="fas fa-envelope"></i>Send order by email</button>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- Empty cart -->
+    <div class="empty" id="cartEmpty" hidden>
+      <div class="empty-icon"><i class="fas fa-cart-shopping"></i></div>
+      <h2>Your cart is empty</h2>
+      <p>Looks like you haven't added anything yet. Browse our categories and find something you love.</p>
+      <a href="shop.html" class="btn btn-gold"><i class="fas fa-bag-shopping"></i>Browse the shop</a>
+      <div class="empty-cats">
+        <a href="shop.html?cat=dry-fruits" class="c-dry"><span class="dot"></span>Dry Fruits</a>
+        <a href="shop.html?cat=pink-salt" class="c-salt"><span class="dot"></span>Pink Salt</a>
+        <a href="shop.html?cat=fresh-fruits" class="c-fresh"><span class="dot"></span>Fresh Fruits</a>
+      </div>
+    </div>
+
+    <div class="assure">
+      <div class="assure-item c-dry">
+        <div class="assure-icon"><i class="fas fa-box-open"></i></div>
+        <div><strong>Carefully packed</strong><span>Every order is packed fresh before it ships.</span></div>
+      </div>
+      <div class="assure-item c-pine">
+        <div class="assure-icon"><i class="fas fa-earth-americas"></i></div>
+        <div><strong>Worldwide shipping</strong><span>See delivery times on our <a href="shipping-returns.html" style="text-decoration:underline">shipping page</a>.</span></div>
+      </div>
+      <div class="assure-item c-fresh">
+        <div class="assure-icon"><i class="fas fa-rotate-left"></i></div>
+        <div><strong>Easy returns</strong><span>Report an issue within 3 days of delivery.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+
+    <div>
+      <div class="footer-logo">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#17543f"/>
+          <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f6d77a" stroke-width="1" opacity=".55"/>
+          <circle cx="32" cy="24" r="8" fill="#f2c14e"/>
+          <path d="M10 38 Q17 32 24 38 T38 38 T52 38" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M14 46 Q20 41 26 46 T38 46 T50 46" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <b>Sea<span>2</span>Sky</b>
+          <small>Traders</small>
+        </div>
+      </div>
+      <p class="footer-about">Sea2Sky Traders is a premium online store offering dry fruits, Himalayan pink salt and fresh fruits to customers worldwide.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="s-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="s-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="s-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="s-sc" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Quick links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Product categories</h3>
+      <ul class="footer-links">
+        <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+        <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+        <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+        <li><a href="contact.html">Wholesale enquiries</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Customer care</h3>
+      <div class="contact-line"><i class="fas fa-user-tie"></i><span><strong>Chief Executive Officer:</strong><br>Muhammad Imran Khan</span></div>
+      <div class="contact-line"><i class="fas fa-envelope"></i><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+      <div class="contact-line"><i class="fab fa-whatsapp"></i><a href="https://wa.me/923008697543" target="_blank" rel="noopener">+92 300 8697543</a></div>
+      <div class="contact-line"><i class="fas fa-location-dot"></i><span>100, Sodhran Block, Bahria Orchard Phase 1,<br>Lahore, Pakistan</span></div>
+      <div class="contact-line"><i class="fas fa-bullhorn"></i><span><strong>Head of Marketing:</strong><br>Kiran Hashmi<br><a href="mailto:info@sea2skytraders.com">info@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener">+92 308 1333143</a></span></div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <button class="fab-main" id="fabBtn" type="button" aria-label="Contact options" aria-expanded="false"><i class="fas fa-comments"></i></button>
+</div>
+
+<script>
+(function () {
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById("menuBtn");
+  var navMenu = document.getElementById("navMenu");
+
+  function setMenu(open) {
+    navMenu.classList.toggle("active", open);
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+  }
+  menuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setMenu(!navMenu.classList.contains("active"));
+  });
+  navMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () { setMenu(false); });
+  });
+
+  /* ---------- Floating contact toggle ---------- */
+  var fab = document.getElementById("fab");
+  var fabBtn = document.getElementById("fabBtn");
+
+  function setFab(open) {
+    fab.classList.toggle("open", open);
+    fabBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    fabBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-comments"></i>';
+  }
+  fabBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setFab(!fab.classList.contains("open"));
+  });
+  document.addEventListener("click", function (e) {
+    if (!fab.contains(e.target)) { setFab(false); }
+  });
+
+  /* ---------- Product list ----------
+     Every product that has an "Add to cart" button on shop.html must be listed here
+     with the same name, so the cart knows its price and picture. */
+  var IMG = "https://images.unsplash.com/photo-";
+  var CROP = "?auto=format&fit=crop&w=240&h=240&q=80";
+
+  var PRODUCTS = {
+    "Premium Californian Almonds":       { price: 9,  unit: "/ 500g",   cat: "Dry Fruits",   theme: "c-dry",   img: IMG + "1508779018996-601e37fa274e" + CROP },
+    "Soft Premium Dates":                { price: 7,  unit: "/ 500g",   cat: "Dry Fruits",   theme: "c-dry",   img: IMG + "1537201872643-ff006e1f016f" + CROP },
+    "Roasted Pistachios":                { price: 12, unit: "/ 500g",   cat: "Dry Fruits",   theme: "c-dry",   img: IMG + "1502825751399-28baa9b81efe" + CROP },
+    "Himalayan Pink Salt (Fine Grain)":  { price: 6,  unit: "/ 1kg",    cat: "Pink Salt",    theme: "c-salt",  img: IMG + "1584683596603-61fbfa842a47" + CROP },
+    "Pink Salt Lamp Decor Chunks":       { price: 11, unit: "/ pack",   cat: "Pink Salt",    theme: "c-salt",  img: IMG + "1524007274076-e8e383a3fa10" + CROP, title: "Pink Salt Lamp & Decor Chunks" },
+    "Seasonal Fresh Fruit Basket":       { price: 16, unit: "/ basket", cat: "Fresh Fruits", theme: "c-fresh", img: IMG + "1610832958506-aa56368176cf" + CROP }
+  };
+
+  /* Products that were removed from the store. They are cleared from old carts. */
+  var DISCONTINUED = [
+    "Embroidered Ladies Kurti Set",
+    "Printed Lawn 3-Piece Suit",
+    "All-Weather Sports Ball Set",
+    "Kids Activity Toy Set",
+    "Wireless Earbuds Pro",
+    "Mobile Accessories Kit"
+  ];
+
+  /* ---------- Cart storage (same as shop.html) ---------- */
+  var CART_KEY = "s2sCart";
+
+  function getRaw() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
+      return Array.isArray(c) ? c.filter(function (n) { return typeof n === "string" && n; }) : [];
+    } catch (e) { return []; }
+  }
+  function saveRaw(arr) {
+    try { localStorage.setItem(CART_KEY, JSON.stringify(arr)); } catch (e) {}
+  }
+  function getGrouped() {
+    var map = {}, order = [];
+    getRaw().forEach(function (name) {
+      if (!map[name]) { map[name] = 0; order.push(name); }
+      map[name]++;
+    });
+    return order.map(function (name) { return { name: name, qty: map[name] }; });
+  }
+  function saveGrouped(items) {
+    var raw = [];
+    items.forEach(function (item) {
+      for (var i = 0; i < item.qty; i++) { raw.push(item.name); }
+    });
+    saveRaw(raw);
+  }
+
+  /* ---------- Helpers ---------- */
+  function esc(text) {
+    return String(text)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  function money(n) {
+    return "$" + (n % 1 === 0 ? n : n.toFixed(2));
+  }
+
+  /* ---------- Elements ---------- */
+  var cartCount = document.getElementById("cartCount");
+  var filled = document.getElementById("cartFilled");
+  var empty = document.getElementById("cartEmpty");
+  var list = document.getElementById("cartList");
+  var sumItems = document.getElementById("sumItems");
+  var sumSubtotal = document.getElementById("sumSubtotal");
+  var sumTotal = document.getElementById("sumTotal");
+  var removedNotice = document.getElementById("removedNotice");
+
+  /* ---------- Remove discontinued products from old carts ---------- */
+  (function () {
+    var raw = getRaw();
+    var kept = raw.filter(function (name) { return DISCONTINUED.indexOf(name) === -1; });
+    if (kept.length !== raw.length) {
+      saveRaw(kept);
+      removedNotice.hidden = false;
+    }
+  })();
+
+  /* ---------- Render ---------- */
+  function render() {
+    var items = getGrouped();
+    var units = 0, total = 0, html = "";
+
+    items.forEach(function (item) {
+      var p = PRODUCTS[item.name] || null;
+      var title = p && p.title ? p.title : item.name;
+      var line = p ? p.price * item.qty : null;
+
+      units += item.qty;
+      if (p) { total += line; }
+
+      html +=
+        '<article class="item ' + (p ? p.theme : "c-pine") + '" data-name="' + esc(item.name) + '">' +
+          '<div class="item-img"><i class="fas fa-box-open"></i>' +
+            (p ? '<img src="' + esc(p.img) + '" alt="' + esc(title) + '" onerror="this.style.display=\'none\'">' : "") +
+          '</div>' +
+          '<div>' +
+            '<span class="item-cat">' + esc(p ? p.cat : "Sea2Sky Traders") + '</span>' +
+            '<h3>' + esc(title) + '</h3>' +
+            '<span class="item-unit">' + (p ? money(p.price) + " " + esc(p.unit) : "Price confirmed on WhatsApp") + '</span>' +
+          '</div>' +
+          '<div class="item-right">' +
+            (p ? '<span class="item-total">' + money(line) + '</span>' : '<span class="item-total ask">Price on request</span>') +
+            '<div class="qty">' +
+              '<button type="button" data-act="dec" aria-label="Decrease quantity of ' + esc(title) + '"><i class="fas fa-minus"></i></button>' +
+              '<span aria-live="polite">' + item.qty + '</span>' +
+              '<button type="button" data-act="inc" aria-label="Increase quantity of ' + esc(title) + '"><i class="fas fa-plus"></i></button>' +
+            '</div>' +
+            '<button type="button" class="remove" data-act="remove"><i class="fas fa-xmark"></i>Remove</button>' +
+          '</div>' +
+        '</article>';
+    });
+
+    cartCount.textContent = units;
+    list.innerHTML = html;
+    sumItems.textContent = units;
+    sumSubtotal.textContent = money(total);
+    sumTotal.textContent = money(total);
+
+    filled.hidden = items.length === 0;
+    empty.hidden = items.length !== 0;
+  }
+
+  /* ---------- Quantity and remove ---------- */
+  list.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-act]");
+    if (!btn) { return; }
+    var row = btn.closest(".item");
+    if (!row) { return; }
+
+    var name = row.dataset.name;
+    var act = btn.dataset.act;
+    var items = getGrouped();
+
+    if (act === "remove") {
+      items = items.filter(function (item) { return item.name !== name; });
+    } else {
+      items.forEach(function (item) {
+        if (item.name === name) {
+          item.qty = Math.max(1, item.qty + (act === "inc" ? 1 : -1));
+        }
+      });
+    }
+
+    saveGrouped(items);
+    render();
+  });
+
+  document.getElementById("clearCart").addEventListener("click", function () {
+    if (window.confirm("Remove all items from your cart?")) {
+      saveRaw([]);
+      render();
+    }
+  });
+
+  /* ---------- Checkout message ---------- */
+  function field(id) { return document.getElementById(id).value.trim(); }
+
+  function buildOrder() {
+    var items = getGrouped();
+    if (!items.length) { return null; }
+
+    var lines = ["Hi, I'd like to place an order:"];
+    var total = 0;
+
+    items.forEach(function (item) {
+      var p = PRODUCTS[item.name] || null;
+      var title = p && p.title ? p.title : item.name;
+      if (p) {
+        var line = p.price * item.qty;
+        total += line;
+        lines.push("- " + title + " x " + item.qty + " = " + money(line));
+      } else {
+        lines.push("- " + title + " x " + item.qty + " (price to be confirmed)");
+      }
+    });
+
+    lines.push("Estimated total: " + money(total));
+
+    var name = field("shipName");
+    var country = field("shipCountry");
+    var city = field("shipCity");
+    var notes = field("shipNotes");
+    var place = [city, country].filter(Boolean).join(", ");
+
+    if (name || place || notes) { lines.push(""); }
+    if (name) { lines.push("Name: " + name); }
+    if (place) { lines.push("Ship to: " + place); }
+    if (notes) { lines.push("Notes: " + notes); }
+
+    lines.push("");
+    lines.push("Please confirm availability, shipping cost and delivery time.");
+
+    return lines.join("\n");
+  }
+
+  document.getElementById("checkoutWa").addEventListener("click", function () {
+    var message = buildOrder();
+    if (!message) { return; }
+    window.open("https://wa.me/923008697543?text=" + encodeURIComponent(message), "_blank");
+  });
+
+  document.getElementById("checkoutMail").addEventListener("click", function () {
+    var message = buildOrder();
+    if (!message) { return; }
+    window.location.href = "mailto:sales@sea2skytraders.com"
+      + "?subject=" + encodeURIComponent("New order from the website")
+      + "&body=" + encodeURIComponent(message);
+  });
+
+  /* ---------- Start ---------- */
+  render();
+  window.addEventListener("pageshow", render);
+  window.addEventListener("storage", render);
+
+})();
+</script>
+
+</body>
+</html>
