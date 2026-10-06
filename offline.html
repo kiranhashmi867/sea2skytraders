@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Can't load this page | Sea2Sky Traders</title>
+<meta name="theme-color" content="#0e3b2e">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  font-size:16px;line-height:1.65;color:#dbe9e0;
+  background:
+    radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
+    radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
+    linear-gradient(135deg,#082a20 0%,#0e3b2e 55%,#17543f 100%);
+  background-attachment:fixed;
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 22px;
+  -webkit-font-smoothing:antialiased;
+}
+main{width:100%;max-width:440px;text-align:center}
+.logo{width:96px;height:96px;margin:0 auto 26px;display:block}
+h1{
+  font-family:'Fraunces',Georgia,'Times New Roman',serif;
+  font-weight:600;font-size:2.2rem;line-height:1.15;color:#fff;margin-bottom:12px;
+}
+p{color:#cfe0d6;margin-bottom:26px}
+button{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 34px;border:0;border-radius:999px;cursor:pointer;
+  font-family:inherit;font-weight:700;font-size:1rem;line-height:1;
+  color:#082a20;background:linear-gradient(135deg,#f6d77a,#e0a526);
+  box-shadow:0 14px 30px -12px rgba(224,165,38,.75);
+}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.help{
+  margin:34px 0 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:.92rem;color:#a9c0b4;
+}
+.help strong{color:#f6d77a;font-weight:600;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<main>
+  <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+    <circle cx="32" cy="32" r="30" fill="#17543f"/>
+    <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f6d77a" stroke-width="1" opacity=".55"/>
+    <circle cx="32" cy="24" r="8" fill="#f2c14e"/>
+    <path d="M10 38 Q17 32 24 38 T38 38 T52 38" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M14 46 Q20 41 26 46 T38 46 T50 46" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+  </svg>
+
+  <h1>Can't load this page</h1>
+  <p>Check your internet connection and try again. This page reloads by itself when you are back online.</p>
+
+  <button type="button" id="retry">Try again</button>
+
+  <p class="help">Need help with an order? Message Sea2Sky Traders on WhatsApp: <strong>+92 300 8697543</strong></p>
+</main>
+
+<script>
+document.getElementById("retry").addEventListener("click", function () {
+  window.location.reload();
+});
+window.addEventListener("online", function () {
+  window.location.reload();
+});
+</script>
+
+</body>
+</html>

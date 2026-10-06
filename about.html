@@ -16,6 +16,8 @@
 <meta property="og:image" content="https://images.unsplash.com/photo-1508779018996-601e37fa274e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e3b2e">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e3b2e'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23f2c14e'/%3E%3Cpath d='M10 38 Q17 32 24 38 T38 38 T52 38' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round'/%3E%3Cpath d='M14 46 Q20 41 26 46 T38 46 T50 46' fill='none' stroke='%23f2c14e' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
 
@@ -252,15 +254,15 @@ footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px
 .footer-bottom a{color:var(--gold-light)}
 
 /* FLOATING CONTACT */
-.fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.contact-fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
 .fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .3s,transform .3s,visibility .3s}
-.fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.contact-fab.open .fab-options{opacity:1;visibility:visible;transform:none}
 .fab-opt{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.3rem;box-shadow:0 10px 24px rgba(0,0,0,.28);transition:transform .25s}
 .fab-opt:hover{transform:scale(1.1)}
 .fab-wa{background:#25d366}
 .fab-mail{background:var(--gold);color:var(--pine-deep)}
 .fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold-light);background:var(--pine);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(8,42,32,.45);transition:background .3s,color .3s}
-.fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
+.contact-fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
 
 /* RESPONSIVE */
 @media(max-width:1100px){
@@ -314,7 +316,7 @@ footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px
   .cta-box{padding:52px 22px}
   .cta-actions .btn{width:100%}
   .footer-grid{grid-template-columns:1fr;gap:34px}
-  .fab{right:14px;bottom:14px}
+  .contact-fab{right:14px;bottom:14px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -692,7 +694,7 @@ footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px
 </footer>
 
 <!-- FLOATING CONTACT TOGGLE -->
-<div class="fab" id="fab">
+<div class="contact-fab" id="fab">
   <div class="fab-options">
     <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="Email us" aria-label="Email"><i class="fas fa-envelope"></i></a>
     <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="WhatsApp us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -753,6 +755,15 @@ footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px
   window.addEventListener("storage", updateCartCount);
 
 })();
+</script>
+
+<script>
+// App mode: offline page and saved copies of pages (see sw.js)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
 </script>
 
 </body>
