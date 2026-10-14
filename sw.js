@@ -7,7 +7,7 @@
    - A link to a page that does not exist: the visitor is taken to the home page.
    Photos, fonts and icons are left to the browser. */
 
-const CACHE = "s2s-pages-v1";
+const CACHE = "s2s-pages-v2";
 const HOME_URL = "/";
 const OFFLINE_URL = "/offline.html";
 const HOME_KEY = self.location.origin + "/";
