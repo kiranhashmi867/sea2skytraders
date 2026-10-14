@@ -15,16 +15,15 @@
 <meta property="og:url" content="https://sea2skytraders.com/">
 <meta property="og:image" content="https://sea2skytraders.com/img-giftbox.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0e3b2e">
+<meta name="theme-color" content="#123a2e">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e3b2e'/%3E%3Cpath d='M12 40 A20 20 0 0 1 52 40' fill='none' stroke='%23d9a441' stroke-width='3'/%3E%3Cpath d='M14 48 L29 22 L44 48Z' fill='%2329735a'/%3E%3Cpath d='M30 48 L40 32 L50 48Z' fill='%23d9a441'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="icon-192.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <script type="application/ld+json">
@@ -52,33 +51,26 @@
 
 <style>
 :root{
-  --pine:#0e3b2e;
-  --pine-deep:#082a20;
-  --pine-soft:#17543f;
-  --gold:#d9a441;
-  --gold-light:#f3d98b;
-  --gold-deep:#9c6f14;
-  --cream:#faf6ee;
-  --sand:#f3ece0;
-  --sage:#f3f7f2;
-  --ink:#13251e;
-  --muted:#5d6e66;
-  --line:#e6e0d4;
-  --shadow:0 24px 60px -28px rgba(8,42,32,.35);
-  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --green:#123a2e;
+  --green-deep:#0b2a21;
+  --green-soft:#1d4c3d;
+  --gold:#b8904a;
+  --gold-light:#e3c98f;
+  --gold-deep:#8a6a2c;
+  --ivory:#fbf8f2;
+  --stone:#f3eee4;
+  --line:#e7dfd0;
+  --ink:#1c2420;
+  --muted:#626b65;
+  --shadow:0 30px 60px -36px rgba(11,42,33,.45);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
   --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
 }
 
-/* category colours */
-.c-dry{--c1:#b87120;--c2:#86490f;--soft:#fdf3e2}
-.c-salt{--c1:#d9577c;--c2:#ab2e5b;--soft:#fdedf1}
-.c-rice{--c1:#c9a24a;--c2:#8f6b17;--soft:#fbf5e4}
-.c-fresh{--c1:#35903f;--c2:#1b6b33;--soft:#eaf6ec}
-
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em;color:var(--pine);text-wrap:balance}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-variant-numeric:lining-nums;font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--ink);background:var(--ivory);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.005em;color:var(--green);text-wrap:balance}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 ul,ol{list-style:none}
@@ -87,245 +79,241 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .container{width:92%;max-width:1240px;margin:0 auto}
 
 /* BUTTONS */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:var(--sans);font-weight:700;font-size:.97rem;line-height:1;border:0;cursor:pointer;white-space:nowrap;transition:transform .25s,box-shadow .25s,background .25s}
-.btn:hover{transform:translateY(-2px)}
-.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--pine-deep);box-shadow:0 14px 30px -12px rgba(217,164,65,.8)}
-.btn-pine{background:var(--pine);color:#fff}
-.btn-pine:hover{background:var(--pine-soft)}
-.btn-line{border:1.5px solid rgba(255,255,255,.45);color:#fff}
-.btn-line:hover{background:rgba(255,255,255,.1)}
-.btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 14px 30px -12px rgba(37,211,102,.7)}
-.btn-sm{padding:12px 20px;font-size:.9rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:2px;font-family:var(--sans);font-weight:600;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;line-height:1;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold-deep)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-soft)}
+.btn-outline{border-color:rgba(227,201,143,.6);color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.08)}
+.btn-wa{background:#128c7e;color:#fff}
+.btn-wa:hover{background:#0e7065}
 
 /* TOP BAR */
-.topbar{background:var(--pine-deep);color:#d8e6dd;font-size:.86rem}
+.topbar{background:var(--green-deep);color:#d6e2db;font-size:.8rem;letter-spacing:.04em}
 .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
 .topbar i{color:var(--gold-light);margin-right:8px}
-.topbar-right{display:flex;gap:24px}
+.topbar-right{display:flex;gap:26px}
 .topbar a:hover{color:var(--gold-light)}
 
 /* HEADER */
-header.site{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 6px 24px -18px rgba(8,42,32,.5)}
-.navbar{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+header.site{position:sticky;top:0;z-index:900;background:rgba(251,248,242,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.navbar{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{display:flex;align-items:center;gap:12px}
-.logo svg{width:54px;height:42px;flex-shrink:0}
-.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.6rem;color:var(--pine);line-height:1;letter-spacing:-.01em}
-.logo-word b span{color:#b98420}
-.logo-word small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.34em;color:var(--pine-soft);margin-top:5px;text-transform:uppercase}
-.nav ul{display:flex;align-items:center;gap:30px}
-.nav a{font-weight:600;font-size:.97rem;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
-.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
-.nav a:hover,.nav a.active{color:var(--pine)}
+.logo svg{width:60px;height:42px;flex-shrink:0}
+.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.95rem;color:var(--green);line-height:.9;letter-spacing:-.01em}
+.logo-word b span{color:var(--gold)}
+.logo-word small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.42em;color:var(--green-soft);margin-top:6px;text-transform:uppercase}
+.nav ul{display:flex;align-items:center;gap:34px}
+.nav a{font-weight:500;font-size:.84rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .25s}
+.nav a:hover,.nav a.active{color:var(--green)}
 .nav a:hover::after,.nav a.active::after{width:100%}
 .nav-actions{display:flex;align-items:center;gap:10px}
-.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.15rem;transition:background .25s}
-.icon-btn.wa{color:#128c7e}
-.icon-btn:hover{background:var(--sage)}
-.cart-btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--pine);color:#fff;padding:11px 14px 11px 20px;border-radius:999px;font-weight:700;font-size:.92rem;line-height:1;transition:background .25s}
-.cart-btn:hover{background:var(--pine-soft)}
-.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--gold);color:var(--pine-deep);font-size:.78rem;font-weight:700;display:inline-grid;place-items:center;line-height:1}
-.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--pine);font-size:1.1rem;cursor:pointer}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.1rem;color:#128c7e;transition:border-color .25s}
+.icon-btn:hover{border-color:var(--gold)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:12px 14px 12px 20px;border-radius:999px;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;line-height:1;transition:background .25s}
+.cart-btn:hover{background:var(--green-soft)}
+.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--gold);color:#fff;font-size:.76rem;font-weight:700;letter-spacing:0;display:inline-grid;place-items:center;line-height:1}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--green);font-size:1.1rem;cursor:pointer}
 
 /* CATEGORY BAR */
-.catbar{background:var(--cream);border-bottom:1px solid var(--line)}
-.catbar .container{display:flex;align-items:center;gap:10px;min-height:56px;overflow-x:auto;scrollbar-width:none}
+.catbar{background:var(--stone);border-bottom:1px solid var(--line)}
+.catbar .container{display:flex;align-items:center;gap:28px;min-height:50px;overflow-x:auto;scrollbar-width:none}
 .catbar .container::-webkit-scrollbar{display:none}
-.catbar a{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.9rem;color:var(--ink);white-space:nowrap;transition:border-color .2s,color .2s}
-.catbar a:hover{border-color:var(--c1,var(--pine));color:var(--c2,var(--pine))}
-.catbar a i{color:var(--pine)}
-.catbar .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
-.catbar a.catbar-quote{margin-left:auto;background:var(--pine);border-color:var(--pine);color:#fff}
-.catbar a.catbar-quote i{color:var(--gold-light)}
-.catbar a.catbar-quote:hover{background:var(--pine-soft);color:#fff}
+.catbar a{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:.84rem;color:var(--ink);white-space:nowrap;transition:color .2s}
+.catbar a:hover{color:var(--gold-deep)}
+.catbar a i{color:var(--gold-deep)}
+.catbar .sep{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.catbar a.catbar-quote{margin-left:auto;color:var(--green);font-weight:600}
 
 /* HERO */
 .hero{position:relative;color:#fff;overflow:hidden;background:
-  radial-gradient(800px 420px at 85% 10%,rgba(243,217,139,.18),transparent 60%),
-  linear-gradient(135deg,var(--pine-deep) 0%,var(--pine) 55%,#145140 100%)}
-.hero::before{content:"";position:absolute;inset:auto 0 0 0;height:180px;opacity:.12;background:
-  linear-gradient(160deg,transparent 48%,#fff 49%,#fff 51%,transparent 52%) 0 0/260px 180px repeat-x}
-.hero .container{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;padding:84px 0 96px}
-.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light)}
-.kicker::before{content:"";width:34px;height:1.5px;background:var(--gold)}
-.hero h1{font-size:clamp(2.5rem,5vw,4.1rem);color:#fff;margin:18px 0 20px}
+  radial-gradient(900px 500px at 85% 0%,rgba(227,201,143,.16),transparent 60%),
+  linear-gradient(140deg,var(--green-deep) 0%,var(--green) 60%,#164536 100%)}
+.hero .container{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:90px 0 100px}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-light)}
+.kicker::before{content:"";width:36px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(2.8rem,5.2vw,4.6rem);font-weight:600;color:#fff;margin:20px 0 22px}
 .hero h1 em{font-style:italic;color:var(--gold-light)}
-.hero-lead{font-size:1.12rem;color:#d3e2d9;max-width:560px;margin-bottom:32px}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
-.hero-badges{display:flex;flex-wrap:wrap;gap:22px}
-.hero-badges span{display:flex;align-items:center;gap:10px;font-size:.9rem;font-weight:600;color:#e6efe9}
-.hero-badges i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--gold);color:var(--gold-light);font-size:.9rem}
-.hero-art{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:16px;height:520px}
-.hero-art figure{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.7);border:1px solid rgba(243,217,139,.25)}
-.hero-art figure:first-child{grid-row:1 / 3}
-.hero-art img{width:100%;height:100%;object-fit:cover}
-.hero-art figcaption{position:absolute;left:14px;bottom:14px;background:rgba(8,42,32,.82);color:#fff;font-size:.8rem;font-weight:700;padding:7px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero-lead{font-size:1.08rem;color:#d1ddd6;max-width:540px;margin-bottom:36px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:28px;padding-top:28px;border-top:1px solid rgba(227,201,143,.25)}
+.hero-badges span{display:flex;align-items:center;gap:10px;font-size:.84rem;letter-spacing:.06em;color:#e6eee9}
+.hero-badges i{color:var(--gold-light)}
+.hero-art{display:grid;gap:16px}
+.frame{position:relative;overflow:hidden;border:1px solid rgba(227,201,143,.45);box-shadow:0 40px 70px -40px rgba(0,0,0,.8)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame-gift{aspect-ratio:602/230}
+.frame-jars{aspect-ratio:1144/252}
 
 /* TRUST STRIP */
-.trust{background:var(--cream);border-bottom:1px solid var(--line)}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
 .trust .container{display:grid;grid-template-columns:repeat(4,1fr)}
-.trust-item{display:flex;align-items:center;gap:14px;padding:26px 18px}
+.trust-item{display:flex;align-items:center;gap:16px;padding:30px 20px}
 .trust-item + .trust-item{border-left:1px solid var(--line)}
-.trust-item i{width:48px;height:48px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--gold);color:var(--pine);font-size:1.1rem;background:#fff}
-.trust-item strong{display:block;font-size:.97rem;color:var(--pine);line-height:1.3}
+.trust-item i{font-size:1.4rem;color:var(--gold);width:28px;text-align:center}
+.trust-item strong{display:block;font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--green);line-height:1.2}
 .trust-item span{font-size:.84rem;color:var(--muted)}
 
 /* SECTIONS */
-.section{padding:100px 0}
-.section-cream{background:var(--cream)}
-.section-sage{background:var(--sage)}
-.head{max-width:720px;margin:0 auto 54px;text-align:center}
+.section{padding:110px 0}
+.section-white{background:#fff}
+.section-stone{background:var(--stone)}
+.head{max-width:700px;margin:0 auto 60px;text-align:center}
 .head .kicker{justify-content:center;color:var(--gold-deep)}
-.head .kicker::after{content:"";width:34px;height:1.5px;background:var(--gold)}
-.head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:14px 0}
-.head p{color:var(--muted);font-size:1.05rem}
+.head .kicker::after{content:"";width:36px;height:1px;background:var(--gold)}
+.head h2{font-size:clamp(2.3rem,4vw,3.4rem);margin:16px 0 14px}
+.head p{color:var(--muted);font-size:1.02rem}
 
 /* CATEGORIES */
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.cat-card{position:relative;display:flex;flex-direction:column;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .3s}
-.cat-card:hover{transform:translateY(-6px)}
-.cat-img{position:relative;height:220px;overflow:hidden;background:linear-gradient(135deg,var(--c1),var(--c2))}
-.cat-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.cat-card:hover .cat-img img{transform:scale(1.06)}
-.cat-tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--c2);font-size:.74rem;font-weight:700;padding:6px 12px;border-radius:999px}
-.cat-body{padding:24px;display:flex;flex-direction:column;flex:1}
-.cat-body h3{font-size:1.45rem;margin-bottom:8px}
-.cat-body p{color:var(--muted);font-size:.93rem;margin-bottom:16px}
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
-.chips span{font-size:.76rem;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--soft);color:var(--c2)}
-.cat-link{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.93rem;color:var(--c2)}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.cat-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);transition:transform .35s,box-shadow .35s}
+.cat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.cat-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--stone)}
+.cat-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.cat-card:hover .cat-img img{transform:scale(1.05)}
+.cat-tag{position:absolute;top:14px;left:14px;background:rgba(251,248,242,.95);color:var(--green);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px}
+.cat-body{padding:26px 24px 24px;display:flex;flex-direction:column;flex:1}
+.cat-body h3{font-size:1.75rem;margin-bottom:8px}
+.cat-body p{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.chips span{font-size:.74rem;padding:4px 10px;background:var(--stone);color:var(--green-soft)}
+.cat-link{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
 .cat-link i{transition:transform .25s}
 .cat-card:hover .cat-link i{transform:translateX(4px)}
 
 /* PRODUCTS */
-.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.prod{display:flex;flex-direction:column;background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 40px -30px rgba(8,42,32,.45);transition:transform .3s,box-shadow .3s}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.prod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);transition:transform .35s,box-shadow .35s}
 .prod:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.prod-img{position:relative;height:200px;overflow:hidden;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.prod-img{position:relative;aspect-ratio:16/11;overflow:hidden;background:var(--stone)}
 .prod-img img{width:100%;height:100%;object-fit:cover}
-.badge{position:absolute;top:12px;left:12px;font-size:.72rem;font-weight:700;padding:6px 11px;border-radius:999px;background:var(--pine);color:var(--gold-light)}
-.prod-body{padding:20px;display:flex;flex-direction:column;flex:1}
-.prod-cat{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c2)}
-.prod-body h3{font-size:1.15rem;margin:6px 0}
+.badge{position:absolute;top:12px;left:12px;font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 11px;background:var(--green);color:var(--gold-light)}
+.prod-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.prod-cat{font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+.prod-body h3{font-size:1.45rem;margin:6px 0}
 .prod-body p{font-size:.88rem;color:var(--muted);margin-bottom:14px}
-.sizes{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-.sizes span{font-size:.74rem;font-weight:600;padding:4px 9px;border-radius:8px;border:1px solid var(--line);color:var(--ink)}
-.prod-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.price{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--pine);line-height:1}
-.price small{font-family:var(--sans);font-size:.75rem;font-weight:600;color:var(--muted);margin-left:3px}
-.price .from{display:block;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.sizes{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.sizes span{font-size:.72rem;padding:3px 9px;border:1px solid var(--line);color:var(--ink)}
+.prod-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding-top:16px;border-top:1px solid var(--line)}
+.price{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--green);line-height:1}
+.price .from{display:block;font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
 .prod-actions{display:flex;gap:8px}
-.mini{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:999px;font-size:.82rem;font-weight:700;background:var(--pine);color:#fff;transition:background .25s}
-.mini:hover{background:var(--pine-soft)}
-.mini-wa{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:1.05rem}
-.note{text-align:center;color:var(--muted);font-size:.88rem;margin-top:30px}
+.mini{display:inline-flex;align-items:center;padding:10px 16px;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:var(--green);color:#fff;transition:background .25s}
+.mini:hover{background:var(--green-soft)}
+.mini-wa{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#128c7e;color:#fff;font-size:1rem}
+.note{text-align:center;color:var(--muted);font-size:.86rem;margin-top:34px}
 .note i{color:var(--gold-deep);margin-right:6px}
-.center{text-align:center;margin-top:40px}
+.center{text-align:center;margin-top:36px}
 
 /* RICE SPOTLIGHT */
-.rice{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
-.rice-media{position:relative;height:540px}
-.rice-media img{position:absolute;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}
-.rice-media .r1{left:0;top:0;width:72%;height:78%}
-.rice-media .r2{right:0;bottom:0;width:52%;height:52%;border:8px solid var(--cream)}
-.rice-copy h2{font-size:clamp(2rem,3.4vw,2.8rem);margin:14px 0 16px}
-.rice-copy > p{color:var(--muted);margin-bottom:28px}
-.rice-list{display:grid;gap:12px;margin-bottom:30px}
-.rice-item{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
-.rice-item i{width:42px;height:42px;flex-shrink:0;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--c2)}
+.rice{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.rice-media{position:relative;aspect-ratio:1/1}
+.rice-media img{position:absolute;object-fit:cover;box-shadow:var(--shadow)}
+.rice-media .r1{left:0;top:0;width:74%;height:76%}
+.rice-media .r2{right:0;bottom:0;width:52%;height:50%;border:10px solid var(--ivory)}
+.rice-copy h2{font-size:clamp(2.3rem,3.8vw,3.2rem);margin:16px 0 18px}
+.rice-copy > p{color:var(--muted);margin-bottom:30px}
+.rice-list{border-top:1px solid var(--line);margin-bottom:32px}
+.rice-item{display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.rice-item i{color:var(--gold);font-size:1.1rem;width:22px;text-align:center}
 .rice-item div{flex:1}
-.rice-item strong{display:block;color:var(--pine);font-size:1rem}
+.rice-item strong{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--green);line-height:1.2}
 .rice-item span{font-size:.85rem;color:var(--muted)}
-.rice-item b{font-family:var(--serif);font-size:1.15rem;color:var(--pine);white-space:nowrap}
-.rice-item b small{font-family:var(--sans);font-size:.72rem;color:var(--muted);font-weight:600}
+.rice-item b{font-family:var(--serif);font-size:1.35rem;color:var(--green);white-space:nowrap}
+.rice-item b small{font-family:var(--sans);font-size:.72rem;color:var(--muted);font-weight:500}
 
 /* GIFT SETS */
 .gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.gift{background:#fff;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column}
-.gift-img{height:300px;background:var(--sand)}
+.gift{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.gift:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.gift-img{aspect-ratio:400/460;overflow:hidden;background:#ebe7e0}
 .gift-img img{width:100%;height:100%;object-fit:cover}
-.gift-body{padding:24px;display:flex;flex-direction:column;flex:1}
-.gift-num{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
-.gift-body h3{font-size:1.4rem;margin:6px 0 8px}
+.gift-body{padding:26px;display:flex;flex-direction:column;flex:1}
+.gift-num{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep)}
+.gift-body h3{font-size:1.75rem;margin:6px 0 8px}
 .gift-body p{color:var(--muted);font-size:.92rem;margin-bottom:18px}
-.gift-banner{margin-top:28px;display:grid;grid-template-columns:1.3fr 1fr;align-items:center;background:var(--pine);border-radius:28px;overflow:hidden;color:#fff}
-.gift-banner img{width:100%;height:100%;min-height:260px;object-fit:cover}
-.gift-banner div{padding:40px}
-.gift-banner h3{color:#fff;font-size:1.9rem;margin:12px 0}
-.gift-banner p{color:#cfe0d6;margin-bottom:24px}
+.gift-banner{margin-top:30px;display:grid;grid-template-columns:1.25fr 1fr;align-items:stretch;background:var(--green);color:#fff}
+.gift-banner .banner-img{position:relative;min-height:280px;overflow:hidden}
+.gift-banner .banner-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gift-banner .banner-copy{padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
+.gift-banner h3{color:#fff;font-size:2.2rem;margin:14px 0 10px}
+.gift-banner p{color:#cfdcd4;margin-bottom:24px;font-size:.95rem}
+.gift-banner .btn{align-self:flex-start}
 
 /* EXPORT */
-.export{position:relative;color:#fff;background:
-  radial-gradient(700px 380px at 10% 0%,rgba(243,217,139,.16),transparent 62%),
-  linear-gradient(135deg,var(--pine-deep),var(--pine))}
-.export .container{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.export h2{color:#fff;font-size:clamp(2rem,3.4vw,2.8rem);margin:14px 0 16px}
-.export p.lead{color:#cfe0d6;margin-bottom:28px}
-.pack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:30px}
-.pack{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(243,217,139,.2)}
+.export{color:#fff;background:linear-gradient(140deg,var(--green-deep),var(--green))}
+.export .container{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.export h2{color:#fff;font-size:clamp(2.3rem,3.8vw,3.2rem);margin:16px 0 18px}
+.export p.lead{color:#cfdcd4;margin-bottom:30px}
+.pack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(227,201,143,.25);border:1px solid rgba(227,201,143,.25);margin-bottom:34px}
+.pack{display:flex;align-items:center;gap:14px;padding:18px;background:var(--green)}
 .pack i{color:var(--gold-light);font-size:1.1rem;width:22px;text-align:center}
-.pack strong{display:block;font-size:.93rem}
-.pack span{font-size:.8rem;color:#bcd0c5}
-.export-img{border-radius:26px;overflow:hidden;border:1px solid rgba(243,217,139,.3);box-shadow:0 30px 60px -28px rgba(0,0,0,.7);background:#fff}
+.pack strong{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:600;line-height:1.2}
+.pack span{font-size:.8rem;color:#b9cbc1}
+.export-img{border:1px solid rgba(227,201,143,.4);box-shadow:0 40px 70px -40px rgba(0,0,0,.8);background:#fff}
 .export-img img{width:100%}
 .export-actions{display:flex;flex-wrap:wrap;gap:14px}
 
 /* HOW TO ORDER */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px}
-.step-no{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:var(--gold-light);font-family:var(--serif);font-weight:700;font-size:1.3rem;margin-bottom:18px}
-.step h3{font-size:1.25rem;margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border:1px solid var(--line);padding:36px 30px}
+.step-no{font-family:var(--serif);font-size:3rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:14px}
+.step h3{font-size:1.6rem;margin-bottom:8px}
 .step p{color:var(--muted);font-size:.93rem}
 
 /* TEAM */
-.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:980px;margin:0 auto}
-.team-card{background:#fff;border-radius:24px;padding:30px;border:1px solid var(--line);border-top:4px solid var(--gold);box-shadow:var(--shadow)}
-.team-top{display:flex;align-items:center;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:12px}
-.avatar{width:62px;height:62px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:var(--gold-light);font-family:var(--serif);font-weight:700;font-size:1.3rem;border:3px solid var(--sand)}
-.role{display:inline-block;font-size:.74rem;font-weight:700;color:var(--gold-deep);background:#fbf3df;padding:4px 10px;border-radius:999px;margin-bottom:6px}
-.team-top h3{font-size:1.4rem}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:1000px;margin:0 auto}
+.team-card{background:#fff;padding:34px;border:1px solid var(--line);border-top:3px solid var(--gold)}
+.team-top{display:flex;align-items:center;gap:18px;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.avatar{width:64px;height:64px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--gold-light);font-family:var(--serif);font-weight:700;font-size:1.5rem}
+.role{display:block;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
+.team-top h3{font-size:1.75rem}
 .team-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem}
 .team-list li:last-child{border-bottom:0}
-.team-list i{color:var(--gold-deep);margin-top:4px;width:16px}
-.team-list a:hover{color:var(--pine-soft)}
-.team-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.chip-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-size:.86rem;font-weight:700}
+.team-list i{color:var(--gold-deep);margin-top:5px;width:16px}
+.team-list a:hover{color:var(--gold-deep)}
+.team-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chip-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 .chip-wa{background:#128c7e;color:#fff}
-.chip-mail{background:var(--pine);color:#fff}
+.chip-mail{background:var(--green);color:#fff}
 .chip-snap{background:#fffc00;color:#111}
 
 /* CTA */
-.cta{padding:90px 0;text-align:center;background:var(--cream)}
-.cta h2{font-size:clamp(2rem,3.4vw,2.8rem);margin:14px 0}
-.cta p{color:var(--muted);max-width:620px;margin:0 auto 28px}
+.cta{padding:100px 0;text-align:center;background:var(--stone)}
+.cta h2{font-size:clamp(2.3rem,3.8vw,3.2rem);margin:16px 0 14px}
+.cta p{color:var(--muted);max-width:600px;margin:0 auto 30px}
+.cta .kicker{color:var(--gold-deep)}
 .cta-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
 
 /* FOOTER */
-footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold)}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:44px;padding:76px 0 52px}
-.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
-.footer-logo svg{width:54px;height:42px}
-.footer-logo b{display:block;font-family:var(--serif);font-weight:700;font-size:1.5rem;color:#fff;line-height:1}
+footer{background:var(--green-deep);color:#b9cbc1}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.35fr;gap:48px;padding:84px 0 56px}
+.footer-logo{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.footer-logo svg{width:78px;height:55px;flex-shrink:0}
+.footer-logo b{display:block;font-family:var(--serif);font-weight:700;font-size:2.4rem;color:#fff;line-height:.9}
 .footer-logo b span{color:var(--gold)}
-.footer-logo small{display:block;font-size:.62rem;font-weight:700;letter-spacing:.34em;color:#9fb8ab;margin-top:5px;text-transform:uppercase}
-.footer-tag{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:12px}
-.footer-about{font-size:.92rem;margin-bottom:22px}
+.footer-logo small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.44em;color:#c8d6ce;margin-top:8px;text-transform:uppercase}
+.footer-tag{font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px}
+.footer-about{font-size:.9rem;margin-bottom:24px;max-width:340px}
 .socials{display:flex;gap:10px}
-.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1rem;transition:transform .25s}
+.socials a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.95rem;transition:transform .25s}
 .socials a:hover{transform:translateY(-3px)}
 .s-fb{background:#1877f2}
 .s-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
 .s-wa{background:#25d366}
 .s-sc{background:#fffc00;color:#111!important}
-.footer-title{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--gold-light);margin-bottom:18px}
+.footer-title{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:#fff;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(227,201,143,.3)}
 .footer-links li{margin-bottom:10px}
-.footer-links a{font-size:.93rem;transition:color .2s}
-.footer-links a:hover{color:#fff}
-.contact-line{display:flex;gap:12px;font-size:.92rem;margin-bottom:14px}
-.contact-line i{color:var(--gold-light);margin-top:4px;width:16px}
+.footer-links a{font-size:.92rem;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.contact-line{display:flex;gap:12px;font-size:.9rem;margin-bottom:14px}
+.contact-line i{color:var(--gold-light);margin-top:5px;width:16px}
 .contact-line strong{color:#fff;font-weight:600}
-.contact-line a:hover{color:#fff}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1)}
-.footer-bottom-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 0;font-size:.85rem}
+.contact-line a:hover{color:var(--gold-light)}
+.footer-bottom{border-top:1px solid rgba(227,201,143,.2)}
+.footer-bottom-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 0;font-size:.82rem}
 .footer-bottom a{color:var(--gold-light)}
 
 /* FLOATING CONTACT */
@@ -335,50 +323,53 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 .fab-opt{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.3rem;box-shadow:0 10px 24px rgba(0,0,0,.28);transition:transform .25s}
 .fab-opt:hover{transform:scale(1.1)}
 .fab-wa{background:#25d366}
-.fab-mail{background:var(--gold);color:var(--pine-deep)}
-.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold-light);background:var(--pine);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(8,42,32,.45);transition:background .3s,color .3s}
-.contact-fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
+.fab-mail{background:var(--gold)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:2px solid var(--gold-light);background:var(--green);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(11,42,33,.45);transition:background .3s,color .3s}
+.contact-fab.open .fab-main{background:var(--gold);color:#fff}
 
 /* RESPONSIVE */
 @media (max-width:1100px){
   .cat-grid,.prod-grid{grid-template-columns:repeat(2,1fr)}
   .hero .container,.rice,.export .container{grid-template-columns:1fr}
-  .hero-art{height:440px}
   .trust .container{grid-template-columns:repeat(2,1fr)}
   .trust-item:nth-child(3){border-left:0}
-  .footer-grid{grid-template-columns:1fr 1fr}
+  .trust-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .rice-media{max-width:560px}
+  .footer-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-brand{grid-column:1 / -1}
 }
-@media (max-width:900px){
+@media (max-width:960px){
   .menu-btn{display:grid;place-items:center}
-  .nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 20px 30px -20px rgba(8,42,32,.4);padding:8px 4%;display:none}
+  .nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ivory);border-bottom:1px solid var(--line);box-shadow:0 20px 30px -20px rgba(11,42,33,.4);padding:8px 4%;display:none}
   .nav ul.active{display:flex}
   .nav li a{display:block;padding:15px 0;border-bottom:1px solid var(--line)}
   .nav a::after{display:none}
   .gift-grid,.steps{grid-template-columns:1fr}
+  .gift-grid{max-width:460px;margin:0 auto}
   .gift-banner{grid-template-columns:1fr}
+  .gift-banner .banner-img{min-height:0;aspect-ratio:602/230}
   .team-grid{grid-template-columns:1fr}
   .topbar-right{display:none}
   .topbar .container{justify-content:center;text-align:center}
 }
 @media (max-width:640px){
-  .section{padding:72px 0}
-  .navbar{min-height:70px}
-  .logo svg{width:46px;height:36px}
-  .logo-word b{font-size:1.35rem}
-  .icon-btn.wa{display:none}
+  .section{padding:76px 0}
+  .navbar{min-height:72px}
+  .logo svg{width:50px;height:35px}
+  .logo-word b{font-size:1.6rem}
+  .icon-btn{display:none}
   .cart-btn{padding:0;width:44px;height:44px;justify-content:center}
   .cart-label{display:none}
-  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid #fff;min-width:22px;height:22px;padding:0 5px}
-  .hero .container{padding:56px 0 70px;gap:40px}
-  .hero-art{height:360px;gap:10px}
-  .hero-badges{gap:14px}
+  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid var(--ivory);min-width:22px;height:22px;padding:0 5px}
+  .hero .container{padding:60px 0 72px;gap:44px}
+  .hero-badges{gap:16px}
   .cat-grid,.prod-grid{grid-template-columns:1fr}
   .trust .container{grid-template-columns:1fr}
   .trust-item + .trust-item{border-left:0;border-top:1px solid var(--line)}
-  .rice-media{height:380px}
   .pack-grid{grid-template-columns:1fr}
-  .gift-banner div{padding:28px}
-  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .gift-banner .banner-copy{padding:30px 26px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px 24px}
+  .footer-grid > div:last-child{grid-column:1 / -1}
   .contact-fab{right:14px;bottom:14px}
   .btn{white-space:normal;text-align:center}
 }
@@ -389,7 +380,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="container">
-    <p><i class="fas fa-truck-fast"></i>Worldwide shipping on retail and wholesale orders</p>
+    <p><i class="fas fa-earth-americas"></i>Worldwide shipping &middot; Retail &amp; wholesale orders</p>
     <div class="topbar-right">
       <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
@@ -402,12 +393,13 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
   <div class="container navbar">
 
     <a href="index.html" class="logo" aria-label="Sea2Sky Traders home">
-      <svg viewBox="0 0 64 50" aria-hidden="true">
-        <path d="M6 40 A26 26 0 0 1 58 40" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/>
-        <path d="M10 46 L28 16 L46 46 Z" fill="#0e3b2e"/>
-        <path d="M28 16 L22.5 25.5 L26 23.5 L28.5 26.5 L31.5 23 L33.5 25 Z" fill="#ffffff"/>
-        <path d="M30 46 L42 27 L56 46 Z" fill="#d9a441"/>
-        <path d="M42 27 L38.5 33 L41 31.5 L43 33.5 L45 31 Z" fill="#f3d98b"/>
+      <svg viewBox="0 0 80 56" aria-hidden="true">
+        <path d="M8 46 A32 32 0 0 1 72 46" fill="none" stroke="#b8904a" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M14 52 L35 16 L56 52 Z" fill="#123a2e"/>
+        <path d="M35 16 L29.2 25.9 L32.4 24.2 L35.2 27.4 L38.4 23.8 L40.8 25.1 Z" fill="#fbf8f2"/>
+        <path d="M37 52 L52 28 L68 52 Z" fill="#b8904a"/>
+        <path d="M52 28 L47.8 34.7 L50.6 33.4 L52.6 35.6 L55 33 L56.4 34.2 Z" fill="#f3e6c6"/>
+        <path d="M10 52 H70" stroke="#b8904a" stroke-width="1.6" stroke-linecap="round"/>
       </svg>
       <span class="logo-word">
         <b>Sea<span>2</span>Sky</b>
@@ -420,15 +412,15 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shipping-returns.html">Shipping</a></li>
+        <li><a href="blog.html">Journal</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
-      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn wa" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="cart.html" class="cart-btn" aria-label="Cart"><i class="fas fa-cart-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="cart.html" class="cart-btn" aria-label="Cart"><i class="fas fa-bag-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
     </div>
 
@@ -439,11 +431,15 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 <div class="catbar">
   <div class="container">
     <a href="shop.html"><i class="fas fa-store"></i>All products</a>
-    <a href="shop.html?cat=dry-fruits" class="c-dry"><span class="dot"></span>Dry Fruits</a>
-    <a href="shop.html?cat=pink-salt" class="c-salt"><span class="dot"></span>Pink Salt</a>
-    <a href="shop.html?cat=rice" class="c-rice"><span class="dot"></span>Rice</a>
-    <a href="shop.html?cat=fresh-fruits" class="c-fresh"><span class="dot"></span>Fresh Fruits</a>
-    <a href="contact.html" class="catbar-quote"><i class="fas fa-boxes-stacked"></i>Wholesale quote</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=dry-fruits">Dry Fruits</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=pink-salt">Himalayan Pink Salt</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=rice">Basmati Rice</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=fresh-fruits">Fresh Fruits</a>
+    <a href="#export" class="catbar-quote"><i class="fas fa-boxes-stacked"></i>Wholesale &amp; export</a>
   </div>
 </div>
 
@@ -455,8 +451,8 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
       <h1>From the Himalayas to your table, <em>packed with care.</em></h1>
       <p class="hero-lead">Premium dry fruits, pure Himalayan pink salt, aromatic basmati rice and fresh fruits from Pakistan. Everyday packs, luxury gift sets and export packaging for homes, retailers and importers worldwide.</p>
       <div class="hero-actions">
-        <a href="shop.html" class="btn btn-gold"><i class="fas fa-bag-shopping"></i>Shop the collection</a>
-        <a href="#export" class="btn btn-line">Bulk &amp; export enquiries</a>
+        <a href="shop.html" class="btn btn-gold">Shop the collection</a>
+        <a href="#gifts" class="btn btn-outline">Explore gift sets</a>
       </div>
       <div class="hero-badges">
         <span><i class="fas fa-leaf"></i>100% Natural</span>
@@ -465,9 +461,8 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
       </div>
     </div>
     <div class="hero-art">
-      <figure><img src="img-almond-gift.jpg" alt="Sea2Sky premium almonds six piece gift collection"><figcaption>Gift collections</figcaption></figure>
-      <figure><img src="img-pinksalt.jpg" alt="Himalayan pink salt in a wooden bowl"><figcaption>Himalayan pink salt</figcaption></figure>
-      <figure><img src="img-dates.jpg" alt="Premium dates in a carved bowl"><figcaption>Premium dates</figcaption></figure>
+      <div class="frame frame-gift"><img src="img-giftbox.jpg" alt="Sea2Sky luxury dry fruits gift box with six varieties"></div>
+      <div class="frame frame-jars"><img src="img-jars.jpg" alt="Sea2Sky premium jars: almonds, pistachios, cashews, walnuts, dates and raisins"></div>
     </div>
   </div>
 </section>
@@ -476,7 +471,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 <section class="trust">
   <div class="container">
     <div class="trust-item"><i class="fas fa-leaf"></i><div><strong>100% Natural</strong><span>No additives, carefully selected</span></div></div>
-    <div class="trust-item"><i class="fas fa-gem"></i><div><strong>Premium packaging</strong><span>Pouches, glass jars and gift boxes</span></div></div>
+    <div class="trust-item"><i class="fas fa-gift"></i><div><strong>Premium packaging</strong><span>Pouches, glass jars and gift boxes</span></div></div>
     <div class="trust-item"><i class="fas fa-boxes-stacked"></i><div><strong>Retail to export</strong><span>From 250g packs to 25kg bags</span></div></div>
     <div class="trust-item"><i class="fas fa-earth-americas"></i><div><strong>Worldwide shipping</strong><span>USA, UK, Europe, Japan and more</span></div></div>
   </div>
@@ -487,49 +482,49 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
   <div class="container">
     <div class="head">
       <span class="kicker">Our collections</span>
-      <h2>Four categories, one trusted name</h2>
+      <h2>Four collections, one trusted name</h2>
       <p>Everything is selected, cleaned and packed with care before it leaves us, for everyday kitchens, gifting and wholesale buyers.</p>
     </div>
 
     <div class="cat-grid">
 
-      <a href="shop.html?cat=dry-fruits" class="cat-card c-dry">
+      <a href="shop.html?cat=dry-fruits" class="cat-card">
         <div class="cat-img"><img src="img-almonds.jpg" alt="Premium almonds in a wooden bowl" loading="lazy"><span class="cat-tag">Best seller</span></div>
         <div class="cat-body">
           <h3>Dry Fruits</h3>
           <p>Almonds, pistachios, cashews, walnuts, dates and raisins in pouches, jars and gift boxes.</p>
           <div class="chips"><span>Almonds</span><span>Pistachios</span><span>Cashews</span><span>Walnuts</span><span>Dates</span><span>Raisins</span></div>
-          <span class="cat-link">Shop dry fruits <i class="fas fa-arrow-right"></i></span>
+          <span class="cat-link">Discover <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
-      <a href="shop.html?cat=pink-salt" class="cat-card c-salt">
+      <a href="shop.html?cat=pink-salt" class="cat-card">
         <div class="cat-img"><img src="img-salt-bowl.jpg" alt="Himalayan pink salt granules and salt block" loading="lazy"><span class="cat-tag">Himalayan</span></div>
         <div class="cat-body">
           <h3>Himalayan Pink Salt</h3>
           <p>Fine and coarse salt, grinders, refill packs, salt blocks and lamps, rich in natural minerals.</p>
           <div class="chips"><span>Fine</span><span>Coarse</span><span>Grinder</span><span>Blocks</span><span>Lamps</span></div>
-          <span class="cat-link">Shop pink salt <i class="fas fa-arrow-right"></i></span>
+          <span class="cat-link">Discover <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
-      <a href="shop.html?cat=rice" class="cat-card c-rice">
-        <div class="cat-img"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Long grain basmati rice" loading="lazy"><span class="cat-tag">New</span></div>
+      <a href="shop.html?cat=rice" class="cat-card">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80" alt="Long grain basmati rice" loading="lazy"><span class="cat-tag">New</span></div>
         <div class="cat-body">
           <h3>Basmati Rice</h3>
           <p>Long-grain, aromatic Pakistani basmati for homes, restaurants and importers.</p>
           <div class="chips"><span>Super Kernel</span><span>1121 Sella</span><span>Brown</span><span>Bulk</span></div>
-          <span class="cat-link">Shop rice <i class="fas fa-arrow-right"></i></span>
+          <span class="cat-link">Discover <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
-      <a href="shop.html?cat=fresh-fruits" class="cat-card c-fresh">
-        <div class="cat-img"><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Fresh seasonal fruits" loading="lazy"><span class="cat-tag">Seasonal</span></div>
+      <a href="shop.html?cat=fresh-fruits" class="cat-card">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80" alt="Fresh seasonal fruits" loading="lazy"><span class="cat-tag">Seasonal</span></div>
         <div class="cat-body">
           <h3>Fresh Fruits</h3>
           <p>Seasonal fruit, freshly packed for delivery. Availability depends on season and destination.</p>
           <div class="chips"><span>Bananas</span><span>Apples</span><span>Grapes</span><span>Baskets</span></div>
-          <span class="cat-link">Shop fresh fruits <i class="fas fa-arrow-right"></i></span>
+          <span class="cat-link">Discover <i class="fas fa-arrow-right"></i></span>
         </div>
       </a>
 
@@ -538,7 +533,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 </section>
 
 <!-- BESTSELLERS -->
-<section class="section section-cream" id="bestsellers">
+<section class="section section-white" id="bestsellers">
   <div class="container">
     <div class="head">
       <span class="kicker">Bestsellers</span>
@@ -548,7 +543,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 
     <div class="prod-grid">
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-almonds.jpg" alt="Premium almonds" loading="lazy"><span class="badge">Best seller</span></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -562,7 +557,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-pistachios.jpg" alt="Premium pistachios" loading="lazy"></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -576,7 +571,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-cashews.jpg" alt="Premium cashews" loading="lazy"></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -590,7 +585,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-walnuts.jpg" alt="Premium walnuts" loading="lazy"></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -604,7 +599,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-dates.jpg" alt="Premium dates" loading="lazy"></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -618,7 +613,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-dry">
+      <article class="prod">
         <div class="prod-img"><img src="img-raisins.jpg" alt="Premium raisins" loading="lazy"></div>
         <div class="prod-body">
           <span class="prod-cat">Dry Fruits</span>
@@ -632,8 +627,8 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-salt">
-        <div class="prod-img"><img src="img-salt-jar.jpg" alt="Himalayan pink salt fine 500g glass jar" loading="lazy"><span class="badge">Himalayan</span></div>
+      <article class="prod">
+        <div class="prod-img"><img src="img-pinksalt.jpg" alt="Himalayan pink salt in a wooden bowl" loading="lazy"><span class="badge">Himalayan</span></div>
         <div class="prod-body">
           <span class="prod-cat">Pink Salt</span>
           <h3>Himalayan Pink Salt</h3>
@@ -646,8 +641,8 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         </div>
       </article>
 
-      <article class="prod c-rice">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Basmati rice on a wooden board" loading="lazy"><span class="badge">New</span></div>
+      <article class="prod">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&amp;fit=crop&amp;w=800&amp;h=550&amp;q=80" alt="Basmati rice on a wooden board" loading="lazy"><span class="badge">New</span></div>
         <div class="prod-body">
           <span class="prod-cat">Rice</span>
           <h3>Super Kernel Basmati</h3>
@@ -663,19 +658,19 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
     </div>
 
     <p class="note"><i class="fas fa-circle-info"></i>Prices in USD for retail packs. Final price, shipping and delivery time are confirmed on WhatsApp for your country.</p>
-    <div class="center"><a href="shop.html" class="btn btn-pine"><i class="fas fa-store"></i>View all products</a></div>
+    <div class="center"><a href="shop.html" class="btn btn-green">View all products</a></div>
   </div>
 </section>
 
 <!-- RICE SPOTLIGHT -->
-<section class="section c-rice">
+<section class="section">
   <div class="container rice">
     <div class="rice-media">
-      <img class="r1" src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Raw long grain basmati rice" loading="lazy">
-      <img class="r2" src="https://images.unsplash.com/photo-1704972269889-f0fdd7f0e7c3?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Baskets filled with white rice" loading="lazy">
+      <img class="r1" src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=900&amp;h=900&amp;q=80" alt="Raw long grain basmati rice" loading="lazy">
+      <img class="r2" src="https://images.unsplash.com/photo-1704972269889-f0fdd7f0e7c3?auto=format&amp;fit=crop&amp;w=700&amp;h=680&amp;q=80" alt="Baskets filled with white rice" loading="lazy">
     </div>
     <div class="rice-copy">
-      <span class="kicker" style="color:var(--gold-deep)">New category</span>
+      <span class="kicker" style="color:var(--gold-deep)">New collection</span>
       <h2>Pakistani basmati rice, long grain and full of aroma</h2>
       <p>Carefully milled and cleaned basmati, packed in retail bags for homes and in export-quality sacks for restaurants, distributors and importers.</p>
       <div class="rice-list">
@@ -684,13 +679,13 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>Brown Basmati</strong><span>Whole grain, nutty and wholesome</span></div><b>$5.49 <small>/ 1kg</small></b></div>
         <div class="rice-item"><i class="fas fa-boxes-stacked"></i><div><strong>Bulk &amp; export rice</strong><span>10kg, 25kg and 50kg bags, private label on request</span></div><b>Quote</b></div>
       </div>
-      <a href="shop.html?cat=rice" class="btn btn-pine"><i class="fas fa-bag-shopping"></i>Shop rice</a>
+      <a href="shop.html?cat=rice" class="btn btn-green">Shop basmati rice</a>
     </div>
   </div>
 </section>
 
 <!-- GIFT SETS -->
-<section class="section section-cream">
+<section class="section section-stone" id="gifts">
   <div class="container">
     <div class="head">
       <span class="kicker">Luxury gifting</span>
@@ -700,25 +695,25 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 
     <div class="gift-grid">
       <div class="gift">
-        <div class="gift-img"><img src="img-salt-set.jpg" alt="Two piece Himalayan pink salt jar set, fine and coarse" loading="lazy"></div>
+        <div class="gift-img"><img src="img-gift-2.jpg" alt="Two piece set of premium glass jars, fine and coarse" loading="lazy"></div>
         <div class="gift-body">
           <span class="gift-num">Two piece set</span>
           <h3>Duo Collection</h3>
-          <p>Two 500g premium jars, any two varieties. A simple, elegant gift.</p>
+          <p>Two 500g premium glass jars, any two varieties. A simple, elegant gift.</p>
           <div class="prod-foot"><div class="price"><span class="from">From</span>$19.99</div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Two%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
         </div>
       </div>
       <div class="gift">
-        <div class="gift-img"><img src="img-almond-gift.jpg" alt="Six piece premium almonds gift collection box" loading="lazy"></div>
+        <div class="gift-img"><img src="img-gift-6.jpg" alt="Six piece premium collection gift box" loading="lazy"></div>
         <div class="gift-body">
           <span class="gift-num">Six piece set</span>
           <h3>Premium Collection</h3>
-          <p>Six 250g jars in a luxury box. Ideal for families and festive gifting.</p>
+          <p>Six glass jars in a luxury box. Ideal for families and festive gifting.</p>
           <div class="prod-foot"><div class="price"><span class="from">From</span>$49.99</div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Six%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
         </div>
       </div>
       <div class="gift">
-        <div class="gift-img"><img src="img-salt-gift.jpg" alt="Himalayan pink salt premium collection gift box" loading="lazy"></div>
+        <div class="gift-img"><img src="img-gift-12.jpg" alt="Twelve piece grand collection gift box" loading="lazy"></div>
         <div class="gift-body">
           <span class="gift-num">Twelve piece set</span>
           <h3>Grand Collection</h3>
@@ -729,12 +724,12 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
     </div>
 
     <div class="gift-banner">
-      <img src="img-giftbox.jpg" alt="Sea2Sky luxury dry fruits gift box with six varieties" loading="lazy">
-      <div>
+      <div class="banner-img"><img src="img-giftbox.jpg" alt="Sea2Sky luxury dry fruits gift box with six varieties" loading="lazy"></div>
+      <div class="banner-copy">
         <span class="kicker">Corporate &amp; custom orders</span>
         <h3>Your gift box, your way</h3>
         <p>Choose the products, sizes and quantities. We prepare custom gift boxes for events, offices and corporate clients.</p>
-        <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20custom%20gift%20box" target="_blank" rel="noopener" class="btn btn-gold"><i class="fas fa-gift"></i>Request a custom box</a>
+        <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20custom%20gift%20box" target="_blank" rel="noopener" class="btn btn-gold">Request a custom box</a>
       </div>
     </div>
   </div>
@@ -750,11 +745,11 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
       <div class="pack-grid">
         <div class="pack"><i class="fas fa-box"></i><div><strong>5kg vacuum pack</strong><span>Food grade, keeps fresh</span></div></div>
         <div class="pack"><i class="fas fa-box-open"></i><div><strong>10kg carton</strong><span>2 x 5kg inner packs</span></div></div>
-        <div class="pack"><i class="fas fa-sack-dollar"></i><div><strong>25kg / 50kg bags</strong><span>Export quality sacks</span></div></div>
+        <div class="pack"><i class="fas fa-weight-hanging"></i><div><strong>25kg / 50kg bags</strong><span>Export quality sacks</span></div></div>
         <div class="pack"><i class="fas fa-pallet"></i><div><strong>Palletised loads</strong><span>Ready for sea and air freight</span></div></div>
       </div>
       <div class="export-actions">
-        <a href="contact.html" class="btn btn-gold"><i class="fas fa-paper-plane"></i>Request a quote</a>
+        <a href="contact.html" class="btn btn-gold">Request a quote</a>
         <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20%2F%20export%20quote" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>WhatsApp us</a>
       </div>
     </div>
@@ -771,15 +766,15 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
       <p>Three easy steps from choosing your products to receiving them.</p>
     </div>
     <div class="steps">
-      <div class="step"><div class="step-no">1</div><h3>Choose products</h3><p>Browse the shop and add products to your cart, or message us with what you need.</p></div>
-      <div class="step"><div class="step-no">2</div><h3>Confirm on WhatsApp</h3><p>We confirm price, shipping cost and delivery time for your country before anything ships.</p></div>
-      <div class="step"><div class="step-no">3</div><h3>Packed &amp; delivered</h3><p>Your order is packed fresh and shipped to your address anywhere in the world.</p></div>
+      <div class="step"><div class="step-no">01</div><h3>Choose products</h3><p>Browse the shop and add products to your cart, or message us with what you need.</p></div>
+      <div class="step"><div class="step-no">02</div><h3>Confirm on WhatsApp</h3><p>We confirm price, shipping cost and delivery time for your country before anything ships.</p></div>
+      <div class="step"><div class="step-no">03</div><h3>Packed &amp; delivered</h3><p>Your order is packed fresh and shipped to your address anywhere in the world.</p></div>
     </div>
   </div>
 </section>
 
 <!-- TEAM -->
-<section class="section section-sage">
+<section class="section section-white">
   <div class="container">
     <div class="head">
       <span class="kicker">Talk to us</span>
@@ -836,12 +831,12 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 <!-- CTA -->
 <section class="cta">
   <div class="container">
-    <span class="kicker" style="color:var(--gold-deep)">Natural Products &middot; Global Reach</span>
+    <span class="kicker">Natural Products &middot; Global Reach</span>
     <h2>Ready to order or need a quote?</h2>
     <p>Message us for retail orders, gift boxes, wholesale prices or export shipping. We reply quickly on WhatsApp.</p>
     <div class="cta-actions">
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>WhatsApp us</a>
-      <a href="contact.html" class="btn btn-pine"><i class="fas fa-paper-plane"></i>Contact our team</a>
+      <a href="contact.html" class="btn btn-green">Contact our team</a>
     </div>
   </div>
 </section>
@@ -850,14 +845,15 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
 <footer>
   <div class="container footer-grid">
 
-    <div>
+    <div class="footer-brand">
       <div class="footer-logo">
-        <svg viewBox="0 0 64 50" aria-hidden="true">
-          <path d="M6 40 A26 26 0 0 1 58 40" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/>
-          <path d="M10 46 L28 16 L46 46 Z" fill="#2c7a5f"/>
-          <path d="M28 16 L22.5 25.5 L26 23.5 L28.5 26.5 L31.5 23 L33.5 25 Z" fill="#ffffff"/>
-          <path d="M30 46 L42 27 L56 46 Z" fill="#d9a441"/>
-          <path d="M42 27 L38.5 33 L41 31.5 L43 33.5 L45 31 Z" fill="#f3d98b"/>
+        <svg viewBox="0 0 80 56" aria-hidden="true">
+          <path d="M8 46 A32 32 0 0 1 72 46" fill="none" stroke="#b8904a" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M14 52 L35 16 L56 52 Z" fill="#2f7a60"/>
+          <path d="M35 16 L29.2 25.9 L32.4 24.2 L35.2 27.4 L38.4 23.8 L40.8 25.1 Z" fill="#fbf8f2"/>
+          <path d="M37 52 L52 28 L68 52 Z" fill="#b8904a"/>
+          <path d="M52 28 L47.8 34.7 L50.6 33.4 L52.6 35.6 L55 33 L56.4 34.2 Z" fill="#f3e6c6"/>
+          <path d="M10 52 H70" stroke="#b8904a" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
         <div>
           <b>Sea<span>2</span>Sky</b>
@@ -880,7 +876,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Journal</a></li>
         <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -890,9 +886,10 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
       <h3 class="footer-title">Product categories</h3>
       <ul class="footer-links">
         <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
-        <li><a href="shop.html?cat=pink-salt">Pink Salt</a></li>
+        <li><a href="shop.html?cat=pink-salt">Himalayan Pink Salt</a></li>
         <li><a href="shop.html?cat=rice">Basmati Rice</a></li>
         <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+        <li><a href="#gifts">Gift sets</a></li>
         <li><a href="#export">Bulk &amp; export</a></li>
       </ul>
     </div>
@@ -911,7 +908,7 @@ footer{background:var(--pine-deep);color:#bcd0c5;border-top:4px solid var(--gold
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
-      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
     </div>
   </div>
 </footer>
