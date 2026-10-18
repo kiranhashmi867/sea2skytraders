@@ -73,7 +73,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em;color:var(--pine);text-wrap:balance}
 a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 ul{list-style:none}
 a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
@@ -1018,6 +1018,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+<script src="../analytics.js" defer></script>
 <script src="../store.js" defer></script>
 <script src="../app.js" defer></script>
 
