@@ -2,7 +2,7 @@
    Paste the Measurement ID from Google Analytics (it starts with "G-") between the quotes.
    While it is empty, nothing is loaded and nothing is tracked. */
 (function () {
-  var GA_ID = "";
+  var GA_ID = "G-9DVM31YPVE";
   if (!GA_ID) { return; }
   var s = document.createElement("script");
   s.async = true;
