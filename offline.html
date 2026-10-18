@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Can't load this page | Sea2Sky Traders</title>
-<meta name="theme-color" content="#123a2e">
+<meta name="theme-color" content="#0f2240">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%}
 body{
   font-family:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
-  font-size:16px;line-height:1.65;color:#dbe9e0;
+  font-size:16px;line-height:1.65;color:#dce3ef;
   background:
     radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
     radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
-    linear-gradient(135deg,#0b2a21 0%,#123a2e 60%,#164536 100%);
+    linear-gradient(135deg,#0a1830 0%,#0f2240 60%,#16305a 100%);
   background-attachment:fixed;
   display:flex;align-items:center;justify-content:center;
   padding:32px 22px;
@@ -28,29 +28,36 @@ h1{
   font-family:'Fraunces',Georgia,'Times New Roman',serif;
   font-weight:600;font-size:2.2rem;line-height:1.15;color:#fff;margin-bottom:12px;
 }
-p{color:#cfe0d6;margin-bottom:26px}
+p{color:#d3dcec;margin-bottom:26px}
 button{
   display:inline-flex;align-items:center;justify-content:center;
   padding:15px 34px;border:0;border-radius:999px;cursor:pointer;
   font-family:inherit;font-weight:700;font-size:1rem;line-height:1;
-  color:#082a20;background:linear-gradient(135deg,#f6d77a,#e0a526);
+  color:#0a1830;background:linear-gradient(135deg,#f6d77a,#e0a526);
   box-shadow:0 14px 30px -12px rgba(224,165,38,.75);
 }
 button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .help{
   margin:34px 0 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);
-  font-size:.92rem;color:#a9c0b4;
+  font-size:.92rem;color:#aab8cf;
 }
 .help strong{color:#f6d77a;font-weight:600;white-space:nowrap}
 </style>
 <style id="i18n-css">
-.lang{display:inline-flex;align-items:center;gap:2px}
-.lang i{margin-right:4px!important;color:var(--gold-light)}
-.lang a{padding:2px 7px;font-size:.76rem;line-height:1.5;color:#fff;border:1px solid transparent;border-radius:2px;letter-spacing:0}
-.lang a[aria-current]{border-color:rgba(227,201,143,.6);color:var(--gold-light)}
-.lang a:hover{color:var(--gold-light)}
-.lang a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
-.lang a[lang=ar]{font-family:'Tajawal',var(--sans)}
+.lang{position:relative;display:inline-flex}
+.lang-btn{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 9px;font:inherit;font-size:.78rem;cursor:pointer;letter-spacing:0}
+.lang-btn i{margin:0!important;color:var(--gold-light)}
+.lang-caret{font-size:.62rem;transition:transform .2s}
+.lang.open .lang-caret{transform:rotate(180deg)}
+.lang-menu{position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:180px;margin:0;padding:6px;list-style:none;background:#fff;border:1px solid rgba(184,144,74,.35);border-radius:10px;box-shadow:0 22px 44px -18px rgba(10,24,48,.45);z-index:10001;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s}
+.lang.open .lang-menu{opacity:1;visibility:visible;transform:none}
+.lang-menu a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:7px;color:#0f2240;font-size:.9rem;letter-spacing:0;text-transform:none}
+.lang-menu a:hover{background:#f3eee4}
+.lang-menu a i{opacity:0;color:#b8904a;margin:0!important}
+.lang-menu a[aria-current] {font-weight:700}
+.lang-menu a[aria-current] i{opacity:1}
+.lang-menu a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
+.lang-menu a[lang=ar]{font-family:'Tajawal',var(--sans)}
 @media (max-width:640px){
   .topbar .container{flex-wrap:wrap;justify-content:center;gap:4px 14px;padding-top:6px;padding-bottom:6px}
   .topbar .tb-msg{flex:1 1 100%;width:100%;text-align:center;font-size:.74rem;line-height:1.5}
