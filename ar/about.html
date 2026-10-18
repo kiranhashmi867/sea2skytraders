@@ -218,6 +218,15 @@ header.site{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px 
 .chip-wa{background:linear-gradient(135deg,#25d366,#128c7e)}
 .chip-mail{background:var(--pine)}
 .chip-snap{background:#fffc00;color:#111}
+.s-li{background:#0a66c2}
+/* Team social buttons: round, original brand colours */
+.team-actions{gap:12px}
+.team-actions .chip-btn{width:46px;height:46px;padding:0;border-radius:50%;justify-content:center;gap:0;font-size:0;letter-spacing:0;box-shadow:0 6px 14px -8px rgba(0,0,0,.45);transition:transform .25s}
+.team-actions .chip-btn i{font-size:1.2rem;margin:0}
+.team-actions .chip-btn:hover{transform:translateY(-3px)}
+.chip-wa{background:#25d366}
+.chip-snap i{color:#111}
+
 
 /* CTA */
 .cta-box{position:relative;overflow:hidden;background:linear-gradient(135deg,#082a20 0%,#0e3b2e 55%,#17543f 100%);border-radius:30px;padding:68px 40px;text-align:center;color:#fff}
@@ -808,8 +817,8 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
           <li><i class="fas fa-phone"></i><span><strong>محمد سعيد خالد:</strong> <a href="https://wa.me/923006277000" target="_blank" rel="noopener"><span dir="ltr">+92 300 6277000</span></a></span></li>
         </ul>
         <div class="team-actions">
-          <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="chip-btn chip-wa"><i class="fab fa-whatsapp"></i>واتساب</a>
-          <a href="mailto:sales@sea2skytraders.com" class="chip-btn chip-mail"><i class="fas fa-envelope"></i>البريد الإلكتروني</a>
+          <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="chip-btn chip-wa" aria-label="واتساب" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:sales@sea2skytraders.com" class="chip-btn chip-mail" aria-label="البريد الإلكتروني" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
 
@@ -828,12 +837,12 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
           <li><i class="fas fa-bullhorn"></i><span>التسويق والعلامة التجارية والمتجر الإلكتروني</span></li>
         </ul>
         <div class="team-actions">
-          <a href="https://wa.me/923081333143" target="_blank" rel="noopener" class="chip-btn chip-wa"><i class="fab fa-whatsapp"></i>واتساب</a>
-          <a href="https://www.linkedin.com/in/kiranghashmi" target="_blank" rel="noopener" class="chip-btn chip-li"><i class="fab fa-linkedin-in"></i>لينكدإن</a>
-          <a href="https://www.instagram.com/kiranhashmi912" target="_blank" rel="noopener" class="chip-btn chip-ig"><i class="fab fa-instagram"></i>إنستغرام</a>
-          <a href="https://www.facebook.com/share/1CkcAH4rJv/" target="_blank" rel="noopener" class="chip-btn chip-fb"><i class="fab fa-facebook-f"></i>فيسبوك</a>
-          <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="chip-btn chip-snap"><i class="fab fa-snapchat"></i>سناب شات</a>
-          <a href="mailto:info@sea2skytraders.com" class="chip-btn chip-mail"><i class="fas fa-envelope"></i>البريد الإلكتروني</a>
+          <a href="https://wa.me/923081333143" target="_blank" rel="noopener" class="chip-btn chip-wa" aria-label="واتساب" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/kiranghashmi" target="_blank" rel="noopener" class="chip-btn chip-li" aria-label="لينكدإن" title="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/kiranhashmi912" target="_blank" rel="noopener" class="chip-btn chip-ig" aria-label="إنستغرام" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1CkcAH4rJv/" target="_blank" rel="noopener" class="chip-btn chip-fb" aria-label="فيسبوك" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="chip-btn chip-snap" aria-label="سناب شات" title="سناب شات"><i class="fab fa-snapchat"></i></a>
+          <a href="mailto:info@sea2skytraders.com" class="chip-btn chip-mail" aria-label="البريد الإلكتروني" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
 
@@ -878,8 +887,9 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       <p class="footer-tag">منتجات طبيعية · انتشار عالمي</p>
       <p class="footer-about">فواكه مجففة فاخرة وملح الهيمالايا الوردي وأرز بسمتي وفواكه طازجة من باكستان، للمنازل وتجار التجزئة والمستوردين حول العالم.</p>
       <div class="socials">
-        <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="s-fb" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="s-ig" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1CkcAH4rJv/" target="_blank" rel="noopener" class="s-fb" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/kiranhashmi912" target="_blank" rel="noopener" class="s-ig" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kiranghashmi" target="_blank" rel="noopener" class="s-li" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="s-wa" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="s-sc" aria-label="سناب شات"><i class="fab fa-snapchat"></i></a>
       </div>
