@@ -457,17 +457,726 @@ footer{background:var(--green-deep);color:#b9cbc1}
   .cat-grid-4{grid-template-columns:1fr!important}
   .btn{white-space:normal;text-align:center}
 }
+
+/* ===== Phase 1: currency, payments, socials ===== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topbar .container{gap:20px}
+.tb-msg{flex:1}
+.tb-tools{display:flex;align-items:center;gap:10px}
+.cur{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.cur i{margin-right:0!important}
+.cur select{background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 6px;font:inherit;font-size:.78rem;cursor:pointer}
+.cur select option{color:#1c2420}
+.pay-badges{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%;padding-top:4px}
+.pb-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#9fb5aa;margin-right:4px}
+.pb{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid rgba(227,201,143,.25);border-radius:2px;font-size:.76rem;color:#dfe8e3}
+.pb i{font-size:1.05rem;color:var(--gold-light)}
+.chip-li{background:#0a66c2;color:#fff}
+.chip-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:#fff}
+.chip-fb{background:#1877f2;color:#fff}
+@media (max-width:960px){
+  .tb-msg{text-align:left}
+}
+@media (max-width:640px){
+  .tb-msg{font-size:.72rem}
+  .tb-msg i{display:none}
+}
 </style>
+<script type="application/ld+json" id="productList">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Sea2Sky Traders products",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "Product",
+    "name": "Premium Californian Almonds",
+    "image": "https://sea2skytraders.com/img-almonds.jpg",
+    "description": "Hand-selected, crunchy almonds. Also in 500g and 1kg packs.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "6.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "Product",
+    "name": "Roasted Pistachios",
+    "image": "https://sea2skytraders.com/img-pistachios.jpg",
+    "description": "Roasted, salted or plain, with rich flavour. Also in 500g and 1kg.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "6.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "Product",
+    "name": "Premium Cashew Nuts",
+    "image": "https://sea2skytraders.com/img-cashews.jpg",
+    "description": "Creamy whole cashews for snacking and cooking. Also in 500g and 1kg.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "6.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "item": {
+    "@type": "Product",
+    "name": "Premium Walnuts",
+    "image": "https://sea2skytraders.com/img-walnuts.jpg",
+    "description": "Light, fresh walnut kernels with a rich taste. Also in 500g and 1kg.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "6.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "item": {
+    "@type": "Product",
+    "name": "Soft Premium Dates",
+    "image": "https://sea2skytraders.com/img-dates.jpg",
+    "description": "Soft, naturally sweet dates. Also in 500g and 1kg packs.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "5.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "item": {
+    "@type": "Product",
+    "name": "Sun-Dried Raisins",
+    "image": "https://sea2skytraders.com/img-raisins.jpg",
+    "description": "Golden, black and brown raisins, naturally sweet. Also in 500g and 1kg.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "5.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "item": {
+    "@type": "Product",
+    "name": "Hunza Dried Apricots",
+    "image": "https://images.unsplash.com/photo-1784043436919-28fd8e17ff3c",
+    "description": "Sun-dried apricots from the Hunza valley, naturally sweet and chewy.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "6.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "item": {
+    "@type": "Product",
+    "name": "Luxury Dry Fruits Gift Box",
+    "image": "https://sea2skytraders.com/img-giftbox.jpg",
+    "description": "Six varieties in a dark-green box with gold detailing.",
+    "category": "Dry Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "49.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "item": {
+    "@type": "Product",
+    "name": "Himalayan Pink Salt (Fine Grain)",
+    "image": "https://sea2skytraders.com/img-salt-fine.jpg",
+    "description": "Fine pink salt in a glass jar or resealable pouch. Also in 500g and 1kg.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "item": {
+    "@type": "Product",
+    "name": "Himalayan Pink Salt (Coarse)",
+    "image": "https://sea2skytraders.com/img-salt-coarse.jpg",
+    "description": "Coarse crystals for grinders and seasoning. Also in 500g and 1kg.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 11,
+   "item": {
+    "@type": "Product",
+    "name": "Pink Salt Grinder",
+    "image": "https://sea2skytraders.com/img-salt-grinder.jpg",
+    "description": "Refillable grinder with fine pink salt crystals for the table.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "8.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 12,
+   "item": {
+    "@type": "Product",
+    "name": "Pink Salt Lamp Decor Chunks",
+    "image": "https://sea2skytraders.com/img-salt-lamp.jpg",
+    "description": "Natural Himalayan salt lamp and decor chunks for a warm glow.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "11.00",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 13,
+   "item": {
+    "@type": "Product",
+    "name": "Pink Salt Duo Gift Set",
+    "image": "https://sea2skytraders.com/img-gift-2.jpg",
+    "description": "Two 500g glass jars, fine and coarse, ready to give.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "19.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 14,
+   "item": {
+    "@type": "Product",
+    "name": "Pink Salt Premium Collection (6 jars)",
+    "image": "https://sea2skytraders.com/img-gift-6.jpg",
+    "description": "Six glass jars of fine and coarse salt in a luxury box.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "49.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 15,
+   "item": {
+    "@type": "Product",
+    "name": "Pink Salt Grand Collection (12 jars)",
+    "image": "https://sea2skytraders.com/img-gift-12.jpg",
+    "description": "Twelve glass jars in our most impressive gift box.",
+    "category": "Pink Salt",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "79.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 16,
+   "item": {
+    "@type": "Product",
+    "name": "Super Kernel Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+    "description": "Pakistan's classic aromatic basmati, extra-long and fluffy. Also in 5kg and 10kg.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.49",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 17,
+   "item": {
+    "@type": "Product",
+    "name": "1121 Sella Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1723475158232-819e29803f4d",
+    "description": "Golden parboiled basmati, grains grow extra long after cooking.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 18,
+   "item": {
+    "@type": "Product",
+    "name": "1121 Steam Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1723475158229-894679ca024e",
+    "description": "White steamed basmati, firm and separate, ideal for biryani and pulao.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 19,
+   "item": {
+    "@type": "Product",
+    "name": "1509 Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1686820740687-426a7b9b2043",
+    "description": "Long, slender grains with a light aroma at an everyday price.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "4.29",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 20,
+   "item": {
+    "@type": "Product",
+    "name": "Brown Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1704916029542-da6fa7bc34e7",
+    "description": "Whole-grain basmati with a nutty, wholesome taste.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "5.49",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 21,
+   "item": {
+    "@type": "Product",
+    "name": "PK-386 Long Grain Rice",
+    "image": "https://images.unsplash.com/photo-1627482265910-5c0ff6bee088",
+    "description": "Non-basmati long grain rice for daily cooking and catering.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "2.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 22,
+   "item": {
+    "@type": "Product",
+    "name": "IRRI-6 Long Grain Rice",
+    "image": "https://images.unsplash.com/photo-1705147289789-6df2593f1b1e",
+    "description": "Popular Pakistani long grain rice, great value for restaurants.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "2.49",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 23,
+   "item": {
+    "@type": "Product",
+    "name": "Broken Basmati Rice",
+    "image": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6",
+    "description": "Broken basmati grains for kheer, khichdi and food processing.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "1.99",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 24,
+   "item": {
+    "@type": "Product",
+    "name": "Basmati Rice for Export (Bulk)",
+    "image": "https://images.unsplash.com/photo-1704972269889-f0fdd7f0e7c3",
+    "description": "10kg, 25kg and 50kg bags and containers, private label on request.",
+    "category": "Rice",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 25,
+   "item": {
+    "@type": "Product",
+    "name": "Seasonal Fresh Fruit Basket",
+    "image": "https://images.unsplash.com/photo-1610832958506-aa56368176cf",
+    "description": "A mix of seasonal fruits, freshly packed for delivery.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK",
+    "offers": {
+     "@type": "Offer",
+     "price": "16.00",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://sea2skytraders.com/shop.html"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 26,
+   "item": {
+    "@type": "Product",
+    "name": "Sindhri Mangoes",
+    "image": "https://images.unsplash.com/photo-1553279768-865429fa0078",
+    "description": "Pakistan's famous sweet Sindhri mangoes, in season May to July.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 27,
+   "item": {
+    "@type": "Product",
+    "name": "Chaunsa Mangoes",
+    "image": "https://images.unsplash.com/photo-1772544639276-87bf05fbb2cf",
+    "description": "Rich, honey-sweet Chaunsa mangoes, in season June to August.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 28,
+   "item": {
+    "@type": "Product",
+    "name": "Kinnow Mandarins",
+    "image": "https://images.unsplash.com/photo-1587735243615-c03f25aaff15",
+    "description": "Juicy Pakistani kinnow, in season December to March.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 29,
+   "item": {
+    "@type": "Product",
+    "name": "Fresh Apples",
+    "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d72",
+    "description": "Crisp, juicy apples, available in season.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 30,
+   "item": {
+    "@type": "Product",
+    "name": "Fresh Bananas",
+    "image": "https://images.unsplash.com/photo-1513563401345-1123a773541c",
+    "description": "Ripe, naturally sweet bananas, available in season.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 31,
+   "item": {
+    "@type": "Product",
+    "name": "Fresh Grapes",
+    "image": "https://images.unsplash.com/photo-1698305819486-ecca56daaba3",
+    "description": "Sweet seedless grapes, available in season.",
+    "category": "Fresh Fruits",
+    "brand": {
+     "@type": "Brand",
+     "name": "Sea2Sky Traders"
+    },
+    "countryOfOrigin": "PK"
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="container">
-    <p><i class="fas fa-earth-americas"></i>Worldwide shipping &middot; Retail &amp; wholesale orders</p>
+    <p class="tb-msg"><i class="fas fa-earth-americas"></i>Delivering to UAE, Saudi Arabia, USA, UK, Europe &amp; Japan</p>
     <div class="topbar-right">
       <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
+    </div>
+    <div class="tb-tools">
+      <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
+        <select id="curSel" aria-label="Currency">
+          <option value="USD">USD $</option>
+          <option value="AED">AED</option>
+          <option value="SAR">SAR</option>
+          <option value="GBP">GBP £</option>
+          <option value="EUR">EUR €</option>
+          <option value="JPY">JPY ¥</option>
+        </select>
+      </label>
     </div>
   </div>
 </div>
@@ -546,11 +1255,11 @@ footer{background:var(--green-deep);color:#b9cbc1}
   <div class="container">
 
     <div class="tabs" aria-label="Product categories">
-      <button class="tab active" type="button" data-cat="all" aria-pressed="true"><i class="fas fa-store"></i>All products <span class="tab-count">22</span></button>
-      <button class="tab c-dry" type="button" data-cat="dry-fruits" aria-pressed="false"><span class="dot"></span>Dry Fruits <span class="tab-count">7</span></button>
+      <button class="tab active" type="button" data-cat="all" aria-pressed="true"><i class="fas fa-store"></i>All products <span class="tab-count">31</span></button>
+      <button class="tab c-dry" type="button" data-cat="dry-fruits" aria-pressed="false"><span class="dot"></span>Dry Fruits <span class="tab-count">8</span></button>
       <button class="tab c-salt" type="button" data-cat="pink-salt" aria-pressed="false"><span class="dot"></span>Pink Salt <span class="tab-count">7</span></button>
-      <button class="tab c-rice" type="button" data-cat="rice" aria-pressed="false"><span class="dot"></span>Basmati Rice <span class="tab-count">4</span></button>
-      <button class="tab c-fresh" type="button" data-cat="fresh-fruits" aria-pressed="false"><span class="dot"></span>Fresh Fruits <span class="tab-count">4</span></button>
+      <button class="tab c-rice" type="button" data-cat="rice" aria-pressed="false"><span class="dot"></span>Rice <span class="tab-count">9</span></button>
+      <button class="tab c-fresh" type="button" data-cat="fresh-fruits" aria-pressed="false"><span class="dot"></span>Fresh Fruits <span class="tab-count">7</span></button>
     </div>
 
     <div class="subs" id="subRow" aria-label="Dry fruit types" hidden>
@@ -561,13 +1270,14 @@ footer{background:var(--green-deep);color:#b9cbc1}
       <button class="sub" type="button" data-sub="walnuts" aria-pressed="false">Walnuts</button>
       <button class="sub" type="button" data-sub="cashews" aria-pressed="false">Cashews</button>
       <button class="sub" type="button" data-sub="raisins" aria-pressed="false">Raisins</button>
+      <button class="sub" type="button" data-sub="apricots" aria-pressed="false">Apricots</button>
       <button class="sub" type="button" data-sub="gifts" aria-pressed="false">Gift sets</button>
     </div>
 
     <p class="ship-note"><i class="fas fa-circle-info"></i><span>Final pricing, shipping cost and delivery time are confirmed on WhatsApp, based on your destination and order size.</span></p>
 
     <div class="shop-bar">
-      <p class="results" id="results" aria-live="polite">Showing 22 products</p>
+      <p class="results" id="results" aria-live="polite">Showing 31 products</p>
       <label class="sort">Sort by
         <select id="shopSort">
           <option value="default">Featured</option>
@@ -593,7 +1303,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Premium Californian Almonds</h3>
           <p>Hand-selected, crunchy almonds. Also in 500g and 1kg packs.</p>
           <div class="prod-foot">
-            <div class="price">$6.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="6.99">$6.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Premium Californian Almonds"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Premium%20Californian%20Almonds" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Premium Californian Almonds on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -612,7 +1322,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Roasted Pistachios</h3>
           <p>Roasted, salted or plain, with rich flavour. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$6.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="6.99">$6.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Roasted Pistachios"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Roasted%20Pistachios" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Roasted Pistachios on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -631,7 +1341,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Premium Cashew Nuts</h3>
           <p>Creamy whole cashews for snacking and cooking. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$6.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="6.99">$6.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Premium Cashew Nuts"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Premium%20Cashew%20Nuts" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Premium Cashew Nuts on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -650,7 +1360,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Premium Walnuts</h3>
           <p>Light, fresh walnut kernels with a rich taste. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$6.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="6.99">$6.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Premium Walnuts"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Premium%20Walnuts" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Premium Walnuts on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -670,7 +1380,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Soft Premium Dates</h3>
           <p>Soft, naturally sweet dates. Also in 500g and 1kg packs.</p>
           <div class="prod-foot">
-            <div class="price">$5.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="5.99">$5.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Soft Premium Dates"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Soft%20Premium%20Dates" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Soft Premium Dates on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -689,7 +1399,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Sun-Dried Raisins</h3>
           <p>Golden, black and brown raisins, naturally sweet. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$5.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="5.99">$5.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Sun-Dried Raisins"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Sun-Dried%20Raisins" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Sun-Dried Raisins on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -698,7 +1408,27 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-dry" data-cat="dry-fruits" data-sub="gifts" data-name="Luxury Dry Fruits Gift Box" data-price="49.99" data-order="7">
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="apricots" data-name="Hunza Dried Apricots" data-price="6.99" data-order="7">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-seedling"></i></span>
+          <img src="https://images.unsplash.com/photo-1784043436919-28fd8e17ff3c?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Hunza Dried Apricots" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">From Pakistan</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Dry Fruits / Apricots</span>
+          <h3>Hunza Dried Apricots</h3>
+          <p>Sun-dried apricots from the Hunza valley, naturally sweet and chewy.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="6.99">$6.99</span> <small>/ 250g</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Hunza Dried Apricots"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Hunza%20Dried%20Apricots" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Hunza Dried Apricots on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-dry" data-cat="dry-fruits" data-sub="gifts" data-name="Luxury Dry Fruits Gift Box" data-price="49.99" data-order="8">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-seedling"></i></span>
           <img class="fit" src="img-giftbox.jpg" alt="Luxury Dry Fruits Gift Box" loading="lazy" onerror="this.style.display='none'">
@@ -709,7 +1439,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Luxury Dry Fruits Gift Box</h3>
           <p>Six varieties in a dark-green box with gold detailing.</p>
           <div class="prod-foot">
-            <div class="price">$49.99 <small>/ box</small></div>
+            <div class="price"><span class="money" data-usd="49.99">$49.99</span> <small>/ box</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Luxury Dry Fruits Gift Box"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Luxury%20Dry%20Fruits%20Gift%20Box" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Luxury Dry Fruits Gift Box on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -720,7 +1450,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
       <!-- ============ PINK SALT ============ -->
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Himalayan Pink Salt (Fine Grain)" data-price="4.99" data-order="8">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Himalayan Pink Salt (Fine Grain)" data-price="4.99" data-order="9">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-salt-fine.jpg" alt="Himalayan Pink Salt (Fine Grain)" loading="lazy" onerror="this.style.display='none'">
@@ -731,7 +1461,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Himalayan Pink Salt (Fine Grain)</h3>
           <p>Fine pink salt in a glass jar or resealable pouch. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$4.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="4.99">$4.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Himalayan Pink Salt (Fine Grain)"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Himalayan%20Pink%20Salt%20%28Fine%20Grain%29" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Himalayan Pink Salt (Fine Grain) on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -740,7 +1470,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Himalayan Pink Salt (Coarse)" data-price="4.99" data-order="9">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Himalayan Pink Salt (Coarse)" data-price="4.99" data-order="10">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-salt-coarse.jpg" alt="Himalayan Pink Salt (Coarse)" loading="lazy" onerror="this.style.display='none'">
@@ -750,7 +1480,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Himalayan Pink Salt (Coarse)</h3>
           <p>Coarse crystals for grinders and seasoning. Also in 500g and 1kg.</p>
           <div class="prod-foot">
-            <div class="price">$4.99 <small>/ 250g</small></div>
+            <div class="price"><span class="money" data-usd="4.99">$4.99</span> <small>/ 250g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Himalayan Pink Salt (Coarse)"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Himalayan%20Pink%20Salt%20%28Coarse%29" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Himalayan Pink Salt (Coarse) on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -759,7 +1489,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Grinder" data-price="8.99" data-order="10">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Grinder" data-price="8.99" data-order="11">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-salt-grinder.jpg" alt="Pink Salt Grinder" loading="lazy" onerror="this.style.display='none'">
@@ -769,7 +1499,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Pink Salt Grinder</h3>
           <p>Refillable grinder with fine pink salt crystals for the table.</p>
           <div class="prod-foot">
-            <div class="price">$8.99 <small>/ 200g</small></div>
+            <div class="price"><span class="money" data-usd="8.99">$8.99</span> <small>/ 200g</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Pink Salt Grinder"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Grinder" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Grinder on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -778,7 +1508,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Lamp Decor Chunks" data-price="11" data-order="11">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Lamp Decor Chunks" data-price="11" data-order="12">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-salt-lamp.jpg" alt="Pink Salt Lamp Decor Chunks" loading="lazy" onerror="this.style.display='none'">
@@ -788,7 +1518,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Pink Salt Lamp Decor Chunks</h3>
           <p>Natural Himalayan salt lamp and decor chunks for a warm glow.</p>
           <div class="prod-foot">
-            <div class="price">$11 <small>/ pack</small></div>
+            <div class="price"><span class="money" data-usd="11">$11</span> <small>/ pack</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Pink Salt Lamp Decor Chunks"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Lamp%20Decor%20Chunks" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Lamp Decor Chunks on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -797,7 +1527,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Duo Gift Set" data-price="19.99" data-order="12">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Duo Gift Set" data-price="19.99" data-order="13">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-gift-2.jpg" alt="Pink Salt Duo Gift Set" loading="lazy" onerror="this.style.display='none'">
@@ -808,7 +1538,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Pink Salt Duo Gift Set</h3>
           <p>Two 500g glass jars, fine and coarse, ready to give.</p>
           <div class="prod-foot">
-            <div class="price">$19.99 <small>/ set</small></div>
+            <div class="price"><span class="money" data-usd="19.99">$19.99</span> <small>/ set</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Pink Salt Duo Gift Set"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Duo%20Gift%20Set" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Duo Gift Set on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -817,7 +1547,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Premium Collection (6 jars)" data-price="49.99" data-order="13">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Premium Collection (6 jars)" data-price="49.99" data-order="14">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-gift-6.jpg" alt="Pink Salt Premium Collection (6 jars)" loading="lazy" onerror="this.style.display='none'">
@@ -828,7 +1558,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Pink Salt Premium Collection (6 jars)</h3>
           <p>Six glass jars of fine and coarse salt in a luxury box.</p>
           <div class="prod-foot">
-            <div class="price">$49.99 <small>/ box</small></div>
+            <div class="price"><span class="money" data-usd="49.99">$49.99</span> <small>/ box</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Pink Salt Premium Collection (6 jars)"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Premium%20Collection%20%286%20jars%29" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Premium Collection (6 jars) on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -837,7 +1567,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Grand Collection (12 jars)" data-price="79.99" data-order="14">
+      <article class="prod c-salt" data-cat="pink-salt" data-sub="" data-name="Pink Salt Grand Collection (12 jars)" data-price="79.99" data-order="15">
         <div class="prod-media fitbg">
           <span class="ph"><i class="fas fa-gem"></i></span>
           <img class="fit" src="img-gift-12.jpg" alt="Pink Salt Grand Collection (12 jars)" loading="lazy" onerror="this.style.display='none'">
@@ -848,7 +1578,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <h3>Pink Salt Grand Collection (12 jars)</h3>
           <p>Twelve glass jars in our most impressive gift box.</p>
           <div class="prod-foot">
-            <div class="price">$79.99 <small>/ box</small></div>
+            <div class="price"><span class="money" data-usd="79.99">$79.99</span> <small>/ box</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Pink Salt Grand Collection (12 jars)"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Pink%20Salt%20Grand%20Collection%20%2812%20jars%29" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Pink Salt Grand Collection (12 jars) on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -857,20 +1587,20 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <!-- ============ BASMATI RICE ============ -->
+      <!-- ============ RICE ============ -->
 
-      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Super Kernel Basmati Rice" data-price="4.49" data-order="15">
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Super Kernel Basmati Rice" data-price="4.49" data-order="16">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-wheat-awn"></i></span>
           <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Super Kernel Basmati Rice" loading="lazy" onerror="this.style.display='none'">
-          <span class="prod-badge">New</span>
+          <span class="prod-badge">Best seller</span>
         </div>
         <div class="prod-body">
-          <span class="prod-cat">Basmati Rice</span>
+          <span class="prod-cat">Rice / Basmati</span>
           <h3>Super Kernel Basmati Rice</h3>
-          <p>Extra-long, aromatic grains that cook fluffy. Also in 5kg and 10kg.</p>
+          <p>Pakistan&#x27;s classic aromatic basmati, extra-long and fluffy. Also in 5kg and 10kg.</p>
           <div class="prod-foot">
-            <div class="price">$4.49 <small>/ 1kg</small></div>
+            <div class="price"><span class="money" data-usd="4.49">$4.49</span> <small>/ 1kg</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Super Kernel Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Super%20Kernel%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Super Kernel Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -879,18 +1609,18 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="1121 Sella Basmati Rice" data-price="4.99" data-order="16">
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="1121 Sella Basmati Rice" data-price="4.99" data-order="17">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-wheat-awn"></i></span>
           <img src="https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="1121 Sella Basmati Rice" loading="lazy" onerror="this.style.display='none'">
-          <span class="prod-badge">New</span>
+          <span class="prod-badge">Popular</span>
         </div>
         <div class="prod-body">
-          <span class="prod-cat">Basmati Rice</span>
+          <span class="prod-cat">Rice / Basmati</span>
           <h3>1121 Sella Basmati Rice</h3>
-          <p>Golden parboiled basmati, extra long after cooking. Also in 5kg and 10kg.</p>
+          <p>Golden parboiled basmati, grains grow extra long after cooking.</p>
           <div class="prod-foot">
-            <div class="price">$4.99 <small>/ 1kg</small></div>
+            <div class="price"><span class="money" data-usd="4.99">$4.99</span> <small>/ 1kg</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="1121 Sella Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%201121%20Sella%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order 1121 Sella Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -899,17 +1629,55 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Brown Basmati Rice" data-price="5.49" data-order="17">
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="1121 Steam Basmati Rice" data-price="4.99" data-order="18">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-wheat-awn"></i></span>
+          <img src="https://images.unsplash.com/photo-1723475158229-894679ca024e?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="1121 Steam Basmati Rice" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Rice / Basmati</span>
+          <h3>1121 Steam Basmati Rice</h3>
+          <p>White steamed basmati, firm and separate, ideal for biryani and pulao.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="4.99">$4.99</span> <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="1121 Steam Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%201121%20Steam%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order 1121 Steam Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="1509 Basmati Rice" data-price="4.29" data-order="19">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-wheat-awn"></i></span>
+          <img src="https://images.unsplash.com/photo-1686820740687-426a7b9b2043?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="1509 Basmati Rice" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Rice / Basmati</span>
+          <h3>1509 Basmati Rice</h3>
+          <p>Long, slender grains with a light aroma at an everyday price.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="4.29">$4.29</span> <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="1509 Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%201509%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order 1509 Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Brown Basmati Rice" data-price="5.49" data-order="20">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-wheat-awn"></i></span>
           <img src="https://images.unsplash.com/photo-1704916029542-da6fa7bc34e7?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Brown Basmati Rice" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="prod-body">
-          <span class="prod-cat">Basmati Rice</span>
+          <span class="prod-cat">Rice / Basmati</span>
           <h3>Brown Basmati Rice</h3>
           <p>Whole-grain basmati with a nutty, wholesome taste.</p>
           <div class="prod-foot">
-            <div class="price">$5.49 <small>/ 1kg</small></div>
+            <div class="price"><span class="money" data-usd="5.49">$5.49</span> <small>/ 1kg</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Brown Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Brown%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Brown Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -918,16 +1686,73 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Basmati Rice for Export (Bulk)" data-price="" data-order="18">
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="PK-386 Long Grain Rice" data-price="2.99" data-order="21">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-wheat-awn"></i></span>
+          <img src="https://images.unsplash.com/photo-1627482265910-5c0ff6bee088?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="PK-386 Long Grain Rice" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Rice / Long grain</span>
+          <h3>PK-386 Long Grain Rice</h3>
+          <p>Non-basmati long grain rice for daily cooking and catering.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="2.99">$2.99</span> <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="PK-386 Long Grain Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20PK-386%20Long%20Grain%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order PK-386 Long Grain Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="IRRI-6 Long Grain Rice" data-price="2.49" data-order="22">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-wheat-awn"></i></span>
+          <img src="https://images.unsplash.com/photo-1705147289789-6df2593f1b1e?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="IRRI-6 Long Grain Rice" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Rice / Long grain</span>
+          <h3>IRRI-6 Long Grain Rice</h3>
+          <p>Popular Pakistani long grain rice, great value for restaurants.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="2.49">$2.49</span> <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="IRRI-6 Long Grain Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20IRRI-6%20Long%20Grain%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order IRRI-6 Long Grain Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Broken Basmati Rice" data-price="1.99" data-order="23">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-wheat-awn"></i></span>
+          <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Broken Basmati Rice" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Rice / Broken</span>
+          <h3>Broken Basmati Rice</h3>
+          <p>Broken basmati grains for kheer, khichdi and food processing.</p>
+          <div class="prod-foot">
+            <div class="price"><span class="money" data-usd="1.99">$1.99</span> <small>/ 1kg</small></div>
+            <div class="prod-actions">
+              <button type="button" class="btn-add" data-add="Broken Basmati Rice"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
+              <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Broken%20Basmati%20Rice" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Broken Basmati Rice on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-rice" data-cat="rice" data-sub="" data-name="Basmati Rice for Export (Bulk)" data-price="" data-order="24">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-wheat-awn"></i></span>
           <img src="https://images.unsplash.com/photo-1704972269889-f0fdd7f0e7c3?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Basmati Rice for Export (Bulk)" loading="lazy" onerror="this.style.display='none'">
           <span class="prod-badge">Wholesale</span>
         </div>
         <div class="prod-body">
-          <span class="prod-cat">Basmati Rice / Bulk</span>
+          <span class="prod-cat">Rice / Bulk &amp; export</span>
           <h3>Basmati Rice for Export (Bulk)</h3>
-          <p>10kg, 25kg and 50kg bags, private label on request.</p>
+          <p>10kg, 25kg and 50kg bags and containers, private label on request.</p>
           <div class="prod-foot">
             <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
             <div class="prod-actions">
@@ -939,7 +1764,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
       <!-- ============ FRESH FRUITS ============ -->
 
-      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Seasonal Fresh Fruit Basket" data-price="16" data-order="19">
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Seasonal Fresh Fruit Basket" data-price="16" data-order="25">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-apple-whole"></i></span>
           <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Seasonal Fresh Fruit Basket" loading="lazy" onerror="this.style.display='none'">
@@ -948,9 +1773,9 @@ footer{background:var(--green-deep);color:#b9cbc1}
         <div class="prod-body">
           <span class="prod-cat">Fresh Fruits</span>
           <h3>Seasonal Fresh Fruit Basket</h3>
-          <p>A mix of bananas, apples and grapes, freshly packed for delivery.</p>
+          <p>A mix of seasonal fruits, freshly packed for delivery.</p>
           <div class="prod-foot">
-            <div class="price">$16 <small>/ basket</small></div>
+            <div class="price"><span class="money" data-usd="16">$16</span> <small>/ basket</small></div>
             <div class="prod-actions">
               <button type="button" class="btn-add" data-add="Seasonal Fresh Fruit Basket"><i class="fas fa-cart-plus"></i><span>Add to cart</span></button>
               <a href="https://wa.me/923008697543?text=I%27m%20interested%20in%20Seasonal%20Fresh%20Fruit%20Basket" target="_blank" rel="noopener" class="wa-mini" aria-label="Order Seasonal Fresh Fruit Basket on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -959,25 +1784,64 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Bananas" data-price="" data-order="20">
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Sindhri Mangoes" data-price="" data-order="26">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-apple-whole"></i></span>
-          <img src="https://images.unsplash.com/photo-1513563401345-1123a773541c?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Bananas" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Sindhri Mangoes" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Seasonal</span>
         </div>
         <div class="prod-body">
-          <span class="prod-cat">Fresh Fruits</span>
-          <h3>Fresh Bananas</h3>
-          <p>Ripe, naturally sweet bananas, available in season.</p>
+          <span class="prod-cat">Fresh Fruits / Mangoes</span>
+          <h3>Sindhri Mangoes</h3>
+          <p>Pakistan&#x27;s famous sweet Sindhri mangoes, in season May to July.</p>
           <div class="prod-foot">
             <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
             <div class="prod-actions">
-              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Fresh%20Bananas" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Sindhri%20Mangoes" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Apples" data-price="" data-order="21">
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Chaunsa Mangoes" data-price="" data-order="27">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1772544639276-87bf05fbb2cf?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Chaunsa Mangoes" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Seasonal</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits / Mangoes</span>
+          <h3>Chaunsa Mangoes</h3>
+          <p>Rich, honey-sweet Chaunsa mangoes, in season June to August.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Chaunsa%20Mangoes" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Kinnow Mandarins" data-price="" data-order="28">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Kinnow Mandarins" loading="lazy" onerror="this.style.display='none'">
+          <span class="prod-badge">Seasonal</span>
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits / Citrus</span>
+          <h3>Kinnow Mandarins</h3>
+          <p>Juicy Pakistani kinnow, in season December to March.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Kinnow%20Mandarins" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Apples" data-price="" data-order="29">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-apple-whole"></i></span>
           <img src="https://images.unsplash.com/photo-1474564862106-1f23d10b9d72?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Apples" loading="lazy" onerror="this.style.display='none'">
@@ -995,7 +1859,25 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </div>
       </article>
 
-      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Grapes" data-price="" data-order="22">
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Bananas" data-price="" data-order="30">
+        <div class="prod-media">
+          <span class="ph"><i class="fas fa-apple-whole"></i></span>
+          <img src="https://images.unsplash.com/photo-1513563401345-1123a773541c?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Bananas" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat">Fresh Fruits</span>
+          <h3>Fresh Bananas</h3>
+          <p>Ripe, naturally sweet bananas, available in season.</p>
+          <div class="prod-foot">
+            <div class="price price-ask"><i class="fas fa-tag"></i>Price on request</div>
+            <div class="prod-actions">
+              <a href="https://wa.me/923008697543?text=Please%20share%20the%20price%20for%20Fresh%20Bananas" target="_blank" rel="noopener" class="btn-ask"><i class="fab fa-whatsapp"></i>Ask for price</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod c-fresh" data-cat="fresh-fruits" data-sub="" data-name="Fresh Grapes" data-price="" data-order="31">
         <div class="prod-media">
           <span class="ph"><i class="fas fa-apple-whole"></i></span>
           <img src="https://images.unsplash.com/photo-1698305819486-ecca56daaba3?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80" alt="Fresh Grapes" loading="lazy" onerror="this.style.display='none'">
@@ -1118,6 +2000,14 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
+      <div class="pay-badges" aria-label="Payment methods we accept">
+        <span class="pb-label">We accept</span>
+        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
+        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+        <span class="pb"><i class="fas fa-building-columns"></i>Bank transfer</span>
+        <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+      </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
     </div>
@@ -1220,8 +2110,8 @@ footer{background:var(--green-deep);color:#b9cbc1}
   var searchEl = document.getElementById("shopSearch");
   var sortEl = document.getElementById("shopSort");
 
-  var catLabels = { "all": "all products", "dry-fruits": "Dry Fruits", "pink-salt": "Pink Salt", "rice": "Basmati Rice", "fresh-fruits": "Fresh Fruits" };
-  var subLabels = { dates: "Dates", almonds: "Almonds", pistachios: "Pistachios", walnuts: "Walnuts", cashews: "Cashews", raisins: "Raisins", gifts: "Gift sets" };
+  var catLabels = { "all": "all products", "dry-fruits": "Dry Fruits", "pink-salt": "Pink Salt", "rice": "Rice", "fresh-fruits": "Fresh Fruits" };
+  var subLabels = { dates: "Dates", almonds: "Almonds", pistachios: "Pistachios", walnuts: "Walnuts", cashews: "Cashews", raisins: "Raisins", apricots: "Apricots", gifts: "Gift sets" };
   var state = { cat: "all", sub: "all", q: "", sort: "default" };
 
   cards.forEach(function (c) {
@@ -1368,6 +2258,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+<script src="store.js" defer></script>
 <script src="app.js" defer></script>
 
 </body>

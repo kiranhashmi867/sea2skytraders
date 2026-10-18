@@ -435,6 +435,43 @@ footer{background:var(--green-deep);color:#b9cbc1}
   .cat-grid-4{grid-template-columns:1fr!important}
   .btn{white-space:normal;text-align:center}
 }
+
+/* ===== Phase 1: currency, payments, socials ===== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topbar .container{gap:20px}
+.tb-msg{flex:1}
+.tb-tools{display:flex;align-items:center;gap:10px}
+.cur{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.cur i{margin-right:0!important}
+.cur select{background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 6px;font:inherit;font-size:.78rem;cursor:pointer}
+.cur select option{color:#1c2420}
+.pay-badges{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%;padding-top:4px}
+.pb-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#9fb5aa;margin-right:4px}
+.pb{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid rgba(227,201,143,.25);border-radius:2px;font-size:.76rem;color:#dfe8e3}
+.pb i{font-size:1.05rem;color:var(--gold-light)}
+.chip-li{background:#0a66c2;color:#fff}
+.chip-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:#fff}
+.chip-fb{background:#1877f2;color:#fff}
+@media (max-width:960px){
+  .tb-msg{text-align:left}
+}
+@media (max-width:640px){
+  .tb-msg{font-size:.72rem}
+  .tb-msg i{display:none}
+}
+
+.pay-block{margin:6px 0 18px;padding-top:16px;border-top:1px solid var(--line)}
+.pay-block h3{font-size:1.25rem;margin-bottom:10px}
+.pay-opts{display:grid;gap:8px}
+.pay-opt{display:block;cursor:pointer}
+.pay-opt input{position:absolute;opacity:0}
+.pay-opt span{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid var(--line);background:#fff;font-size:.9rem;font-weight:500}
+.pay-opt span i{width:20px;text-align:center;color:var(--gold-deep);font-size:1.1rem}
+.pay-opt input:checked + span{border-color:var(--pine);box-shadow:inset 0 0 0 1px var(--pine);background:#f7f4ec}
+.pay-opt input:focus-visible + span{outline:3px solid var(--gold);outline-offset:2px}
+.pay-info{font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.btn-paypal{background:#ffc439;color:#111;margin-top:12px}
+.btn-paypal:hover{background:#f2b52e}
 </style>
 </head>
 <body>
@@ -442,10 +479,22 @@ footer{background:var(--green-deep);color:#b9cbc1}
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="container">
-    <p><i class="fas fa-earth-americas"></i>Worldwide shipping &middot; Retail &amp; wholesale orders</p>
+    <p class="tb-msg"><i class="fas fa-earth-americas"></i>Delivering to UAE, Saudi Arabia, USA, UK, Europe &amp; Japan</p>
     <div class="topbar-right">
       <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
+    </div>
+    <div class="tb-tools">
+      <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
+        <select id="curSel" aria-label="Currency">
+          <option value="USD">USD $</option>
+          <option value="AED">AED</option>
+          <option value="SAR">SAR</option>
+          <option value="GBP">GBP £</option>
+          <option value="EUR">EUR €</option>
+          <option value="JPY">JPY ¥</option>
+        </select>
+      </label>
     </div>
   </div>
 </div>
@@ -550,9 +599,9 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <div class="summary-body">
 
             <div class="sum-row"><span>Items</span><strong id="sumItems">0</strong></div>
-            <div class="sum-row"><span>Estimated subtotal</span><strong id="sumSubtotal">$0</strong></div>
+            <div class="sum-row"><span>Estimated subtotal</span><strong id="sumSubtotal"><span class="money" data-usd="0">$0</span></strong></div>
             <div class="sum-row"><span>Shipping</span><strong>Confirmed on WhatsApp</strong></div>
-            <div class="sum-row sum-total"><span>Estimated total</span><span id="sumTotal">$0</span></div>
+            <div class="sum-row sum-total"><span>Estimated total</span><span id="sumTotal"><span class="money" data-usd="0">$0</span></span></div>
 
             <p class="sum-note"><i class="fas fa-circle-info"></i><span>Final pricing, shipping cost and delivery time will be confirmed on WhatsApp based on your destination and order size.</span></p>
 
@@ -578,6 +627,19 @@ footer{background:var(--green-deep);color:#b9cbc1}
                 <label for="shipNotes">Order notes</label>
                 <textarea id="shipNotes" placeholder="Delivery preferences or anything else we should know"></textarea>
               </div>
+            </div>
+
+            <div class="pay-block" id="payBlock">
+              <h3>Payment method</h3>
+              <div class="pay-opts" role="radiogroup" aria-label="Payment method">
+                <label class="pay-opt"><input type="radio" name="pay" value="PayPal" checked><span><i class="fab fa-paypal"></i>PayPal</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Visa / Mastercard"><span><i class="fab fa-cc-visa"></i>Visa / Mastercard</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Bank transfer"><span><i class="fas fa-building-columns"></i>Bank transfer</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="JazzCash / Easypaisa"><span><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Cash on delivery (Pakistan)"><span><i class="fas fa-money-bill-wave"></i>Cash on delivery (Pakistan)</span></label>
+              </div>
+              <p class="pay-info" id="payInfo"></p>
+              <a href="#" class="btn btn-paypal btn-block" id="payPal" target="_blank" rel="noopener" hidden><i class="fab fa-paypal"></i>Pay now with PayPal</a>
             </div>
 
             <button type="button" class="btn btn-wa btn-block" id="checkoutWa"><i class="fab fa-whatsapp"></i>Checkout on WhatsApp</button>
@@ -686,6 +748,14 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
+      <div class="pay-badges" aria-label="Payment methods we accept">
+        <span class="pb-label">We accept</span>
+        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
+        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+        <span class="pb"><i class="fas fa-building-columns"></i>Bank transfer</span>
+        <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+      </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
     </div>
@@ -751,6 +821,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
     "Premium Walnuts": { price: 6.99, unit: "/ 250g", cat: "Dry Fruits", theme: "c-dry", img: "img-walnuts.jpg" },
     "Soft Premium Dates": { price: 5.99, unit: "/ 250g", cat: "Dry Fruits", theme: "c-dry", img: "img-dates.jpg" },
     "Sun-Dried Raisins": { price: 5.99, unit: "/ 250g", cat: "Dry Fruits", theme: "c-dry", img: "img-raisins.jpg" },
+    "Hunza Dried Apricots": { price: 6.99, unit: "/ 250g", cat: "Dry Fruits", theme: "c-dry", img: "https://images.unsplash.com/photo-1784043436919-28fd8e17ff3c?auto=format&fit=crop&w=240&h=240&q=80" },
     "Luxury Dry Fruits Gift Box": { price: 49.99, unit: "/ box", cat: "Dry Fruits", theme: "c-dry", img: "img-giftbox.jpg" },
     "Himalayan Pink Salt (Fine Grain)": { price: 4.99, unit: "/ 250g", cat: "Pink Salt", theme: "c-salt", img: "img-salt-fine.jpg" },
     "Himalayan Pink Salt (Coarse)": { price: 4.99, unit: "/ 250g", cat: "Pink Salt", theme: "c-salt", img: "img-salt-coarse.jpg" },
@@ -759,9 +830,14 @@ footer{background:var(--green-deep);color:#b9cbc1}
     "Pink Salt Duo Gift Set": { price: 19.99, unit: "/ set", cat: "Pink Salt", theme: "c-salt", img: "img-gift-2.jpg" },
     "Pink Salt Premium Collection (6 jars)": { price: 49.99, unit: "/ box", cat: "Pink Salt", theme: "c-salt", img: "img-gift-6.jpg" },
     "Pink Salt Grand Collection (12 jars)": { price: 79.99, unit: "/ box", cat: "Pink Salt", theme: "c-salt", img: "img-gift-12.jpg" },
-    "Super Kernel Basmati Rice": { price: 4.49, unit: "/ 1kg", cat: "Basmati Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=240&h=240&q=80" },
-    "1121 Sella Basmati Rice": { price: 4.99, unit: "/ 1kg", cat: "Basmati Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&fit=crop&w=240&h=240&q=80" },
-    "Brown Basmati Rice": { price: 5.49, unit: "/ 1kg", cat: "Basmati Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1704916029542-da6fa7bc34e7?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Super Kernel Basmati Rice": { price: 4.49, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1121 Sella Basmati Rice": { price: 4.99, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1121 Steam Basmati Rice": { price: 4.99, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1723475158229-894679ca024e?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1509 Basmati Rice": { price: 4.29, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1686820740687-426a7b9b2043?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Brown Basmati Rice": { price: 5.49, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1704916029542-da6fa7bc34e7?auto=format&fit=crop&w=240&h=240&q=80" },
+    "PK-386 Long Grain Rice": { price: 2.99, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1627482265910-5c0ff6bee088?auto=format&fit=crop&w=240&h=240&q=80" },
+    "IRRI-6 Long Grain Rice": { price: 2.49, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1705147289789-6df2593f1b1e?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Broken Basmati Rice": { price: 1.99, unit: "/ 1kg", cat: "Rice", theme: "c-rice", img: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=240&h=240&q=80" },
     "Seasonal Fresh Fruit Basket": { price: 16, unit: "/ basket", cat: "Fresh Fruits", theme: "c-fresh", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=240&h=240&q=80" }
   };
 
@@ -809,8 +885,11 @@ footer{background:var(--green-deep);color:#b9cbc1}
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
-  function money(n) {
+  function usd(n) {
     return "$" + (n % 1 === 0 ? n : n.toFixed(2));
+  }
+  function money(n) {
+    return (window.S2S && window.S2S.fmt) ? window.S2S.fmt(n) : usd(n);
   }
 
   /* ---------- Elements ---------- */
@@ -926,13 +1005,15 @@ footer{background:var(--green-deep);color:#b9cbc1}
       if (p) {
         var line = p.price * item.qty;
         total += line;
-        lines.push("- " + title + " x " + item.qty + " = " + money(line));
+        lines.push("- " + title + " x " + item.qty + " = " + usd(line));
       } else {
         lines.push("- " + title + " x " + item.qty + " (price to be confirmed)");
       }
     });
 
-    lines.push("Estimated total: " + money(total));
+    var approx = (window.S2S && window.S2S.currency() !== "USD") ? " (approx. " + window.S2S.fmt(total) + ")" : "";
+    lines.push("Estimated total: " + usd(total) + approx);
+    lines.push("Payment method: " + payMethod());
 
     var name = field("shipName");
     var country = field("shipCountry");
@@ -965,9 +1046,54 @@ footer{background:var(--green-deep);color:#b9cbc1}
       + "&body=" + encodeURIComponent(message);
   });
 
+  /* ---------- Payment method ---------- */
+  function payMethod() {
+    var c = document.querySelector('input[name="pay"]:checked');
+    return c ? c.value : "PayPal";
+  }
+  function orderTotal() {
+    var total = 0;
+    getGrouped().forEach(function (item) {
+      var p = PRODUCTS[item.name];
+      if (p) { total += p.price * item.qty; }
+    });
+    return Math.round(total * 100) / 100;
+  }
+  function updatePay() {
+    var cfg = (window.S2S && window.S2S.payment) || {};
+    var m = payMethod();
+    var info = document.getElementById("payInfo");
+    var pp = document.getElementById("payPal");
+    var text = "";
+    pp.hidden = true;
+    if (m === "PayPal") {
+      if (cfg.paypalMe && orderTotal() > 0) {
+        pp.href = "https://www.paypal.me/" + cfg.paypalMe + "/" + orderTotal() + "USD";
+        pp.hidden = false;
+        text = "Send your order first so we can confirm shipping, then pay securely with PayPal.";
+      } else {
+        text = "We send you a secure PayPal payment request after confirming your order and shipping cost.";
+      }
+    } else if (m === "Visa / Mastercard") {
+      text = "We send you a secure card payment link after confirming your order and shipping cost.";
+    } else if (m === "Bank transfer") {
+      text = cfg.bank ? "Bank details: " + cfg.bank : "Our bank details are shared on WhatsApp after your order is confirmed.";
+    } else if (m === "JazzCash / Easypaisa") {
+      text = cfg.wallet ? "Wallet details: " + cfg.wallet : "Our JazzCash / Easypaisa number is shared on WhatsApp after your order is confirmed.";
+    } else {
+      text = "Available for orders delivered within Pakistan. Pay in cash when your order arrives.";
+    }
+    info.textContent = text;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="pay"]'), function (r) {
+    r.addEventListener("change", updatePay);
+  });
+  window.addEventListener("s2s:currency", function () { render(); updatePay(); });
+
   /* ---------- Start ---------- */
   render();
-  window.addEventListener("pageshow", render);
+  updatePay();
+  window.addEventListener("pageshow", function () { render(); updatePay(); });
   window.addEventListener("storage", render);
 
 })();
@@ -981,6 +1107,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+<script src="store.js" defer></script>
 <script src="app.js" defer></script>
 
 </body>

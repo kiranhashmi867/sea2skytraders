@@ -373,6 +373,30 @@ footer{background:var(--green-deep);color:#b9cbc1}
   .contact-fab{right:14px;bottom:14px}
   .btn{white-space:normal;text-align:center}
 }
+
+/* ===== Phase 1: currency, payments, socials ===== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topbar .container{gap:20px}
+.tb-msg{flex:1}
+.tb-tools{display:flex;align-items:center;gap:10px}
+.cur{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.cur i{margin-right:0!important}
+.cur select{background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 6px;font:inherit;font-size:.78rem;cursor:pointer}
+.cur select option{color:#1c2420}
+.pay-badges{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%;padding-top:4px}
+.pb-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#9fb5aa;margin-right:4px}
+.pb{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid rgba(227,201,143,.25);border-radius:2px;font-size:.76rem;color:#dfe8e3}
+.pb i{font-size:1.05rem;color:var(--gold-light)}
+.chip-li{background:#0a66c2;color:#fff}
+.chip-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:#fff}
+.chip-fb{background:#1877f2;color:#fff}
+@media (max-width:960px){
+  .tb-msg{text-align:left}
+}
+@media (max-width:640px){
+  .tb-msg{font-size:.72rem}
+  .tb-msg i{display:none}
+}
 </style>
 </head>
 <body>
@@ -380,10 +404,22 @@ footer{background:var(--green-deep);color:#b9cbc1}
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="container">
-    <p><i class="fas fa-earth-americas"></i>Worldwide shipping &middot; Retail &amp; wholesale orders</p>
+    <p class="tb-msg"><i class="fas fa-earth-americas"></i>Delivering to UAE, Saudi Arabia, USA, UK, Europe &amp; Japan</p>
     <div class="topbar-right">
       <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
+    </div>
+    <div class="tb-tools">
+      <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
+        <select id="curSel" aria-label="Currency">
+          <option value="USD">USD $</option>
+          <option value="AED">AED</option>
+          <option value="SAR">SAR</option>
+          <option value="GBP">GBP £</option>
+          <option value="EUR">EUR €</option>
+          <option value="JPY">JPY ¥</option>
+        </select>
+      </label>
     </div>
   </div>
 </div>
@@ -473,7 +509,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
     <div class="trust-item"><i class="fas fa-leaf"></i><div><strong>100% Natural</strong><span>No additives, carefully selected</span></div></div>
     <div class="trust-item"><i class="fas fa-gift"></i><div><strong>Premium packaging</strong><span>Pouches, glass jars and gift boxes</span></div></div>
     <div class="trust-item"><i class="fas fa-boxes-stacked"></i><div><strong>Retail to export</strong><span>From 250g packs to 25kg bags</span></div></div>
-    <div class="trust-item"><i class="fas fa-earth-americas"></i><div><strong>Worldwide shipping</strong><span>USA, UK, Europe, Japan and more</span></div></div>
+    <div class="trust-item"><i class="fas fa-earth-americas"></i><div><strong>Worldwide shipping</strong><span>UAE, KSA, USA, UK, Europe, Japan</span></div></div>
   </div>
 </section>
 
@@ -551,7 +587,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Crunchy, natural almonds, hand-selected for size and taste.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$6.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="6.99">$6.99</span></div>
             <div class="prod-actions"><a href="shop.html#almonds" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Almonds" target="_blank" rel="noopener" class="mini-wa" aria-label="Order almonds on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -565,7 +601,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Roasted, salted or plain, with rich flavour and a satisfying crunch.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$6.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="6.99">$6.99</span></div>
             <div class="prod-actions"><a href="shop.html#pistachios" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Pistachios" target="_blank" rel="noopener" class="mini-wa" aria-label="Order pistachios on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -579,7 +615,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Creamy whole cashews, perfect for snacking, cooking and gifting.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$6.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="6.99">$6.99</span></div>
             <div class="prod-actions"><a href="shop.html#cashews" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Cashews" target="_blank" rel="noopener" class="mini-wa" aria-label="Order cashews on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -593,7 +629,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Light, fresh walnut kernels with a rich, hearty taste.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$6.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="6.99">$6.99</span></div>
             <div class="prod-actions"><a href="shop.html#walnuts" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Walnuts" target="_blank" rel="noopener" class="mini-wa" aria-label="Order walnuts on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -607,7 +643,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Soft, naturally sweet dates in a range of popular varieties.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$5.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="5.99">$5.99</span></div>
             <div class="prod-actions"><a href="shop.html#dates" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Dates" target="_blank" rel="noopener" class="mini-wa" aria-label="Order dates on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -621,7 +657,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Golden, black and brown raisins, naturally sweet and full of energy.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$5.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="5.99">$5.99</span></div>
             <div class="prod-actions"><a href="shop.html#raisins" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Raisins" target="_blank" rel="noopener" class="mini-wa" aria-label="Order raisins on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -635,7 +671,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Fine or coarse, in glass jars, pouches and refill packs.</p>
           <div class="sizes"><span>250g</span><span>500g</span><span>1kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$4.99</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="4.99">$4.99</span></div>
             <div class="prod-actions"><a href="shop.html?cat=pink-salt" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Himalayan%20Pink%20Salt" target="_blank" rel="noopener" class="mini-wa" aria-label="Order pink salt on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -649,7 +685,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <p>Extra-long, aromatic grains that cook fluffy and separate.</p>
           <div class="sizes"><span>1kg</span><span>5kg</span><span>10kg</span></div>
           <div class="prod-foot">
-            <div class="price"><span class="from">From</span>$4.49</div>
+            <div class="price"><span class="from">From</span><span class="money" data-usd="4.49">$4.49</span></div>
             <div class="prod-actions"><a href="shop.html?cat=rice" class="mini">View</a><a href="https://wa.me/923008697543?text=Hi%2C%20I%27m%20interested%20in%20Super%20Kernel%20Basmati%20Rice" target="_blank" rel="noopener" class="mini-wa" aria-label="Order basmati rice on WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
           </div>
         </div>
@@ -657,7 +693,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
     </div>
 
-    <p class="note"><i class="fas fa-circle-info"></i>Prices in USD for retail packs. Final price, shipping and delivery time are confirmed on WhatsApp for your country.</p>
+    <p class="note"><i class="fas fa-circle-info"></i>Prices are in USD. Other currencies are shown as an approximate guide. Final price, shipping and delivery time are confirmed on WhatsApp for your country.</p>
     <div class="center"><a href="shop.html" class="btn btn-green">View all products</a></div>
   </div>
 </section>
@@ -674,9 +710,9 @@ footer{background:var(--green-deep);color:#b9cbc1}
       <h2>Pakistani basmati rice, long grain and full of aroma</h2>
       <p>Carefully milled and cleaned basmati, packed in retail bags for homes and in export-quality sacks for restaurants, distributors and importers.</p>
       <div class="rice-list">
-        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>Super Kernel Basmati</strong><span>Extra-long grain, classic aroma</span></div><b>$4.49 <small>/ 1kg</small></b></div>
-        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>1121 Sella Basmati</strong><span>Golden parboiled, extra long after cooking</span></div><b>$4.99 <small>/ 1kg</small></b></div>
-        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>Brown Basmati</strong><span>Whole grain, nutty and wholesome</span></div><b>$5.49 <small>/ 1kg</small></b></div>
+        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>Super Kernel Basmati</strong><span>Extra-long grain, classic aroma</span></div><b><span class="money" data-usd="4.49">$4.49</span> <small>/ 1kg</small></b></div>
+        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>1121 Sella Basmati</strong><span>Golden parboiled, extra long after cooking</span></div><b><span class="money" data-usd="4.99">$4.99</span> <small>/ 1kg</small></b></div>
+        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>Brown Basmati</strong><span>Whole grain, nutty and wholesome</span></div><b><span class="money" data-usd="5.49">$5.49</span> <small>/ 1kg</small></b></div>
         <div class="rice-item"><i class="fas fa-boxes-stacked"></i><div><strong>Bulk &amp; export rice</strong><span>10kg, 25kg and 50kg bags, private label on request</span></div><b>Quote</b></div>
       </div>
       <a href="shop.html?cat=rice" class="btn btn-green">Shop basmati rice</a>
@@ -700,7 +736,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <span class="gift-num">Two piece set</span>
           <h3>Duo Collection</h3>
           <p>Two 500g premium glass jars, any two varieties. A simple, elegant gift.</p>
-          <div class="prod-foot"><div class="price"><span class="from">From</span>$19.99</div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Two%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
+          <div class="prod-foot"><div class="price"><span class="from">From</span><span class="money" data-usd="19.99">$19.99</span></div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Two%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
         </div>
       </div>
       <div class="gift">
@@ -709,7 +745,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <span class="gift-num">Six piece set</span>
           <h3>Premium Collection</h3>
           <p>Six glass jars in a luxury box. Ideal for families and festive gifting.</p>
-          <div class="prod-foot"><div class="price"><span class="from">From</span>$49.99</div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Six%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
+          <div class="prod-foot"><div class="price"><span class="from">From</span><span class="money" data-usd="49.99">$49.99</span></div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Six%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
         </div>
       </div>
       <div class="gift">
@@ -718,7 +754,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
           <span class="gift-num">Twelve piece set</span>
           <h3>Grand Collection</h3>
           <p>Twelve jars of mixed varieties. Our most impressive corporate gift.</p>
-          <div class="prod-foot"><div class="price"><span class="from">From</span>$79.99</div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Twelve%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
+          <div class="prod-foot"><div class="price"><span class="from">From</span><span class="money" data-usd="79.99">$79.99</span></div><a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20the%20Twelve%20Piece%20Gift%20Set" target="_blank" rel="noopener" class="mini">Order</a></div>
         </div>
       </div>
     </div>
@@ -819,6 +855,9 @@ footer{background:var(--green-deep);color:#b9cbc1}
         </ul>
         <div class="team-actions">
           <a href="https://wa.me/923081333143" target="_blank" rel="noopener" class="chip-btn chip-wa"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+          <a href="https://www.linkedin.com/in/kiranghashmi" target="_blank" rel="noopener" class="chip-btn chip-li"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+          <a href="https://www.instagram.com/kiranhashmi912" target="_blank" rel="noopener" class="chip-btn chip-ig"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="https://www.facebook.com/share/1CkcAH4rJv/" target="_blank" rel="noopener" class="chip-btn chip-fb"><i class="fab fa-facebook-f"></i>Facebook</a>
           <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="chip-btn chip-snap"><i class="fab fa-snapchat"></i>Snapchat</a>
           <a href="mailto:info@sea2skytraders.com" class="chip-btn chip-mail"><i class="fas fa-envelope"></i>Email</a>
         </div>
@@ -907,6 +946,14 @@ footer{background:var(--green-deep);color:#b9cbc1}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
+      <div class="pay-badges" aria-label="Payment methods we accept">
+        <span class="pb-label">We accept</span>
+        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
+        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+        <span class="pb"><i class="fas fa-building-columns"></i>Bank transfer</span>
+        <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+      </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>
     </div>
@@ -985,6 +1032,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+<script src="store.js" defer></script>
 <script src="app.js" defer></script>
 
 </body>
