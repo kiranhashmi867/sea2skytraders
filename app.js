@@ -19,7 +19,9 @@
     var b = document.createElement("button");
     b.type = "button";
     b.className = "app-install " + extraClass;
-    b.innerHTML = '<i class="fas fa-download"></i><span>Install our app</span>';
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    var label = { ar: "ثبّت تطبيقنا", ja: "アプリをインストール" }[lang] || "Install our app";
+    b.innerHTML = '<i class="fas fa-download"></i><span>' + label + '</span>';
     b.addEventListener("click", function () {
       if (!promptEvent) { return; }
       promptEvent.prompt();

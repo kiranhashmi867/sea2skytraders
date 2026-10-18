@@ -8,6 +8,10 @@
 <title>Your Cart | Sea2Sky Traders</title>
 <meta name="description" content="Review the items in your cart and send your order to Sea2Sky Traders on WhatsApp. Price, shipping and delivery are confirmed before anything ships.">
 <link rel="canonical" href="https://sea2skytraders.com/cart.html">
+<link rel="alternate" hreflang="en" href="https://sea2skytraders.com/cart.html">
+<link rel="alternate" hreflang="ar" href="https://sea2skytraders.com/ar/cart.html">
+<link rel="alternate" hreflang="ja" href="https://sea2skytraders.com/ja/cart.html">
+<link rel="alternate" hreflang="x-default" href="https://sea2skytraders.com/cart.html">
 <meta name="theme-color" content="#123a2e">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -473,6 +477,19 @@ footer{background:var(--green-deep);color:#b9cbc1}
 .btn-paypal{background:#ffc439;color:#111;margin-top:12px}
 .btn-paypal:hover{background:#f2b52e}
 </style>
+<style id="i18n-css">
+.lang{display:inline-flex;align-items:center;gap:2px}
+.lang i{margin-right:4px!important;color:var(--gold-light)}
+.lang a{padding:2px 7px;font-size:.76rem;line-height:1.5;color:#fff;border:1px solid transparent;border-radius:2px;letter-spacing:0}
+.lang a[aria-current]{border-color:rgba(227,201,143,.6);color:var(--gold-light)}
+.lang a:hover{color:var(--gold-light)}
+.lang a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
+.lang a[lang=ar]{font-family:'Tajawal',var(--sans)}
+@media (max-width:640px){
+  .topbar .container{flex-wrap:wrap;justify-content:center;gap:4px 14px;padding-top:6px;padding-bottom:6px}
+  .topbar .tb-msg{flex:1 1 100%;width:100%;text-align:center;font-size:.74rem;line-height:1.5}
+}
+</style>
 </head>
 <body>
 
@@ -485,6 +502,7 @@ footer{background:var(--green-deep);color:#b9cbc1}
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 300 8697543</a>
     </div>
     <div class="tb-tools">
+      <nav class="lang" aria-label="Language"><i class="fas fa-globe" aria-hidden="true"></i><a href="cart.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="ar/cart.html" hreflang="ar" lang="ar">العربية</a><a href="ja/cart.html" hreflang="ja" lang="ja">日本語</a></nav>
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
         <select id="curSel" aria-label="Currency">
           <option value="USD">USD $</option>

@@ -13,9 +13,12 @@
   var RATES = { USD: 1, AED: 3.6725, SAR: 3.75, GBP: 0.75, EUR: 0.889, JPY: 158 };
   var KEY = "s2sCurrency";
 
+  // A visitor who has not chosen a currency sees the usual one for the page language.
+  var DEFAULT = { ar: "AED", ja: "JPY" }[(document.documentElement.lang || "en").slice(0, 2)] || "USD";
+
   function currency() {
-    var c = "USD";
-    try { c = localStorage.getItem(KEY) || "USD"; } catch (e) {}
+    var c = DEFAULT;
+    try { c = localStorage.getItem(KEY) || DEFAULT; } catch (e) {}
     return RATES[c] ? c : "USD";
   }
 

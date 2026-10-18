@@ -43,6 +43,19 @@ button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 }
 .help strong{color:#f6d77a;font-weight:600;white-space:nowrap}
 </style>
+<style id="i18n-css">
+.lang{display:inline-flex;align-items:center;gap:2px}
+.lang i{margin-right:4px!important;color:var(--gold-light)}
+.lang a{padding:2px 7px;font-size:.76rem;line-height:1.5;color:#fff;border:1px solid transparent;border-radius:2px;letter-spacing:0}
+.lang a[aria-current]{border-color:rgba(227,201,143,.6);color:var(--gold-light)}
+.lang a:hover{color:var(--gold-light)}
+.lang a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
+.lang a[lang=ar]{font-family:'Tajawal',var(--sans)}
+@media (max-width:640px){
+  .topbar .container{flex-wrap:wrap;justify-content:center;gap:4px 14px;padding-top:6px;padding-bottom:6px}
+  .topbar .tb-msg{flex:1 1 100%;width:100%;text-align:center;font-size:.74rem;line-height:1.5}
+}
+</style>
 </head>
 <body>
 
@@ -63,6 +76,22 @@ button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 </main>
 
 <script>
+// The app shows this page for any address it cannot load, including the Arabic and Japanese pages.
+(function () {
+  var m = window.location.pathname.match(/^\/(ar|ja)\//);
+  if (!m || document.documentElement.lang !== "en") { return; }
+  var T = {
+    ar: ["تعذّر تحميل هذه الصفحة", "تحقق من اتصالك بالإنترنت وحاول مرة أخرى. ستُعاد تحميل هذه الصفحة تلقائياً عند عودة الاتصال.", "حاول مرة أخرى", "تحتاج مساعدة في طلب؟ راسل Sea2Sky Traders عبر واتساب: "],
+    ja: ["ページを読み込めません", "インターネット接続を確認して、もう一度お試しください。オンラインに戻ると自動的に再読み込みされます。", "再試行", "ご注文でお困りですか?WhatsAppで Sea2Sky Traders にご連絡ください:"]
+  }[m[1]];
+  document.documentElement.lang = m[1];
+  if (m[1] === "ar") { document.documentElement.dir = "rtl"; }
+  document.querySelector("h1").textContent = T[0];
+  document.querySelector("main > p:not(.help)").textContent = T[1];
+  document.getElementById("retry").textContent = T[2];
+  var help = document.querySelector(".help");
+  help.firstChild.textContent = T[3];
+})();
 document.getElementById("retry").addEventListener("click", function () {
   window.location.reload();
 });

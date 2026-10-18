@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+
+<title>سلة التسوق | Sea2Sky Traders</title>
+<meta name="description" content="راجع منتجات سلتك وأرسل طلبك إلى Sea2Sky Traders عبر واتساب. يتم تأكيد السعر والشحن والتوصيل قبل الشحن.">
+<link rel="canonical" href="https://sea2skytraders.com/ar/cart.html">
+<link rel="alternate" hreflang="en" href="https://sea2skytraders.com/cart.html">
+<link rel="alternate" hreflang="ar" href="https://sea2skytraders.com/ar/cart.html">
+<link rel="alternate" hreflang="ja" href="https://sea2skytraders.com/ja/cart.html">
+<link rel="alternate" hreflang="x-default" href="https://sea2skytraders.com/cart.html">
+<meta name="theme-color" content="#123a2e">
+<link rel="manifest" href="../manifest.json">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<link rel="icon" type="image/png" href="../icon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --pine:#0e3b2e;
+  --pine-deep:#082a20;
+  --pine-soft:#17543f;
+  --gold:#e0a526;
+  --gold-light:#f6d77a;
+  --gold-deep:#a87508;
+  --sage:#f3f7f2;
+  --sand:#fff6e0;
+  --ink:#13251e;
+  --muted:#5d6e66;
+  --line:#e2e9e3;
+  --shadow:0 24px 60px -28px rgba(8,42,32,.35);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+
+/* colour themes */
+.c-dry{--c1:#b87120;--c2:#86490f;--soft:#fdf3e2;--sh:rgba(184,113,32,.5)}
+.c-salt{--c1:#d9577c;--c2:#ab2e5b;--soft:#fdedf1;--sh:rgba(217,87,124,.5)}
+.c-fresh{--c1:#35903f;--c2:#1b6b33;--soft:#eaf6ec;--sh:rgba(53,144,63,.5)}
+.c-pine{--c1:#17543f;--c2:#0e3b2e;--soft:#eaf3ee;--sh:rgba(14,59,46,.5)}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em;color:var(--pine);text-wrap:balance}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+[hidden]{display:none!important}
+
+.container{width:92%;max-width:1240px;margin:0 auto}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:var(--sans);font-weight:700;font-size:.97rem;line-height:1;border:0;cursor:pointer;white-space:nowrap;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--pine-deep);box-shadow:0 14px 30px -12px rgba(224,165,38,.75)}
+.btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 14px 30px -12px rgba(37,211,102,.7)}
+.btn-ghost{background:#fff;color:var(--pine);border:1.5px solid var(--line);padding:13.5px 28px}
+.btn-ghost:hover{border-color:var(--pine)}
+.btn-cat{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;box-shadow:0 14px 26px -12px var(--sh)}
+.btn-block{width:100%}
+
+/* TOP BAR */
+.topbar{background:var(--pine-deep);color:#d8e6dd;font-size:.86rem}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
+.topbar i{color:var(--gold-light);margin-right:8px}
+.topbar-right{display:flex;gap:24px}
+.topbar a:hover{color:var(--gold-light)}
+
+/* HEADER */
+header.site{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 6px 24px -18px rgba(8,42,32,.5)}
+.navbar{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:50px;height:50px;flex-shrink:0}
+.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.55rem;color:var(--pine);line-height:1;letter-spacing:-.01em}
+.logo-word b span{color:var(--gold-deep)}
+.logo-word small{display:block;font-size:.66rem;font-weight:700;letter-spacing:.3em;color:var(--muted);margin-top:5px;text-transform:uppercase}
+.nav ul{display:flex;align-items:center;gap:30px}
+.nav a{font-weight:600;font-size:.97rem;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+.nav a:hover{color:var(--pine)}
+.nav a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.15rem;transition:background .25s}
+.icon-btn.wa{color:#128c7e}
+.icon-btn:hover{background:var(--sage)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--pine-deep);padding:11px 14px 11px 20px;border-radius:999px;font-weight:700;font-size:.92rem;line-height:1}
+.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--pine);color:#fff;font-size:.78rem;font-weight:700;display:inline-grid;place-items:center;line-height:1}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--pine);font-size:1.1rem;cursor:pointer}
+
+/* CATEGORY BAR */
+.catbar{background:var(--sage);border-bottom:1px solid var(--line)}
+.catbar .container{display:flex;align-items:center;gap:10px;min-height:56px;overflow-x:auto;scrollbar-width:none}
+.catbar .container::-webkit-scrollbar{display:none}
+.catbar a{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.9rem;color:var(--ink);white-space:nowrap;transition:border-color .25s,color .25s}
+.catbar a:hover{border-color:var(--c1,var(--pine));color:var(--c2,var(--pine))}
+.catbar a i{color:var(--pine)}
+.catbar .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.catbar a.catbar-quote{margin-left:auto;background:var(--pine);border-color:var(--pine);color:#fff}
+.catbar a.catbar-quote i{color:var(--gold-light)}
+.catbar a.catbar-quote:hover{background:var(--pine-soft);color:#fff}
+
+/* PAGE HERO */
+.page-hero{color:#fff;background:
+  radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
+  radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
+  linear-gradient(135deg,#082a20 0%,#0e3b2e 55%,#17543f 100%)}
+.page-hero .container{padding:52px 0 56px}
+.crumb{font-size:.9rem;color:#b9cdc2;margin-bottom:14px}
+.crumb a:hover{color:var(--gold-light)}
+.crumb b{color:var(--gold-light);font-weight:600}
+.page-hero h1{color:#fff;font-size:clamp(2.1rem,4.4vw,3.2rem);margin-bottom:12px}
+.page-hero h1 span{color:var(--gold-light);font-style:italic}
+.page-hero p{color:#cfe0d6;font-size:1.08rem;max-width:640px}
+
+/* CART */
+.cart-wrap{padding:40px 0 88px}
+
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px}
+.flow li{display:flex;align-items:center;gap:14px;background:var(--sage);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.flow-no{width:40px;height:40px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:var(--pine);color:var(--gold-light);font-family:var(--serif);font-weight:700;font-size:1.1rem}
+.flow strong{display:block;color:var(--pine);font-size:.98rem;line-height:1.3}
+.flow div span{display:block;color:var(--muted);font-size:.86rem;line-height:1.4}
+
+.noscript{background:var(--sand);border:1px solid var(--gold);border-radius:16px;padding:18px 20px;color:var(--ink);margin-bottom:24px}
+
+.cart-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:start}
+.cart-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.cart-head h2{font-size:1.5rem}
+.clear-btn{display:inline-flex;align-items:center;gap:8px;background:none;border:0;color:var(--muted);font-family:var(--sans);font-weight:700;font-size:.9rem;cursor:pointer;padding:8px 14px;border-radius:999px;transition:color .2s,background .2s}
+.clear-btn:hover{color:#b3261e;background:#fdecea}
+.notice{display:flex;gap:10px;align-items:flex-start;background:var(--sand);border:1px solid var(--gold);border-radius:14px;padding:12px 16px;font-size:.93rem;margin-bottom:14px}
+.notice i{color:var(--gold-deep);margin-top:4px}
+
+.cart-list{display:grid;gap:14px}
+.item{display:grid;grid-template-columns:104px 1fr auto;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;transition:border-color .25s,box-shadow .25s}
+.item:hover{border-color:var(--c1);box-shadow:0 20px 40px -28px var(--sh)}
+.item-img{position:relative;width:104px;height:104px;border-radius:14px;overflow:hidden;display:grid;place-items:center;font-size:1.8rem;color:rgba(255,255,255,.5);background:linear-gradient(135deg,var(--c1),var(--c2))}
+.item-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item-cat{font-size:.78rem;font-weight:700;color:var(--c2)}
+.item h3{font-size:1.15rem;margin:2px 0 4px}
+.item-unit{font-size:.9rem;color:var(--muted)}
+.item-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.item-total{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:var(--pine);line-height:1}
+.item-total.ask{font-family:var(--sans);font-size:.88rem;color:var(--c2)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.qty button{width:38px;height:38px;border:0;background:#fff;color:var(--pine);font-size:.9rem;cursor:pointer;transition:background .2s}
+.qty button:hover{background:var(--sage)}
+.qty span{min-width:34px;text-align:center;font-weight:700}
+.remove{display:inline-flex;align-items:center;gap:6px;background:none;border:0;color:var(--muted);font-family:var(--sans);font-size:.85rem;font-weight:600;cursor:pointer;transition:color .2s}
+.remove:hover{color:#b3261e}
+.continue{display:inline-flex;align-items:center;gap:9px;margin-top:20px;font-weight:700;color:var(--pine)}
+.continue:hover{color:var(--gold-deep)}
+
+.summary{position:sticky;top:104px;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.summary-head{background:linear-gradient(135deg,#082a20 0%,#0e3b2e 60%,#17543f 100%);padding:22px 26px}
+.summary-head h2{color:#fff;font-size:1.4rem}
+.summary-body{padding:20px 26px 26px}
+.sum-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;color:var(--muted)}
+.sum-row strong{color:var(--ink);text-align:right}
+.sum-total{border-top:1.5px solid var(--line);margin-top:8px;padding-top:16px;color:var(--ink);font-weight:700}
+.sum-total span:last-child{font-family:var(--serif);font-weight:700;font-size:1.7rem;color:var(--pine);line-height:1}
+.sum-note{display:flex;gap:9px;align-items:flex-start;background:var(--sage);border-radius:14px;padding:12px 14px;font-size:.87rem;color:var(--muted);margin:14px 0 20px}
+.sum-note i{color:var(--pine);margin-top:3px}
+
+.ship-fields{border-top:1px solid var(--line);padding-top:18px;margin-bottom:20px}
+.ship-fields h3{font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:0;margin-bottom:4px}
+.ship-fields h3 small{font-weight:500;color:var(--muted)}
+.ship-fields>p{font-size:.86rem;color:var(--muted);margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field{margin-bottom:10px}
+.field label{display:block;font-weight:700;font-size:.82rem;color:var(--pine);margin-bottom:5px}
+.field input,.field textarea{width:100%;font-family:var(--sans);font-size:.96rem;color:var(--ink);background:var(--sage);border:1.5px solid var(--line);border-radius:12px;padding:11px 13px;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:72px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(224,165,38,.18)}
+.summary .btn + .btn{margin-top:10px}
+
+.empty{text-align:center;padding:64px 24px;border:1.5px dashed var(--line);border-radius:26px;background:var(--sage)}
+.empty-icon{width:86px;height:86px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:#fff;border:1px solid var(--line);color:var(--pine);font-size:2rem}
+.empty h2{font-size:1.9rem;margin-bottom:10px}
+.empty p{color:var(--muted);max-width:480px;margin:0 auto 26px}
+.empty-cats{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:22px}
+.empty-cats a{display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:.9rem;color:var(--c2);transition:border-color .2s}
+.empty-cats a:hover{border-color:var(--c1)}
+.empty-cats .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+
+/* ASSURANCE STRIP */
+.assure{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.assure-item{display:flex;align-items:center;gap:14px;padding:24px 22px;border-right:1px solid var(--line)}
+.assure-item:last-child{border-right:0}
+.assure-icon{width:50px;height:50px;border-radius:15px;flex-shrink:0;display:grid;place-items:center;font-size:1.15rem;color:#fff;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.assure-item strong{display:block;font-size:1rem;color:var(--pine);line-height:1.3}
+.assure-item span{display:block;font-size:.87rem;color:var(--muted);line-height:1.4}
+
+/* FOOTER */
+footer{background:var(--pine-deep);color:#b9cdc2;padding-top:72px;border-top:4px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:46px;padding-bottom:54px}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.footer-logo svg{width:48px;height:48px}
+.footer-logo b{font-family:var(--serif);font-weight:700;font-size:1.45rem;color:#fff;line-height:1}
+.footer-logo b span{color:var(--gold-light)}
+.footer-logo small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.3em;color:#9fb6aa;margin-top:5px;text-transform:uppercase}
+.footer-about{font-size:.95rem;line-height:1.8;color:#a9c0b4;margin-bottom:22px}
+.footer-title{font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:0;color:var(--gold-light);margin-bottom:18px}
+.footer-links li{margin-bottom:10px}
+.footer-links a{font-size:.95rem;transition:color .2s,padding-left .2s}
+.footer-links a:hover{color:var(--gold-light);padding-left:4px}
+.contact-line{display:flex;gap:12px;margin-bottom:14px;font-size:.95rem;line-height:1.6}
+.contact-line i{width:18px;text-align:center;color:var(--gold-light);margin-top:5px;flex-shrink:0}
+.contact-line strong{color:#fff;font-weight:600}
+.contact-line a{word-break:break-word}
+.contact-line a:hover{color:var(--gold-light)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.05rem;transition:transform .25s}
+.socials a:hover{transform:translateY(-3px)}
+.s-fb{background:#1877f2}
+.s-ig{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
+.s-wa{background:#25d366}
+.socials a.s-sc{background:#fffc00;color:#111}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0}
+.footer-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.88rem;color:#9fb6aa}
+.footer-bottom a{color:var(--gold-light)}
+
+/* FLOATING CONTACT */
+.contact-fab{position:fixed;right:20px;bottom:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.fab-options{display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .3s,transform .3s,visibility .3s}
+.contact-fab.open .fab-options{opacity:1;visibility:visible;transform:none}
+.fab-opt{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.3rem;box-shadow:0 10px 24px rgba(0,0,0,.28);transition:transform .25s}
+.fab-opt:hover{transform:scale(1.1)}
+.fab-wa{background:#25d366}
+.fab-mail{background:var(--gold);color:var(--pine-deep)}
+.fab-main{width:60px;height:60px;border-radius:50%;border:3px solid var(--gold-light);background:var(--pine);color:var(--gold-light);font-size:1.4rem;cursor:pointer;box-shadow:0 14px 32px rgba(8,42,32,.45);transition:background .3s,color .3s}
+.contact-fab.open .fab-main{background:var(--gold);color:var(--pine-deep)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .nav ul{gap:20px}
+  .cart-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:940px){
+  .menu-btn{display:grid;place-items:center}
+  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:6px 4% 18px;border-top:1px solid var(--line);box-shadow:0 30px 40px -20px rgba(8,42,32,.25)}
+  .nav ul.active{display:flex}
+  .nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .nav a::after{display:none}
+  .flow{grid-template-columns:1fr}
+  .assure{grid-template-columns:1fr}
+  .assure-item{border-right:0;border-bottom:1px solid var(--line)}
+  .assure-item:last-child{border-bottom:0}
+}
+@media(max-width:760px){
+  .topbar .container{justify-content:center;text-align:center}
+  .topbar-right{display:none}
+}
+@media(max-width:640px){
+  .navbar{min-height:70px}
+  .logo svg{width:44px;height:44px}
+  .logo-word b{font-size:1.3rem}
+  .icon-btn.wa{display:none}
+  .cart-btn{padding:0;width:44px;height:44px;justify-content:center}
+  .cart-label{display:none}
+  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid #fff;min-width:22px;height:22px;padding:0 5px}
+  .catbar a.catbar-quote{margin-left:0}
+  .page-hero .container{padding:40px 0 44px}
+  .cart-wrap{padding:28px 0 64px}
+  .item{grid-template-columns:84px 1fr;gap:14px;padding:14px}
+  .item-img{width:84px;height:84px}
+  .item-right{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--line)}
+  .summary-body{padding:18px 20px 22px}
+  .summary-head{padding:20px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .empty{padding:48px 20px}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .contact-fab{right:14px;bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+
+/* ===== SEA2SKY THEME (same design as the home page) ===== */
+:root{
+  --pine:#123a2e;--pine-deep:#0b2a21;--pine-soft:#1d4c3d;
+  --green:#123a2e;--green-deep:#0b2a21;--green-soft:#1d4c3d;
+  --gold:#b8904a;--gold-light:#e3c98f;--gold-deep:#8a6a2c;
+  --ivory:#fbf8f2;--stone:#f3eee4;--sage:#f3eee4;--sand:#fbf8f2;
+  --line:#e7dfd0;--ink:#1c2420;--muted:#626b65;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+.c-dry{--c1:#9a6a2c;--c2:#6f4a17;--soft:#f6eedf;--sh:rgba(154,106,44,.45)}
+.c-salt{--c1:#b85d74;--c2:#8e3c55;--soft:#f8ecef;--sh:rgba(184,93,116,.45)}
+.c-rice{--c1:#b0903f;--c2:#7d6420;--soft:#f7f0dc;--sh:rgba(176,144,63,.45)}
+.c-fresh{--c1:#3f7d4a;--c2:#2a5c35;--soft:#eaf2ea;--sh:rgba(63,125,74,.45)}
+.c-pine{--c1:#1d4c3d;--c2:#123a2e;--soft:#eef2ee;--sh:rgba(18,58,46,.45)}
+body{background:var(--ivory);font-variant-numeric:lining-nums;line-height:1.7}
+h1,h2,h3{font-weight:600;line-height:1.08;letter-spacing:-.005em}
+html{scroll-padding-top:110px}
+.page-hero{background:radial-gradient(900px 500px at 85% 0%,rgba(227,201,143,.16),transparent 60%),linear-gradient(140deg,#0b2a21 0%,#123a2e 60%,#164536 100%)!important}
+.page-hero h1{font-size:clamp(2.6rem,5vw,3.9rem)}
+.btn-wa{background:#128c7e!important;box-shadow:none!important}
+.btn-cat{border-radius:2px;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;font-weight:600}
+.bulk{background:radial-gradient(700px 380px at 10% 0%,rgba(227,201,143,.16),transparent 62%),linear-gradient(140deg,#0b2a21,#123a2e)!important}
+.section-sage{background:var(--stone)}
+.cat-grid-4{grid-template-columns:repeat(4,1fr)!important}
+.prod-media img.fit{object-fit:contain;background:#f1ece6}
+.catbar a,.catbar a.catbar-quote{padding:0;background:none;border:0;border-radius:0;box-shadow:none}
+.catbar a.catbar-quote:hover{background:none;color:var(--gold-deep)}
+.prod-media.fitbg{background:#f1ece6}
+.btn-add,.btn-ask{border-radius:2px!important;box-shadow:none!important;text-transform:uppercase;letter-spacing:.08em;font-size:.74rem!important;font-weight:600!important}
+.btn-add{background:var(--c2)!important}
+.btn-add.added{background:var(--pine)!important}
+.btn-ask{background:#128c7e!important;color:#fff}
+.wa-mini{background:#128c7e}
+.prod-badge{border-radius:2px;background:var(--pine)!important;color:var(--gold-light)!important;text-transform:uppercase;letter-spacing:.12em;font-size:.64rem;box-shadow:none}
+.tab{border-radius:2px}
+.tab.active{background:var(--pine)!important;box-shadow:none!important}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:2px;font-family:var(--sans);font-weight:600;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;line-height:1;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold-deep)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-soft)}
+.btn-outline{border-color:rgba(227,201,143,.6);color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.08)}
+.btn-wa{background:#128c7e;color:#fff}
+.btn-wa:hover{background:#0e7065}
+
+/* TOP BAR */
+.topbar{background:var(--green-deep);color:#d6e2db;font-size:.8rem;letter-spacing:.04em}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
+.topbar i{color:var(--gold-light);margin-right:8px}
+.topbar-right{display:flex;gap:26px}
+.topbar a:hover{color:var(--gold-light)}
+
+/* HEADER */
+header.site{position:sticky;top:0;z-index:900;background:rgba(251,248,242,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.navbar{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:60px;height:42px;flex-shrink:0}
+.logo-word b{display:block;font-family:var(--serif);font-weight:700;font-size:1.95rem;color:var(--green);line-height:.9;letter-spacing:-.01em}
+.logo-word b span{color:var(--gold)}
+.logo-word small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.42em;color:var(--green-soft);margin-top:6px;text-transform:uppercase}
+.nav ul{display:flex;align-items:center;gap:34px}
+.nav a{font-weight:500;font-size:.84rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:8px 0;position:relative;transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .25s}
+.nav a:hover,.nav a.active{color:var(--green)}
+.nav a:hover::after,.nav a.active::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-size:1.1rem;color:#128c7e;transition:border-color .25s}
+.icon-btn:hover{border-color:var(--gold)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:12px 14px 12px 20px;border-radius:999px;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;line-height:1;transition:background .25s}
+.cart-btn:hover{background:var(--green-soft)}
+.cart-count{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:var(--gold);color:#fff;font-size:.76rem;font-weight:700;letter-spacing:0;display:inline-grid;place-items:center;line-height:1}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--green);font-size:1.1rem;cursor:pointer}
+
+/* CATEGORY BAR */
+.catbar{background:var(--stone);border-bottom:1px solid var(--line)}
+.catbar .container{display:flex;align-items:center;gap:28px;min-height:50px;overflow-x:auto;scrollbar-width:none}
+.catbar .container::-webkit-scrollbar{display:none}
+.catbar a{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:.84rem;color:var(--ink);white-space:nowrap;transition:color .2s}
+.catbar a:hover{color:var(--gold-deep)}
+.catbar a i{color:var(--gold-deep)}
+.catbar .sep{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.catbar a.catbar-quote{margin-left:auto;color:var(--green);font-weight:600}
+
+/* FOOTER */
+footer{background:var(--green-deep);color:#b9cbc1}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.35fr;gap:48px;padding:84px 0 56px}
+.footer-logo{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.footer-logo svg{width:78px;height:55px;flex-shrink:0}
+.footer-logo b{display:block;font-family:var(--serif);font-weight:700;font-size:2.4rem;color:#fff;line-height:.9}
+.footer-logo b span{color:var(--gold)}
+.footer-logo small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.44em;color:#c8d6ce;margin-top:8px;text-transform:uppercase}
+.footer-tag{font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px}
+.footer-about{font-size:.9rem;margin-bottom:24px;max-width:340px}
+.socials{display:flex;gap:10px}
+.socials a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.95rem;transition:transform .25s}
+.socials a:hover{transform:translateY(-3px)}
+.s-fb{background:#1877f2}
+.s-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
+.s-wa{background:#25d366}
+.s-sc{background:#fffc00;color:#111!important}
+.footer-title{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:#fff;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(227,201,143,.3)}
+.footer-links li{margin-bottom:10px}
+.footer-links a{font-size:.92rem;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.contact-line{display:flex;gap:12px;font-size:.9rem;margin-bottom:14px}
+.contact-line i{color:var(--gold-light);margin-top:5px;width:16px}
+.contact-line strong{color:#fff;font-weight:600}
+.contact-line a:hover{color:var(--gold-light)}
+.footer-bottom{border-top:1px solid rgba(227,201,143,.2)}
+.footer-bottom-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 0;font-size:.82rem}
+.footer-bottom a{color:var(--gold-light)}
+
+
+@media (max-width:1100px){
+  .footer-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-brand{grid-column:1 / -1}
+  .cat-grid-4{grid-template-columns:repeat(2,1fr)!important}
+}
+@media (max-width:960px){
+  .menu-btn{display:grid;place-items:center}
+  .nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ivory);border-bottom:1px solid var(--line);box-shadow:0 20px 30px -20px rgba(11,42,33,.4);padding:8px 4%;display:none}
+  .nav ul.active{display:flex}
+  .nav li a{display:block;padding:15px 0;border-bottom:1px solid var(--line)}
+  .nav a::after{display:none}
+  .topbar-right{display:none}
+  .topbar .container{justify-content:center;text-align:center}
+}
+@media (min-width:961px){
+  .menu-btn{display:none}
+  .nav ul{position:static;display:flex;flex-direction:row;background:none;box-shadow:none;padding:0;border:0}
+  .nav li a{padding:8px 0;border:0}
+}
+@media (max-width:640px){
+  .navbar{min-height:72px}
+  .logo svg{width:50px;height:35px}
+  .logo-word b{font-size:1.6rem}
+  .icon-btn{display:none}
+  .cart-btn{padding:0;width:44px;height:44px;justify-content:center}
+  .cart-label{display:none}
+  .cart-count{position:absolute;top:-6px;right:-6px;border:2px solid var(--ivory);min-width:22px;height:22px;padding:0 5px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px 24px}
+  .footer-grid > div:first-child,.footer-grid > div:last-child{grid-column:1 / -1}
+  .cat-grid-4{grid-template-columns:1fr!important}
+  .btn{white-space:normal;text-align:center}
+}
+
+/* ===== Phase 1: currency, payments, socials ===== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topbar .container{gap:20px}
+.tb-msg{flex:1}
+.tb-tools{display:flex;align-items:center;gap:10px}
+.cur{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.cur i{margin-right:0!important}
+.cur select{background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 6px;font:inherit;font-size:.78rem;cursor:pointer}
+.cur select option{color:#1c2420}
+.pay-badges{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%;padding-top:4px}
+.pb-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#9fb5aa;margin-right:4px}
+.pb{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid rgba(227,201,143,.25);border-radius:2px;font-size:.76rem;color:#dfe8e3}
+.pb i{font-size:1.05rem;color:var(--gold-light)}
+.chip-li{background:#0a66c2;color:#fff}
+.chip-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:#fff}
+.chip-fb{background:#1877f2;color:#fff}
+@media (max-width:960px){
+  .tb-msg{text-align:left}
+}
+@media (max-width:640px){
+  .tb-msg{font-size:.72rem}
+  .tb-msg i{display:none}
+}
+
+.pay-block{margin:6px 0 18px;padding-top:16px;border-top:1px solid var(--line)}
+.pay-block h3{font-size:1.25rem;margin-bottom:10px}
+.pay-opts{display:grid;gap:8px}
+.pay-opt{display:block;cursor:pointer}
+.pay-opt input{position:absolute;opacity:0}
+.pay-opt span{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid var(--line);background:#fff;font-size:.9rem;font-weight:500}
+.pay-opt span i{width:20px;text-align:center;color:var(--gold-deep);font-size:1.1rem}
+.pay-opt input:checked + span{border-color:var(--pine);box-shadow:inset 0 0 0 1px var(--pine);background:#f7f4ec}
+.pay-opt input:focus-visible + span{outline:3px solid var(--gold);outline-offset:2px}
+.pay-info{font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.btn-paypal{background:#ffc439;color:#111;margin-top:12px}
+.btn-paypal:hover{background:#f2b52e}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style id="i18n-lang">
+:root{--sans:'Figtree','Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--serif:'Cormorant Garamond','Amiri',Georgia,serif}
+html[dir=rtl] *{letter-spacing:0!important;text-transform:none!important}
+html[dir=rtl] body{line-height:1.8}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{line-height:1.45}
+html[dir=rtl] .fa-arrow-right,html[dir=rtl] .fa-arrow-right-long,html[dir=rtl] .fa-chevron-right,html[dir=rtl] .fa-angle-right,html[dir=rtl] .fa-arrow-left,html[dir=rtl] .fa-chevron-left{transform:scaleX(-1)}
+html[dir=rtl] a[href^="tel:"],html[dir=rtl] a[href^="mailto:"],html[dir=rtl] .money,html[dir=rtl] input[type=email],html[dir=rtl] input[type=tel]{direction:ltr;unicode-bidi:isolate}
+html[dir=rtl] .topbar i,html[dir=rtl] i.fas,html[dir=rtl] i.fab{margin-right:0}
+html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
+</style>
+<style id="i18n-css">
+.lang{display:inline-flex;align-items:center;gap:2px}
+.lang i{margin-right:4px!important;color:var(--gold-light)}
+.lang a{padding:2px 7px;font-size:.76rem;line-height:1.5;color:#fff;border:1px solid transparent;border-radius:2px;letter-spacing:0}
+.lang a[aria-current]{border-color:rgba(227,201,143,.6);color:var(--gold-light)}
+.lang a:hover{color:var(--gold-light)}
+.lang a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
+.lang a[lang=ar]{font-family:'Tajawal',var(--sans)}
+@media (max-width:640px){
+  .topbar .container{flex-wrap:wrap;justify-content:center;gap:4px 14px;padding-top:6px;padding-bottom:6px}
+  .topbar .tb-msg{flex:1 1 100%;width:100%;text-align:center;font-size:.74rem;line-height:1.5}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <p class="tb-msg"><i class="fas fa-earth-americas"></i>نوصّل إلى الإمارات والسعودية وأمريكا وبريطانيا وأوروبا واليابان</p>
+    <div class="topbar-right">
+      <a href="mailto:sales@sea2skytraders.com"><i class="fas fa-envelope"></i>sales@sea2skytraders.com</a>
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span dir="ltr">+92 300 8697543</span></a>
+    </div>
+    <div class="tb-tools">
+      <nav class="lang" aria-label="اللغة"><i class="fas fa-globe" aria-hidden="true"></i><a href="../cart.html" hreflang="en" lang="en">EN</a><a href="cart.html" hreflang="ar" lang="ar" aria-current="true">العربية</a><a href="../ja/cart.html" hreflang="ja" lang="ja">日本語</a></nav>
+      <label class="cur"><i class="fas fa-coins"></i><span class="sr">العملة</span>
+        <select id="curSel" aria-label="العملة">
+          <option value="USD">USD $</option>
+          <option value="AED">AED</option>
+          <option value="SAR">SAR</option>
+          <option value="GBP">GBP £</option>
+          <option value="EUR">EUR €</option>
+          <option value="JPY">JPY ¥</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="container navbar">
+
+    <a href="index.html" class="logo" aria-label="الصفحة الرئيسية لـ Sea2Sky Traders">
+      <svg viewBox="0 0 80 56" aria-hidden="true">
+        <path d="M8 46 A32 32 0 0 1 72 46" fill="none" stroke="#b8904a" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M14 52 L35 16 L56 52 Z" fill="#123a2e"/>
+        <path d="M35 16 L29.2 25.9 L32.4 24.2 L35.2 27.4 L38.4 23.8 L40.8 25.1 Z" fill="#fbf8f2"/>
+        <path d="M37 52 L52 28 L68 52 Z" fill="#b8904a"/>
+        <path d="M52 28 L47.8 34.7 L50.6 33.4 L52.6 35.6 L55 33 L56.4 34.2 Z" fill="#f3e6c6"/>
+        <path d="M10 52 H70" stroke="#b8904a" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">
+        <b>Sea<span>2</span>Sky</b>
+        <small>Traders</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <ul id="navMenu">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="shipping-returns.html">الشحن</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="تواصل عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+      <a href="cart.html" class="cart-btn" aria-label="السلة"><i class="fas fa-bag-shopping"></i><span class="cart-label">السلة</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
+    </div>
+
+  </div>
+</header>
+
+<!-- CATEGORY BAR -->
+<div class="catbar">
+  <div class="container">
+    <a href="shop.html"><i class="fas fa-store"></i>جميع المنتجات</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=dry-fruits">الفواكه المجففة</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=pink-salt">ملح الهيمالايا الوردي</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=rice">أرز بسمتي</a>
+    <span class="sep"></span>
+    <a href="shop.html?cat=fresh-fruits">الفواكه الطازجة</a>
+    <a href="index.html#export" class="catbar-quote"><i class="fas fa-boxes-stacked"></i>الجملة والتصدير</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="crumb"><a href="index.html">الرئيسية</a> &nbsp;/&nbsp; <a href="shop.html">المتجر</a> &nbsp;/&nbsp; <b>السلة</b></p>
+    <h1>سلة <span>التسوق</span></h1>
+    <p>راجع منتجاتك ثم أرسل طلبك عبر واتساب. نؤكد السعر والشحن والتوصيل قبل الشحن.</p>
+  </div>
+</section>
+
+<!-- CART -->
+<section class="cart-wrap">
+  <div class="container">
+
+    <ol class="flow">
+      <li><span class="flow-no">1</span><div><strong>راجع سلتك</strong><span>تحقق من المنتجات والكميات.</span></div></li>
+      <li><span class="flow-no">2</span><div><strong>أرسلها عبر واتساب</strong><span>يُفتح طلبك كرسالة جاهزة.</span></div></li>
+      <li><span class="flow-no">3</span><div><strong>نؤكد ونشحن</strong><span>السعر وتكلفة الشحن ومدة التوصيل.</span></div></li>
+    </ol>
+
+    <noscript>
+      <p class="noscript">تحتاج السلة إلى JavaScript لتعمل. يُرجى تفعيله في متصفحك، أو راسلنا عبر واتساب على <span dir="ltr">‎+92 300 8697543</span> لتقديم طلبك.</p>
+    </noscript>
+
+    <!-- Cart with items -->
+    <div id="cartFilled" hidden>
+      <div class="cart-grid">
+
+        <div>
+          <div class="cart-head">
+            <h2>المنتجات في سلتك</h2>
+            <button type="button" class="clear-btn" id="clearCart"><i class="fas fa-trash-can"></i>إفراغ السلة</button>
+          </div>
+
+          <p class="notice" id="removedNotice" hidden><i class="fas fa-circle-info"></i><span>بعض المنتجات في سلتك لم تعد متوفرة وتمت إزالتها.</span></p>
+
+          <div class="cart-list" id="cartList"></div>
+
+          <a href="shop.html" class="continue"><i class="fas fa-arrow-left"></i>متابعة التسوق</a>
+        </div>
+
+        <aside class="summary" aria-label="ملخص الطلب">
+          <div class="summary-head"><h2>ملخص الطلب</h2></div>
+          <div class="summary-body">
+
+            <div class="sum-row"><span>المنتجات</span><strong id="sumItems">0</strong></div>
+            <div class="sum-row"><span>المجموع الفرعي التقديري</span><strong id="sumSubtotal"><span class="money" data-usd="0">$0</span></strong></div>
+            <div class="sum-row"><span>الشحن</span><strong>يُؤكَّد عبر واتساب</strong></div>
+            <div class="sum-row sum-total"><span>الإجمالي التقديري</span><span id="sumTotal"><span class="money" data-usd="0">$0</span></span></div>
+
+            <p class="sum-note"><i class="fas fa-circle-info"></i><span>سيتم تأكيد السعر النهائي وتكلفة الشحن ومدة التوصيل عبر واتساب حسب وجهتك وحجم طلبك.</span></p>
+
+            <div class="ship-fields">
+              <h3>تفاصيل التوصيل <small>(اختياري)</small></h3>
+              <p>أضفها لنقدّم لك تكلفة الشحن بشكل أسرع.</p>
+
+              <div class="field">
+                <label for="shipName">الاسم الكامل</label>
+                <input type="text" id="shipName" placeholder="اسمك" autocomplete="name">
+              </div>
+              <div class="row2">
+                <div class="field">
+                  <label for="shipCountry">الدولة</label>
+                  <input type="text" id="shipCountry" placeholder="الدولة" autocomplete="country-name">
+                </div>
+                <div class="field">
+                  <label for="shipCity">المدينة</label>
+                  <input type="text" id="shipCity" placeholder="المدينة" autocomplete="address-level2">
+                </div>
+              </div>
+              <div class="field">
+                <label for="shipNotes">ملاحظات الطلب</label>
+                <textarea id="shipNotes" placeholder="تفضيلات التوصيل أو أي معلومات أخرى نحتاج معرفتها"></textarea>
+              </div>
+            </div>
+
+            <div class="pay-block" id="payBlock">
+              <h3>طريقة الدفع</h3>
+              <div class="pay-opts" role="radiogroup" aria-label="طريقة الدفع">
+                <label class="pay-opt"><input type="radio" name="pay" value="PayPal" checked><span><i class="fab fa-paypal"></i>PayPal</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Visa / Mastercard"><span><i class="fab fa-cc-visa"></i>Visa / Mastercard</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Bank transfer"><span><i class="fas fa-building-columns"></i>تحويل بنكي</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="JazzCash / Easypaisa"><span><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span></label>
+                <label class="pay-opt"><input type="radio" name="pay" value="Cash on delivery (Pakistan)"><span><i class="fas fa-money-bill-wave"></i>الدفع عند الاستلام (باكستان)</span></label>
+              </div>
+              <p class="pay-info" id="payInfo"></p>
+              <a href="#" class="btn btn-paypal btn-block" id="payPal" target="_blank" rel="noopener" hidden><i class="fab fa-paypal"></i>ادفع الآن عبر PayPal</a>
+            </div>
+
+            <button type="button" class="btn btn-wa btn-block" id="checkoutWa"><i class="fab fa-whatsapp"></i>إتمام الطلب عبر واتساب</button>
+            <button type="button" class="btn btn-ghost btn-block" id="checkoutMail"><i class="fas fa-envelope"></i>إرسال الطلب بالبريد الإلكتروني</button>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- Empty cart -->
+    <div class="empty" id="cartEmpty" hidden>
+      <div class="empty-icon"><i class="fas fa-cart-shopping"></i></div>
+      <h2>سلتك فارغة</h2>
+      <p>يبدو أنك لم تضف أي منتج بعد. تصفّح فئاتنا واختر ما يعجبك.</p>
+      <a href="shop.html" class="btn btn-gold"><i class="fas fa-bag-shopping"></i>تصفّح المتجر</a>
+      <div class="empty-cats">
+        <a href="shop.html?cat=dry-fruits" class="c-dry"><span class="dot"></span>الفواكه المجففة</a>
+        <a href="shop.html?cat=pink-salt" class="c-salt"><span class="dot"></span>الملح الوردي</a>
+        <a href="shop.html?cat=fresh-fruits" class="c-fresh"><span class="dot"></span>الفواكه الطازجة</a>
+      </div>
+    </div>
+
+    <div class="assure">
+      <div class="assure-item c-dry">
+        <div class="assure-icon"><i class="fas fa-box-open"></i></div>
+        <div><strong>تعبئة بعناية</strong><span>كل طلب يُعبّأ طازجًا قبل شحنه.</span></div>
+      </div>
+      <div class="assure-item c-pine">
+        <div class="assure-icon"><i class="fas fa-earth-americas"></i></div>
+        <div><strong>شحن إلى جميع أنحاء العالم</strong><span>اطّلع على مدد التوصيل في <a href="shipping-returns.html" style="text-decoration:underline">صفحة الشحن</a>.</span></div>
+      </div>
+      <div class="assure-item c-fresh">
+        <div class="assure-icon"><i class="fas fa-rotate-left"></i></div>
+        <div><strong>إرجاع سهل</strong><span>أبلغنا عن أي مشكلة خلال 3 أيام من التوصيل.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 80 56" aria-hidden="true">
+          <path d="M8 46 A32 32 0 0 1 72 46" fill="none" stroke="#b8904a" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M14 52 L35 16 L56 52 Z" fill="#2f7a60"/>
+          <path d="M35 16 L29.2 25.9 L32.4 24.2 L35.2 27.4 L38.4 23.8 L40.8 25.1 Z" fill="#fbf8f2"/>
+          <path d="M37 52 L52 28 L68 52 Z" fill="#b8904a"/>
+          <path d="M52 28 L47.8 34.7 L50.6 33.4 L52.6 35.6 L55 33 L56.4 34.2 Z" fill="#f3e6c6"/>
+          <path d="M10 52 H70" stroke="#b8904a" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <b>Sea<span>2</span>Sky</b>
+          <small>Traders</small>
+        </div>
+      </div>
+      <p class="footer-tag">منتجات طبيعية · انتشار عالمي</p>
+      <p class="footer-about">فواكه مجففة فاخرة وملح الهيمالايا الوردي وأرز بسمتي وفواكه طازجة من باكستان، للمنازل وتجار التجزئة والمستوردين حول العالم.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/1H9YBM2kvf/" target="_blank" rel="noopener" class="s-fb" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sea2skytraders" target="_blank" rel="noopener" class="s-ig" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="s-wa" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.snapchat.com/add/ayyatshah23?share_id=37fpKLd74aY&amp;locale=en-PK" target="_blank" rel="noopener" class="s-sc" aria-label="سناب شات"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="footer-title">روابط سريعة</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="shipping-returns.html">الشحن والإرجاع</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">فئات المنتجات</h3>
+      <ul class="footer-links">
+        <li><a href="shop.html?cat=dry-fruits">الفواكه المجففة</a></li>
+        <li><a href="shop.html?cat=pink-salt">ملح الهيمالايا الوردي</a></li>
+        <li><a href="shop.html?cat=rice">أرز بسمتي</a></li>
+        <li><a href="shop.html?cat=fresh-fruits">الفواكه الطازجة</a></li>
+        <li><a href="index.html#gifts">علب الهدايا</a></li>
+        <li><a href="index.html#export">الجملة والتصدير</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">خدمة العملاء</h3>
+      <div class="contact-line"><i class="fas fa-user-tie"></i><span><strong>الرئيس التنفيذي:</strong><br>محمد عمران خان</span></div>
+      <div class="contact-line"><i class="fas fa-envelope"></i><a href="mailto:sales@sea2skytraders.com">sales@sea2skytraders.com</a></div>
+      <div class="contact-line"><i class="fab fa-whatsapp"></i><a href="https://wa.me/923008697543" target="_blank" rel="noopener"><span dir="ltr">+92 300 8697543</span></a></div>
+      <div class="contact-line"><i class="fas fa-location-dot"></i><span>100، بلوك سودران، بحرية أورتشارد المرحلة 1،<br>لاهور، باكستان</span></div>
+      <div class="contact-line"><i class="fas fa-bullhorn"></i><span><strong>رئيسة التسويق:</strong><br>كيران هاشمي<br><a href="mailto:info@sea2skytraders.com">info@sea2skytraders.com</a><br><a href="https://wa.me/923081333143" target="_blank" rel="noopener"><span dir="ltr">+92 308 1333143</span></a></span></div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <div class="pay-badges" aria-label="طرق الدفع المقبولة">
+        <span class="pb-label">نقبل</span>
+        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
+        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+        <span class="pb"><i class="fas fa-building-columns"></i>تحويل بنكي</span>
+        <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+      </div>
+      <p>© 2026 Sea2Sky Traders. جميع الحقوق محفوظة.</p>
+      <p><a href="privacy-policy.html">سياسة الخصوصية</a> &nbsp;|&nbsp; <a href="shipping-returns.html">الشحن والإرجاع</a> &nbsp;|&nbsp; <a href="contact.html">دعم العملاء</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CONTACT TOGGLE -->
+<div class="contact-fab" id="fab">
+  <div class="fab-options">
+    <a href="mailto:sales@sea2skytraders.com" class="fab-opt fab-mail" title="راسلنا بالبريد" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="fab-opt fab-wa" title="راسلنا على واتساب" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <button class="fab-main" id="fabBtn" type="button" aria-label="خيارات التواصل" aria-expanded="false"><i class="fas fa-comments"></i></button>
+</div>
+
+<script>
+(function () {
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById("menuBtn");
+  var navMenu = document.getElementById("navMenu");
+
+  function setMenu(open) {
+    navMenu.classList.toggle("active", open);
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+  }
+  menuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setMenu(!navMenu.classList.contains("active"));
+  });
+  navMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () { setMenu(false); });
+  });
+
+  /* ---------- Floating contact toggle ---------- */
+  var fab = document.getElementById("fab");
+  var fabBtn = document.getElementById("fabBtn");
+
+  function setFab(open) {
+    fab.classList.toggle("open", open);
+    fabBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    fabBtn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-comments"></i>';
+  }
+  fabBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setFab(!fab.classList.contains("open"));
+  });
+  document.addEventListener("click", function (e) {
+    if (!fab.contains(e.target)) { setFab(false); }
+  });
+
+  /* ---------- Product list ----------
+     Every product that has an "Add to cart" button on shop.html must be listed here
+     with the same name, so the cart knows its price and picture. */
+  var IMG = "https://images.unsplash.com/photo-";
+  var CROP = "?auto=format&fit=crop&w=240&h=240&q=80";
+
+  var PRODUCTS = {
+    "Premium Californian Almonds": { title: "لوز كاليفورني فاخر", price: 6.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-almonds.jpg" },
+    "Roasted Pistachios": { title: "فستق محمّص", price: 6.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-pistachios.jpg" },
+    "Premium Cashew Nuts": { title: "كاجو فاخر", price: 6.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-cashews.jpg" },
+    "Premium Walnuts": { title: "جوز فاخر", price: 6.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-walnuts.jpg" },
+    "Soft Premium Dates": { title: "تمر فاخر طري", price: 5.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-dates.jpg" },
+    "Sun-Dried Raisins": { title: "زبيب مجفف بالشمس", price: 5.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "../img-raisins.jpg" },
+    "Hunza Dried Apricots": { title: "مشمش هونزا المجفف", price: 6.99, unit: "/ 250 غ", cat: "فواكه مجففة", theme: "c-dry", img: "https://images.unsplash.com/photo-1784043436919-28fd8e17ff3c?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Luxury Dry Fruits Gift Box": { title: "علبة هدايا فاخرة للفواكه المجففة", price: 49.99, unit: "/ علبة", cat: "فواكه مجففة", theme: "c-dry", img: "../img-giftbox.jpg" },
+    "Himalayan Pink Salt (Fine Grain)": { title: "ملح الهيمالايا الوردي (ناعم)", price: 4.99, unit: "/ 250 غ", cat: "ملح وردي", theme: "c-salt", img: "../img-salt-fine.jpg" },
+    "Himalayan Pink Salt (Coarse)": { title: "ملح الهيمالايا الوردي (خشن)", price: 4.99, unit: "/ 250 غ", cat: "ملح وردي", theme: "c-salt", img: "../img-salt-coarse.jpg" },
+    "Pink Salt Grinder": { title: "مطحنة الملح الوردي", price: 8.99, unit: "/ 200 غ", cat: "ملح وردي", theme: "c-salt", img: "../img-salt-grinder.jpg" },
+    "Pink Salt Lamp Decor Chunks": { title: "مصباح الملح الوردي وقطع الزينة", price: 11, unit: "/ عبوة", cat: "ملح وردي", theme: "c-salt", img: "../img-salt-lamp.jpg", title: "Pink Salt Lamp & Decor Chunks" },
+    "Pink Salt Duo Gift Set": { title: "طقم هدايا الملح الوردي الثنائي", price: 19.99, unit: "/ طقم", cat: "ملح وردي", theme: "c-salt", img: "../img-gift-2.jpg" },
+    "Pink Salt Premium Collection (6 jars)": { title: "المجموعة الفاخرة للملح الوردي (6 برطمانات)", price: 49.99, unit: "/ علبة", cat: "ملح وردي", theme: "c-salt", img: "../img-gift-6.jpg" },
+    "Pink Salt Grand Collection (12 jars)": { title: "المجموعة الكبرى للملح الوردي (12 برطمانًا)", price: 79.99, unit: "/ علبة", cat: "ملح وردي", theme: "c-salt", img: "../img-gift-12.jpg" },
+    "Super Kernel Basmati Rice": { title: "أرز بسمتي سوبر كيرنل", price: 4.49, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1121 Sella Basmati Rice": { title: "أرز بسمتي 1121 سيلا", price: 4.99, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1121 Steam Basmati Rice": { title: "أرز بسمتي 1121 ستيم", price: 4.99, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1723475158229-894679ca024e?auto=format&fit=crop&w=240&h=240&q=80" },
+    "1509 Basmati Rice": { title: "أرز بسمتي 1509", price: 4.29, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1686820740687-426a7b9b2043?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Brown Basmati Rice": { title: "أرز بسمتي بني", price: 5.49, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1704916029542-da6fa7bc34e7?auto=format&fit=crop&w=240&h=240&q=80" },
+    "PK-386 Long Grain Rice": { title: "أرز طويل الحبة PK-386", price: 2.99, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1627482265910-5c0ff6bee088?auto=format&fit=crop&w=240&h=240&q=80" },
+    "IRRI-6 Long Grain Rice": { title: "أرز طويل الحبة IRRI-6", price: 2.49, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1705147289789-6df2593f1b1e?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Broken Basmati Rice": { title: "أرز بسمتي مكسّر", price: 1.99, unit: "/ 1 كغ", cat: "أرز", theme: "c-rice", img: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=240&h=240&q=80" },
+    "Seasonal Fresh Fruit Basket": { title: "سلة فواكه موسمية طازجة", price: 16, unit: "/ سلة", cat: "فواكه طازجة", theme: "c-fresh", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=240&h=240&q=80" }
+  };
+
+  /* Products that were removed from the store. They are cleared from old carts. */
+  var DISCONTINUED = [
+    "Embroidered Ladies Kurti Set",
+    "Printed Lawn 3-Piece Suit",
+    "All-Weather Sports Ball Set",
+    "Kids Activity Toy Set",
+    "Wireless Earbuds Pro",
+    "Mobile Accessories Kit"
+  ];
+
+  /* ---------- Cart storage (same as shop.html) ---------- */
+  var CART_KEY = "s2sCart";
+
+  function getRaw() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
+      return Array.isArray(c) ? c.filter(function (n) { return typeof n === "string" && n; }) : [];
+    } catch (e) { return []; }
+  }
+  function saveRaw(arr) {
+    try { localStorage.setItem(CART_KEY, JSON.stringify(arr)); } catch (e) {}
+  }
+  function getGrouped() {
+    var map = {}, order = [];
+    getRaw().forEach(function (name) {
+      if (!map[name]) { map[name] = 0; order.push(name); }
+      map[name]++;
+    });
+    return order.map(function (name) { return { name: name, qty: map[name] }; });
+  }
+  function saveGrouped(items) {
+    var raw = [];
+    items.forEach(function (item) {
+      for (var i = 0; i < item.qty; i++) { raw.push(item.name); }
+    });
+    saveRaw(raw);
+  }
+
+  /* ---------- Helpers ---------- */
+  function esc(text) {
+    return String(text)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  function usd(n) {
+    return "$" + (n % 1 === 0 ? n : n.toFixed(2));
+  }
+  function money(n) {
+    return (window.S2S && window.S2S.fmt) ? window.S2S.fmt(n) : usd(n);
+  }
+
+  /* ---------- Elements ---------- */
+  var cartCount = document.getElementById("cartCount");
+  var filled = document.getElementById("cartFilled");
+  var empty = document.getElementById("cartEmpty");
+  var list = document.getElementById("cartList");
+  var sumItems = document.getElementById("sumItems");
+  var sumSubtotal = document.getElementById("sumSubtotal");
+  var sumTotal = document.getElementById("sumTotal");
+  var removedNotice = document.getElementById("removedNotice");
+
+  /* ---------- Remove discontinued products from old carts ---------- */
+  (function () {
+    var raw = getRaw();
+    var kept = raw.filter(function (name) { return DISCONTINUED.indexOf(name) === -1; });
+    if (kept.length !== raw.length) {
+      saveRaw(kept);
+      removedNotice.hidden = false;
+    }
+  })();
+
+  /* ---------- Render ---------- */
+  function render() {
+    var items = getGrouped();
+    var units = 0, total = 0, html = "";
+
+    items.forEach(function (item) {
+      var p = PRODUCTS[item.name] || null;
+      var title = p && p.title ? p.title : item.name;
+      var line = p ? p.price * item.qty : null;
+
+      units += item.qty;
+      if (p) { total += line; }
+
+      html +=
+        '<article class="item ' + (p ? p.theme : "c-pine") + '" data-name="' + esc(item.name) + '">' +
+          '<div class="item-img"><i class="fas fa-box-open"></i>' +
+            (p ? '<img src="' + esc(p.img) + '" alt="' + esc(title) + '" onerror="this.style.display=\'none\'">' : "") +
+          '</div>' +
+          '<div>' +
+            '<span class="item-cat">' + esc(p ? p.cat : "Sea2Sky Traders") + '</span>' +
+            '<h3>' + esc(title) + '</h3>' +
+            '<span class="item-unit">' + (p ? money(p.price) + " " + esc(p.unit) : "يتم تأكيد السعر عبر واتساب") + '</span>' +
+          '</div>' +
+          '<div class="item-right">' +
+            (p ? '<span class="item-total">' + money(line) + '</span>' : '<span class="item-total ask">السعر عند الطلب</span>') +
+            '<div class="qty">' +
+              '<button type="button" data-act="dec" aria-label="إنقاص كمية ' + esc(title) + '"><i class="fas fa-minus"></i></button>' +
+              '<span aria-live="polite">' + item.qty + '</span>' +
+              '<button type="button" data-act="inc" aria-label="زيادة كمية ' + esc(title) + '"><i class="fas fa-plus"></i></button>' +
+            '</div>' +
+            '<button type="button" class="remove" data-act="remove"><i class="fas fa-xmark"></i>إزالة</button>' +
+          '</div>' +
+        '</article>';
+    });
+
+    cartCount.textContent = units;
+    list.innerHTML = html;
+    sumItems.textContent = units;
+    sumSubtotal.textContent = money(total);
+    sumTotal.textContent = money(total);
+
+    filled.hidden = items.length === 0;
+    empty.hidden = items.length !== 0;
+  }
+
+  /* ---------- Quantity and remove ---------- */
+  list.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-act]");
+    if (!btn) { return; }
+    var row = btn.closest(".item");
+    if (!row) { return; }
+
+    var name = row.dataset.name;
+    var act = btn.dataset.act;
+    var items = getGrouped();
+
+    if (act === "remove") {
+      items = items.filter(function (item) { return item.name !== name; });
+    } else {
+      items.forEach(function (item) {
+        if (item.name === name) {
+          item.qty = Math.max(1, item.qty + (act === "inc" ? 1 : -1));
+        }
+      });
+    }
+
+    saveGrouped(items);
+    render();
+  });
+
+  document.getElementById("clearCart").addEventListener("click", function () {
+    if (window.confirm("هل تريد إزالة كل المنتجات من السلة؟")) {
+      saveRaw([]);
+      render();
+    }
+  });
+
+  /* ---------- Checkout message ---------- */
+  function field(id) { return document.getElementById(id).value.trim(); }
+
+  function buildOrder() {
+    var items = getGrouped();
+    if (!items.length) { return null; }
+
+    var lines = ["Hi, I'd like to place an order:"];
+    var total = 0;
+
+    items.forEach(function (item) {
+      var p = PRODUCTS[item.name] || null;
+      var title = p && p.title ? p.title : item.name;
+      if (p) {
+        var line = p.price * item.qty;
+        total += line;
+        lines.push("- " + title + " x " + item.qty + " = " + usd(line));
+      } else {
+        lines.push("- " + title + " x " + item.qty + " (price to be confirmed)");
+      }
+    });
+
+    var approx = (window.S2S && window.S2S.currency() !== "USD") ? " (approx. " + window.S2S.fmt(total) + ")" : "";
+    lines.push("Estimated total: " + usd(total) + approx);
+    lines.push("Payment method: " + payMethod());
+
+    var name = field("shipName");
+    var country = field("shipCountry");
+    var city = field("shipCity");
+    var notes = field("shipNotes");
+    var place = [city, country].filter(Boolean).join(", ");
+
+    if (name || place || notes) { lines.push(""); }
+    if (name) { lines.push("Name: " + name); }
+    if (place) { lines.push("Ship to: " + place); }
+    if (notes) { lines.push("Notes: " + notes); }
+
+    lines.push("");
+    lines.push("Please confirm availability, shipping cost and delivery time.");
+
+    return lines.join("\n");
+  }
+
+  document.getElementById("checkoutWa").addEventListener("click", function () {
+    var message = buildOrder();
+    if (!message) { return; }
+    window.open("https://wa.me/923008697543?text=" + encodeURIComponent(message), "_blank");
+  });
+
+  document.getElementById("checkoutMail").addEventListener("click", function () {
+    var message = buildOrder();
+    if (!message) { return; }
+    window.location.href = "mailto:sales@sea2skytraders.com"
+      + "?subject=" + encodeURIComponent("New order from the website")
+      + "&body=" + encodeURIComponent(message);
+  });
+
+  /* ---------- Payment method ---------- */
+  function payMethod() {
+    var c = document.querySelector('input[name="pay"]:checked');
+    return c ? c.value : "PayPal";
+  }
+  function orderTotal() {
+    var total = 0;
+    getGrouped().forEach(function (item) {
+      var p = PRODUCTS[item.name];
+      if (p) { total += p.price * item.qty; }
+    });
+    return Math.round(total * 100) / 100;
+  }
+  function updatePay() {
+    var cfg = (window.S2S && window.S2S.payment) || {};
+    var m = payMethod();
+    var info = document.getElementById("payInfo");
+    var pp = document.getElementById("payPal");
+    var text = "";
+    pp.hidden = true;
+    if (m === "PayPal") {
+      if (cfg.paypalMe && orderTotal() > 0) {
+        pp.href = "https://www.paypal.me/" + cfg.paypalMe + "/" + orderTotal() + "USD";
+        pp.hidden = false;
+        text = "أرسل طلبك أولاً لنؤكد الشحن، ثم ادفع بأمان عبر PayPal.";
+      } else {
+        text = "نرسل لك طلب دفع آمن عبر PayPal بعد تأكيد طلبك وتكلفة الشحن.";
+      }
+    } else if (m === "Visa / Mastercard") {
+      text = "نرسل لك رابط دفع آمن بالبطاقة بعد تأكيد طلبك وتكلفة الشحن.";
+    } else if (m === "Bank transfer") {
+      text = cfg.bank ? "تفاصيل الحساب البنكي: " + cfg.bank : "نرسل تفاصيل حسابنا البنكي عبر واتساب بعد تأكيد طلبك.";
+    } else if (m === "JazzCash / Easypaisa") {
+      text = cfg.wallet ? "تفاصيل المحفظة: " + cfg.wallet : "نرسل رقم JazzCash / Easypaisa عبر واتساب بعد تأكيد طلبك.";
+    } else {
+      text = "متاح للطلبات داخل باكستان فقط. ادفع نقداً عند استلام طلبك.";
+    }
+    info.textContent = text;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="pay"]'), function (r) {
+    r.addEventListener("change", updatePay);
+  });
+  window.addEventListener("s2s:currency", function () { render(); updatePay(); });
+
+  /* ---------- Start ---------- */
+  render();
+  updatePay();
+  window.addEventListener("pageshow", function () { render(); updatePay(); });
+  window.addEventListener("storage", render);
+
+})();
+</script>
+
+<script>
+// App mode: offline page and saved copies of pages (see sw.js)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("../sw.js").catch(function () {});
+  });
+}
+</script>
+<script src="../store.js" defer></script>
+<script src="../app.js" defer></script>
+
+</body>
+</html>

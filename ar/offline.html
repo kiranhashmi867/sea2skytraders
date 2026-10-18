@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>تعذّر تحميل هذه الصفحة | Sea2Sky Traders</title>
+<meta name="theme-color" content="#123a2e">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  font-size:16px;line-height:1.65;color:#dbe9e0;
+  background:
+    radial-gradient(700px 380px at 90% 0%,rgba(246,215,122,.2),transparent 62%),
+    radial-gradient(520px 340px at 0% 100%,rgba(217,87,124,.14),transparent 62%),
+    linear-gradient(135deg,#0b2a21 0%,#123a2e 60%,#164536 100%);
+  background-attachment:fixed;
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 22px;
+  -webkit-font-smoothing:antialiased;
+}
+main{width:100%;max-width:440px;text-align:center}
+.logo{width:120px;height:84px;margin:0 auto 26px;display:block}
+h1{
+  font-family:'Fraunces',Georgia,'Times New Roman',serif;
+  font-weight:600;font-size:2.2rem;line-height:1.15;color:#fff;margin-bottom:12px;
+}
+p{color:#cfe0d6;margin-bottom:26px}
+button{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 34px;border:0;border-radius:999px;cursor:pointer;
+  font-family:inherit;font-weight:700;font-size:1rem;line-height:1;
+  color:#082a20;background:linear-gradient(135deg,#f6d77a,#e0a526);
+  box-shadow:0 14px 30px -12px rgba(224,165,38,.75);
+}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.help{
+  margin:34px 0 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:.92rem;color:#a9c0b4;
+}
+.help strong{color:#f6d77a;font-weight:600;white-space:nowrap}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style id="i18n-lang">
+:root{--sans:'Figtree','Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--serif:'Cormorant Garamond','Amiri',Georgia,serif}
+html[dir=rtl] *{letter-spacing:0!important;text-transform:none!important}
+html[dir=rtl] body{line-height:1.8}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{line-height:1.45}
+html[dir=rtl] .fa-arrow-right,html[dir=rtl] .fa-arrow-right-long,html[dir=rtl] .fa-chevron-right,html[dir=rtl] .fa-angle-right,html[dir=rtl] .fa-arrow-left,html[dir=rtl] .fa-chevron-left{transform:scaleX(-1)}
+html[dir=rtl] a[href^="tel:"],html[dir=rtl] a[href^="mailto:"],html[dir=rtl] .money,html[dir=rtl] input[type=email],html[dir=rtl] input[type=tel]{direction:ltr;unicode-bidi:isolate}
+html[dir=rtl] .topbar i,html[dir=rtl] i.fas,html[dir=rtl] i.fab{margin-right:0}
+html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
+</style>
+<style id="i18n-css">
+.lang{display:inline-flex;align-items:center;gap:2px}
+.lang i{margin-right:4px!important;color:var(--gold-light)}
+.lang a{padding:2px 7px;font-size:.76rem;line-height:1.5;color:#fff;border:1px solid transparent;border-radius:2px;letter-spacing:0}
+.lang a[aria-current]{border-color:rgba(227,201,143,.6);color:var(--gold-light)}
+.lang a:hover{color:var(--gold-light)}
+.lang a[lang=ja]{font-family:'Noto Sans JP',var(--sans)}
+.lang a[lang=ar]{font-family:'Tajawal',var(--sans)}
+@media (max-width:640px){
+  .topbar .container{flex-wrap:wrap;justify-content:center;gap:4px 14px;padding-top:6px;padding-bottom:6px}
+  .topbar .tb-msg{flex:1 1 100%;width:100%;text-align:center;font-size:.74rem;line-height:1.5}
+}
+</style>
+</head>
+<body>
+
+<main>
+  <svg class="logo" viewBox="0 0 80 56" aria-hidden="true">
+    <path d="M8 46 A32 32 0 0 1 72 46" fill="none" stroke="#e3c98f" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M14 52 L35 16 L56 52 Z" fill="#f5efe1"/>
+    <path d="M37 52 L52 28 L68 52 Z" fill="#b8904a"/>
+    <path d="M10 52 H70" stroke="#c9a564" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+
+  <h1>تعذّر تحميل هذه الصفحة</h1>
+  <p>تحقق من اتصالك بالإنترنت وحاول مرة أخرى. ستُعاد تحميل هذه الصفحة تلقائياً عند عودة الاتصال.</p>
+
+  <button type="button" id="retry">حاول مرة أخرى</button>
+
+  <p class="help">تحتاج مساعدة في طلب؟ راسل Sea2Sky Traders عبر واتساب: <strong><span dir="ltr">+92 300 8697543</span></strong></p>
+</main>
+
+<script>
+// The app shows this page for any address it cannot load, including the Arabic and Japanese pages.
+(function () {
+  var m = window.location.pathname.match(/^\/(ar|ja)\//);
+  if (!m || document.documentElement.lang !== "en") { return; }
+  var T = {
+    ar: ["تعذّر تحميل هذه الصفحة", "تحقق من اتصالك بالإنترنت وحاول مرة أخرى. ستُعاد تحميل هذه الصفحة تلقائياً عند عودة الاتصال.", "حاول مرة أخرى", "تحتاج مساعدة في طلب؟ راسل Sea2Sky Traders عبر واتساب: "],
+    ja: ["ページを読み込めません", "インターネット接続を確認して、もう一度お試しください。オンラインに戻ると自動的に再読み込みされます。", "再試行", "ご注文でお困りですか?WhatsAppで Sea2Sky Traders にご連絡ください:"]
+  }[m[1]];
+  document.documentElement.lang = m[1];
+  if (m[1] === "ar") { document.documentElement.dir = "rtl"; }
+  document.querySelector("h1").textContent = T[0];
+  document.querySelector("main > p:not(.help)").textContent = T[1];
+  document.getElementById("retry").textContent = T[2];
+  var help = document.querySelector(".help");
+  help.firstChild.textContent = T[3];
+})();
+document.getElementById("retry").addEventListener("click", function () {
+  window.location.reload();
+});
+window.addEventListener("online", function () {
+  window.location.reload();
+});
+</script>
+
+</body>
+</html>
