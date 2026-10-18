@@ -10,9 +10,11 @@
 
   var style = document.createElement("style");
   style.textContent =
-    ".app-install{display:none;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font-family:inherit;font-weight:700;font-size:.95rem;line-height:1;color:#fff;background:#b8904a;border-radius:999px;padding:12px 18px;font-size:.85rem;box-shadow:0 14px 30px -12px rgba(10,24,48,.6)}" +
+    ".app-install{display:none;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font-family:inherit;font-weight:700;font-size:.95rem;line-height:1;color:#13358c;background:#fff;border:1px solid rgba(184,144,74,.65);border-radius:999px;padding:11px 18px;font-size:.84rem;box-shadow:0 14px 30px -14px rgba(11,33,99,.55)}" +
+    ".app-install i{color:#b8904a}" +
     ".app-install.show{display:inline-flex}" +
-    ".app-install-float{position:fixed;left:14px;bottom:20px;z-index:9998}" ;
+    ".app-install-float{position:fixed;left:20px;bottom:80px;z-index:9997}" +
+    "@media (max-width:640px){.app-install-float{left:14px;bottom:72px}}" ;
   document.head.appendChild(style);
 
   function makeButton(extraClass) {

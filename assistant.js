@@ -18,7 +18,7 @@
   /* ---------- Words ---------- */
   var T = {
     en: {
-      btn: "Ask Sea2Sky", title: "Sea2Sky Assistant", sub: "Products, prices, shipping and payment, answered instantly",
+      btn: "Ask Sea2Sky", tag: "Instant answers, 24/7", title: "Sea2Sky Assistant", sub: "Products, prices, shipping and payment, answered instantly",
       hello: "Hello! I can help you find products, check prices and explain shipping, payment and bulk orders. What are you looking for?",
       placeholder: "Type your question...", send: "Send", close: "Close",
       chips: ["Shipping to UAE", "Basmati rice prices", "Payment methods", "Bulk / wholesale order", "Gift boxes", "Returns"],
@@ -43,7 +43,7 @@
       orderHint: "Ready to order? Add items to your cart and send your order on WhatsApp in one tap."
     },
     ar: {
-      btn: "اسأل Sea2Sky", title: "مساعد Sea2Sky", sub: "المنتجات والأسعار والشحن والدفع، إجابات فورية",
+      btn: "اسأل مساعد Sea2Sky", tag: "إجابات فورية على مدار الساعة", title: "مساعد Sea2Sky", sub: "المنتجات والأسعار والشحن والدفع، إجابات فورية",
       hello: "مرحباً! يمكنني مساعدتك في العثور على المنتجات ومعرفة الأسعار وشرح الشحن والدفع وطلبات الجملة. عمّ تبحث؟",
       placeholder: "اكتب سؤالك...", send: "إرسال", close: "إغلاق",
       chips: ["الشحن إلى الإمارات", "أسعار أرز البسمتي", "طرق الدفع", "طلب جملة", "علب الهدايا", "الإرجاع"],
@@ -68,7 +68,7 @@
       orderHint: "جاهز للطلب؟ أضف المنتجات إلى السلة وأرسل طلبك عبر واتساب بضغطة واحدة."
     },
     ja: {
-      btn: "Sea2Skyに質問", title: "Sea2Sky アシスタント", sub: "商品・価格・配送・お支払いにすぐお答えします",
+      btn: "Sea2Skyに質問", tag: "24時間すぐに回答", title: "Sea2Sky アシスタント", sub: "商品・価格・配送・お支払いにすぐお答えします",
       hello: "こんにちは!商品探し、価格の確認、配送・お支払い・まとめ買いについてご案内します。何をお探しですか?",
       placeholder: "ご質問を入力...", send: "送信", close: "閉じる",
       chips: ["日本への配送", "バスマティ米の価格", "お支払い方法", "まとめ買い・卸売", "ギフトボックス", "返品について"],
@@ -223,47 +223,49 @@
 
   /* ---------- Interface ---------- */
   var css = "" +
-    ".s2s-ai-btn{position:fixed;right:20px;bottom:92px;z-index:9997;display:inline-flex;align-items:center;gap:9px;padding:12px 18px 12px 14px;border:0;border-radius:999px;cursor:pointer;" +
-    "background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0a1830;font:700 .9rem/1 var(--sans,'Figtree',system-ui,sans-serif);box-shadow:0 16px 34px -14px rgba(10,24,48,.65);transition:transform .25s}" +
-    ".s2s-ai-btn:hover{transform:translateY(-2px)}.s2s-ai-btn i{font-size:1.05rem}" +
-    ".s2s-ai-btn .dot{width:8px;height:8px;border-radius:50%;background:#1fbf6a;box-shadow:0 0 0 3px rgba(31,191,106,.25)}" +
-    ".s2s-ai{position:fixed;right:20px;bottom:92px;z-index:9999;width:390px;max-width:calc(100vw - 24px);height:min(620px,calc(100vh - 120px));display:flex;flex-direction:column;" +
-    "background:#fbf8f2;border:1px solid rgba(184,144,74,.35);border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(10,24,48,.6);opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .25s,transform .25s,visibility .25s}" +
+    ".s2s-ai-btn{position:fixed;left:20px;bottom:20px;z-index:9997;display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border:1px solid rgba(227,201,143,.55);border-radius:999px;cursor:pointer;" +
+    "background:linear-gradient(135deg,#0b2163,#1f4bb5);color:#fff;font:600 .88rem/1 var(--sans,'Figtree',system-ui,sans-serif);letter-spacing:.01em;box-shadow:0 18px 36px -14px rgba(11,33,99,.7);transition:transform .25s,box-shadow .25s}" +
+    ".s2s-ai-btn:hover{transform:translateY(-2px);box-shadow:0 22px 40px -14px rgba(11,33,99,.8)}" +
+    ".s2s-ai-btn .ic{position:relative;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0b2163;font-size:.95rem}" +
+    ".s2s-ai-btn .dot{position:absolute;right:-1px;top:-1px;width:10px;height:10px;border-radius:50%;background:#1fbf6a;border:2px solid #0b2163}" +
+    ".s2s-ai-btn small{display:block;font-size:.66rem;font-weight:500;color:#c9d6f5;margin-top:3px;letter-spacing:.04em}" +
+    ".s2s-ai{position:fixed;left:20px;bottom:20px;z-index:9999;width:390px;max-width:calc(100vw - 24px);height:min(620px,calc(100vh - 120px));display:flex;flex-direction:column;" +
+    "background:#fbf8f2;border:1px solid rgba(184,144,74,.35);border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(11,33,99,.6);opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .25s,transform .25s,visibility .25s}" +
     ".s2s-ai.open{opacity:1;visibility:visible;transform:none}" +
-    ".s2s-ai-head{display:flex;align-items:center;gap:12px;padding:16px 16px 14px;background:linear-gradient(135deg,#0a1830,#16305a);color:#fff}" +
-    ".s2s-ai-head .av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0a1830;font-size:1.1rem;flex-shrink:0}" +
+    ".s2s-ai-head{display:flex;align-items:center;gap:12px;padding:16px 16px 14px;background:linear-gradient(135deg,#0b2163,#183f9e);color:#fff}" +
+    ".s2s-ai-head .av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0b2163;font-size:1.1rem;flex-shrink:0}" +
     ".s2s-ai-head b{display:block;font:700 1.02rem/1.2 var(--sans,system-ui)}.s2s-ai-head small{display:block;font-size:.74rem;color:#c9d3e6;line-height:1.35;margin-top:2px}" +
     ".s2s-ai-head button{margin-inline-start:auto;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;cursor:pointer;font-size:1rem;flex-shrink:0}" +
     ".s2s-ai-log{flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px}" +
     ".s2s-ai-msg{max-width:88%;padding:10px 13px;border-radius:14px;font-size:.9rem;line-height:1.55;white-space:pre-line;word-wrap:break-word}" +
     ".s2s-ai-msg.bot{background:#fff;border:1px solid #ece4d3;color:#141c2b;align-self:flex-start;border-end-start-radius:4px}" +
-    ".s2s-ai-msg.me{background:#0f2240;color:#fff;align-self:flex-end;border-end-end-radius:4px}" +
+    ".s2s-ai-msg.me{background:#13358c;color:#fff;align-self:flex-end;border-end-end-radius:4px}" +
     ".s2s-ai-prods{display:grid;gap:8px;margin-top:8px}" +
     ".s2s-ai-p{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;padding:7px;border:1px solid #ece4d3;border-radius:10px;background:#fbf8f2}" +
     ".s2s-ai-p img{width:52px;height:52px;object-fit:cover;border-radius:8px;background:#f3eee4}" +
-    ".s2s-ai-p b{display:block;font-size:.84rem;line-height:1.3;color:#0f2240}.s2s-ai-p span{font-size:.8rem;color:#8a6a2c;font-weight:700}" +
+    ".s2s-ai-p b{display:block;font-size:.84rem;line-height:1.3;color:#13358c}.s2s-ai-p span{font-size:.8rem;color:#8a6a2c;font-weight:700}" +
     ".s2s-ai-p .acts{display:flex;gap:6px;margin-top:5px;flex-wrap:wrap}" +
-    ".s2s-ai-p .acts a,.s2s-ai-p .acts button{font:600 .72rem/1 var(--sans,system-ui);padding:6px 9px;border-radius:999px;border:1px solid #0f2240;color:#0f2240;background:#fff;cursor:pointer;text-decoration:none}" +
-    ".s2s-ai-p .acts button{background:#0f2240;color:#fff}" +
+    ".s2s-ai-p .acts a,.s2s-ai-p .acts button{font:600 .72rem/1 var(--sans,system-ui);padding:6px 9px;border-radius:999px;border:1px solid #13358c;color:#13358c;background:#fff;cursor:pointer;text-decoration:none}" +
+    ".s2s-ai-p .acts button{background:#13358c;color:#fff}" +
     ".s2s-ai-wa{display:inline-flex;align-items:center;gap:7px;margin-top:8px;padding:8px 13px;border-radius:999px;background:#25d366;color:#fff!important;font-weight:700;font-size:.8rem;text-decoration:none}" +
     ".s2s-ai-chips{display:flex;gap:6px;overflow-x:auto;padding:0 14px 10px;scrollbar-width:none}.s2s-ai-chips::-webkit-scrollbar{display:none}" +
-    ".s2s-ai-chips button{flex-shrink:0;padding:7px 12px;border-radius:999px;border:1px solid rgba(184,144,74,.5);background:#fff;color:#0f2240;font:600 .76rem/1.2 var(--sans,system-ui);cursor:pointer}" +
+    ".s2s-ai-chips button{flex-shrink:0;padding:7px 12px;border-radius:999px;border:1px solid rgba(184,144,74,.5);background:#fff;color:#13358c;font:600 .76rem/1.2 var(--sans,system-ui);cursor:pointer}" +
     ".s2s-ai-form{display:flex;gap:8px;padding:12px;border-top:1px solid #ece4d3;background:#fff}" +
     ".s2s-ai-form input{flex:1;min-width:0;padding:11px 14px;border:1px solid #ddd3bf;border-radius:999px;font:400 .92rem var(--sans,system-ui);background:#fbf8f2;color:#141c2b}" +
     ".s2s-ai-form input:focus{outline:2px solid #b8904a;outline-offset:1px}" +
-    ".s2s-ai-form button{width:44px;height:44px;border-radius:50%;border:0;background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0a1830;cursor:pointer;font-size:1rem;flex-shrink:0}" +
+    ".s2s-ai-form button{width:44px;height:44px;border-radius:50%;border:0;background:linear-gradient(135deg,#e3c98f,#b8904a);color:#0b2163;cursor:pointer;font-size:1rem;flex-shrink:0}" +
     "html[dir=rtl] .s2s-ai-form button i{transform:scaleX(-1)}" +
     ".s2s-ai-typing{align-self:flex-start;padding:10px 14px;background:#fff;border:1px solid #ece4d3;border-radius:14px;display:flex;gap:4px}" +
     ".s2s-ai-typing i{width:6px;height:6px;border-radius:50%;background:#b8904a;animation:s2sdot 1s infinite}.s2s-ai-typing i:nth-child(2){animation-delay:.15s}.s2s-ai-typing i:nth-child(3){animation-delay:.3s}" +
     "@keyframes s2sdot{0%,80%,100%{opacity:.3}40%{opacity:1}}" +
-    "@media (max-width:640px){.s2s-ai-btn{right:14px;bottom:80px;padding:11px 15px 11px 12px;font-size:.84rem}" +
+    "@media (max-width:640px){.s2s-ai-btn{left:14px;bottom:14px;padding:6px 14px 6px 6px;font-size:.82rem}.s2s-ai-btn .ic{width:30px;height:30px}.s2s-ai-btn small{display:none}" +
     ".s2s-ai{right:0;left:0;bottom:0;width:100%;max-width:none;height:min(86vh,680px);border-radius:18px 18px 0 0}}";
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
   var btn = document.createElement("button");
   btn.type = "button"; btn.className = "s2s-ai-btn";
   btn.setAttribute("aria-haspopup", "dialog"); btn.setAttribute("aria-expanded", "false");
-  btn.innerHTML = '<span class="dot" aria-hidden="true"></span><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><span>' + T.btn + "</span>";
+  btn.innerHTML = '<span class="ic" aria-hidden="true"><i class="fas fa-wand-magic-sparkles"></i><span class="dot"></span></span><span>' + T.btn + "<small>" + T.tag + "</small></span>";
 
   var box = document.createElement("section");
   box.className = "s2s-ai"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", T.title);

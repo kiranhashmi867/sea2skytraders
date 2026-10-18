@@ -8,8 +8,8 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#0f2240",
-  "theme_color": "#0f2240",
+  "background_color": "#13358c",
+  "theme_color": "#13358c",
   "categories": ["shopping", "food"],
   "icons": [
     {
