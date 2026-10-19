@@ -1,110 +1,459 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://sea2skytraders.com/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/shop.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/about.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/shipping-returns.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/blog.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/contact.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/privacy-policy.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
-
+  <url>
+    <loc>https://sea2skytraders.com/premium-californian-almonds.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/roasted-pistachios.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/premium-cashew-nuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/premium-walnuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/soft-premium-dates.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/sun-dried-raisins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/hunza-dried-apricots.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/luxury-dry-fruits-gift-box.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/himalayan-pink-salt-fine-grain.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/himalayan-pink-salt-coarse.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pink-salt-grinder.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pink-salt-lamp-decor-chunks.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pink-salt-duo-gift-set.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pink-salt-premium-collection-6-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pink-salt-grand-collection-12-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/super-kernel-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/1121-sella-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/1121-steam-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/1509-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/brown-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/pk-386-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/irri-6-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/broken-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/basmati-rice-for-export-bulk.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/seasonal-fresh-fruit-basket.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/sindhri-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/chaunsa-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/kinnow-mandarins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/fresh-apples.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/fresh-bananas.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/fresh-grapes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
   <url>
     <loc>https://sea2skytraders.com/ar/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/shop.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/about.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/shipping-returns.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/blog.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/contact.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ar/privacy-policy.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
+  <url>
+    <loc>https://sea2skytraders.com/ar/premium-californian-almonds.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/roasted-pistachios.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/premium-cashew-nuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/premium-walnuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/soft-premium-dates.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/sun-dried-raisins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/hunza-dried-apricots.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/luxury-dry-fruits-gift-box.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/himalayan-pink-salt-fine-grain.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/himalayan-pink-salt-coarse.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pink-salt-grinder.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pink-salt-lamp-decor-chunks.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pink-salt-duo-gift-set.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pink-salt-premium-collection-6-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pink-salt-grand-collection-12-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/super-kernel-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/1121-sella-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/1121-steam-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/1509-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/brown-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/pk-386-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/irri-6-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/broken-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/basmati-rice-for-export-bulk.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/seasonal-fresh-fruit-basket.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/sindhri-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/chaunsa-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/kinnow-mandarins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/fresh-apples.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/fresh-bananas.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ar/fresh-grapes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
   <url>
     <loc>https://sea2skytraders.com/ja/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/shop.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/about.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/shipping-returns.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/blog.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/contact.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
   <url>
     <loc>https://sea2skytraders.com/ja/privacy-policy.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
-
+  <url>
+    <loc>https://sea2skytraders.com/ja/premium-californian-almonds.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/roasted-pistachios.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/premium-cashew-nuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/premium-walnuts.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/soft-premium-dates.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/sun-dried-raisins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/hunza-dried-apricots.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/luxury-dry-fruits-gift-box.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/himalayan-pink-salt-fine-grain.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/himalayan-pink-salt-coarse.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pink-salt-grinder.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pink-salt-lamp-decor-chunks.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pink-salt-duo-gift-set.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pink-salt-premium-collection-6-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pink-salt-grand-collection-12-jars.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/super-kernel-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/1121-sella-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/1121-steam-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/1509-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/brown-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/pk-386-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/irri-6-long-grain-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/broken-basmati-rice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/basmati-rice-for-export-bulk.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/seasonal-fresh-fruit-basket.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/sindhri-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/chaunsa-mangoes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/kinnow-mandarins.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/fresh-apples.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/fresh-bananas.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://sea2skytraders.com/ja/fresh-grapes.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
 </urlset>

@@ -306,7 +306,7 @@
         var d = document.createElement("div"); d.className = "s2s-ai-p";
         d.innerHTML = '<img src="' + esc(img) + '" alt="" loading="lazy"><div><b>' + esc(pname(p)) + "</b><span>" +
           (p.price ? esc(money(p.price)) + " " + esc(p.unit) : esc(T.onRequest)) + '</span><div class="acts">' +
-          '<a href="' + PAGE_BASE + "shop.html?cat=" + p.cat + '">' + esc(T.view) + "</a>" +
+          '<a href="' + PAGE_BASE + (p.url || ("shop.html?cat=" + p.cat)) + '">' + esc(T.view) + "</a>" +
           (p.addable ? '<button type="button">' + esc(T.add) + "</button>" : "") + "</div></div>";
         var add = d.querySelector("button");
         if (add) {
