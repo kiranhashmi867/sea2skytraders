@@ -882,15 +882,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
     "Seasonal Fresh Fruit Basket": { title: "سلة فواكه موسمية طازجة", price: 16, unit: "/ سلة", cat: "فواكه طازجة", theme: "c-fresh", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=240&h=240&q=80" }
   };
 
-  /* Products that were removed from the store. They are cleared from old carts. */
-  var DISCONTINUED = [
-    "Embroidered Ladies Kurti Set",
-    "Printed Lawn 3-Piece Suit",
-    "All-Weather Sports Ball Set",
-    "Kids Activity Toy Set",
-    "Wireless Earbuds Pro",
-    "Mobile Accessories Kit"
-  ];
+  /* Anything in an old cart that is not sold any more is cleared (see below). */
 
   /* ---------- Cart storage (same as shop.html) ---------- */
   var CART_KEY = "s2sCart";
@@ -946,7 +938,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
   /* ---------- Remove discontinued products from old carts ---------- */
   (function () {
     var raw = getRaw();
-    var kept = raw.filter(function (name) { return DISCONTINUED.indexOf(name) === -1; });
+    var kept = raw.filter(function (name) { return Object.prototype.hasOwnProperty.call(PRODUCTS, name); });
     if (kept.length !== raw.length) {
       saveRaw(kept);
       removedNotice.hidden = false;
@@ -969,7 +961,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       html +=
         '<article class="item ' + (p ? p.theme : "c-pine") + '" data-name="' + esc(item.name) + '">' +
           '<div class="item-img"><i class="fas fa-box-open"></i>' +
-            (p ? '<img src="' + esc(p.img) + '" alt="' + esc(title) + '" onerror="this.style.display=\'none\'">' : "") +
+            (p ? '<img src="' + esc(p.img) + '" width="240" height="240" alt="' + esc(title) + '" onerror="this.style.display=\'none\'">' : "") +
           '</div>' +
           '<div>' +
             '<span class="item-cat">' + esc(p ? p.cat : "Sea2Sky Traders") + '</span>' +
