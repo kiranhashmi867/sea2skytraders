@@ -446,6 +446,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
 }
 </style>
 <style>.prod-link{color:inherit}.prod-link:hover{color:var(--gold-deep)}</style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <style id="i18n-css">
 .lang{position:relative;display:inline-flex}
 .lang-btn{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 9px;font:inherit;font-size:.78rem;cursor:pointer;letter-spacing:0}
@@ -482,6 +483,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
         <select id="curSel" aria-label="Currency">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -517,13 +519,14 @@ footer{background:var(--green-deep);color:#bdc9dc}
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="shipping-returns.html">Shipping</a></li>
+        <li><a href="wholesale.html">Wholesale</a></li>
         <li><a href="blog.html">Journal</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>Get a quote</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="Cart"><i class="fas fa-bag-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -557,7 +560,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
       <p class="hero-lead">Premium dry fruits, pure Himalayan pink salt, aromatic basmati rice and fresh fruits from Pakistan. Everyday packs, luxury gift sets and export packaging for homes, retailers and importers worldwide.</p>
       <div class="hero-actions">
         <a href="shop.html" class="btn btn-gold">Shop the collection</a>
-        <a href="#gifts" class="btn btn-outline">Explore gift sets</a>
+        <a href="wholesale.html" class="btn btn-outline">Request a wholesale quote</a>
       </div>
       <div class="hero-badges">
         <span><i class="fas fa-leaf"></i>100% Natural</span>
@@ -874,7 +877,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
         <div class="pack"><i class="fas fa-pallet"></i><div><strong>Palletised loads</strong><span>Ready for sea and air freight</span></div></div>
       </div>
       <div class="export-actions">
-        <a href="contact.html" class="btn btn-gold">Request a quote</a>
+        <a href="wholesale.html#rfq" class="btn btn-gold">Request a quote</a>
         <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20%2F%20export%20quote" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>WhatsApp us</a>
       </div>
     </div>
@@ -893,7 +896,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
     <div class="steps">
       <div class="step"><div class="step-no">01</div><h3>Choose products</h3><p>Browse the shop and add products to your cart, or message us with what you need.</p></div>
       <div class="step"><div class="step-no">02</div><h3>Confirm on WhatsApp</h3><p>We confirm price, shipping cost and delivery time for your country before anything ships.</p></div>
-      <div class="step"><div class="step-no">03</div><h3>Packed &amp; delivered</h3><p>Your order is packed fresh and shipped to your address anywhere in the world.</p></div>
+      <div class="step"><div class="step-no">03</div><h3>Packed &amp; delivered</h3><p>Your order is packed fresh and shipped to your address. Fresh fruit depends on the season and your destination.</p></div>
     </div>
   </div>
 </section>
@@ -1007,6 +1010,9 @@ footer{background:var(--green-deep);color:#bdc9dc}
         <li><a href="about.html">About us</a></li>
         <li><a href="blog.html">Journal</a></li>
         <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="wholesale.html">Wholesale &amp; Export</a></li>
+        <li><a href="rice-guide.html">Rice guide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -1036,13 +1042,12 @@ footer{background:var(--green-deep);color:#bdc9dc}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="Payment methods we accept">
-        <span class="pb-label">We accept</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="Payment options">
+        <span class="pb-label">Payment options, confirmed with your order</span>
         <span class="pb"><i class="fas fa-building-columns"></i>Bank transfer</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>Cash on delivery (Pakistan)</span>
       </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>

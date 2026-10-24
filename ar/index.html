@@ -446,6 +446,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
 }
 </style>
 <style>.prod-link{color:inherit}.prod-link:hover{color:var(--gold-deep)}</style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style id="i18n-lang">
 :root{--sans:'Figtree','Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--serif:'Cormorant Garamond','Amiri',Georgia,serif}
@@ -493,6 +494,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">العملة</span>
         <select id="curSel" aria-label="العملة">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -528,13 +530,14 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <li><a href="index.html" class="active">الرئيسية</a></li>
         <li><a href="shop.html">المتجر</a></li>
         <li><a href="about.html">من نحن</a></li>
-        <li><a href="shipping-returns.html">الشحن</a></li>
+        <li><a href="wholesale.html">الجملة</a></li>
         <li><a href="blog.html">المدونة</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>اطلب عرض سعر</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="تواصل عبر واتساب"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="السلة"><i class="fas fa-bag-shopping"></i><span class="cart-label">السلة</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -568,7 +571,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       <p class="hero-lead">فواكه مجففة فاخرة، وملح الهيمالايا الوردي النقي، وأرز بسمتي عطري، وفواكه طازجة من باكستان. عبوات للاستخدام اليومي وعلب هدايا فاخرة وتغليف للتصدير، للمنازل وتجار التجزئة والمستوردين حول العالم.</p>
       <div class="hero-actions">
         <a href="shop.html" class="btn btn-gold">تسوّق المجموعة</a>
-        <a href="#gifts" class="btn btn-outline">اكتشف علب الهدايا</a>
+        <a href="wholesale.html" class="btn btn-outline">اطلب عرض سعر للجملة</a>
       </div>
       <div class="hero-badges">
         <span><i class="fas fa-leaf"></i>طبيعي 100%</span>
@@ -781,7 +784,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <div class="prod-img"><img width="800" height="550" src="https://images.unsplash.com/photo-1723475158232-819e29803f4d?auto=format&amp;fit=crop&amp;w=800&amp;h=550&amp;q=80" alt="أرز بسمتي على لوح خشبي" loading="lazy"><span class="badge">جديد</span></div>
         <div class="prod-body">
           <span class="prod-cat">الأرز</span>
-          <h3><a class="prod-link" href="super-kernel-basmati-rice.html">بسمتي سوبر كيرنل</a></h3>
+          <h3><a class="prod-link" href="super-kernel-basmati-rice.html">أرز سوبر كيرنل بسمتي</a></h3>
           <p>حبوب طويلة جدًا وعطرية، تُطهى منفوشة ومنفصلة.</p>
           <div class="sizes"><span>1kg</span><span>5kg</span><span>10kg</span></div>
           <div class="prod-foot">
@@ -810,12 +813,12 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       <h2>أرز بسمتي باكستاني، طويل الحبة وغني بالرائحة</h2>
       <p>أرز بسمتي مطحون ومنظّف بعناية، معبّأ في أكياس للتجزئة للمنازل، وفي أكياس بجودة التصدير للمطاعم والموزعين والمستوردين.</p>
       <div class="rice-list">
-        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>بسمتي سوبر كيرنل</strong><span>حبة طويلة جدًا، ورائحة أصيلة</span></div><b><span class="money" data-usd="4.49">$4.49</span> <small>/ 1 كغ</small></b></div>
-        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>بسمتي 1121 سيلا</strong><span>مسلوق مسبقًا بلون ذهبي، يزداد طولًا بعد الطهي</span></div><b><span class="money" data-usd="4.99">$4.99</span> <small>/ 1 كغ</small></b></div>
-        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>بسمتي بني</strong><span>حبة كاملة بنكهة مكسرات ومغذية</span></div><b><span class="money" data-usd="5.49">$5.49</span> <small>/ 1 كغ</small></b></div>
+        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>أرز سوبر كيرنل بسمتي</strong><span>حبة طويلة جدًا، ورائحة أصيلة</span></div><b><span class="money" data-usd="4.49">$4.49</span> <small>/ 1 كغ</small></b></div>
+        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>أرز 1121 سيلا بسمتي</strong><span>مسلوق مسبقًا بلون ذهبي، يزداد طولًا بعد الطهي</span></div><b><span class="money" data-usd="4.99">$4.99</span> <small>/ 1 كغ</small></b></div>
+        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>أرز بسمتي بني</strong><span>حبة كاملة بنكهة مكسرات ومغذية</span></div><b><span class="money" data-usd="5.49">$5.49</span> <small>/ 1 كغ</small></b></div>
         <div class="rice-item"><i class="fas fa-boxes-stacked"></i><div><strong>أرز بالجملة وللتصدير</strong><span>أكياس 10 و25 و50 كغ، والعلامة الخاصة عند الطلب</span></div><b>عرض سعر</b></div>
       </div>
-      <a href="shop.html?cat=rice" class="btn btn-green">تسوّق أرز البسمتي</a>
+      <a href="shop.html?cat=rice" class="btn btn-green">تسوق أرز البسمتي</a>
     </div>
   </div>
 </section>
@@ -882,10 +885,10 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <div class="pack"><i class="fas fa-box"></i><div><strong>عبوة مفرغة 5 كغ</strong><span>آمنة للغذاء، تحافظ على الطزاجة</span></div></div>
         <div class="pack"><i class="fas fa-box-open"></i><div><strong>كرتونة 10 كغ</strong><span>عبوتان داخليتان 5 كغ</span></div></div>
         <div class="pack"><i class="fas fa-weight-hanging"></i><div><strong>أكياس 25 / 50 كغ</strong><span>أكياس بجودة التصدير</span></div></div>
-        <div class="pack"><i class="fas fa-pallet"></i><div><strong>شحنات على منصات</strong><span>جاهزة للشحن البحري والجوي</span></div></div>
+        <div class="pack"><i class="fas fa-pallet"></i><div><strong>شحنات على منصات نقالة</strong><span>جاهزة للشحن البحري والجوي</span></div></div>
       </div>
       <div class="export-actions">
-        <a href="contact.html" class="btn btn-gold">اطلب عرض سعر</a>
+        <a href="wholesale.html#rfq" class="btn btn-gold">اطلب عرض سعر</a>
         <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20%2F%20export%20quote" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>راسلنا على واتساب</a>
       </div>
     </div>
@@ -904,7 +907,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
     <div class="steps">
       <div class="step"><div class="step-no">01</div><h3>اختر المنتجات</h3><p>تصفّح المتجر وأضف المنتجات إلى السلة، أو راسلنا بما تحتاجه.</p></div>
       <div class="step"><div class="step-no">02</div><h3>التأكيد عبر واتساب</h3><p>نؤكد السعر وتكلفة الشحن ومدة التوصيل لبلدك قبل الشحن.</p></div>
-      <div class="step"><div class="step-no">03</div><h3>تعبئة وتوصيل</h3><p>تُعبّأ طلبيتك طازجة وتُشحن إلى عنوانك في أي مكان في العالم.</p></div>
+      <div class="step"><div class="step-no">03</div><h3>تعبئة وتوصيل</h3><p>نعبئ طلبك طازجاً ونشحنه إلى عنوانك. تعتمد الفواكه الطازجة على الموسم ووجهتك.</p></div>
     </div>
   </div>
 </section>
@@ -1018,6 +1021,9 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <li><a href="about.html">من نحن</a></li>
         <li><a href="blog.html">المدونة</a></li>
         <li><a href="shipping-returns.html">الشحن والإرجاع</a></li>
+        <li><a href="wholesale.html">الجملة والتصدير</a></li>
+        <li><a href="rice-guide.html">دليل الأرز</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </div>
@@ -1047,13 +1053,12 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="طرق الدفع المقبولة">
-        <span class="pb-label">نقبل</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="خيارات الدفع">
+        <span class="pb-label">خيارات الدفع، تُؤكَّد مع طلبك</span>
         <span class="pb"><i class="fas fa-building-columns"></i>تحويل بنكي</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>الدفع عند الاستلام (باكستان)</span>
       </div>
       <p>© 2026 Sea2Sky Traders. جميع الحقوق محفوظة.</p>
       <p><a href="privacy-policy.html">سياسة الخصوصية</a> &nbsp;|&nbsp; <a href="shipping-returns.html">الشحن والإرجاع</a> &nbsp;|&nbsp; <a href="contact.html">دعم العملاء</a></p>

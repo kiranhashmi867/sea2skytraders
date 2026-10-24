@@ -2,7 +2,7 @@
    - PAYMENT: fill in the details and the cart shows them automatically.
    - RATES: approximate exchange rates for showing prices in other currencies.
      Orders are always charged in USD. AED and SAR are fixed to the US dollar;
-     update GBP, EUR and JPY from time to time. */
+     update PKR, GBP, EUR and JPY from time to time. */
 (function () {
   var PAYMENT = {
     paypalMe: "",   // PayPal.me name only, for example "sea2skytraders" from paypal.me/sea2skytraders
@@ -10,7 +10,7 @@
     wallet: ""      // for example "JazzCash 0300 1234567 (Account title)"
   };
 
-  var RATES = { USD: 1, AED: 3.6725, SAR: 3.75, GBP: 0.75, EUR: 0.889, JPY: 158 };
+  var RATES = { USD: 1, PKR: 281, AED: 3.6725, SAR: 3.75, GBP: 0.75, EUR: 0.889, JPY: 158 };
   var KEY = "s2sCurrency";
 
   // A visitor who has not chosen a currency sees the usual one for the page language.
@@ -26,6 +26,7 @@
     cur = cur || currency();
     var v = usd * RATES[cur];
     if (cur === "JPY") { return "¥" + Math.round(v).toLocaleString("en-US"); }
+    if (cur === "PKR") { return "Rs " + Math.round(v).toLocaleString("en-US"); }
     var s = v.toFixed(2);
     if (cur === "USD") { return "$" + (usd % 1 === 0 ? String(usd) : usd.toFixed(2)); }
     if (cur === "GBP") { return "£" + s; }

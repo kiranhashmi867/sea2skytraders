@@ -516,7 +516,8 @@ footer{background:var(--green-deep);color:#bdc9dc}
  "brand": {
   "@type": "Brand",
   "name": "Sea2Sky Traders"
- }
+ },
+ "countryOfOrigin": "PK"
 }
 </script>
 <script type="application/ld+json">
@@ -630,9 +631,15 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
 .pd-card .tx{display:block;padding:14px 16px}
 .pd-card b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--green);line-height:1.25;margin-bottom:6px}
 .pd-card .tx > span{display:block;font-size:.88rem;color:var(--gold-deep);font-weight:700}
+.pd-spec{width:100%;max-width:760px;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pd-spec th,.pd-spec td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top;font-size:.97rem}
+.pd-spec th{width:34%;color:var(--green);font-weight:600;background:var(--stone)}
+.pd-spec tr:last-child th,.pd-spec tr:last-child td{border-bottom:0}
+.pd-more{margin-top:12px}.pd-more a{color:var(--green);font-weight:600}.pd-more a:hover{color:var(--gold-deep)}
 @media (max-width:960px){.pd-grid,.pd-two{grid-template-columns:1fr;gap:28px}.pd-rel{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.pd-wrap{padding:22px 0 50px}.pd-trust{grid-template-columns:1fr 1fr 1fr}.pd-trust li{font-size:.72rem;padding:10px 4px}.pd-price .money{font-size:2rem}.pd-actions .btn{flex:1 1 100%;justify-content:center}}
 </style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
 <style id="i18n-lang">
 :root{--sans:'Figtree','Noto Sans JP','Hiragino Sans','Yu Gothic',system-ui,sans-serif;--serif:'Cormorant Garamond','Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',Georgia,serif}
@@ -676,6 +683,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">通貨</span>
         <select id="curSel" aria-label="通貨">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -711,13 +719,14 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="index.html">ホーム</a></li>
         <li><a href="shop.html" class="active">ショップ</a></li>
         <li><a href="about.html">会社概要</a></li>
-        <li><a href="shipping-returns.html">配送</a></li>
+        <li><a href="wholesale.html">卸売</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>見積もり依頼</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsAppで相談"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="カート"><i class="fas fa-bag-shopping"></i><span class="cart-label">カート</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -762,9 +771,9 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
           <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20quote%20for%20Kinnow%20Mandarins.%20Quantity%3A%20%2C%20Destination%20country%3A%20" target="_blank" rel="noopener" class="btn btn-line"><i class="fas fa-boxes-stacked"></i><span>まとめ買いの見積もり</span></a>
         </div>
         <ul class="pd-trust">
-          <li><i class="fas fa-earth-americas"></i><span>世界中へ配送</span></li>
+          <li><i class="fas fa-calendar-days"></i><span>季節限定</span></li>
           <li><i class="fas fa-box-open"></i><span>新鮮なまま梱包</span></li>
-          <li><i class="fas fa-shield-halved"></i><span>安全なお支払い</span></li>
+          <li><i class="fas fa-circle-check"></i><span>ご注文を事前に確認</span></li>
         </ul>
         <ul class="pd-points"><li><i class="fas fa-check"></i><span>信頼できる生産者の旬の果物</span></li><li><i class="fas fa-check"></i><span>鮮度を保つよう丁寧に梱包</span></li><li><i class="fas fa-check"></i><span>在庫はWhatsAppでご案内</span></li><li><i class="fas fa-check"></i><span>小売用バスケットとまとめ買い</span></li></ul>
       </div>
@@ -780,8 +789,16 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
     </div>
     <div>
       <h2>梱包と配送</h2>
-      <p>1〜2営業日以内に梱包します。パキスタン全土へお届けし、UAE・サウジアラビア・英国・ヨーロッパ・米国・日本へも発送します。最終的な送料はお支払い前にWhatsAppでご案内します。</p>
+      <p>生鮮フルーツは季節限定です。在庫・梱包・配送は季節、お届け先の都市や国、輸入規制によって異なるため、ご注文前にWhatsAppですべてご案内します。すべての国へ生鮮フルーツを発送できるわけではありません。</p>
+      <p class="pd-more"><a href="wholesale.html#rfq"><i class="fas fa-file-signature"></i> 卸売・輸出のお見積もりを依頼</a></p>
     </div>
+  </div>
+</section>
+
+<section class="pd-section">
+  <div class="container">
+    <h2>商品詳細</h2>
+    <table class="pd-spec"><tbody><tr><th>原産地</th><td>パキスタン</td></tr><tr><th>カテゴリー</th><td>フレッシュフルーツ</td></tr><tr><th>保存方法</th><td>涼しい場所または冷蔵庫で保存し、お届け後お早めにお召し上がりください。</td></tr><tr><th>小売・卸売</th><td>小売パックはオンラインで。まとめ買い・輸出数量はご相談ください。</td></tr></tbody></table>
   </div>
 </section>
 
@@ -837,6 +854,9 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="about.html">会社概要</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="shipping-returns.html">配送・返品</a></li>
+        <li><a href="wholesale.html">卸売・輸出</a></li>
+        <li><a href="rice-guide.html">お米ガイド</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
@@ -849,7 +869,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="shop.html?cat=rice">バスマティライス</a></li>
         <li><a href="shop.html?cat=fresh-fruits">フレッシュフルーツ</a></li>
         <li><a href="index.html#gifts">ギフトセット</a></li>
-        <li><a href="index.html#export">業務用・輸出</a></li>
+        <li><a href="wholesale.html">業務用・輸出</a></li>
       </ul>
     </div>
 
@@ -866,13 +886,12 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="ご利用いただけるお支払い方法">
-        <span class="pb-label">お支払い方法</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="お支払い方法">
+        <span class="pb-label">お支払い方法(ご注文時に確認)</span>
         <span class="pb"><i class="fas fa-building-columns"></i>銀行振込</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>代金引換（パキスタン国内）</span>
       </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">プライバシーポリシー</a> &nbsp;|&nbsp; <a href="shipping-returns.html">配送・返品</a> &nbsp;|&nbsp; <a href="contact.html">カスタマーサポート</a></p>

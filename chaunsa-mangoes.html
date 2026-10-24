@@ -516,7 +516,8 @@ footer{background:var(--green-deep);color:#bdc9dc}
  "brand": {
   "@type": "Brand",
   "name": "Sea2Sky Traders"
- }
+ },
+ "countryOfOrigin": "PK"
 }
 </script>
 <script type="application/ld+json">
@@ -630,9 +631,15 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
 .pd-card .tx{display:block;padding:14px 16px}
 .pd-card b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--green);line-height:1.25;margin-bottom:6px}
 .pd-card .tx > span{display:block;font-size:.88rem;color:var(--gold-deep);font-weight:700}
+.pd-spec{width:100%;max-width:760px;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pd-spec th,.pd-spec td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top;font-size:.97rem}
+.pd-spec th{width:34%;color:var(--green);font-weight:600;background:var(--stone)}
+.pd-spec tr:last-child th,.pd-spec tr:last-child td{border-bottom:0}
+.pd-more{margin-top:12px}.pd-more a{color:var(--green);font-weight:600}.pd-more a:hover{color:var(--gold-deep)}
 @media (max-width:960px){.pd-grid,.pd-two{grid-template-columns:1fr;gap:28px}.pd-rel{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.pd-wrap{padding:22px 0 50px}.pd-trust{grid-template-columns:1fr 1fr 1fr}.pd-trust li{font-size:.72rem;padding:10px 4px}.pd-price .money{font-size:2rem}.pd-actions .btn{flex:1 1 100%;justify-content:center}}
 </style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <style id="i18n-css">
 .lang{position:relative;display:inline-flex}
 .lang-btn{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;border:1px solid rgba(227,201,143,.45);border-radius:2px;padding:3px 9px;font:inherit;font-size:.78rem;cursor:pointer;letter-spacing:0}
@@ -669,6 +676,7 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">Currency</span>
         <select id="curSel" aria-label="Currency">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -704,13 +712,14 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html" class="active">Shop</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="shipping-returns.html">Shipping</a></li>
+        <li><a href="wholesale.html">Wholesale</a></li>
         <li><a href="blog.html">Journal</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>Get a quote</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="Cart"><i class="fas fa-bag-shopping"></i><span class="cart-label">Cart</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -755,9 +764,9 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
           <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20quote%20for%20Chaunsa%20Mangoes.%20Quantity%3A%20%2C%20Destination%20country%3A%20" target="_blank" rel="noopener" class="btn btn-line"><i class="fas fa-boxes-stacked"></i><span>Ask for a bulk quote</span></a>
         </div>
         <ul class="pd-trust">
-          <li><i class="fas fa-earth-americas"></i><span>Ships worldwide</span></li>
+          <li><i class="fas fa-calendar-days"></i><span>Seasonal</span></li>
           <li><i class="fas fa-box-open"></i><span>Packed fresh</span></li>
-          <li><i class="fas fa-shield-halved"></i><span>Secure payment</span></li>
+          <li><i class="fas fa-circle-check"></i><span>Order confirmed first</span></li>
         </ul>
         <ul class="pd-points"><li><i class="fas fa-check"></i><span>Seasonal fruit from trusted growers</span></li><li><i class="fas fa-check"></i><span>Carefully packed for freshness</span></li><li><i class="fas fa-check"></i><span>Availability confirmed on WhatsApp</span></li><li><i class="fas fa-check"></i><span>Retail baskets and bulk orders</span></li></ul>
       </div>
@@ -773,8 +782,16 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
     </div>
     <div>
       <h2>Packing and delivery</h2>
-      <p>Packed within 1–2 business days. Delivered across Pakistan and shipped worldwide to the UAE, Saudi Arabia, the UK, Europe, the USA and Japan. The final shipping cost is confirmed on WhatsApp before you pay.</p>
+      <p>Fresh fruit is seasonal. Availability, packing and delivery depend on the season, your city or country and import rules, so we confirm everything on WhatsApp before you order. We do not ship fresh fruit to every country.</p>
+      <p class="pd-more"><a href="wholesale.html#rfq"><i class="fas fa-file-signature"></i> Request a wholesale or export quote</a></p>
     </div>
+  </div>
+</section>
+
+<section class="pd-section">
+  <div class="container">
+    <h2>Product details</h2>
+    <table class="pd-spec"><tbody><tr><th>Origin</th><td>Pakistan</td></tr><tr><th>Category</th><td>Fresh Fruits</td></tr><tr><th>Storage</th><td>Keep in a cool place or the fridge and enjoy soon after delivery.</td></tr><tr><th>Retail and wholesale</th><td>Retail packs online. Bulk and export quantities on request.</td></tr></tbody></table>
   </div>
 </section>
 
@@ -830,6 +847,9 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
         <li><a href="about.html">About us</a></li>
         <li><a href="blog.html">Journal</a></li>
         <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        <li><a href="wholesale.html">Wholesale &amp; Export</a></li>
+        <li><a href="rice-guide.html">Rice guide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -842,7 +862,7 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
         <li><a href="shop.html?cat=rice">Basmati Rice</a></li>
         <li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
         <li><a href="index.html#gifts">Gift sets</a></li>
-        <li><a href="index.html#export">Bulk &amp; export</a></li>
+        <li><a href="wholesale.html">Bulk &amp; export</a></li>
       </ul>
     </div>
 
@@ -859,13 +879,12 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="Payment methods we accept">
-        <span class="pb-label">We accept</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="Payment options">
+        <span class="pb-label">Payment options, confirmed with your order</span>
         <span class="pb"><i class="fas fa-building-columns"></i>Bank transfer</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>Cash on delivery (Pakistan)</span>
       </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="shipping-returns.html">Shipping &amp; Returns</a> &nbsp;|&nbsp; <a href="contact.html">Customer Support</a></p>

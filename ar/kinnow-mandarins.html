@@ -516,7 +516,8 @@ footer{background:var(--green-deep);color:#bdc9dc}
  "brand": {
   "@type": "Brand",
   "name": "Sea2Sky Traders"
- }
+ },
+ "countryOfOrigin": "PK"
 }
 </script>
 <script type="application/ld+json">
@@ -630,9 +631,15 @@ html[lang=ja] .pd-info h1{font-size:clamp(1.5rem,3vw,2.3rem)}
 .pd-card .tx{display:block;padding:14px 16px}
 .pd-card b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--green);line-height:1.25;margin-bottom:6px}
 .pd-card .tx > span{display:block;font-size:.88rem;color:var(--gold-deep);font-weight:700}
+.pd-spec{width:100%;max-width:760px;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pd-spec th,.pd-spec td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top;font-size:.97rem}
+.pd-spec th{width:34%;color:var(--green);font-weight:600;background:var(--stone)}
+.pd-spec tr:last-child th,.pd-spec tr:last-child td{border-bottom:0}
+.pd-more{margin-top:12px}.pd-more a{color:var(--green);font-weight:600}.pd-more a:hover{color:var(--gold-deep)}
 @media (max-width:960px){.pd-grid,.pd-two{grid-template-columns:1fr;gap:28px}.pd-rel{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.pd-wrap{padding:22px 0 50px}.pd-trust{grid-template-columns:1fr 1fr 1fr}.pd-trust li{font-size:.72rem;padding:10px 4px}.pd-price .money{font-size:2rem}.pd-actions .btn{flex:1 1 100%;justify-content:center}}
 </style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style id="i18n-lang">
 :root{--sans:'Figtree','Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--serif:'Cormorant Garamond','Amiri',Georgia,serif}
@@ -680,6 +687,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">العملة</span>
         <select id="curSel" aria-label="العملة">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -715,13 +723,14 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="shop.html" class="active">المتجر</a></li>
         <li><a href="about.html">من نحن</a></li>
-        <li><a href="shipping-returns.html">الشحن</a></li>
+        <li><a href="wholesale.html">الجملة</a></li>
         <li><a href="blog.html">المدونة</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>اطلب عرض سعر</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="تواصل عبر واتساب"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="السلة"><i class="fas fa-bag-shopping"></i><span class="cart-label">السلة</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -766,9 +775,9 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
           <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20quote%20for%20Kinnow%20Mandarins.%20Quantity%3A%20%2C%20Destination%20country%3A%20" target="_blank" rel="noopener" class="btn btn-line"><i class="fas fa-boxes-stacked"></i><span>اطلب عرض سعر للجملة</span></a>
         </div>
         <ul class="pd-trust">
-          <li><i class="fas fa-earth-americas"></i><span>شحن عالمي</span></li>
+          <li><i class="fas fa-calendar-days"></i><span>موسمي</span></li>
           <li><i class="fas fa-box-open"></i><span>تعبئة طازجة</span></li>
-          <li><i class="fas fa-shield-halved"></i><span>دفع آمن</span></li>
+          <li><i class="fas fa-circle-check"></i><span>تأكيد الطلب أولاً</span></li>
         </ul>
         <ul class="pd-points"><li><i class="fas fa-check"></i><span>فواكه موسمية من مزارعين موثوقين</span></li><li><i class="fas fa-check"></i><span>معبأة بعناية للحفاظ على الطزاجة</span></li><li><i class="fas fa-check"></i><span>نؤكد التوفر عبر واتساب</span></li><li><i class="fas fa-check"></i><span>سلال للتجزئة وطلبات جملة</span></li></ul>
       </div>
@@ -784,8 +793,16 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
     </div>
     <div>
       <h2>التعبئة والتوصيل</h2>
-      <p>تتم التعبئة خلال 1–2 يوم عمل. نوصل إلى جميع أنحاء باكستان ونشحن إلى الإمارات والسعودية وبريطانيا وأوروبا وأمريكا واليابان. نؤكد تكلفة الشحن النهائية عبر واتساب قبل الدفع.</p>
+      <p>الفواكه الطازجة موسمية. يعتمد التوفر والتعبئة والتوصيل على الموسم ومدينتك أو بلدك وقواعد الاستيراد، لذلك نؤكد كل شيء عبر واتساب قبل الطلب. لا نشحن الفواكه الطازجة إلى كل الدول.</p>
+      <p class="pd-more"><a href="wholesale.html#rfq"><i class="fas fa-file-signature"></i> اطلب عرض سعر للجملة أو التصدير</a></p>
     </div>
+  </div>
+</section>
+
+<section class="pd-section">
+  <div class="container">
+    <h2>تفاصيل المنتج</h2>
+    <table class="pd-spec"><tbody><tr><th>المنشأ</th><td>باكستان</td></tr><tr><th>الفئة</th><td>الفواكه الطازجة</td></tr><tr><th>التخزين</th><td>يُحفظ في مكان بارد أو في الثلاجة ويُستهلك بعد التوصيل بوقت قصير.</td></tr><tr><th>التجزئة والجملة</th><td>عبوات التجزئة متاحة عبر الموقع، والكميات الكبيرة والتصدير عند الطلب.</td></tr></tbody></table>
   </div>
 </section>
 
@@ -841,6 +858,9 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <li><a href="about.html">من نحن</a></li>
         <li><a href="blog.html">المدونة</a></li>
         <li><a href="shipping-returns.html">الشحن والإرجاع</a></li>
+        <li><a href="wholesale.html">الجملة والتصدير</a></li>
+        <li><a href="rice-guide.html">دليل الأرز</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </div>
@@ -853,7 +873,7 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
         <li><a href="shop.html?cat=rice">أرز بسمتي</a></li>
         <li><a href="shop.html?cat=fresh-fruits">الفواكه الطازجة</a></li>
         <li><a href="index.html#gifts">علب الهدايا</a></li>
-        <li><a href="index.html#export">الجملة والتصدير</a></li>
+        <li><a href="wholesale.html">الجملة والتصدير</a></li>
       </ul>
     </div>
 
@@ -870,13 +890,12 @@ html[dir=rtl] ul,html[dir=rtl] ol{padding-right:1.2em;padding-left:0}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="طرق الدفع المقبولة">
-        <span class="pb-label">نقبل</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="خيارات الدفع">
+        <span class="pb-label">خيارات الدفع، تُؤكَّد مع طلبك</span>
         <span class="pb"><i class="fas fa-building-columns"></i>تحويل بنكي</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>الدفع عند الاستلام (باكستان)</span>
       </div>
       <p>© 2026 Sea2Sky Traders. جميع الحقوق محفوظة.</p>
       <p><a href="privacy-policy.html">سياسة الخصوصية</a> &nbsp;|&nbsp; <a href="shipping-returns.html">الشحن والإرجاع</a> &nbsp;|&nbsp; <a href="contact.html">دعم العملاء</a></p>

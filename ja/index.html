@@ -446,6 +446,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
 }
 </style>
 <style>.prod-link{color:inherit}.prod-link:hover{color:var(--gold-deep)}</style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
 <style id="i18n-lang">
 :root{--sans:'Figtree','Noto Sans JP','Hiragino Sans','Yu Gothic',system-ui,sans-serif;--serif:'Cormorant Garamond','Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',Georgia,serif}
@@ -489,6 +490,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">通貨</span>
         <select id="curSel" aria-label="通貨">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -524,13 +526,14 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="index.html" class="active">ホーム</a></li>
         <li><a href="shop.html">ショップ</a></li>
         <li><a href="about.html">会社概要</a></li>
-        <li><a href="shipping-returns.html">配送</a></li>
+        <li><a href="wholesale.html">卸売</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>見積もり依頼</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsAppで相談"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="カート"><i class="fas fa-bag-shopping"></i><span class="cart-label">カート</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -564,7 +567,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <p class="hero-lead">パキスタン産の高級ドライフルーツ、純粋なヒマラヤピンクソルト、香り高いバスマティライス、フレッシュフルーツ。ご家庭用パックから高級ギフトセット、輸出用包装まで、世界中のご家庭・小売店・輸入業者様へお届けします。</p>
       <div class="hero-actions">
         <a href="shop.html" class="btn btn-gold">コレクションを見る</a>
-        <a href="#gifts" class="btn btn-outline">ギフトセットを見る</a>
+        <a href="wholesale.html" class="btn btn-outline">卸売の見積もりを依頼</a>
       </div>
       <div class="hero-badges">
         <span><i class="fas fa-leaf"></i>100%天然</span>
@@ -807,11 +810,11 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <p>丁寧に精米・選別したバスマティを、ご家庭用の小売袋と、レストラン・卸・輸入業者様向けの輸出品質の袋でお届けします。</p>
       <div class="rice-list">
         <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>スーパーカーネル・バスマティ</strong><span>超長粒・伝統の香り</span></div><b><span class="money" data-usd="4.49">$4.49</span> <small>/ 1kg</small></b></div>
-        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>1121 セラ・バスマティ</strong><span>黄金色のパーボイルド米、炊くとさらに長く</span></div><b><span class="money" data-usd="4.99">$4.99</span> <small>/ 1kg</small></b></div>
-        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>ブラウン・バスマティ</strong><span>全粒・ナッツのような風味で栄養豊富</span></div><b><span class="money" data-usd="5.49">$5.49</span> <small>/ 1kg</small></b></div>
+        <div class="rice-item"><i class="fas fa-wheat-awn"></i><div><strong>1121セラ・バスマティ</strong><span>黄金色のパーボイルド米、炊くとさらに長く</span></div><b><span class="money" data-usd="4.99">$4.99</span> <small>/ 1kg</small></b></div>
+        <div class="rice-item"><i class="fas fa-seedling"></i><div><strong>玄米バスマティ</strong><span>全粒・ナッツのような風味で栄養豊富</span></div><b><span class="money" data-usd="5.49">$5.49</span> <small>/ 1kg</small></b></div>
         <div class="rice-item"><i class="fas fa-boxes-stacked"></i><div><strong>業務用・輸出用のお米</strong><span>10kg・25kg・50kg袋、プライベートブランドにも対応</span></div><b>見積もり</b></div>
       </div>
-      <a href="shop.html?cat=rice" class="btn btn-green">バスマティライスを見る</a>
+      <a href="shop.html?cat=rice" class="btn btn-green">バスマティ米を見る</a>
     </div>
   </div>
 </section>
@@ -876,12 +879,12 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <p class="lead">ドライフルーツ、ヒマラヤピンクソルト、バスマティライスを輸出品質の包装でお届けします。貴社ブランドでのプライベートブランドにも対応します。</p>
       <div class="pack-grid">
         <div class="pack"><i class="fas fa-box"></i><div><strong>5kg真空パック</strong><span>食品グレードで鮮度を保持</span></div></div>
-        <div class="pack"><i class="fas fa-box-open"></i><div><strong>10kg段ボール</strong><span>5kg内袋×2</span></div></div>
+        <div class="pack"><i class="fas fa-box-open"></i><div><strong>10kgカートン</strong><span>5kg内袋×2</span></div></div>
         <div class="pack"><i class="fas fa-weight-hanging"></i><div><strong>25kg / 50kg袋</strong><span>輸出品質の袋</span></div></div>
         <div class="pack"><i class="fas fa-pallet"></i><div><strong>パレット積み</strong><span>海上・航空輸送に対応</span></div></div>
       </div>
       <div class="export-actions">
-        <a href="contact.html" class="btn btn-gold">見積もりを依頼</a>
+        <a href="wholesale.html#rfq" class="btn btn-gold">見積もりを依頼</a>
         <a href="https://wa.me/923008697543?text=Hi%2C%20I%27d%20like%20a%20bulk%20%2F%20export%20quote" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i>WhatsAppで問い合わせ</a>
       </div>
     </div>
@@ -900,7 +903,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
     <div class="steps">
       <div class="step"><div class="step-no">01</div><h3>商品を選ぶ</h3><p>ショップで商品をカートに入れるか、ご希望をメッセージでお知らせください。</p></div>
       <div class="step"><div class="step-no">02</div><h3>WhatsAppで確認</h3><p>発送前に、お客様の国への価格・送料・お届け日数を確認します。</p></div>
-      <div class="step"><div class="step-no">03</div><h3>梱包・お届け</h3><p>ご注文は新鮮なまま梱包し、世界中のご住所へお届けします。</p></div>
+      <div class="step"><div class="step-no">03</div><h3>梱包・お届け</h3><p>ご注文は新鮮なまま梱包し、ご住所へお届けします。生鮮フルーツは季節とお届け先によります。</p></div>
     </div>
   </div>
 </section>
@@ -1014,6 +1017,9 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="about.html">会社概要</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="shipping-returns.html">配送・返品</a></li>
+        <li><a href="wholesale.html">卸売・輸出</a></li>
+        <li><a href="rice-guide.html">お米ガイド</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
@@ -1043,13 +1049,12 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="ご利用いただけるお支払い方法">
-        <span class="pb-label">お支払い方法</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="お支払い方法">
+        <span class="pb-label">お支払い方法(ご注文時に確認)</span>
         <span class="pb"><i class="fas fa-building-columns"></i>銀行振込</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>代金引換（パキスタン国内）</span>
       </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">プライバシーポリシー</a> &nbsp;|&nbsp; <a href="shipping-returns.html">配送・返品</a> &nbsp;|&nbsp; <a href="contact.html">カスタマーサポート</a></p>

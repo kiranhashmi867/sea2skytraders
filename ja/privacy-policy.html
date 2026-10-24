@@ -458,6 +458,7 @@ footer{background:var(--green-deep);color:#bdc9dc}
   .tb-msg i{display:none}
 }
 </style>
+<style id="quote-css">.quote-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold-deep);font-weight:700;font-size:.86rem;line-height:1;white-space:nowrap;transition:background .25s,color .25s}.quote-btn:hover{background:var(--gold);color:#fff}@media (max-width:1240px){.quote-btn{display:none}}</style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
 <style id="i18n-lang">
 :root{--sans:'Figtree','Noto Sans JP','Hiragino Sans','Yu Gothic',system-ui,sans-serif;--serif:'Cormorant Garamond','Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',Georgia,serif}
@@ -501,6 +502,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
       <label class="cur"><i class="fas fa-coins"></i><span class="sr">通貨</span>
         <select id="curSel" aria-label="通貨">
           <option value="USD">USD $</option>
+          <option value="PKR">PKR Rs</option>
           <option value="AED">AED</option>
           <option value="SAR">SAR</option>
           <option value="GBP">GBP £</option>
@@ -536,13 +538,14 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="index.html">ホーム</a></li>
         <li><a href="shop.html">ショップ</a></li>
         <li><a href="about.html">会社概要</a></li>
-        <li><a href="shipping-returns.html">配送</a></li>
+        <li><a href="wholesale.html">卸売</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
 
     <div class="nav-actions">
+      <a href="wholesale.html#rfq" class="quote-btn"><i class="fas fa-file-signature"></i><span>見積もり依頼</span></a>
       <a href="https://wa.me/923008697543" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsAppで相談"><i class="fab fa-whatsapp"></i></a>
       <a href="cart.html" class="cart-btn" aria-label="カート"><i class="fas fa-bag-shopping"></i><span class="cart-label">カート</span><span class="cart-count" id="cartCount">0</span></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
@@ -768,6 +771,9 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="about.html">会社概要</a></li>
         <li><a href="blog.html">ジャーナル</a></li>
         <li><a href="shipping-returns.html">配送・返品</a></li>
+        <li><a href="wholesale.html">卸売・輸出</a></li>
+        <li><a href="rice-guide.html">お米ガイド</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
@@ -780,7 +786,7 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
         <li><a href="shop.html?cat=rice">バスマティライス</a></li>
         <li><a href="shop.html?cat=fresh-fruits">フレッシュフルーツ</a></li>
         <li><a href="index.html#gifts">ギフトセット</a></li>
-        <li><a href="index.html#export">業務用・輸出</a></li>
+        <li><a href="wholesale.html">業務用・輸出</a></li>
       </ul>
     </div>
 
@@ -797,13 +803,12 @@ html[lang=ja] *{text-transform:none!important;letter-spacing:.02em!important}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <div class="pay-badges" aria-label="ご利用いただけるお支払い方法">
-        <span class="pb-label">お支払い方法</span>
-        <span class="pb"><i class="fab fa-cc-visa"></i>Visa</span>
-        <span class="pb"><i class="fab fa-cc-mastercard"></i>Mastercard</span>
-        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
+      <div class="pay-badges" aria-label="お支払い方法">
+        <span class="pb-label">お支払い方法(ご注文時に確認)</span>
         <span class="pb"><i class="fas fa-building-columns"></i>銀行振込</span>
+        <span class="pb"><i class="fab fa-paypal"></i>PayPal</span>
         <span class="pb"><i class="fas fa-mobile-screen"></i>JazzCash / Easypaisa</span>
+        <span class="pb"><i class="fas fa-money-bill-wave"></i>代金引換（パキスタン国内）</span>
       </div>
       <p>© 2026 Sea2Sky Traders. All rights reserved.</p>
       <p><a href="privacy-policy.html">プライバシーポリシー</a> &nbsp;|&nbsp; <a href="shipping-returns.html">配送・返品</a> &nbsp;|&nbsp; <a href="contact.html">カスタマーサポート</a></p>
